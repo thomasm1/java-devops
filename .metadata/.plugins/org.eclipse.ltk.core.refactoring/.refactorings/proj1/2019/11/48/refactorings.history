@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;proj1FirstClass&apos; to &apos;JavaDay2/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;proj1&apos;&#x0D;&#x0A;- Destination element: &apos;JavaDay2/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;proj1/src/main/java/proj1FirstClass&apos;" description="Copy package" destination="=JavaDay2/src\/main\/java" element1="/src\/main\/java&lt;proj1FirstClass" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1574871022813" version="1.0"/>
+</session>

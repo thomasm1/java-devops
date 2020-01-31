@@ -1,0 +1,13 @@
+            
+span.links:hover {
+    cursor:pointer; 
+    text-decoration: none;
+ 
+}
+.admin-login {
+    padding:5px;
+    text-align:right;
+}
+.register-logout {
+    float:right;
+}

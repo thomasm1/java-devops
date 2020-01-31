@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 44528b7d42922a985a49ea558fd88fe9b539e237 thomas maestas <thomasm1.maestas@gmail.com> 1578412221 -0500	commit (initial): first java-rev commit -
+44528b7d42922a985a49ea558fd88fe9b539e237 275f21fb7301838256b105f6d7d4eba2ff2bc037 thomas maestas <thomasm1.maestas@gmail.com> 1578510098 -0500	commit: guardians
+275f21fb7301838256b105f6d7d4eba2ff2bc037 275f21fb7301838256b105f6d7d4eba2ff2bc037 thomas maestas <thomasm1.maestas@gmail.com> 1578779073 -0500	checkout: moving from master to master
+275f21fb7301838256b105f6d7d4eba2ff2bc037 abf43cb8831d1e2dfac3119cb31d1f457b2220e6 thomas maestas <thomasm1.maestas@gmail.com> 1578873565 -0500	commit: java-rev: working proj1, working hibernate
+abf43cb8831d1e2dfac3119cb31d1f457b2220e6 dc8c3bffdc49aad862f7681388fbdd2b937462d9 thomas maestas <thomasm1.maestas@gmail.com> 1580357181 -0500	commit: project0 checked 100%
+dc8c3bffdc49aad862f7681388fbdd2b937462d9 49118dbb3104048aa4798d492235a33056187e18 thomas maestas <thomasm1.maestas@gmail.com> 1580393715 -0500	commit: TestingAutomation, BackEnd_Master (project2)
+49118dbb3104048aa4798d492235a33056187e18 aa1057930191604a85fe8cff738df234e167e63b thomas maestas <thomasm1.maestas@gmail.com> 1580393740 -0500	commit (amend): TestingAutomation, BackEnd_Master (project2), .gitignore
+aa1057930191604a85fe8cff738df234e167e63b 0d057086b30eb0aba6a324d9ad5f945ce5844021 thomas maestas <thomasm1.maestas@gmail.com> 1580393772 -0500	commit (amend): TestingAutomation, BackEnd_Master (project2), .gitignore
+0d057086b30eb0aba6a324d9ad5f945ce5844021 3f8ae1afe1fe817a05888e101d9e3a248c7c1da4 thomas maestas <thomasm1.maestas@gmail.com> 1580394385 -0500	commit (amend): TestingAutomation, BackEnd_Master (project2), .gitignore
+3f8ae1afe1fe817a05888e101d9e3a248c7c1da4 2745d0f7f5cb3e30b547473df78dc06e7dace9b7 thomas maestas <thomasm1.maestas@gmail.com> 1580432233 -0500	commit: fixed RevaturePointRestService Bean /associates
+2745d0f7f5cb3e30b547473df78dc06e7dace9b7 b58984ad4fa89f5f743ce9fbce362b97fb40cc10 thomas maestas <thomasm1.maestas@gmail.com> 1580437642 -0500	commit: doggywood front -all fixed, automation, pointsRevature
+b58984ad4fa89f5f743ce9fbce362b97fb40cc10 e6bf82706b91d7a29c4903607e60b4cd969b142e thomas maestas <thomasm1.maestas@gmail.com> 1580438054 -0500	commit (amend): doggywood front -all fixed, automation, pointsRevature
+e6bf82706b91d7a29c4903607e60b4cd969b142e d07470c40cf3634088ea591ab2a11de1d9972b94 thomas maestas <thomasm1.maestas@gmail.com> 1580446658 -0500	commit (amend): doggywood front -all fixed, automation, pointsRevature

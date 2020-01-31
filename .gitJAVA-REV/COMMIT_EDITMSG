@@ -1,0 +1,720 @@
+doggywood front -all fixed, automation, pointsRevature
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Thu Jan 30 21:27:22 2020 -0500
+#
+# On branch master
+# Changes to be committed:
+#	modified:   .gitignore
+#	new file:   BackEnd_Master/README.md
+#	modified:   RevaturePointRestService/src/main/resources/application.properties
+#	new file:   TestingAutomation/README.md
+#	modified:   TestingAutomation/target/classes/META-INF/maven/com.revature/TestingAutomation/pom.properties
+#	modified:   TestingAutomation/test-output/Default suite/Default test.html
+#	modified:   TestingAutomation/test-output/Default suite/Default test.xml
+#	modified:   TestingAutomation/test-output/emailable-report.html
+#	modified:   TestingAutomation/test-output/index.html
+#	modified:   TestingAutomation/test-output/junitreports/TEST-com.revature.behaviortests.TestRunner.xml
+#	modified:   TestingAutomation/test-output/old/Default suite/methods-alphabetical.html
+#	modified:   TestingAutomation/test-output/old/Default suite/methods.html
+#	modified:   TestingAutomation/test-output/testng-results.xml
+#	new file:   aws-architect/aws-alexa-kit/.gitignore
+#	new file:   aws-architect/aws-alexa-kit/FAQ.md
+#	new file:   aws-architect/aws-alexa-kit/Interview-Questions/README.MD
+#	new file:   aws-architect/aws-alexa-kit/README.md
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/aws-vpc.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/chef/Chef-Server-Instances.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/chef/Chef-Server-QuickStart.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/chef/Chef-Server-VPC.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/myELB.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/scalable-2tier-template.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/setup-app-db-stack.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/setup-lms-autoscaling-stack.template
+#	new file:   aws-architect/aws-alexa-kit/cf-templates/setup-network-stack.template
+#	new file:   aws-architect/aws-alexa-kit/cli-scripts/setup-aws-2tier.sh
+#	new file:   aws-architect/aws-alexa-kit/iam-policies/s3policyToAllowAccessSingleBucket.json
+#	new file:   aws-architect/aws-alexa-kit/img/API GW + Lambda=FrontEnd + BackEnd.png
+#	new file:   aws-architect/aws-alexa-kit/img/Archtectural Viewpoints06.jpg
+#	new file:   aws-architect/aws-alexa-kit/img/DataSource-Filebeat-Logstash-ElasticSearch.png
+#	new file:   aws-architect/aws-alexa-kit/img/Elastic-FileSystem-EC2.jpg
+#	new file:   aws-architect/aws-alexa-kit/img/Image-Processor.png
+#	new file:   aws-architect/aws-alexa-kit/img/Multi-AZ-VPC-ELB.png
+#	new file:   aws-architect/aws-alexa-kit/img/Reporting.png
+#	new file:   aws-architect/aws-alexa-kit/img/Serverless-Application-Architecture.png
+#	new file:   aws-architect/aws-alexa-kit/img/VPC-NAT-Instance.png
+#	new file:   aws-architect/aws-alexa-kit/img/VPC-Peering.png
+#	new file:   aws-architect/aws-alexa-kit/img/VPC-Subnet-AZ[1-2]-Mapping.png
+#	new file:   aws-architect/aws-alexa-kit/img/Valaxy-Training-Elastic-Beanstalk-Application-Environments-newssection.png
+#	new file:   aws-architect/aws-alexa-kit/img/Valaxy-Training-Elastic-Beanstalk-Application-Environments.png
+#	new file:   aws-architect/aws-alexa-kit/img/Valaxy-Training-Web-App-DB-Ref-Arch-for-boto3.png
+#	new file:   aws-architect/aws-alexa-kit/img/alexa_skills_kit_architecture_diagram.png
+#	new file:   aws-architect/aws-alexa-kit/img/auto_scaling.png
+#	new file:   aws-architect/aws-alexa-kit/img/hdd-pv-vg-lv-fs.jpg
+#	new file:   aws-architect/aws-alexa-kit/img/home-made-ssl.png
+#	new file:   aws-architect/aws-alexa-kit/img/iam-s3-sqs-sns-video-transcoder.jpg
+#	new file:   aws-architect/aws-alexa-kit/img/log_analysis_archive.jpg
+#	new file:   aws-architect/aws-alexa-kit/img/multi-az-vpc.png
+#	new file:   aws-architect/aws-alexa-kit/img/setup-ec2-wordpress-boto.png
+#	new file:   aws-architect/aws-alexa-kit/img/setup-s3-bucket-copy-across-accounts.png
+#	new file:   aws-architect/aws-alexa-kit/img/site-to-site-vpn.png
+#	new file:   aws-architect/aws-alexa-kit/img/valaxy-Training-Elastic-Beanstalk-Application-Environments-news.png
+#	new file:   aws-architect/aws-alexa-kit/img/valaxy-Training-Elastic-Beanstalk-Application-Environments-welcome.png
+#	new file:   aws-architect/aws-alexa-kit/img/web-App-DB-Ref-Arch.png
+#	new file:   aws-architect/aws-alexa-kit/setups-installed/iam-s3-sqs-sns-video-transcoder.py
+#	new file:   aws-architect/aws-alexa-kit/setups-installed/pdf-to-png-using-boto3-aws.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-DynamoDB/readme.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ElasticFileSystem-on-ec2/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ElasticFileSystem-on-ec2/setup-ElasticFileSystem-on-ec2.sh
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-SSL-in-apache/Readme.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/build-scripts/Automation-UpdateSsmParam.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/build-scripts/Bake-GoldenAMI-Linux.json
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/build-scripts/Bake-GoldenAMI-Windows.json
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/build-scripts/create-iam-roles-for-build.yaml
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/build-scripts/post-ami-build.sh
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/00-Secure-Golden-AMI-Process.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/AWS-UpdateLinux-Ami-00.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/AWS-UpdateLinux-Ami-01.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/AWS-UpdateLinux-Ami-02.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/AWS-UpdateLinux-Ami-Automatically.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/Create-Automation-Document-00.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ami-lifecycle-management-using-ssm/images/Create-Automation-Document-01.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-api-gw/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-api-gw/app.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-autoscaling-with-boto3/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-autoscaling-with-boto3/setup-autoscaling-with-boto3
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-aws-cli/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-boto-with-aws/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-cloudformation-webserver/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-cloudformation-webserver/cf-vpc-ec2-webserver.template
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-cross-account-iam-roles/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-cross-account-iam-roles/images/IAM-CROSS-ACCOUNT-ACCESS-DELEGATION.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-custom-kms/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-custom-kms/images/AWS-Custom-KMS.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-custom-kms/images/kms_spec_key_materials_1.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-dynamodb-bulk-load/bulk-load-items-to-dynamodb.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-dynamodb-bulk-load/campaign-leads.json
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-dynamodb-bulk-load/create-dynamodb-table.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-elastic-beanstalk-blue-green-deployment/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-elastic-beanstalk/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-elastic-beanstalk/setup-beanstalk-python.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-elasticsearch-logstash/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-iam-access-to-rds/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-iam-access-to-rds/images/iam-access-to-rds-00.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-iam-access-to-rds/images/iam-access-to-rds-01.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-iam-with-boto3/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ipsec-rhel/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-lambda-to-manage-security-groups/setup-lambda-to-manage-security-groups.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-lamda-ec2-start-stop/setup-lamda-ec2-start-stop.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-lamdba-for-rss-parsing/newsParser.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-lvm-in-EC2/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-manual-elasticsearch-snapshots/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-manual-elasticsearch-snapshots/images/ElasticSearch-Manual-Snapshots-00.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-manual-elasticsearch-snapshots/images/ElasticSearch-Manual-Snapshots-04.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-multi-az-vpc-from-scratch-using-boto/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-multi-az-vpc-from-scratch-using-boto/setup-multi-az-vpc-from-scratch-using-boto.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-nat-to-allow-internet-for-private-instances/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-nat-to-allow-internet-for-private-instances/vpc-nat-private-internet-passthrough.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-pre-signed-s3-urls/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-pre-signed-s3-urls/images/Screenshot-Valaxy-Miztiik.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-pre-signed-s3-urls/images/signed-url-upload-flow.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-pre-signed-s3-urls/index.html
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-pre-signed-s3-urls/s3-signed-url-generator.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-resource-cleanup-script-using-boto/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-resource-cleanup-script-using-boto/aws-janitor.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-run-command/install-linux-package.json
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-run-command/install-windows-package.json
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-block-storage-filesystem/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-block-storage-filesystem/img/EC2-S3FS.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-block-storage-filesystem/setup-s3-block-storage-filesystem.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-bucket-copy-across-accounts/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-cli-from-ec2/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-event-sns-notification/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-event-sns-notification/images/AWS-S3-Events.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-notify-through-sns-publish-to-sqs/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-s3-notify-through-sns-publish-to-sqs/setup-s3-notify-through-sns-publish-to-sqs.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-scaling-elasticsearch/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-scaling-elasticsearch/images/scaling-elasticsearch-miztiik-valaxy.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-sendmail/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-sftp-for-s3/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-sftp-for-s3/images/sftp-for-s3-valaxy-miztiik.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-sqs-with-boto3/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-sqs-with-boto3/create-manage-sqs-with-boto3.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssh-key-recovery-using-userdata/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssh-key-recovery-using-userdata/images/setup-ssh-key-recovery-using-userdata-valaxy-00.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssh-key-recovery-using-userdata/images/setup-ssh-key-recovery-using-userdata-valaxy-01.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssl-connection-to-rds/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssl-connection-to-rds/images/SSL-to-RDS.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssm-hybrid-environment/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-ssm-hybrid-environment/images/AWS-EC2-Systems-Manager.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-user-data-to-execute-after-initial-launch/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-user-data-to-execute-after-initial-launch/images/setup-user-data-to-execute-after-initial-launch-output.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-user-data-to-execute-after-initial-launch/images/setup-user-data-to-execute-after-initial-launch.png
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-user-to-assume-role/README.MD
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-vpc-flow-logs/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-vpc-flow-logs/setup-vpc-flow-logs-monitor.py
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-vpc-peering/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-vpc-peering/vpc-peering-cli.sh
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-wordpress-in-ec2-in-5-minutes-with-boto/README.md
+#	new file:   aws-architect/aws-alexa-kit/setups/setup-wordpress-in-ec2-in-5-minutes-with-boto/setup-wordpress-in-ec2-in-5-minutes-with-boto.py
+#	new file:   doggymaterial/.gitignore
+#	new file:   doggymaterial/angular.json
+#	new file:   doggymaterial/browserslist
+#	new file:   doggymaterial/e2e/protractor.conf.js
+#	new file:   doggymaterial/e2e/src/app.e2e-spec.ts
+#	new file:   doggymaterial/e2e/src/app.po.ts
+#	new file:   doggymaterial/e2e/tsconfig.json
+#	new file:   doggymaterial/info.json
+#	new file:   doggymaterial/karma.conf.js
+#	new file:   doggymaterial/package-lock.json
+#	new file:   doggymaterial/package.json
+#	new file:   doggymaterial/randomFiles/WireFrame - Draft 1.pdf
+#	new file:   doggymaterial/randomFiles/brendansuck.txt
+#	new file:   doggymaterial/src/app/app-routing.module.ts
+#	new file:   doggymaterial/src/app/app.component.css
+#	new file:   doggymaterial/src/app/app.component.html
+#	new file:   doggymaterial/src/app/app.component.spec.ts
+#	new file:   doggymaterial/src/app/app.component.ts
+#	new file:   doggymaterial/src/app/app.module.ts
+#	new file:   doggymaterial/src/app/components/animal-create/animal-create.component.css
+#	new file:   doggymaterial/src/app/components/animal-create/animal-create.component.html
+#	new file:   doggymaterial/src/app/components/animal-create/animal-create.component.spec.ts
+#	new file:   doggymaterial/src/app/components/animal-create/animal-create.component.ts
+#	new file:   doggymaterial/src/app/components/appt-create/appt-create.component.css
+#	new file:   doggymaterial/src/app/components/appt-create/appt-create.component.html
+#	new file:   doggymaterial/src/app/components/appt-create/appt-create.component.spec.ts
+#	new file:   doggymaterial/src/app/components/appt-create/appt-create.component.ts
+#	new file:   doggymaterial/src/app/components/appt/appt.component.css
+#	new file:   doggymaterial/src/app/components/appt/appt.component.html
+#	new file:   doggymaterial/src/app/components/appt/appt.component.spec.ts
+#	new file:   doggymaterial/src/app/components/appt/appt.component.ts
+#	new file:   doggymaterial/src/app/components/cli/cli-animal-profile/cli-animal-profile.component.css
+#	new file:   doggymaterial/src/app/components/cli/cli-animal-profile/cli-animal-profile.component.html
+#	new file:   doggymaterial/src/app/components/cli/cli-animal-profile/cli-animal-profile.component.spec.ts
+#	new file:   doggymaterial/src/app/components/cli/cli-animal-profile/cli-animal-profile.component.ts
+#	new file:   doggymaterial/src/app/components/cli/cli-pet-record/cli-pet-record.component.css
+#	new file:   doggymaterial/src/app/components/cli/cli-pet-record/cli-pet-record.component.html
+#	new file:   doggymaterial/src/app/components/cli/cli-pet-record/cli-pet-record.component.spec.ts
+#	new file:   doggymaterial/src/app/components/cli/cli-pet-record/cli-pet-record.component.ts
+#	new file:   doggymaterial/src/app/components/cli/clients/clients.component.css
+#	new file:   doggymaterial/src/app/components/cli/clients/clients.component.html
+#	new file:   doggymaterial/src/app/components/cli/clients/clients.component.spec.ts
+#	new file:   doggymaterial/src/app/components/cli/clients/clients.component.ts
+#	new file:   doggymaterial/src/app/components/cli/create-client/create-client.component.css
+#	new file:   doggymaterial/src/app/components/cli/create-client/create-client.component.html
+#	new file:   doggymaterial/src/app/components/cli/create-client/create-client.component.spec.ts
+#	new file:   doggymaterial/src/app/components/cli/create-client/create-client.component.ts
+#	new file:   doggymaterial/src/app/components/doggydash/doggydash.component.css
+#	new file:   doggymaterial/src/app/components/doggydash/doggydash.component.html
+#	new file:   doggymaterial/src/app/components/doggydash/doggydash.component.spec.ts
+#	new file:   doggymaterial/src/app/components/doggydash/doggydash.component.ts
+#	new file:   doggymaterial/src/app/components/employees/employees.component.css
+#	new file:   doggymaterial/src/app/components/employees/employees.component.html
+#	new file:   doggymaterial/src/app/components/employees/employees.component.spec.ts
+#	new file:   doggymaterial/src/app/components/employees/employees.component.ts
+#	new file:   doggymaterial/src/app/components/landing/cli-profile/cli-profile.component.css
+#	new file:   doggymaterial/src/app/components/landing/cli-profile/cli-profile.component.html
+#	new file:   doggymaterial/src/app/components/landing/cli-profile/cli-profile.component.spec.ts
+#	new file:   doggymaterial/src/app/components/landing/cli-profile/cli-profile.component.ts
+#	new file:   doggymaterial/src/app/components/landing/rec-landing/rec-landing.component.css
+#	new file:   doggymaterial/src/app/components/landing/rec-landing/rec-landing.component.html
+#	new file:   doggymaterial/src/app/components/landing/rec-landing/rec-landing.component.spec.ts
+#	new file:   doggymaterial/src/app/components/landing/rec-landing/rec-landing.component.ts
+#	new file:   doggymaterial/src/app/components/landing/vet-landing/vet-landing.component.css
+#	new file:   doggymaterial/src/app/components/landing/vet-landing/vet-landing.component.html
+#	new file:   doggymaterial/src/app/components/landing/vet-landing/vet-landing.component.spec.ts
+#	new file:   doggymaterial/src/app/components/landing/vet-landing/vet-landing.component.ts
+#	new file:   doggymaterial/src/app/components/logins/emp-rec-login/emp-rec-login.component.css
+#	new file:   doggymaterial/src/app/components/logins/emp-rec-login/emp-rec-login.component.html
+#	new file:   doggymaterial/src/app/components/logins/emp-rec-login/emp-rec-login.component.spec.ts
+#	new file:   doggymaterial/src/app/components/logins/emp-rec-login/emp-rec-login.component.ts
+#	new file:   doggymaterial/src/app/components/logins/emp-vet-login/emp-vet-login.component.css
+#	new file:   doggymaterial/src/app/components/logins/emp-vet-login/emp-vet-login.component.html
+#	new file:   doggymaterial/src/app/components/logins/emp-vet-login/emp-vet-login.component.spec.ts
+#	new file:   doggymaterial/src/app/components/logins/emp-vet-login/emp-vet-login.component.ts
+#	new file:   doggymaterial/src/app/components/logins/login/login.component.css
+#	new file:   doggymaterial/src/app/components/logins/login/login.component.html
+#	new file:   doggymaterial/src/app/components/logins/login/login.component.spec.ts
+#	new file:   doggymaterial/src/app/components/logins/login/login.component.ts
+#	new file:   doggymaterial/src/app/components/logins/register/register.component.css
+#	new file:   doggymaterial/src/app/components/logins/register/register.component.html
+#	new file:   doggymaterial/src/app/components/logins/register/register.component.spec.ts
+#	new file:   doggymaterial/src/app/components/logins/register/register.component.ts
+#	new file:   doggymaterial/src/app/components/vet/vet-animal-profile/vet-animal-profile.component.css
+#	new file:   doggymaterial/src/app/components/vet/vet-animal-profile/vet-animal-profile.component.html
+#	new file:   doggymaterial/src/app/components/vet/vet-animal-profile/vet-animal-profile.component.spec.ts
+#	new file:   doggymaterial/src/app/components/vet/vet-animal-profile/vet-animal-profile.component.ts
+#	new file:   doggymaterial/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.css
+#	new file:   doggymaterial/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.html
+#	new file:   doggymaterial/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.spec.ts
+#	new file:   doggymaterial/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.ts
+#	new file:   doggymaterial/src/app/components/vet/vet-pet-record/vet-pet-record.component.css
+#	new file:   doggymaterial/src/app/components/vet/vet-pet-record/vet-pet-record.component.html
+#	new file:   doggymaterial/src/app/components/vet/vet-pet-record/vet-pet-record.component.spec.ts
+#	new file:   doggymaterial/src/app/components/vet/vet-pet-record/vet-pet-record.component.ts
+#	new file:   doggymaterial/src/app/layout/doggynav/doggynav.component.css
+#	new file:   doggymaterial/src/app/layout/doggynav/doggynav.component.html
+#	new file:   doggymaterial/src/app/layout/doggynav/doggynav.component.spec.ts
+#	new file:   doggymaterial/src/app/layout/doggynav/doggynav.component.ts
+#	new file:   doggymaterial/src/app/models/animal.ts
+#	new file:   doggymaterial/src/app/models/animalModel.ts
+#	new file:   doggymaterial/src/app/models/customer.ts
+#	new file:   doggymaterial/src/app/models/login.ts
+#	new file:   doggymaterial/src/app/models/register.ts
+#	new file:   doggymaterial/src/app/services/animals.service.spec.ts
+#	new file:   doggymaterial/src/app/services/animals.service.ts
+#	new file:   doggymaterial/src/app/services/clients.service.spec.ts
+#	new file:   doggymaterial/src/app/services/clients.service.ts
+#	new file:   doggymaterial/src/app/services/employees.service.spec.ts
+#	new file:   doggymaterial/src/app/services/employees.service.ts
+#	new file:   doggymaterial/src/assets/.gitkeep
+#	new file:   doggymaterial/src/assets/Animals/random_a1.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a2.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a3.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a4.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a5.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a6.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a7.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a8.jpg
+#	new file:   doggymaterial/src/assets/Animals/random_a9.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p1.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p10.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p10.png
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p2.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p3.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p4.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p5.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p6.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p7.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p8.jpg
+#	new file:   doggymaterial/src/assets/People/fullsizeNonSquare/random_p9.jpg
+#	new file:   doggymaterial/src/assets/People/random_p1.png
+#	new file:   doggymaterial/src/assets/People/random_p10.png
+#	new file:   doggymaterial/src/assets/People/random_p2.png
+#	new file:   doggymaterial/src/assets/People/random_p3.png
+#	new file:   doggymaterial/src/assets/People/random_p4.png
+#	new file:   doggymaterial/src/assets/People/random_p5.png
+#	new file:   doggymaterial/src/assets/People/random_p6.png
+#	new file:   doggymaterial/src/assets/People/random_p7.png
+#	new file:   doggymaterial/src/assets/People/random_p8.png
+#	new file:   doggymaterial/src/assets/People/random_p9.png
+#	new file:   doggymaterial/src/assets/logo1.png
+#	new file:   doggymaterial/src/assets/malinois1.jpg
+#	new file:   doggymaterial/src/assets/style6.png
+#	new file:   doggymaterial/src/environments/environment.prod.ts
+#	new file:   doggymaterial/src/environments/environment.ts
+#	new file:   doggymaterial/src/favicon.ico
+#	new file:   doggymaterial/src/index.html
+#	new file:   doggymaterial/src/main.ts
+#	new file:   doggymaterial/src/polyfills.ts
+#	new file:   doggymaterial/src/styles.css
+#	new file:   doggymaterial/src/test.ts
+#	new file:   doggymaterial/tsconfig.app.json
+#	new file:   doggymaterial/tsconfig.json
+#	new file:   doggymaterial/tsconfig.spec.json
+#	new file:   doggymaterial/tslint.json
+#	new file:   doggywood/.editorconfig
+#	new file:   doggywood/.gitignore
+#	new file:   doggywood/.gitignore copy
+#	new file:   doggywood/README.md
+#	new file:   doggywood/angular.json
+#	new file:   doggywood/browserconfig.xml
+#	new file:   doggywood/browserslist
+#	new file:   doggywood/buildspec.yaml
+#	new file:   doggywood/customers.json
+#	new file:   doggywood/db.json
+#	new file:   doggywood/e2e/protractor.conf.js
+#	new file:   doggywood/e2e/protractorConf.js
+#	new file:   doggywood/e2e/src/app.e2e-spec.ts
+#	new file:   doggywood/e2e/src/app.po.ts
+#	new file:   doggywood/e2e/src/spec.js
+#	new file:   doggywood/e2e/tsconfig.json
+#	new file:   doggywood/employees.json
+#	new file:   doggywood/info.json
+#	new file:   doggywood/karma.conf.js
+#	new file:   doggywood/package-lock.json
+#	new file:   doggywood/package.json
+#	new file:   doggywood/pets.json
+#	new file:   doggywood/randomFiles/WireFrame - Draft 1.pdf
+#	new file:   doggywood/randomFiles/brendansuck.txt
+#	new file:   doggywood/site.webmanifest
+#	new file:   doggywood/src/app/app-routing.module.ts
+#	new file:   doggywood/src/app/app.component.css
+#	new file:   doggywood/src/app/app.component.html
+#	new file:   doggywood/src/app/app.component.spec.ts
+#	new file:   doggywood/src/app/app.component.ts
+#	new file:   doggywood/src/app/app.module.ts
+#	new file:   doggywood/src/app/components/appt-create/appt-create.component.css
+#	new file:   doggywood/src/app/components/appt-create/appt-create.component.html
+#	new file:   doggywood/src/app/components/appt-create/appt-create.component.spec.ts
+#	new file:   doggywood/src/app/components/appt-create/appt-create.component.ts
+#	new file:   doggywood/src/app/components/appt/appt.component.css
+#	new file:   doggywood/src/app/components/appt/appt.component.html
+#	new file:   doggywood/src/app/components/appt/appt.component.spec.ts
+#	new file:   doggywood/src/app/components/appt/appt.component.ts
+#	new file:   doggywood/src/app/components/cli/cli-pet-profile/cli-pet-profile.component.css
+#	new file:   doggywood/src/app/components/cli/cli-pet-profile/cli-pet-profile.component.html
+#	new file:   doggywood/src/app/components/cli/cli-pet-profile/cli-pet-profile.component.spec.ts
+#	new file:   doggywood/src/app/components/cli/cli-pet-profile/cli-pet-profile.component.ts
+#	new file:   doggywood/src/app/components/cli/cli-pet-record/cli-pet-record.component.css
+#	new file:   doggywood/src/app/components/cli/cli-pet-record/cli-pet-record.component.html
+#	new file:   doggywood/src/app/components/cli/cli-pet-record/cli-pet-record.component.spec.ts
+#	new file:   doggywood/src/app/components/cli/cli-pet-record/cli-pet-record.component.ts
+#	new file:   doggywood/src/app/components/cli/clients/clients.component.css
+#	new file:   doggywood/src/app/components/cli/clients/clients.component.html
+#	new file:   doggywood/src/app/components/cli/clients/clients.component.spec.ts
+#	new file:   doggywood/src/app/components/cli/clients/clients.component.ts
+#	new file:   doggywood/src/app/components/cli/create-client/create-client.component.css
+#	new file:   doggywood/src/app/components/cli/create-client/create-client.component.html
+#	new file:   doggywood/src/app/components/cli/create-client/create-client.component.spec.ts
+#	new file:   doggywood/src/app/components/cli/create-client/create-client.component.ts
+#	new file:   doggywood/src/app/components/doggydash/doggydash.component.css
+#	new file:   doggywood/src/app/components/doggydash/doggydash.component.html
+#	new file:   doggywood/src/app/components/doggydash/doggydash.component.spec.ts
+#	new file:   doggywood/src/app/components/doggydash/doggydash.component.ts
+#	new file:   doggywood/src/app/components/landing/cli-profile/cli-profile.component.css
+#	new file:   doggywood/src/app/components/landing/cli-profile/cli-profile.component.html
+#	new file:   doggywood/src/app/components/landing/cli-profile/cli-profile.component.spec.ts
+#	new file:   doggywood/src/app/components/landing/cli-profile/cli-profile.component.ts
+#	new file:   doggywood/src/app/components/landing/rec-landing/rec-landing.component.css
+#	new file:   doggywood/src/app/components/landing/rec-landing/rec-landing.component.html
+#	new file:   doggywood/src/app/components/landing/rec-landing/rec-landing.component.spec.ts
+#	new file:   doggywood/src/app/components/landing/rec-landing/rec-landing.component.ts
+#	new file:   doggywood/src/app/components/landing/vet-landing/vet-landing.component.css
+#	new file:   doggywood/src/app/components/landing/vet-landing/vet-landing.component.html
+#	new file:   doggywood/src/app/components/landing/vet-landing/vet-landing.component.spec.ts
+#	new file:   doggywood/src/app/components/landing/vet-landing/vet-landing.component.ts
+#	new file:   doggywood/src/app/components/logins/emp-rec-login/emp-rec-login.component.css
+#	new file:   doggywood/src/app/components/logins/emp-rec-login/emp-rec-login.component.html
+#	new file:   doggywood/src/app/components/logins/emp-rec-login/emp-rec-login.component.spec.ts
+#	new file:   doggywood/src/app/components/logins/emp-rec-login/emp-rec-login.component.ts
+#	new file:   doggywood/src/app/components/logins/emp-vet-login/emp-vet-login.component.css
+#	new file:   doggywood/src/app/components/logins/emp-vet-login/emp-vet-login.component.html
+#	new file:   doggywood/src/app/components/logins/emp-vet-login/emp-vet-login.component.spec.ts
+#	new file:   doggywood/src/app/components/logins/emp-vet-login/emp-vet-login.component.ts
+#	new file:   doggywood/src/app/components/logins/login/login.component.css
+#	new file:   doggywood/src/app/components/logins/login/login.component.html
+#	new file:   doggywood/src/app/components/logins/login/login.component.spec.ts
+#	new file:   doggywood/src/app/components/logins/login/login.component.ts
+#	new file:   doggywood/src/app/components/logins/register/register.component.css
+#	new file:   doggywood/src/app/components/logins/register/register.component.html
+#	new file:   doggywood/src/app/components/logins/register/register.component.spec.ts
+#	new file:   doggywood/src/app/components/logins/register/register.component.ts
+#	new file:   doggywood/src/app/components/pet-create/pet-create.component.css
+#	new file:   doggywood/src/app/components/pet-create/pet-create.component.html
+#	new file:   doggywood/src/app/components/pet-create/pet-create.component.spec.ts
+#	new file:   doggywood/src/app/components/pet-create/pet-create.component.ts
+#	new file:   doggywood/src/app/components/vac-create/vac-create.component.css
+#	new file:   doggywood/src/app/components/vac-create/vac-create.component.html
+#	new file:   doggywood/src/app/components/vac-create/vac-create.component.spec.ts
+#	new file:   doggywood/src/app/components/vac-create/vac-create.component.ts
+#	new file:   doggywood/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.css
+#	new file:   doggywood/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.html
+#	new file:   doggywood/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.spec.ts
+#	new file:   doggywood/src/app/components/vet/vet-cli-profile/vet-cli-profile.component.ts
+#	new file:   doggywood/src/app/components/vet/vet-pet-profile/vet-pet-profile.component.css
+#	new file:   doggywood/src/app/components/vet/vet-pet-profile/vet-pet-profile.component.html
+#	new file:   doggywood/src/app/components/vet/vet-pet-profile/vet-pet-profile.component.spec.ts
+#	new file:   doggywood/src/app/components/vet/vet-pet-profile/vet-pet-profile.component.ts
+#	new file:   doggywood/src/app/components/vet/vet-pet-record/vet-pet-record.component.css
+#	new file:   doggywood/src/app/components/vet/vet-pet-record/vet-pet-record.component.html
+#	new file:   doggywood/src/app/components/vet/vet-pet-record/vet-pet-record.component.spec.ts
+#	new file:   doggywood/src/app/components/vet/vet-pet-record/vet-pet-record.component.ts
+#	new file:   doggywood/src/app/layout/date-picker/date-picker.component.ts
+#	new file:   doggywood/src/app/layout/footer/footer.component.css
+#	new file:   doggywood/src/app/layout/footer/footer.component.html
+#	new file:   doggywood/src/app/layout/footer/footer.component.spec.ts
+#	new file:   doggywood/src/app/layout/footer/footer.component.ts
+#	new file:   doggywood/src/app/layout/header/header.component.css
+#	new file:   doggywood/src/app/layout/header/header.component.html
+#	new file:   doggywood/src/app/layout/header/header.component.spec.ts
+#	new file:   doggywood/src/app/layout/header/header.component.ts
+#	new file:   doggywood/src/app/layout/nav/nav.component.css
+#	new file:   doggywood/src/app/layout/nav/nav.component.html
+#	new file:   doggywood/src/app/layout/nav/nav.component.spec.ts
+#	new file:   doggywood/src/app/layout/nav/nav.component.ts
+#	new file:   doggywood/src/app/models/appointment.ts
+#	new file:   doggywood/src/app/models/customer.ts
+#	new file:   doggywood/src/app/models/employee.ts
+#	new file:   doggywood/src/app/models/employeeModel.ts
+#	new file:   doggywood/src/app/models/login.ts
+#	new file:   doggywood/src/app/models/note.ts
+#	new file:   doggywood/src/app/models/pet.ts
+#	new file:   doggywood/src/app/models/petModel.ts
+#	new file:   doggywood/src/app/models/petNeuter.ts
+#	new file:   doggywood/src/app/models/petType.ts
+#	new file:   doggywood/src/app/models/register.ts
+#	new file:   doggywood/src/app/models/vacc-record.ts
+#	new file:   doggywood/src/app/models/vaccination.ts
+#	new file:   doggywood/src/app/services/appointment.service.spec.ts
+#	new file:   doggywood/src/app/services/appointment.service.ts
+#	new file:   doggywood/src/app/services/authentication.service.spec.ts
+#	new file:   doggywood/src/app/services/authentication.service.ts
+#	new file:   doggywood/src/app/services/cli-landing.service.spec.ts
+#	new file:   doggywood/src/app/services/cli-landing.service.ts
+#	new file:   doggywood/src/app/services/clients.service.spec.ts
+#	new file:   doggywood/src/app/services/clients.service.ts
+#	new file:   doggywood/src/app/services/employees.service.spec.ts
+#	new file:   doggywood/src/app/services/employees.service.ts
+#	new file:   doggywood/src/app/services/notes.service.spec.ts
+#	new file:   doggywood/src/app/services/notes.service.ts
+#	new file:   doggywood/src/app/services/pets.service.spec.ts
+#	new file:   doggywood/src/app/services/pets.service.ts
+#	new file:   doggywood/src/app/services/vacc-record.service.spec.ts
+#	new file:   doggywood/src/app/services/vacc-record.service.ts
+#	new file:   doggywood/src/app/services/vaccination.service.spec.ts
+#	new file:   doggywood/src/app/services/vaccination.service.ts
+#	new file:   doggywood/src/assets/.gitkeep
+#	new file:   doggywood/src/assets/.gitkeep copy
+#	new file:   doggywood/src/assets/Animals/fullsize/619defe92455003faf9b5e150d81bf15.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/MV5BYWY5OTZlMTktZDlhMS00YzVhLTk1N2MtZGM5NTYyYzk1Y2I5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_CR0,29,304,171_AL_UX477_CR0,0,477,268_AL_.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/funny-dog-names-unicorn.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a1.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a2.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a3.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a4.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a5.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a6.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a7.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a8.jpg
+#	new file:   doggywood/src/assets/Animals/fullsize/random_a9.jpg
+#	new file:   doggywood/src/assets/Animals/random_a1.jpg
+#	new file:   doggywood/src/assets/Animals/random_a2.jpg
+#	new file:   doggywood/src/assets/Animals/random_a3.jpg
+#	new file:   doggywood/src/assets/Animals/random_a4.jpg
+#	new file:   doggywood/src/assets/Animals/random_a5.jpg
+#	new file:   doggywood/src/assets/Animals/random_a6.jpg
+#	new file:   doggywood/src/assets/Animals/random_a7.jpg
+#	new file:   doggywood/src/assets/Animals/random_a8.jpg
+#	new file:   doggywood/src/assets/Animals/random_a9.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p1.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p10.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p10.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p11.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p12.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p13.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p14.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p15.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p16.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p17.png
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p2.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p3.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p4.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p5.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p6.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p7.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p8.jpg
+#	new file:   doggywood/src/assets/People/fullsizeNonSquare/random_p9.jpg
+#	new file:   doggywood/src/assets/People/random_p1.png
+#	new file:   doggywood/src/assets/People/random_p10.png
+#	new file:   doggywood/src/assets/People/random_p11.png
+#	new file:   doggywood/src/assets/People/random_p12.png
+#	new file:   doggywood/src/assets/People/random_p14.png
+#	new file:   doggywood/src/assets/People/random_p15.png
+#	new file:   doggywood/src/assets/People/random_p16.png
+#	new file:   doggywood/src/assets/People/random_p17.png
+#	new file:   doggywood/src/assets/People/random_p2.png
+#	new file:   doggywood/src/assets/People/random_p3.png
+#	new file:   doggywood/src/assets/People/random_p4.png
+#	new file:   doggywood/src/assets/People/random_p5.png
+#	new file:   doggywood/src/assets/People/random_p6.png
+#	new file:   doggywood/src/assets/People/random_p7.png
+#	new file:   doggywood/src/assets/People/random_p8.png
+#	new file:   doggywood/src/assets/People/random_p9.png
+#	new file:   doggywood/src/assets/android-chrome-192x192.png
+#	new file:   doggywood/src/assets/android-chrome-384x384.png
+#	new file:   doggywood/src/assets/apple-touch-icon.png
+#	new file:   doggywood/src/assets/browserconfig.xml
+#	new file:   doggywood/src/assets/favicon-16x16.png
+#	new file:   doggywood/src/assets/favicon-32x32.png
+#	new file:   doggywood/src/assets/favicon.ico
+#	new file:   doggywood/src/assets/logo1.png
+#	new file:   doggywood/src/assets/mstile-150x150.png
+#	new file:   doggywood/src/assets/safari-pinned-tab.svg
+#	new file:   doggywood/src/assets/site.webmanifest
+#	new file:   doggywood/src/assets/style6.png
+#	new file:   doggywood/src/assets/use this one.png
+#	new file:   doggywood/src/environments/environment.prod.ts
+#	new file:   doggywood/src/environments/environment.ts
+#	new file:   doggywood/src/index.html
+#	new file:   doggywood/src/main.ts
+#	new file:   doggywood/src/polyfills.ts
+#	new file:   doggywood/src/styles.css
+#	new file:   doggywood/src/test.ts
+#	new file:   doggywood/tsconfig.app.json
+#	new file:   doggywood/tsconfig.json
+#	new file:   doggywood/tsconfig.spec.json
+#	new file:   doggywood/tslint.json
+#	new file:   project0/README.md
+#	modified:   project0/target/classes/META-INF/maven/project0/project0/pom.properties
+#
+# Changes not staged for commit:
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Primitives/org.eclipse.jdt.core/state.dat
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/.root/7.tree
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+#	modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+#	modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
+#	modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+#	deleted:    .metadata/.plugins/org.eclipse.jdt.core/2133716733.index
+#	deleted:    .metadata/.plugins/org.eclipse.jdt.core/3861167943.index
+#	modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+#	modified:   .metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+#	modified:   .metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml
+#	modified:   .metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.blogs/-549550714.xml
+#	modified:   .metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.update/-1223306788.xml
+#	modified:   .metadata/version.ini
+#	deleted:    1-old
+#	modified:   BackEnd_Master/src/main/resources/application.properties
+#	modified:   Guardians (new commits)
+#	modified:   RPAS-frontend (modified content)
+#	deleted:    RyanExampleProject
+#	deleted:    _cli/AJAX/ExAJAX.html
+#	deleted:    _cli/AJAX/StarWars.html
+#	deleted:    _cli/AJAX/cats.js
+#	deleted:    _cli/AJAX/getDailyTech.html
+#	deleted:    _cli/AJAX/requestFinder.html
+#	deleted:    _cli/DOM/bubbling.html
+#	deleted:    _cli/DOM/eventful.html
+#	deleted:    _cli/DOM/java-armchair-lambda-TEMPLATE/.gitignore
+#	deleted:    _cli/DOM/java-armchair-lambda-TEMPLATE/README.md
+#	deleted:    _cli/DOM/java-armchair-lambda-TEMPLATE/pom.xml
+#	deleted:    _cli/DOM/java-armchair-lambda-TEMPLATE/src/main/java/com/techprimers/aws/GatewayResponse.java
+#	deleted:    _cli/DOM/java-armchair-lambda-TEMPLATE/src/main/java/com/techprimers/aws/LambdaJavaAPI.java
+#	deleted:    _cli/DOM/manipulation.html
+#	deleted:    _cli/DOM/manipulation.js
+#	deleted:    _cli/HTMLCSS/Pokemon.html
+#	deleted:    _cli/HTMLCSS/hello.html
+#	deleted:    _cli/HTMLCSS/jigglypuff.png
+#	deleted:    _cli/HTMLCSS/jigglypuff.webp
+#	deleted:    _cli/HTMLCSS/stylin.css
+#	deleted:    _cli/JavaScript/JavaScriptNotes.txt
+#	deleted:    _cli/JavaScript/ajax.txt
+#	deleted:    _cli/JavaScript/closure.js
+#	deleted:    _cli/JavaScript/dom.txt
+#	deleted:    _cli/JavaScript/functions.js
+#	deleted:    _cli/JavaScript/hoisting.js
+#	deleted:    _cli/JavaScript/htmlnotes.txt
+#	deleted:    _cli/JavaScript/objects.js
+#	deleted:    _cli/JavaScript/runner.html
+#	deleted:    _cli/JavaScript/scope.js
+#	deleted:    _cli/JavaScript/type.js
+#	deleted:    _cli/imdb.html
+#	deleted:    _cli/nasa.html
+#	deleted:    _cli/starwars.html
+#	deleted:    _client/api/nasa.html
+#	deleted:    _java-/DAOTest/PokemonDAOTesting.java
+#	deleted:    _java-/ExampleDAO/.classpath
+#	deleted:    _java-/ExampleDAO/.project
+#	deleted:    _java-/ExampleDAO/.settings/org.eclipse.jdt.core.prefs
+#	deleted:    _java-/ExampleDAO/.settings/org.eclipse.m2e.core.prefs
+#	deleted:    _java-/ExampleDAO/pom.xml
+#	deleted:    _java-/ExampleDAO/src/main/java/dao/PizzaDAO.java
+#	deleted:    _java-/ExampleDAO/src/main/java/dao/PizzaDAOImpl.java
+#	deleted:    _java-/ExampleDAO/src/main/java/db/FakeDB.java
+#	deleted:    _java-/ExampleDAO/src/main/java/model_START_HERE/Pizza.java
+#	deleted:    _java-/ExampleDAO/src/main/java/service/PizzaService.java
+#	deleted:    _java-/ExampleDAO/target/classes/META-INF/MANIFEST.MF
+#	deleted:    _java-/ExampleDAO/target/classes/META-INF/maven/com.revature/ExampleDAO/pom.properties
+#	deleted:    _java-/ExampleDAO/target/classes/META-INF/maven/com.revature/ExampleDAO/pom.xml
+#	deleted:    _java-/ExampleDAO/target/classes/dao/PizzaDAO.class
+#	deleted:    _java-/ExampleDAO/target/classes/dao/PizzaDAOImpl.class
+#	deleted:    _java-/ExampleDAO/target/classes/db/FakeDB.class
+#	deleted:    _java-/ExampleDAO/target/classes/model_START_HERE/Pizza.class
+#	deleted:    _java-/ExampleDAO/target/classes/service/PizzaService.class
+#	deleted:    _java-/ExampleJDBC/.classpath
+#	deleted:    _java-/ExampleJDBC/.project
+#	deleted:    _java-/ExampleJDBC/.settings/org.eclipse.jdt.core.prefs
+#	deleted:    _java-/ExampleJDBC/.settings/org.eclipse.m2e.core.prefs
+#	deleted:    _java-/ExampleJDBC/pom.xml
+#	deleted:    _java-/ExampleJDBC/src/main/java/application/App.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/application/SQLInjection.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/dao/PokemonDAO.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/dao/PokemonDAOImpl.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/model/Person.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/model/Pokemon.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/service/PokemonService.java
+#	deleted:    _java-/ExampleJDBC/src/main/java/util/JDBCConnection.java
+#	deleted:    _java-/ExampleJDBC/target/classes/META-INF/MANIFEST.MF
+#	deleted:    _java-/ExampleJDBC/target/classes/META-INF/maven/com.revature/ExampleJDBC/pom.properties
+#	deleted:    _java-/ExampleJDBC/target/classes/META-INF/maven/com.revature/ExampleJDBC/pom.xml
+#	deleted:    _java-/ExampleJDBC/target/classes/application/App.class
+#	deleted:    _java-/ExampleJDBC/target/classes/application/SQLInjection.class
+#	deleted:    _java-/ExampleJDBC/target/classes/dao/PokemonDAO.class
+#	deleted:    _java-/ExampleJDBC/target/classes/dao/PokemonDAOImpl.class
+#	deleted:    _java-/ExampleJDBC/target/classes/model/Person.class
+#	deleted:    _java-/ExampleJDBC/target/classes/model/Pokemon.class
+#	deleted:    _java-/ExampleJDBC/target/classes/service/PokemonService.class
+#	deleted:    _java-/ExampleJDBC/target/classes/util/JDBCConnection.class
+#	deleted:    _java-/JavaDay1Notes.txt
+#	deleted:    _java-/JavaDay2Notes.txt
+#	deleted:    _java-/JavaDay3Notes.txt
+#	deleted:    _java-/JavaDay4Notes.txt
+#	deleted:    _java-/JavaDay5Notes.txt
+#	deleted:    _java-/OfferService.txt
+#	modified:   jenkins (new commits, modified content, untracked content)
+#	deleted:    ng2020/.editorconfig
+#	deleted:    ng2020/.gitignore
+#	deleted:    ng2020/README.md
+#	deleted:    ng2020/angular.json
+#	deleted:    ng2020/browserslist
+#	deleted:    ng2020/e2e/protractor.conf.js
+#	deleted:    ng2020/e2e/src/app.e2e-spec.ts
+#	deleted:    ng2020/e2e/src/app.po.ts
+#	deleted:    ng2020/e2e/tsconfig.json
+#	deleted:    ng2020/karma.conf.js
+#	deleted:    ng2020/package-lock.json
+#	deleted:    ng2020/package.json
+#	deleted:    ng2020/src/app/app-routing.module.ts
+#	deleted:    ng2020/src/app/app.component.css
+#	deleted:    ng2020/src/app/app.component.html
+#	deleted:    ng2020/src/app/app.component.spec.ts
+#	deleted:    ng2020/src/app/app.component.ts
+#	deleted:    ng2020/src/app/app.module.ts
+#	deleted:    ng2020/src/assets/.gitkeep
+#	deleted:    ng2020/src/environments/environment.prod.ts
+#	deleted:    ng2020/src/environments/environment.ts
+#	deleted:    ng2020/src/favicon.ico
+#	deleted:    ng2020/src/index.html
+#	deleted:    ng2020/src/main.ts
+#	deleted:    ng2020/src/polyfills.ts
+#	deleted:    ng2020/src/styles.css
+#	deleted:    ng2020/src/test.ts
+#	deleted:    ng2020/tsconfig.app.json
+#	deleted:    ng2020/tsconfig.json
+#	deleted:    ng2020/tsconfig.spec.json
+#	deleted:    ng2020/tslint.json
+#	deleted:    thomas-sdet/.editorconfig
+#	deleted:    thomas-sdet/.gitignore
+#	deleted:    thomas-sdet/README.md
+#	deleted:    thomas-sdet/browserslist
+#	deleted:    thomas-sdet/guardians/3rdpartylicenses.txt
+#	deleted:    thomas-sdet/guardians/assets/Baby_Groot.jpg
+#	deleted:    thomas-sdet/guardians/assets/Guardians-of-the-Galaxy-Baby-Groot-11-Scale.jpg
+#	deleted:    thomas-sdet/guardians/assets/apprehensive-groot.jpg
+#	deleted:    thomas-sdet/guardians/assets/default.html
+#	deleted:    thomas-sdet/guardians/assets/groot.jpg
+#	deleted:    thomas-sdet/guardians/assets/typicode-marvelAPI.txt
+#	deleted:    thomas-sdet/guardians/favicon.ico
+#	deleted:    thomas-sdet/guardians/index.html
+#	deleted:    thomas-sdet/guardians/main-es2015.c445057f1defda6e8208.js
+#	deleted:    thomas-sdet/guardians/main-es5.c445057f1defda6e8208.js
+#	deleted:    thomas-sdet/guardians/polyfills-es2015.2987770fde9daa1d8a2e.js
+#	deleted:    thomas-sdet/guardians/polyfills-es5.ef4b1e1fc703b3ff76e3.js
+#	deleted:    thomas-sdet/guardians/runtime-es2015.edb2fcf2778e7bf1d426.js
+#	deleted:    thomas-sdet/guardians/runtime-es5.edb2fcf2778e7bf1d426.js
+#	deleted:    thomas-sdet/guardians/styles.3ff695c00d717f2d2a11.css
+#
+# Untracked files:
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/_rev/1.tree
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/proj1/2.tree
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/proj2/1.tree
+#	.metadata/.plugins/org.eclipse.core.resources/.root/8.tree
+#	.metadata/.plugins/org.eclipse.jdt.core/indexNamesMap.txt
+#	BatchRideFinderService/
+#	distancematrix/
+#	project1/
+#	resource-programming/
+#
