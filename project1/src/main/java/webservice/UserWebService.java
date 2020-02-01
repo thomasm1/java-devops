@@ -30,8 +30,10 @@ public class UserWebService {
 		}
 //		int userId = Integer.parseInt(request.getParameter("id"));
 		int deptId = Integer.parseInt(request.getParameter("deptId"));
+		System.out.println(deptId);
 		int superId = Integer.parseInt(request.getParameter("superId"));
-		String userName = request.getParameter("username");
+		String userName = request.getParameter("userName");
+		System.out.println(userName);
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
 
