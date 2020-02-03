@@ -26,7 +26,7 @@ h2/
 RPAS-frontend/
 rideshare-user-service/
 1911-sdet/
-android-spel/
+beanLifecycle/
 BatchRideFinderService/
 bower/
 HibernateEx/
@@ -36,6 +36,8 @@ SimpleSpringBoot/
 HibernateEx
 SpringIOC
 SpringMVC
+SpringBootSimple
+
 
 # Server stuff
 Servers/
