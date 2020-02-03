@@ -22,11 +22,27 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
- 
+h2/
+RPAS-frontend/
+rideshare-user-service/
+1911-sdet/
+android-spel/
+BatchRideFinderService/
+bower/
+HibernateEx/
+rideshare-frontend/
+rideshare-local/
+SimpleSpringBoot/
+
+
+
 # In GitHub
 Guardians/
 jenkins/
- 
+
+
+# NG node_ 
 PokeAppNG/node_modules/
 doggywood/node_modules/
 node_modules/
+/.metadata/
