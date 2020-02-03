@@ -26,8 +26,7 @@ public class BookInitializer implements CommandLineRunner {
 
         for(int i = 0; i < 10; i++) {
 
-            Book book = new Book();
-           
+            Book book = new Book(); 
 //            book.setTitle("War and Peace");
 //            book.setAuthor("Tolstoy");
 //            book.setIsbn("67868687222278");

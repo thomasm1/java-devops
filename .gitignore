@@ -33,7 +33,12 @@ HibernateEx/
 rideshare-frontend/
 rideshare-local/
 SimpleSpringBoot/
+HibernateEx
+SpringIOC
+SpringMVC
 
+# Server stuff
+Servers/
 
 
 # In GitHub
