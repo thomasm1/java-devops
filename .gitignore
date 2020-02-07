@@ -27,6 +27,7 @@ fullstack-node/
 h2/
 RPAS-frontend/
 rideshare-user-service/
+rideshare-user*/
 1911-sdet/
 beanLifecycle/
 BatchRideFinderService/
@@ -46,6 +47,7 @@ Servers/
 
 
 # In GitHub
+groot-app/
 Guardians/
 jenkins/
 
