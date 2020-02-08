@@ -28,6 +28,7 @@ h2/
 RPAS-frontend/
 rideshare-user-service/
 rideshare-user*/
+rideshare-user*/*
 1911-sdet/
 beanLifecycle/
 BatchRideFinderService/
@@ -48,6 +49,7 @@ Servers/
 
 # In GitHub
 groot-app/
+groot-material/
 Guardians/
 jenkins/
 
