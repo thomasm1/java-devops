@@ -25,6 +25,7 @@ public class LoginToDoggy {
 		// OPEN PAGE
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.navigate().to("http://localhost:4200");
+		 driver.get("http://doggywood.s3-website-us-east-1.amazonaws.com"); 
 		// driver.get("http://www.google.com");
 		driver.manage().window().maximize();
 		driver.manage().window().getSize();

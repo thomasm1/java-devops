@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!-- 
+2. This file defines classes you wish to persist. How these classes are 
+mapped to database tables. Database driver, location, userid and pw
+ -->
+
+<persistence version="2.0"
+    xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    
+    <!-- Define a name used to get an entity manager. Define that you will 
+    complete transactions with the DB 
+      <persistence-unit name="hibernate2" transaction-type="RESOURCE_LOCAL">
+        -->
+   <persistence-unit name="hibernate2" transaction-type="JTA">
+ 
+  
+        <!-- Define the class for Hibernate which implements JPA -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Define the object that should be persisted in the database -->
+        <class>net.thomasmaestas.java.hibernate2</class>
+        <properties>
+<!-- 
+            <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/poc</property>
+    <property name="hibernate.connection.username">user</property>
+    <property name="hibernate.connection.password"/>
+        
+         -->
+            <!-- Driver for DB database -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <!-- URL for DB --> 
+             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://thomas2.cs8ihlmwvzfx.us-east-1.rds.amazonaws.com:3306/thomas2"/>
+           <!--  <property name="javax.persistence.jdbc.url" value="jdbc:mysql://thomas2.cs8ihlmwvzfx.us-east-1.rds.amazonaws.com"/> -->
+            <property name="javax.persistence.jdbc.user" value="thomas" />
+            <property name="javax.persistence.jdbc.password" value="$" />
+            
+            <!-- <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/hibernate2" />${OPENSHIFT_MYSQL_DB_PASSWORD} -->
+            <!-- Username  <property name="javax.persistence.jdbc.user" value="dbadmin" /> -->
+            <!-- Password  <property name="javax.persistence.jdbc.password" value="thomasm1" />    -->
+        </properties>
+    </persistence-unit>
+</persistence>

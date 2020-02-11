@@ -2,11 +2,11 @@ package systemUser;
 
 import logger.LogGround;
 import models.Car;
-import models.Offer;
-import models.User;
+//import models.Offer;
+//import models.User;
 import service.CarService;
-import service.OfferService;
-import service.UserService;
+//import service.OfferService;
+//import service.UserService;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -51,7 +51,7 @@ public class UserMain {
 		try {
 			File textFile = new File(fileName);
 			Scanner scanText = new Scanner(textFile);
-			int value = scanText.nextInt();
+			int value = scanText.nextInt(); 
 			System.out.println("\n    #=============#");
 			System.out.println("    Welcome VIP # " + value);
 			System.out.println("    #=============#");
@@ -59,8 +59,8 @@ public class UserMain {
 			System.out.println(
 					"\n1.) Log in press '1'.\n" + "2.) Register (get great deals and make offers), press '2'"
 							+ "\n3.) Browse the lot,  press '3'." + "\n\nExit, press '0'.");
-
 			scanText.close();
+			
 		} catch (FileNotFoundException e) {
 			System.out.println("Welcome script file not found: " + fileName.toString());
 		}

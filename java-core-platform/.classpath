@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="core-3/after/CreateAndPopulateZip/src"/>
+	<classpathentry kind="src" path="core-3/after/ExerciseTryWithResources/src"/>
+	<classpathentry kind="src" path="core-3/before/CreateAndPopulateZip/src"/>
+	<classpathentry kind="src" path="core-3/before/ExerciseTryWithResources/src"/>
+	<classpathentry kind="src" path="core-6/after/ExerciseCmdLine/src"/>
+	<classpathentry kind="src" path="core-6/after/PropertiesFromResource/src"/>
+	<classpathentry kind="src" path="core-6/before/ExerciseCmdLine/src"/>
+	<classpathentry kind="src" path="core-6/before/PropertiesFromResource/src"/>
+	<classpathentry kind="output" path="core-3/after/CreateAndPopulateZip/out/production/CreateAndPopulateZip"/>
+</classpath>

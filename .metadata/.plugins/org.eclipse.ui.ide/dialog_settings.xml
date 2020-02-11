@@ -109,6 +109,17 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\w\www\git\java-rev\groot-app"/>
+			<item value="C:\w\www\git\java-rev\1911-sdet\PokeApp"/>
+			<item value="C:\w\www\git\java-cli\java5admin"/>
+			<item value="C:\w\www\git\java-cli\java0core"/>
+			<item value="C:\w\www\git\java-rev\c_methods"/>
+			<item value="C:\w\www\git\java-rev\c_classesIO"/>
+			<item value="C:\w\www\git\java-rev\distancematrix"/>
+			<item value="C:\w\www\git\java-rev\c_classes"/>
+			<item value="C:\w\www\git\java-rev\java-core-platform"/>
+			<item value="C:\w\www\git\java-rev\c_collections"/>
+			<item value="C:\w\www\git\java-rev\rideshare-user-thomas"/>
 			<item value="C:\w\www\git\java-rev\TestNgSeleniumCucumber"/>
 			<item value="C:\w\www\git\java-rev\JavaCore_questions"/>
 			<item value="C:\w\www\git\java-rev\SpringBootWeb"/>
@@ -143,6 +154,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\w\www\git\java-rev\groot-app"/>
+			<item value="C:\w\www\git\java-rev\rideshare-user-thomas"/>
 			<item value="C:\w\www\git\java-rev\TestCore"/>
 			<item value="C:\w\www\git\java-rev\TestNgSeleniumCucumber"/>
 			<item value="C:\w\www\git\java-rev\SpringBootDataJPA"/>
@@ -153,5 +166,7 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

@@ -1,5 +1,26 @@
-//package db;
-//
+package db;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import models.Groot;
+
+public class DB {
+
+	public static Map<Integer, Groot> team = new HashMap<Integer, Groot>();
+	
+	static {
+		Groot p1 = new Groot(1, "Bulbasaur", "Grass/Poision");		
+		Groot p2 = new Groot(2, "Pikachu", "Electric");
+		Groot p3 = new Groot(3, "Jigglypuff", "Fairy");
+		
+		team.put(1, p1);
+		team.put(2, p2);
+		team.put(3, p3);
+	}
+	
+}
+
 //import java.util.HashMap;
 //import java.util.Map;
 //

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Map;
 import java.util.Scanner;
 
 public class JDBCConnection {
@@ -16,21 +17,23 @@ public class JDBCConnection {
 		if(conn == null) {
 			
 			String endpoint = "jdbc:oracle:thin:@thomas.cs8ihlmwvzfx.us-east-1.rds.amazonaws.com:1521:thomas";
-			String value = "";							// endpoint:port:SID
-			try {
-				String fileBower = "C:/w/www/git/java-dev/bower/bowertext.txt";
-				File textFile = new File(fileBower);
-				Scanner scanText = new Scanner(textFile);
-				value = scanText.nextLine(); 
-				System.out.println("\n  ....Accessing AWS RDS endpoint\n");
-				scanText.close();
-			} catch (FileNotFoundException e1) {
-				e1.printStackTrace();
-			};
+			
+			String secureValue = getJDBCKey();
+//			String secureValue = "";							// endpoint:port:SID
+//			try {
+//				String fileBower = "C:/w/www/git/java-dev/bower/bowertext.txt";
+//				File textFile = new File(fileBower);
+//				Scanner scanText = new Scanner(textFile);
+//				secureValue = scanText.nextLine(); 
+//				System.out.println("\n  ....Accessing AWS RDS endpoint\n");
+//				scanText.close();
+//			} catch (FileNotFoundException e1) {
+//				e1.printStackTrace();
+//			};
+			
+			String password = secureValue; 
 			String username = "thomas";
-			String password = value;
 
-		
 			try {
 				conn = DriverManager.getConnection(endpoint, username, password);
 				return conn;
@@ -40,9 +43,18 @@ public class JDBCConnection {
 		} else {
 			return conn;
 		}
-		
 		return null;
-		
+	}
+
+	public static String getJDBCKey() {
+		Map<String, String> env = System.getenv();
+		for (Map.Entry<String, String> entry : env.entrySet()) {
+			if (entry.getKey().equals("getJDBCKey")) {
+				System.out.println(entry.getValue());
+				return entry.getValue();
+			}
+		}
+		return null;
 	}
 
 	public static void main(String[] args) { 
