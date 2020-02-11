@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="project2"/>
-<aop-project name="h2-books"/>
 <aop-project name="beanIOC"/>
+<aop-project name="groot-data"/>
 <aop-project name="distancematrix"/>
 <aop-project name="rideshare-user-service"/>
 <aop-project name="SpringBootDataJPA"/>
