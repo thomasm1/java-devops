@@ -8,6 +8,7 @@
 		<version>2.2.3.BUILD-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<packaging>war</packaging>
 	<groupId>com.doggywood</groupId>
 	<artifactId>doggywood</artifactId>
 	<version>0.0.1-SNAPSHOT</version>

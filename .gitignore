@@ -25,23 +25,12 @@ hs_err_pid*
 fullstack-java/
 fullstack-node/
 h2/
-RPAS-frontend/
-rideshare-user-service/
-rideshare-user*/
-rideshare-user*/*
+RPAS-frontend/ 
+rideshare-user-thomas/
 1911-sdet/
-beanLifecycle/
-BatchRideFinderService/
-bower/
-HibernateEx/
-rideshare-frontend/
-rideshare-local/
-SimpleSpringBoot/
-HibernateEx
-SpringIOC
-SpringMVC
-SpringBootSimple
-
+beanLifecycle/   
+rideshare-frontend/    
+project3/
 
 # Server stuff
 Servers/
@@ -49,13 +38,13 @@ Servers/
 
 # In GitHub
 groot-app/
-groot-material/
-Guardians/
+groot-material/ 
+groot-data/
+groot-h2-material/
 jenkins/
 
 
-# NG node_ 
-PokeAppNG/node_modules/
+# NG node_  
 doggywood/node_modules/
 node_modules/
 /.metadata/
