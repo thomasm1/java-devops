@@ -109,6 +109,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\w\www\git\java-rev\android-spel"/>
+			<item value="C:\w\www\git\java-rev\tomcat"/>
+			<item value="C:\w\www\git\java-rev\SpringBootDataJPA"/>
+			<item value="C:\w\www\git\java-rev\TestConsole"/>
+			<item value="C:\w\www\git\java-rev\hibernateORACL"/>
 			<item value="C:\w\www\git\java-rev\HibernateEx"/>
 			<item value="C:\w\www\git\java-rev\hibernate"/>
 			<item value="C:\w\www\git\java-rev\beanLifecycle"/>
@@ -159,18 +164,21 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\w\www\git\java-rev\Servers"/>
+			<item value="C:\w\www\git\java-rev\groot-data"/>
+			<item value="C:\w\www\git\java-rev\groot-app"/>
+			<item value="C:\w\www\git\java-rev\hibernateORACL"/>
+			<item value="C:\w\www\git\java-rev\TestNgSeleniumCucumber"/>
+			<item value="C:\w\www\git\java-rev\project3\rideshare-user-service"/>
+			<item value="C:\w\www\git\java-rev\project2"/>
+			<item value="C:\w\www\git\java-rev\rideshare-user-thomas"/>
 			<item value="C:\w\www\git\java-rev\hibernate2"/>
 			<item value="C:\w\www\git\java-rev\beanLifecycle"/>
-			<item value="C:\w\www\git\java-rev\groot-data"/>
 			<item value="C:\w\www\git\java-rev\groot-h2"/>
-			<item value="C:\w\www\git\java-rev\groot-app"/>
-			<item value="C:\w\www\git\java-rev\rideshare-user-thomas"/>
 			<item value="C:\w\www\git\java-rev\TestCore"/>
-			<item value="C:\w\www\git\java-rev\TestNgSeleniumCucumber"/>
 			<item value="C:\w\www\git\java-rev\SpringBootDataJPA"/>
 			<item value="C:\w\www\git\java-rev\SpringBootWeb"/>
 			<item value="C:\w\www\git\java-rev\BackEnd_Master"/>
-			<item value="C:\w\www\git\java-rev\project2"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

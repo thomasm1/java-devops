@@ -3,8 +3,5 @@
 <aop-project name="project2"/>
 <aop-project name="beanIOC"/>
 <aop-project name="groot-data"/>
-<aop-project name="distancematrix"/>
 <aop-project name="rideshare-user-service"/>
-<aop-project name="SpringBootDataJPA"/>
-<aop-project name="SpringBootWeb"/>
 </aop-reference-model>
