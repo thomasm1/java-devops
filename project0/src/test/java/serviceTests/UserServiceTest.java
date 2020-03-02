@@ -14,8 +14,8 @@ public class UserServiceTest {      // *NOTE: change PK usernames before sending
 //		  User  p2; update
 //		  User p3; delete
 
-	@org.junit.BeforeClass // setup
-	public static void setupClass() {
+	@org.junit.BeforeClass // setup   
+	public static void setupClass() { // static! (not needed with TestNG @BeforeClass
 		System.out.println("Class/Static setup "); 
 	}
 
@@ -61,7 +61,7 @@ public class UserServiceTest {      // *NOTE: change PK usernames before sending
 		System.out.println("After Class executing ...");
 	} // teardown
 
-	@org.junit.AfterClass
+	@org.junit.AfterClass   // static! (not needed with TestNG @BeforeClass
 	public static void tearDownClass() {
 		System.out.println("After Class executing ...");
 	} // teardown
