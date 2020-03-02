@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
-// import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -14,12 +14,17 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         NavComponent,
-        FooterComponent,
-        // AppRoutingModule 
-
+        FooterComponent  
       ],
     }).compileComponents();
   }));
+
+it(`should have a test`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    const a = 'a';
+    expect(a).toEqual('a');
+  });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
