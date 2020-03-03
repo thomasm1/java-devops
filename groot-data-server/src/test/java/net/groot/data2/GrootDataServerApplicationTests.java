@@ -1,0 +1,13 @@
+package net.groot.data2;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class GrootDataServerApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
