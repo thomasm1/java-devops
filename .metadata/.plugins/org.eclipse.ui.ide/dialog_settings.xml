@@ -109,6 +109,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\w\www\git\java-rev\spring-tutorial-5"/>
 			<item value="C:\w\www\git\java-rev\android-spel"/>
 			<item value="C:\w\www\git\java-rev\tomcat"/>
 			<item value="C:\w\www\git\java-rev\SpringBootDataJPA"/>
@@ -164,6 +165,10 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\w\www\git\java-rev\SpringBootWeb"/>
+			<item value="C:\w\www\git\java-rev\SpringBootDataJPA"/>
+			<item value="C:\w\www\git\java-rev\CucumberFramework\CucumberFramework"/>
+			<item value="C:\w\www\git\java-rev\hibernateMySQL"/>
 			<item value="C:\w\www\git\java-rev\Servers"/>
 			<item value="C:\w\www\git\java-rev\groot-data"/>
 			<item value="C:\w\www\git\java-rev\groot-app"/>
@@ -176,8 +181,6 @@
 			<item value="C:\w\www\git\java-rev\beanLifecycle"/>
 			<item value="C:\w\www\git\java-rev\groot-h2"/>
 			<item value="C:\w\www\git\java-rev\TestCore"/>
-			<item value="C:\w\www\git\java-rev\SpringBootDataJPA"/>
-			<item value="C:\w\www\git\java-rev\SpringBootWeb"/>
 			<item value="C:\w\www\git\java-rev\BackEnd_Master"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

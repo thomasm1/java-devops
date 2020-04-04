@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="project2"/>
+<aop-project name="groot-data-server"/>
 <aop-project name="beanIOC"/>
 <aop-project name="groot-data"/>
-<aop-project name="rideshare-user-service"/>
+<aop-project name="spring-tutorial-5"/>
+<aop-project name="SpringBootDataJPA"/>
+<aop-project name="SpringBootWeb"/>
 </aop-reference-model>

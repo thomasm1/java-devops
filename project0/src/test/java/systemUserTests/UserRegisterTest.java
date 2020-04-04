@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class UserRegisterTest {
 
 	@Before
+	
 	public void setup() {
 		String fileName = "C:/w/www/git/java-dev/project0/src/main/java/systemUser/scannertext.txt";
 		System.out.println("Before executing ..." + fileName);
