@@ -2,6 +2,26 @@ plugins {
   id 'java'
 }
 
+defaultTasks 'thisIsDefault', 'anotherTask'
+ 
+// logger.info ">>> build.gradle --> This is executed during the configuration phase  - timestamp @ ${gradle.timestamp()}"
+task thisIsDefault
+task anotherTask {
+	description = "logging another Task"
+	group = "group - Another Task"
+	doFirst{
+		logger.info "This task $name is first action"
+	}
+	doLast{
+		logger.info "This task $name is 2nd action"
+	}
+}
+logger.info anotherTask.description
+logger.info anotherTask.group
+project.thisIsDefault {
+	logger.info "This is default task ..."
+}
+
 
 project.group = 'net.thomasmaestas'
 project.version = '0.0.1-SNAPSHOT'
@@ -31,4 +51,49 @@ jar {
 	baseName = "$project.name-all" 
 	from {project.configurations.runtimeClasspath.collect {File file -> project.zipTree(file)}
 	}
+}
+
+//Properties
+logger.info "has property: ${project.gradle.hasProperty('$gradleVersion')}"
+logger.info "has property: ${hasProperty('projectDir')}"
+
+
+logger.info project.gradlePropertiesProp
+logger.info "has property: ${project.hasProperty('gradlePropertiesProp')}"
+
+
+
+if( project.hasProperty('gradlePropertiesProp') ) {
+	logger.info "The property file value is $gradlePropertiesProp"
+}else{
+	logger.info "Oops! gradlePropertiesProp can't be found"
+}
+
+
+
+if( project.hasProperty('commandLineProjectProp') ) {
+	logger.info "The property file value is $commandLineProjectProp"
+}else{
+	logger.info "Oops! commandLineProjectProp can't be found"
+}
+
+
+project.ext.sayHello = "Hello!"
+if( project.hasProperty('sayHello') ) {
+	logger.info project.sayHello
+}else{
+	logger.info "Unable to say Hello!"
+}
+
+if( project.gradle.hasProperty('timestamp') ) {
+	logger.info project.gradle.timestamp()
+}else{
+	logger.info "Oops! timestamp() unavailable!"
+}
+
+
+if( gradle.ext.has('timestamp') ) {
+	logger.info gradle.timestamp()
+}else{
+	logger.info "Oops! timestamp() unavailable!"
 }
