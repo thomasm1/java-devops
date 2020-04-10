@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: Gradle Jar File Example
-Implementation-Version: 0.0.1-SNAPSHOT
-Created-By: net.thomasmaestas
-Main-Class: net.thomasmaestas.random.App
-
