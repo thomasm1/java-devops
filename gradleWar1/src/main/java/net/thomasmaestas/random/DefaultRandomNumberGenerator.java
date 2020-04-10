@@ -7,7 +7,7 @@ import org.apache.commons.math3.random.RandomDataGenerator;
 
 
 /**
- * @author denOfProgramming
+ * @author net.thomasmaestas
  *
  */
 public class DefaultRandomNumberGenerator implements RandomGenerator {

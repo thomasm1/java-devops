@@ -4,7 +4,10 @@ import javax.inject.Inject;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+// import org.apache.log4j.Logger;
+//import org.apache.log4j.spi.LoggerFactory;
 //spring imports
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import net.thomasmaestas.random.GeneratedRandomIdentifier;
 import net.thomasmaestas.random.RandomGenerator;
+//logger imports
+//import org.apache.log4j.Logger;
 
 /**
  * 
@@ -33,11 +38,11 @@ import net.thomasmaestas.random.RandomGenerator;
 @Controller
 public class IdentifierGenerationController {
 	
-	// Using the slf4j api directly - remove comments from this code only after SLF4J dependencies are added, see tutorials. 
-	//private static final Logger logger = LoggerFactory.getLogger(IdentifierGenerationController.class);
+	// Using the slf4j api directly - remove comments from this code after SLF4J dependencies are added, see tutorials. 
+	private static final Logger logger = LoggerFactory.getLogger(IdentifierGenerationController.class);
 
-	// using the log4j api, jar provided by our specific dependency
-	private static final Logger logger = Logger.getLogger("net.thomasmaestas.controller.IdentifierGenerationController");
+	// using the log4j api, jar provided by our specific dependency /// now slf4j
+	// private static final Logger logger = Logger.getLogger("net.thomasmaestas.controller.IdentifierGenerationController");
 
 	// using the JCL api, jar provided by transient dependency via spring-core
 	private Log log = LogFactory.getLog(IdentifierGenerationController.class);

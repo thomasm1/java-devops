@@ -2,7 +2,7 @@ package net.thomasmaestas.random;
 
 
 /**
- * @author denOfProgramming
+ * @author net.thomasmaestas
  *
  */
 public final class GeneratedRandomIdentifier {

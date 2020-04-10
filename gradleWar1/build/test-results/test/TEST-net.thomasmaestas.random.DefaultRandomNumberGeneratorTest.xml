@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.thomasmaestas.random.DefaultRandomNumberGeneratorTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2020-04-10T01:43:25" hostname="Phaedros" time="0.003">
+<testsuite name="net.thomasmaestas.random.DefaultRandomNumberGeneratorTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2020-04-10T02:26:17" hostname="Phaedros" time="0.003">
   <properties/>
   <testcase name="testName" classname="net.thomasmaestas.random.DefaultRandomNumberGeneratorTest" time="0.002"/>
   <testcase name="testRandomGenerator" classname="net.thomasmaestas.random.DefaultRandomNumberGeneratorTest" time="0.0">

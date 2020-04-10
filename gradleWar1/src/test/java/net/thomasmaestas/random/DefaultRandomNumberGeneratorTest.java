@@ -9,7 +9,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 /**
- * @author denOfProgramming
+ * @author net.thomasmaestas
  *
  */
 public class DefaultRandomNumberGeneratorTest

@@ -11,14 +11,15 @@ import net.thomasmaestas.random.DefaultRandomNumberGenerator;
 import net.thomasmaestas.random.RandomGenerator;
 
 /**
- * @author denOfProgramming
+ * @author net.thomasmaestas
  *
  */
 @Configuration
-// Marks this class as configuration
+// Marks class as configuration
 // Specifies which package to scan
 @ComponentScan("net.thomasmaestas")
-// Enables Spring's annotations
+
+// Enables Spring annotations
 @EnableWebMvc
 public class Config {
 

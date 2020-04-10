@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>New Random Identifier is: ${id}</h1>
-<h2>It was brought to you using the: "${creator}"</h2>	
+<h2>It was brought to you using  : "${creator}"</h2>	
 </body>
 </html>
