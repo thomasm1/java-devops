@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.thomasmaestas.random.RandomGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-25T23:21:24" hostname="Phaedros" time="0.014">
+  <properties/>
+  <testcase name="testName" classname="net.thomasmaestas.random.RandomGeneratorTest" time="0.002"/>
+  <testcase name="testRandomGenerator" classname="net.thomasmaestas.random.RandomGeneratorTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
