@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.denofprogramming.controller.RegistrationControllerIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.denofprogramming.controller.RegistrationControllerIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.denofprogramming.controller.html">com.denofprogramming.controller</a> &gt; RegistrationControllerIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.465s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">readRegistrationIT</td>
+<td class="success">0.465s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Apr 29, 2020 9:13:13 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:13 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:13 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@13a979a2: startup date [Wed Apr 29 21:13:13 EDT 2020]; root of context hierarchy
+Apr 29, 2020 9:13:14 PM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;
+INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.RegistrationController read
+INFO: Entered method RegistrationController read() with Registration[student=User [id=999, name=null, age=0], course=Course [name=null]]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.CourseController read
+INFO: Entering method CourseController read() with Course [name=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.CourseService read
+INFO: Entered method CourseService read() with Course [name=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.CourseRepository read
+INFO: Entered method CourseRepository read() with Course [name=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.CourseRepository read
+INFO: Exiting method CourseRepository read() with Course [name=Spring101]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.CourseService read
+INFO: Exiting method CourseService read() with Course [name=Spring101]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.CourseController read
+INFO: Exiting method CourseController read() with Course [name=Spring101]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.StudentService read
+INFO: Entered StudentService-&gt;read with:User [id=999, name=null, age=0]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.UserService read
+INFO: Entered UserService-&gt;read with:User [id=999, name=null, age=0]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.UserRepository read
+INFO: Entered UserRepository-&gt;read with:User [id=999, name=null, age=0]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.UserRepository read
+INFO: Exiting UserRepository-&gt;read with:User [id=999, name=Jim Sparrow, age=31]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.StudentService read
+INFO: Exiting StudentService-&gt;read with:User [id=999, name=Jim Sparrow, age=31]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.RegistrationService read
+INFO: Entered method RegistrationService read() with Registration[student=User [id=999, name=null, age=0], course=Course [name=null]]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.RegistrationRepository read
+INFO: Entered method RegistrationRepository read() with Registration[student=User [id=999, name=null, age=0], course=Course [name=null]]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.RegistrationRepository read
+INFO: Exiting method RegistrationRepository read() with Registration[student=null, course=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.RegistrationService read
+INFO: Exiting method RegistrationService read() with Registration[student=null, course=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.RegistrationController read
+INFO: Exiting method RegistrationController read() with Registration[student=User [id=999, name=Jim Sparrow, age=31], course=Course [name=Spring101]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at Apr 29, 2020 9:13:14 PM</p>
+</div>
+</div>
+</body>
+</html>
