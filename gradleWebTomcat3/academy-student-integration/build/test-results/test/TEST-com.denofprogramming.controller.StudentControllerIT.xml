@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.denofprogramming.controller.StudentControllerIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-30T01:13:15" hostname="Phaedros" time="0.416">
+  <properties/>
+  <testcase name="readStudentTest" classname="com.denofprogramming.controller.StudentControllerIT" time="0.416"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Apr 29, 2020 9:13:15 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:15 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:16 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@4af0eb23: startup date [Wed Apr 29 21:13:16 EDT 2020]; root of context hierarchy
+Apr 29, 2020 9:13:16 PM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
+INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Apr 29, 2020 9:13:16 PM com.denofprogramming.service.StudentService read
+INFO: Entered StudentService->read with:User [id=null, name=null, age=0]
+Apr 29, 2020 9:13:16 PM com.denofprogramming.service.UserService read
+INFO: Entered UserService->read with:User [id=null, name=null, age=0]
+Apr 29, 2020 9:13:16 PM com.denofprogramming.repository.UserRepositoryIT read
+INFO: Entered UserRepositoryIT->read with:User [id=null, name=null, age=0]
+Apr 29, 2020 9:13:16 PM com.denofprogramming.repository.UserRepositoryIT read
+INFO: Exiting UserRepositoryIT->read with:User [id=null, name=Jim Beam, age=46]
+Apr 29, 2020 9:13:16 PM com.denofprogramming.service.StudentService read
+INFO: Exiting StudentService->read with:User [id=null, name=Jim Beam, age=46]
+]]></system-err>
+</testsuite>

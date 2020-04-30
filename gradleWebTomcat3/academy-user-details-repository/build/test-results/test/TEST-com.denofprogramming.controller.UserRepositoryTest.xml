@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.denofprogramming.controller.UserRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-30T01:13:17" hostname="Phaedros" time="0.336">
+  <properties/>
+  <testcase name="readStudentTest" classname="com.denofprogramming.controller.UserRepositoryTest" time="0.336"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Apr 29, 2020 9:13:17 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:17 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:17 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@6f368d31: startup date [Wed Apr 29 21:13:17 EDT 2020]; root of context hierarchy
+Apr 29, 2020 9:13:17 PM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
+INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Apr 29, 2020 9:13:17 PM com.denofprogramming.repository.UserRepository read
+INFO: Entered UserRepository->read with:User [id=null, name=null, age=0]
+Apr 29, 2020 9:13:17 PM com.denofprogramming.repository.UserRepository read
+INFO: Exiting UserRepository->read with:User [id=null, name=Jim Sparrow, age=31]
+]]></system-err>
+</testsuite>

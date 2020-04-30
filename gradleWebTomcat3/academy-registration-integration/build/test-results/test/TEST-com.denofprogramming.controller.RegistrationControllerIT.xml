@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.denofprogramming.controller.RegistrationControllerIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-30T01:13:13" hostname="Phaedros" time="0.465">
+  <properties/>
+  <testcase name="readRegistrationIT" classname="com.denofprogramming.controller.RegistrationControllerIT" time="0.465"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Apr 29, 2020 9:13:13 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:13 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: Could not instantiate TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+Apr 29, 2020 9:13:13 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@13a979a2: startup date [Wed Apr 29 21:13:13 EDT 2020]; root of context hierarchy
+Apr 29, 2020 9:13:14 PM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
+INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.RegistrationController read
+INFO: Entered method RegistrationController read() with Registration[student=User [id=999, name=null, age=0], course=Course [name=null]]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.CourseController read
+INFO: Entering method CourseController read() with Course [name=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.CourseService read
+INFO: Entered method CourseService read() with Course [name=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.CourseRepository read
+INFO: Entered method CourseRepository read() with Course [name=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.CourseRepository read
+INFO: Exiting method CourseRepository read() with Course [name=Spring101]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.CourseService read
+INFO: Exiting method CourseService read() with Course [name=Spring101]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.CourseController read
+INFO: Exiting method CourseController read() with Course [name=Spring101]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.StudentService read
+INFO: Entered StudentService->read with:User [id=999, name=null, age=0]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.UserService read
+INFO: Entered UserService->read with:User [id=999, name=null, age=0]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.UserRepository read
+INFO: Entered UserRepository->read with:User [id=999, name=null, age=0]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.UserRepository read
+INFO: Exiting UserRepository->read with:User [id=999, name=Jim Sparrow, age=31]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.StudentService read
+INFO: Exiting StudentService->read with:User [id=999, name=Jim Sparrow, age=31]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.RegistrationService read
+INFO: Entered method RegistrationService read() with Registration[student=User [id=999, name=null, age=0], course=Course [name=null]]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.RegistrationRepository read
+INFO: Entered method RegistrationRepository read() with Registration[student=User [id=999, name=null, age=0], course=Course [name=null]]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.repository.RegistrationRepository read
+INFO: Exiting method RegistrationRepository read() with Registration[student=null, course=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.service.RegistrationService read
+INFO: Exiting method RegistrationService read() with Registration[student=null, course=null]
+Apr 29, 2020 9:13:14 PM com.denofprogramming.controller.RegistrationController read
+INFO: Exiting method RegistrationController read() with Registration[student=User [id=999, name=Jim Sparrow, age=31], course=Course [name=Spring101]]
+]]></system-err>
+</testsuite>
