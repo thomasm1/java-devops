@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jobtest.web.WebDockerRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-27T22:39:29" hostname="Phaedros" time="776.083">
+  <properties/>
+  <testcase name="test()" classname="jobtest.web.WebDockerRunner" time="776.083"/>
+  <system-out><![CDATA[18:39:30.905 [Test worker] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+18:39:31.153 [1588027171152] DEBUG com.intuit.karate - command: [supervisorctl, start, ffmpeg]
+18:39:31.162 [1588027171152] ERROR com.intuit.karate.shell.Command - command error: [supervisorctl, start, ffmpeg] - Cannot run program "supervisorctl": CreateProcess error=2, The system cannot find the file specified
+18:39:31.876 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:39:35.965 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4086 milliseconds for URL: http://localhost:9222
+18:39:35.965 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:39:37.967 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #1 waiting for http to be ready at: http://localhost:9222
+18:39:37.971 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:9222
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:9222
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:39:41.999 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4027 milliseconds for URL: http://localhost:9222
+18:39:42.001 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:39:44.004 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #2 waiting for http to be ready at: http://localhost:9222
+18:39:44.008 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:9222
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:9222
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:39:48.041 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4030 milliseconds for URL: http://localhost:9222
+18:39:48.043 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:39:50.045 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #3 waiting for http to be ready at: http://localhost:9222
+18:39:50.050 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:9222
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: localhost:9222
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:39:54.068 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4016 milliseconds for URL: http://localhost:9222
+18:39:54.070 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:39:56.072 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #4 waiting for http to be ready at: http://localhost:9222
+18:39:56.077 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:9222
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:9222
+5 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:00.108 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4030 milliseconds for URL: http://localhost:9222
+18:40:00.109 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:02.110 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #5 waiting for http to be ready at: http://localhost:9222
+18:40:02.118 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+6 > GET http://localhost:9222
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:9222
+6 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:06.128 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4008 milliseconds for URL: http://localhost:9222
+18:40:06.129 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:08.131 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #6 waiting for http to be ready at: http://localhost:9222
+18:40:08.138 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:9222
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Host: localhost:9222
+7 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:12.171 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4031 milliseconds for URL: http://localhost:9222
+18:40:12.172 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:14.174 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://localhost:9222
+18:40:14.178 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:9222
+8 > Accept-Encoding: gzip,deflate
+8 > Connection: Keep-Alive
+8 > Host: localhost:9222
+8 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:18.190 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:40:18.192 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:20.194 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://localhost:9222
+18:40:20.203 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:9222
+9 > Accept-Encoding: gzip,deflate
+9 > Connection: Keep-Alive
+9 > Host: localhost:9222
+9 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:24.248 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4032 milliseconds for URL: http://localhost:9222
+18:40:24.251 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:26.254 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://localhost:9222
+18:40:26.273 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+10 > GET http://localhost:9222
+10 > Accept-Encoding: gzip,deflate
+10 > Connection: Keep-Alive
+10 > Host: localhost:9222
+10 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:30.300 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4024 milliseconds for URL: http://localhost:9222
+18:40:30.302 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:32.305 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #10 waiting for http to be ready at: http://localhost:9222
+18:40:32.315 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:9222
+11 > Accept-Encoding: gzip,deflate
+11 > Connection: Keep-Alive
+11 > Host: localhost:9222
+11 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:36.346 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4029 milliseconds for URL: http://localhost:9222
+18:40:36.347 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:38.348 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #11 waiting for http to be ready at: http://localhost:9222
+18:40:38.349 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+12 > GET http://localhost:9222
+12 > Accept-Encoding: gzip,deflate
+12 > Connection: Keep-Alive
+12 > Host: localhost:9222
+12 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:42.356 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4007 milliseconds for URL: http://localhost:9222
+18:40:42.356 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:44.357 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #12 waiting for http to be ready at: http://localhost:9222
+18:40:44.358 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:9222
+13 > Accept-Encoding: gzip,deflate
+13 > Connection: Keep-Alive
+13 > Host: localhost:9222
+13 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:48.381 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4023 milliseconds for URL: http://localhost:9222
+18:40:48.381 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:50.381 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #13 waiting for http to be ready at: http://localhost:9222
+18:40:50.382 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+14 > GET http://localhost:9222
+14 > Accept-Encoding: gzip,deflate
+14 > Connection: Keep-Alive
+14 > Host: localhost:9222
+14 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:40:54.611 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4229 milliseconds for URL: http://localhost:9222
+18:40:54.612 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:40:56.612 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #14 waiting for http to be ready at: http://localhost:9222
+18:40:56.614 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:9222
+15 > Accept-Encoding: gzip,deflate
+15 > Connection: Keep-Alive
+15 > Host: localhost:9222
+15 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:00.629 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4015 milliseconds for URL: http://localhost:9222
+18:41:00.629 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:02.630 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #15 waiting for http to be ready at: http://localhost:9222
+18:41:02.632 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+16 > GET http://localhost:9222
+16 > Accept-Encoding: gzip,deflate
+16 > Connection: Keep-Alive
+16 > Host: localhost:9222
+16 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:06.656 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4024 milliseconds for URL: http://localhost:9222
+18:41:06.656 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:08.656 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #16 waiting for http to be ready at: http://localhost:9222
+18:41:08.657 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+17 > GET http://localhost:9222
+17 > Accept-Encoding: gzip,deflate
+17 > Connection: Keep-Alive
+17 > Host: localhost:9222
+17 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:12.767 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4110 milliseconds for URL: http://localhost:9222
+18:41:12.767 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:14.767 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #17 waiting for http to be ready at: http://localhost:9222
+18:41:14.768 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+18 > GET http://localhost:9222
+18 > Accept-Encoding: gzip,deflate
+18 > Connection: Keep-Alive
+18 > Host: localhost:9222
+18 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:19.254 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4485 milliseconds for URL: http://localhost:9222
+18:41:19.254 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:21.254 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #18 waiting for http to be ready at: http://localhost:9222
+18:41:21.255 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+19 > GET http://localhost:9222
+19 > Accept-Encoding: gzip,deflate
+19 > Connection: Keep-Alive
+19 > Host: localhost:9222
+19 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:25.667 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4412 milliseconds for URL: http://localhost:9222
+18:41:25.667 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:27.667 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #19 waiting for http to be ready at: http://localhost:9222
+18:41:27.668 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+20 > GET http://localhost:9222
+20 > Accept-Encoding: gzip,deflate
+20 > Connection: Keep-Alive
+20 > Host: localhost:9222
+20 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:32.153 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4485 milliseconds for URL: http://localhost:9222
+18:41:32.153 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:34.154 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #20 waiting for http to be ready at: http://localhost:9222
+18:41:34.156 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+21 > GET http://localhost:9222
+21 > Accept-Encoding: gzip,deflate
+21 > Connection: Keep-Alive
+21 > Host: localhost:9222
+21 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:38.568 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4412 milliseconds for URL: http://localhost:9222
+18:41:38.568 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:40.569 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #21 waiting for http to be ready at: http://localhost:9222
+18:41:40.570 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+22 > GET http://localhost:9222
+22 > Accept-Encoding: gzip,deflate
+22 > Connection: Keep-Alive
+22 > Host: localhost:9222
+22 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:45.061 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4491 milliseconds for URL: http://localhost:9222
+18:41:45.061 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:47.070 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #22 waiting for http to be ready at: http://localhost:9222
+18:41:47.072 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+23 > GET http://localhost:9222
+23 > Accept-Encoding: gzip,deflate
+23 > Connection: Keep-Alive
+23 > Host: localhost:9222
+23 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:51.461 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4389 milliseconds for URL: http://localhost:9222
+18:41:51.461 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:53.461 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #23 waiting for http to be ready at: http://localhost:9222
+18:41:53.462 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+24 > GET http://localhost:9222
+24 > Accept-Encoding: gzip,deflate
+24 > Connection: Keep-Alive
+24 > Host: localhost:9222
+24 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:41:57.867 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4404 milliseconds for URL: http://localhost:9222
+18:41:57.867 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:41:59.868 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #24 waiting for http to be ready at: http://localhost:9222
+18:41:59.870 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+25 > GET http://localhost:9222
+25 > Accept-Encoding: gzip,deflate
+25 > Connection: Keep-Alive
+25 > Host: localhost:9222
+25 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:04.103 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4233 milliseconds for URL: http://localhost:9222
+18:42:04.104 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:06.104 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #25 waiting for http to be ready at: http://localhost:9222
+18:42:06.106 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+26 > GET http://localhost:9222
+26 > Accept-Encoding: gzip,deflate
+26 > Connection: Keep-Alive
+26 > Host: localhost:9222
+26 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:10.111 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4005 milliseconds for URL: http://localhost:9222
+18:42:10.111 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:12.112 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #26 waiting for http to be ready at: http://localhost:9222
+18:42:12.113 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+27 > GET http://localhost:9222
+27 > Accept-Encoding: gzip,deflate
+27 > Connection: Keep-Alive
+27 > Host: localhost:9222
+27 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:16.127 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4014 milliseconds for URL: http://localhost:9222
+18:42:16.127 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:18.128 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #27 waiting for http to be ready at: http://localhost:9222
+18:42:18.130 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+28 > GET http://localhost:9222
+28 > Accept-Encoding: gzip,deflate
+28 > Connection: Keep-Alive
+28 > Host: localhost:9222
+28 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:22.146 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4016 milliseconds for URL: http://localhost:9222
+18:42:22.146 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:24.146 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #28 waiting for http to be ready at: http://localhost:9222
+18:42:24.147 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+29 > GET http://localhost:9222
+29 > Accept-Encoding: gzip,deflate
+29 > Connection: Keep-Alive
+29 > Host: localhost:9222
+29 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:28.157 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:42:28.157 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:30.157 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #29 waiting for http to be ready at: http://localhost:9222
+18:42:30.159 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+30 > GET http://localhost:9222
+30 > Accept-Encoding: gzip,deflate
+30 > Connection: Keep-Alive
+30 > Host: localhost:9222
+30 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:34.183 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4024 milliseconds for URL: http://localhost:9222
+18:42:34.183 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:36.184 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #30 waiting for http to be ready at: http://localhost:9222
+18:42:36.187 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+31 > GET http://localhost:9222
+31 > Accept-Encoding: gzip,deflate
+31 > Connection: Keep-Alive
+31 > Host: localhost:9222
+31 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:40.207 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:42:40.208 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:42.229 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:46.250 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222/json
+18:42:46.252 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:46.262 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+com.intuit.karate.exception.KarateException: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.intuit.karate.core.ScenarioContext.clientInvoke(ScenarioContext.java:687)
+	at com.intuit.karate.core.ScenarioContext.method(ScenarioContext.java:735)
+	at com.intuit.karate.Http.get(Http.java:107)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:67)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:265)
+	at com.intuit.karate.core.ScenarioContext.driver(ScenarioContext.java:967)
+	at com.intuit.karate.StepActions.driver(StepActions.java:392)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.Engine.executeStep(Engine.java:153)
+	at com.intuit.karate.core.ScenarioExecutionUnit.execute(ScenarioExecutionUnit.java:219)
+	at com.intuit.karate.core.ScenarioExecutionUnit.run(ScenarioExecutionUnit.java:297)
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1386)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+18:42:46.353 [1588027366352] DEBUG com.intuit.karate - command: [supervisorctl, start, ffmpeg]
+18:42:46.379 [1588027366352] ERROR com.intuit.karate.shell.Command - command error: [supervisorctl, start, ffmpeg] - Cannot run program "supervisorctl": CreateProcess error=2, The system cannot find the file specified
+18:42:46.416 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:50.449 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4017 milliseconds for URL: http://localhost:9222
+18:42:50.449 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:52.451 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #1 waiting for http to be ready at: http://localhost:9222
+18:42:52.452 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:9222
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:9222
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:42:56.480 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4028 milliseconds for URL: http://localhost:9222
+18:42:56.481 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:42:58.481 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #2 waiting for http to be ready at: http://localhost:9222
+18:42:58.485 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:9222
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:9222
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:02.516 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4030 milliseconds for URL: http://localhost:9222
+18:43:02.516 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:04.518 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #3 waiting for http to be ready at: http://localhost:9222
+18:43:04.523 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:9222
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: localhost:9222
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:08.551 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4027 milliseconds for URL: http://localhost:9222
+18:43:08.552 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:10.553 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #4 waiting for http to be ready at: http://localhost:9222
+18:43:10.559 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:9222
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:9222
+5 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:14.570 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4011 milliseconds for URL: http://localhost:9222
+18:43:14.570 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:16.572 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #5 waiting for http to be ready at: http://localhost:9222
+18:43:16.573 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+6 > GET http://localhost:9222
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:9222
+6 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:20.597 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:43:20.598 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:22.599 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #6 waiting for http to be ready at: http://localhost:9222
+18:43:22.601 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:9222
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Host: localhost:9222
+7 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:26.613 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:43:26.614 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:28.616 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://localhost:9222
+18:43:28.622 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:9222
+8 > Accept-Encoding: gzip,deflate
+8 > Connection: Keep-Alive
+8 > Host: localhost:9222
+8 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:32.650 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4026 milliseconds for URL: http://localhost:9222
+18:43:32.650 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:34.652 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://localhost:9222
+18:43:34.656 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:9222
+9 > Accept-Encoding: gzip,deflate
+9 > Connection: Keep-Alive
+9 > Host: localhost:9222
+9 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:38.687 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4031 milliseconds for URL: http://localhost:9222
+18:43:38.688 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:40.689 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://localhost:9222
+18:43:40.695 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+10 > GET http://localhost:9222
+10 > Accept-Encoding: gzip,deflate
+10 > Connection: Keep-Alive
+10 > Host: localhost:9222
+10 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:44.710 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4014 milliseconds for URL: http://localhost:9222
+18:43:44.711 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:46.712 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #10 waiting for http to be ready at: http://localhost:9222
+18:43:46.716 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:9222
+11 > Accept-Encoding: gzip,deflate
+11 > Connection: Keep-Alive
+11 > Host: localhost:9222
+11 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:50.735 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4018 milliseconds for URL: http://localhost:9222
+18:43:50.736 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:52.737 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #11 waiting for http to be ready at: http://localhost:9222
+18:43:52.741 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+12 > GET http://localhost:9222
+12 > Accept-Encoding: gzip,deflate
+12 > Connection: Keep-Alive
+12 > Host: localhost:9222
+12 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:43:56.752 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:43:56.753 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:43:58.754 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #12 waiting for http to be ready at: http://localhost:9222
+18:43:58.758 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:9222
+13 > Accept-Encoding: gzip,deflate
+13 > Connection: Keep-Alive
+13 > Host: localhost:9222
+13 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:02.782 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4024 milliseconds for URL: http://localhost:9222
+18:44:02.783 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:04.784 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #13 waiting for http to be ready at: http://localhost:9222
+18:44:04.787 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+14 > GET http://localhost:9222
+14 > Accept-Encoding: gzip,deflate
+14 > Connection: Keep-Alive
+14 > Host: localhost:9222
+14 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:08.806 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:44:08.807 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:10.808 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #14 waiting for http to be ready at: http://localhost:9222
+18:44:10.817 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:9222
+15 > Accept-Encoding: gzip,deflate
+15 > Connection: Keep-Alive
+15 > Host: localhost:9222
+15 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:14.839 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:44:14.840 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:16.840 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #15 waiting for http to be ready at: http://localhost:9222
+18:44:16.845 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+16 > GET http://localhost:9222
+16 > Accept-Encoding: gzip,deflate
+16 > Connection: Keep-Alive
+16 > Host: localhost:9222
+16 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:20.861 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4015 milliseconds for URL: http://localhost:9222
+18:44:20.862 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:22.864 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #16 waiting for http to be ready at: http://localhost:9222
+18:44:22.868 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+17 > GET http://localhost:9222
+17 > Accept-Encoding: gzip,deflate
+17 > Connection: Keep-Alive
+17 > Host: localhost:9222
+17 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:26.888 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:44:26.888 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:28.889 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #17 waiting for http to be ready at: http://localhost:9222
+18:44:28.892 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+18 > GET http://localhost:9222
+18 > Accept-Encoding: gzip,deflate
+18 > Connection: Keep-Alive
+18 > Host: localhost:9222
+18 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:32.913 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:44:32.914 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:34.915 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #18 waiting for http to be ready at: http://localhost:9222
+18:44:34.918 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+19 > GET http://localhost:9222
+19 > Accept-Encoding: gzip,deflate
+19 > Connection: Keep-Alive
+19 > Host: localhost:9222
+19 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:38.936 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4017 milliseconds for URL: http://localhost:9222
+18:44:38.936 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:40.938 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #19 waiting for http to be ready at: http://localhost:9222
+18:44:40.945 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+20 > GET http://localhost:9222
+20 > Accept-Encoding: gzip,deflate
+20 > Connection: Keep-Alive
+20 > Host: localhost:9222
+20 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:44.958 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4012 milliseconds for URL: http://localhost:9222
+18:44:44.958 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:46.960 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #20 waiting for http to be ready at: http://localhost:9222
+18:44:46.965 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+21 > GET http://localhost:9222
+21 > Accept-Encoding: gzip,deflate
+21 > Connection: Keep-Alive
+21 > Host: localhost:9222
+21 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:50.995 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4030 milliseconds for URL: http://localhost:9222
+18:44:50.996 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:52.997 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #21 waiting for http to be ready at: http://localhost:9222
+18:44:53.000 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+22 > GET http://localhost:9222
+22 > Accept-Encoding: gzip,deflate
+22 > Connection: Keep-Alive
+22 > Host: localhost:9222
+22 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:44:57.019 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4018 milliseconds for URL: http://localhost:9222
+18:44:57.020 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:44:59.021 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #22 waiting for http to be ready at: http://localhost:9222
+18:44:59.024 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+23 > GET http://localhost:9222
+23 > Accept-Encoding: gzip,deflate
+23 > Connection: Keep-Alive
+23 > Host: localhost:9222
+23 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:03.044 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4020 milliseconds for URL: http://localhost:9222
+18:45:03.045 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:05.046 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #23 waiting for http to be ready at: http://localhost:9222
+18:45:05.053 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+24 > GET http://localhost:9222
+24 > Accept-Encoding: gzip,deflate
+24 > Connection: Keep-Alive
+24 > Host: localhost:9222
+24 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:09.083 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4028 milliseconds for URL: http://localhost:9222
+18:45:09.083 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:11.083 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #24 waiting for http to be ready at: http://localhost:9222
+18:45:11.089 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+25 > GET http://localhost:9222
+25 > Accept-Encoding: gzip,deflate
+25 > Connection: Keep-Alive
+25 > Host: localhost:9222
+25 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:15.102 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4012 milliseconds for URL: http://localhost:9222
+18:45:15.102 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:17.102 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #25 waiting for http to be ready at: http://localhost:9222
+18:45:17.105 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+26 > GET http://localhost:9222
+26 > Accept-Encoding: gzip,deflate
+26 > Connection: Keep-Alive
+26 > Host: localhost:9222
+26 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:21.113 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4008 milliseconds for URL: http://localhost:9222
+18:45:21.113 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:23.115 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #26 waiting for http to be ready at: http://localhost:9222
+18:45:23.121 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+27 > GET http://localhost:9222
+27 > Accept-Encoding: gzip,deflate
+27 > Connection: Keep-Alive
+27 > Host: localhost:9222
+27 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:27.143 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:45:27.143 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:29.145 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #27 waiting for http to be ready at: http://localhost:9222
+18:45:29.149 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+28 > GET http://localhost:9222
+28 > Accept-Encoding: gzip,deflate
+28 > Connection: Keep-Alive
+28 > Host: localhost:9222
+28 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:33.179 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4029 milliseconds for URL: http://localhost:9222
+18:45:33.181 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:35.181 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #28 waiting for http to be ready at: http://localhost:9222
+18:45:35.184 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+29 > GET http://localhost:9222
+29 > Accept-Encoding: gzip,deflate
+29 > Connection: Keep-Alive
+29 > Host: localhost:9222
+29 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:39.202 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4017 milliseconds for URL: http://localhost:9222
+18:45:39.202 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:41.204 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #29 waiting for http to be ready at: http://localhost:9222
+18:45:41.210 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+30 > GET http://localhost:9222
+30 > Accept-Encoding: gzip,deflate
+30 > Connection: Keep-Alive
+30 > Host: localhost:9222
+30 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:45.222 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4011 milliseconds for URL: http://localhost:9222
+18:45:45.223 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:47.225 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #30 waiting for http to be ready at: http://localhost:9222
+18:45:47.230 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+31 > GET http://localhost:9222
+31 > Accept-Encoding: gzip,deflate
+31 > Connection: Keep-Alive
+31 > Host: localhost:9222
+31 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:51.252 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:45:51.253 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:53.256 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:45:57.290 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4033 milliseconds for URL: http://localhost:9222/json
+18:45:57.291 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:45:57.292 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+com.intuit.karate.exception.KarateException: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.intuit.karate.core.ScenarioContext.clientInvoke(ScenarioContext.java:687)
+	at com.intuit.karate.core.ScenarioContext.method(ScenarioContext.java:735)
+	at com.intuit.karate.Http.get(Http.java:107)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:67)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:265)
+	at com.intuit.karate.core.ScenarioContext.driver(ScenarioContext.java:967)
+	at com.intuit.karate.StepActions.driver(StepActions.java:392)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.Engine.executeStep(Engine.java:153)
+	at com.intuit.karate.core.ScenarioExecutionUnit.execute(ScenarioExecutionUnit.java:219)
+	at com.intuit.karate.core.ScenarioExecutionUnit.run(ScenarioExecutionUnit.java:297)
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1386)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+18:45:57.367 [1588027557366] DEBUG com.intuit.karate - command: [supervisorctl, start, ffmpeg]
+18:45:57.376 [1588027557366] ERROR com.intuit.karate.shell.Command - command error: [supervisorctl, start, ffmpeg] - Cannot run program "supervisorctl": CreateProcess error=2, The system cannot find the file specified
+18:45:57.385 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:01.401 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4016 milliseconds for URL: http://localhost:9222
+18:46:01.401 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:03.402 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #1 waiting for http to be ready at: http://localhost:9222
+18:46:03.404 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:9222
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:9222
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:07.411 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4007 milliseconds for URL: http://localhost:9222
+18:46:07.412 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:09.412 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #2 waiting for http to be ready at: http://localhost:9222
+18:46:09.415 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:9222
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:9222
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:13.448 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4032 milliseconds for URL: http://localhost:9222
+18:46:13.448 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:15.448 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #3 waiting for http to be ready at: http://localhost:9222
+18:46:15.454 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:9222
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: localhost:9222
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:19.479 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4025 milliseconds for URL: http://localhost:9222
+18:46:19.480 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:21.480 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #4 waiting for http to be ready at: http://localhost:9222
+18:46:21.484 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:9222
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:9222
+5 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:25.512 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4028 milliseconds for URL: http://localhost:9222
+18:46:25.512 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:27.513 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #5 waiting for http to be ready at: http://localhost:9222
+18:46:27.518 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+6 > GET http://localhost:9222
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:9222
+6 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:31.549 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4030 milliseconds for URL: http://localhost:9222
+18:46:31.549 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:33.550 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #6 waiting for http to be ready at: http://localhost:9222
+18:46:33.554 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:9222
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Host: localhost:9222
+7 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:37.583 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4029 milliseconds for URL: http://localhost:9222
+18:46:37.583 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:39.584 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://localhost:9222
+18:46:39.588 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:9222
+8 > Accept-Encoding: gzip,deflate
+8 > Connection: Keep-Alive
+8 > Host: localhost:9222
+8 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:43.596 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4008 milliseconds for URL: http://localhost:9222
+18:46:43.597 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:45.597 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://localhost:9222
+18:46:45.605 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:9222
+9 > Accept-Encoding: gzip,deflate
+9 > Connection: Keep-Alive
+9 > Host: localhost:9222
+9 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:49.626 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4020 milliseconds for URL: http://localhost:9222
+18:46:49.627 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:51.630 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://localhost:9222
+18:46:51.634 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+10 > GET http://localhost:9222
+10 > Accept-Encoding: gzip,deflate
+10 > Connection: Keep-Alive
+10 > Host: localhost:9222
+10 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:46:55.670 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4036 milliseconds for URL: http://localhost:9222
+18:46:55.671 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:46:57.671 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #10 waiting for http to be ready at: http://localhost:9222
+18:46:57.676 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:9222
+11 > Accept-Encoding: gzip,deflate
+11 > Connection: Keep-Alive
+11 > Host: localhost:9222
+11 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:01.696 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4020 milliseconds for URL: http://localhost:9222
+18:47:01.697 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:03.698 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #11 waiting for http to be ready at: http://localhost:9222
+18:47:03.698 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+12 > GET http://localhost:9222
+12 > Accept-Encoding: gzip,deflate
+12 > Connection: Keep-Alive
+12 > Host: localhost:9222
+12 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:07.718 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:47:07.719 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:09.719 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #12 waiting for http to be ready at: http://localhost:9222
+18:47:09.724 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:9222
+13 > Accept-Encoding: gzip,deflate
+13 > Connection: Keep-Alive
+13 > Host: localhost:9222
+13 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:13.744 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:47:13.744 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:15.744 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #13 waiting for http to be ready at: http://localhost:9222
+18:47:15.751 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+14 > GET http://localhost:9222
+14 > Accept-Encoding: gzip,deflate
+14 > Connection: Keep-Alive
+14 > Host: localhost:9222
+14 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:19.783 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4032 milliseconds for URL: http://localhost:9222
+18:47:19.783 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:21.784 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #14 waiting for http to be ready at: http://localhost:9222
+18:47:21.789 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:9222
+15 > Accept-Encoding: gzip,deflate
+15 > Connection: Keep-Alive
+15 > Host: localhost:9222
+15 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:25.818 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4028 milliseconds for URL: http://localhost:9222
+18:47:25.818 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:27.821 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #15 waiting for http to be ready at: http://localhost:9222
+18:47:27.824 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+16 > GET http://localhost:9222
+16 > Accept-Encoding: gzip,deflate
+16 > Connection: Keep-Alive
+16 > Host: localhost:9222
+16 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:31.843 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:47:31.844 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:33.845 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #16 waiting for http to be ready at: http://localhost:9222
+18:47:33.847 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+17 > GET http://localhost:9222
+17 > Accept-Encoding: gzip,deflate
+17 > Connection: Keep-Alive
+17 > Host: localhost:9222
+17 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:37.861 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4012 milliseconds for URL: http://localhost:9222
+18:47:37.861 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:39.862 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #17 waiting for http to be ready at: http://localhost:9222
+18:47:39.865 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+18 > GET http://localhost:9222
+18 > Accept-Encoding: gzip,deflate
+18 > Connection: Keep-Alive
+18 > Host: localhost:9222
+18 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:43.883 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4017 milliseconds for URL: http://localhost:9222
+18:47:43.883 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:45.883 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #18 waiting for http to be ready at: http://localhost:9222
+18:47:45.885 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+19 > GET http://localhost:9222
+19 > Accept-Encoding: gzip,deflate
+19 > Connection: Keep-Alive
+19 > Host: localhost:9222
+19 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:49.917 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4032 milliseconds for URL: http://localhost:9222
+18:47:49.918 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:51.919 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #19 waiting for http to be ready at: http://localhost:9222
+18:47:51.921 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+20 > GET http://localhost:9222
+20 > Accept-Encoding: gzip,deflate
+20 > Connection: Keep-Alive
+20 > Host: localhost:9222
+20 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:47:55.929 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4007 milliseconds for URL: http://localhost:9222
+18:47:55.929 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:47:57.930 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #20 waiting for http to be ready at: http://localhost:9222
+18:47:57.931 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+21 > GET http://localhost:9222
+21 > Accept-Encoding: gzip,deflate
+21 > Connection: Keep-Alive
+21 > Host: localhost:9222
+21 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:01.941 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:48:01.942 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:03.942 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #21 waiting for http to be ready at: http://localhost:9222
+18:48:03.945 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+22 > GET http://localhost:9222
+22 > Accept-Encoding: gzip,deflate
+22 > Connection: Keep-Alive
+22 > Host: localhost:9222
+22 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:07.968 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:48:07.968 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:09.969 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #22 waiting for http to be ready at: http://localhost:9222
+18:48:09.971 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+23 > GET http://localhost:9222
+23 > Accept-Encoding: gzip,deflate
+23 > Connection: Keep-Alive
+23 > Host: localhost:9222
+23 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:13.989 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4017 milliseconds for URL: http://localhost:9222
+18:48:13.989 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:15.990 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #23 waiting for http to be ready at: http://localhost:9222
+18:48:15.993 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+24 > GET http://localhost:9222
+24 > Accept-Encoding: gzip,deflate
+24 > Connection: Keep-Alive
+24 > Host: localhost:9222
+24 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:20.000 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4007 milliseconds for URL: http://localhost:9222
+18:48:20.000 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:22.002 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #24 waiting for http to be ready at: http://localhost:9222
+18:48:22.005 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+25 > GET http://localhost:9222
+25 > Accept-Encoding: gzip,deflate
+25 > Connection: Keep-Alive
+25 > Host: localhost:9222
+25 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:26.027 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:48:26.027 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:28.028 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #25 waiting for http to be ready at: http://localhost:9222
+18:48:28.029 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+26 > GET http://localhost:9222
+26 > Accept-Encoding: gzip,deflate
+26 > Connection: Keep-Alive
+26 > Host: localhost:9222
+26 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:32.045 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4016 milliseconds for URL: http://localhost:9222
+18:48:32.046 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:34.047 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #26 waiting for http to be ready at: http://localhost:9222
+18:48:34.051 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+27 > GET http://localhost:9222
+27 > Accept-Encoding: gzip,deflate
+27 > Connection: Keep-Alive
+27 > Host: localhost:9222
+27 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:38.064 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4012 milliseconds for URL: http://localhost:9222
+18:48:38.064 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:40.065 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #27 waiting for http to be ready at: http://localhost:9222
+18:48:40.066 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+28 > GET http://localhost:9222
+28 > Accept-Encoding: gzip,deflate
+28 > Connection: Keep-Alive
+28 > Host: localhost:9222
+28 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:44.085 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:48:44.085 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:46.114 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #28 waiting for http to be ready at: http://localhost:9222
+18:48:46.117 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+29 > GET http://localhost:9222
+29 > Accept-Encoding: gzip,deflate
+29 > Connection: Keep-Alive
+29 > Host: localhost:9222
+29 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:50.239 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4122 milliseconds for URL: http://localhost:9222
+18:48:50.239 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:52.240 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #29 waiting for http to be ready at: http://localhost:9222
+18:48:52.241 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+30 > GET http://localhost:9222
+30 > Accept-Encoding: gzip,deflate
+30 > Connection: Keep-Alive
+30 > Host: localhost:9222
+30 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:48:56.698 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4457 milliseconds for URL: http://localhost:9222
+18:48:56.698 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:48:58.698 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #30 waiting for http to be ready at: http://localhost:9222
+18:48:58.699 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+31 > GET http://localhost:9222
+31 > Accept-Encoding: gzip,deflate
+31 > Connection: Keep-Alive
+31 > Host: localhost:9222
+31 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:02.850 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4151 milliseconds for URL: http://localhost:9222
+18:49:02.851 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:04.856 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:08.871 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4013 milliseconds for URL: http://localhost:9222/json
+18:49:08.871 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:08.872 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+com.intuit.karate.exception.KarateException: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.intuit.karate.core.ScenarioContext.clientInvoke(ScenarioContext.java:687)
+	at com.intuit.karate.core.ScenarioContext.method(ScenarioContext.java:735)
+	at com.intuit.karate.Http.get(Http.java:107)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:67)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:265)
+	at com.intuit.karate.core.ScenarioContext.driver(ScenarioContext.java:967)
+	at com.intuit.karate.StepActions.driver(StepActions.java:392)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.Engine.executeStep(Engine.java:153)
+	at com.intuit.karate.core.ScenarioExecutionUnit.execute(ScenarioExecutionUnit.java:219)
+	at com.intuit.karate.core.ScenarioExecutionUnit.run(ScenarioExecutionUnit.java:297)
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1386)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+18:49:09.060 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 2: classpath:jobtest/web/web1.feature
+---------------------------------------------------------
+feature: classpath:jobtest/web/web1.feature
+report: build\surefire-reports\jobtest.web.web1.json
+scenarios:  3 | passed:  0 | failed:  3 | time: 577.5861
+---------------------------------------------------------
+18:49:09.080 [1588027749079] DEBUG com.intuit.karate - command: [supervisorctl, start, ffmpeg]
+18:49:09.087 [1588027749079] ERROR com.intuit.karate.shell.Command - command error: [supervisorctl, start, ffmpeg] - Cannot run program "supervisorctl": CreateProcess error=2, The system cannot find the file specified
+18:49:09.094 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:13.100 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4006 milliseconds for URL: http://localhost:9222
+18:49:13.100 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:15.102 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #1 waiting for http to be ready at: http://localhost:9222
+18:49:15.103 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:9222
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:9222
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:19.121 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4018 milliseconds for URL: http://localhost:9222
+18:49:19.121 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:21.122 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #2 waiting for http to be ready at: http://localhost:9222
+18:49:21.130 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:9222
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:9222
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:25.146 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4015 milliseconds for URL: http://localhost:9222
+18:49:25.146 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:27.146 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #3 waiting for http to be ready at: http://localhost:9222
+18:49:27.150 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:9222
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: localhost:9222
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:31.173 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:49:31.173 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:33.174 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #4 waiting for http to be ready at: http://localhost:9222
+18:49:33.177 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:9222
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:9222
+5 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:37.198 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:49:37.198 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:39.199 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #5 waiting for http to be ready at: http://localhost:9222
+18:49:39.202 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+6 > GET http://localhost:9222
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:9222
+6 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:43.220 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4018 milliseconds for URL: http://localhost:9222
+18:49:43.220 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:45.221 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #6 waiting for http to be ready at: http://localhost:9222
+18:49:45.226 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:9222
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Host: localhost:9222
+7 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:49.239 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4013 milliseconds for URL: http://localhost:9222
+18:49:49.240 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:51.240 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://localhost:9222
+18:49:51.248 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:9222
+8 > Accept-Encoding: gzip,deflate
+8 > Connection: Keep-Alive
+8 > Host: localhost:9222
+8 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:49:55.273 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4025 milliseconds for URL: http://localhost:9222
+18:49:55.273 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:49:57.273 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://localhost:9222
+18:49:57.277 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:9222
+9 > Accept-Encoding: gzip,deflate
+9 > Connection: Keep-Alive
+9 > Host: localhost:9222
+9 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:01.306 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4027 milliseconds for URL: http://localhost:9222
+18:50:01.306 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:03.307 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://localhost:9222
+18:50:03.312 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+10 > GET http://localhost:9222
+10 > Accept-Encoding: gzip,deflate
+10 > Connection: Keep-Alive
+10 > Host: localhost:9222
+10 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:07.321 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4009 milliseconds for URL: http://localhost:9222
+18:50:07.322 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:09.322 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #10 waiting for http to be ready at: http://localhost:9222
+18:50:09.326 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:9222
+11 > Accept-Encoding: gzip,deflate
+11 > Connection: Keep-Alive
+11 > Host: localhost:9222
+11 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:13.355 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4025 milliseconds for URL: http://localhost:9222
+18:50:13.355 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:15.356 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #11 waiting for http to be ready at: http://localhost:9222
+18:50:15.366 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+12 > GET http://localhost:9222
+12 > Accept-Encoding: gzip,deflate
+12 > Connection: Keep-Alive
+12 > Host: localhost:9222
+12 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:19.387 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:50:19.389 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:21.392 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #12 waiting for http to be ready at: http://localhost:9222
+18:50:21.399 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:9222
+13 > Accept-Encoding: gzip,deflate
+13 > Connection: Keep-Alive
+13 > Host: localhost:9222
+13 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:25.412 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4013 milliseconds for URL: http://localhost:9222
+18:50:25.412 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:27.414 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #13 waiting for http to be ready at: http://localhost:9222
+18:50:27.415 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+14 > GET http://localhost:9222
+14 > Accept-Encoding: gzip,deflate
+14 > Connection: Keep-Alive
+14 > Host: localhost:9222
+14 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:31.446 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4030 milliseconds for URL: http://localhost:9222
+18:50:31.446 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:33.447 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #14 waiting for http to be ready at: http://localhost:9222
+18:50:33.448 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:9222
+15 > Accept-Encoding: gzip,deflate
+15 > Connection: Keep-Alive
+15 > Host: localhost:9222
+15 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:37.457 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4008 milliseconds for URL: http://localhost:9222
+18:50:37.457 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:39.457 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #15 waiting for http to be ready at: http://localhost:9222
+18:50:39.460 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+16 > GET http://localhost:9222
+16 > Accept-Encoding: gzip,deflate
+16 > Connection: Keep-Alive
+16 > Host: localhost:9222
+16 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:43.470 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4009 milliseconds for URL: http://localhost:9222
+18:50:43.470 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:45.470 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #16 waiting for http to be ready at: http://localhost:9222
+18:50:45.473 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+17 > GET http://localhost:9222
+17 > Accept-Encoding: gzip,deflate
+17 > Connection: Keep-Alive
+17 > Host: localhost:9222
+17 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:49.480 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4006 milliseconds for URL: http://localhost:9222
+18:50:49.480 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:51.481 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #17 waiting for http to be ready at: http://localhost:9222
+18:50:51.485 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+18 > GET http://localhost:9222
+18 > Accept-Encoding: gzip,deflate
+18 > Connection: Keep-Alive
+18 > Host: localhost:9222
+18 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:50:55.504 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:50:55.505 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:50:57.505 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #18 waiting for http to be ready at: http://localhost:9222
+18:50:57.507 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+19 > GET http://localhost:9222
+19 > Accept-Encoding: gzip,deflate
+19 > Connection: Keep-Alive
+19 > Host: localhost:9222
+19 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:01.529 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:51:01.529 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:03.531 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #19 waiting for http to be ready at: http://localhost:9222
+18:51:03.535 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+20 > GET http://localhost:9222
+20 > Accept-Encoding: gzip,deflate
+20 > Connection: Keep-Alive
+20 > Host: localhost:9222
+20 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:07.546 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:51:07.547 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:09.548 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #20 waiting for http to be ready at: http://localhost:9222
+18:51:09.553 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+21 > GET http://localhost:9222
+21 > Accept-Encoding: gzip,deflate
+21 > Connection: Keep-Alive
+21 > Host: localhost:9222
+21 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:13.575 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:51:13.575 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:15.577 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #21 waiting for http to be ready at: http://localhost:9222
+18:51:15.580 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+22 > GET http://localhost:9222
+22 > Accept-Encoding: gzip,deflate
+22 > Connection: Keep-Alive
+22 > Host: localhost:9222
+22 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:19.602 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:51:19.603 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:21.604 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #22 waiting for http to be ready at: http://localhost:9222
+18:51:21.610 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+23 > GET http://localhost:9222
+23 > Accept-Encoding: gzip,deflate
+23 > Connection: Keep-Alive
+23 > Host: localhost:9222
+23 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:25.624 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4014 milliseconds for URL: http://localhost:9222
+18:51:25.626 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:27.627 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #23 waiting for http to be ready at: http://localhost:9222
+18:51:27.630 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+24 > GET http://localhost:9222
+24 > Accept-Encoding: gzip,deflate
+24 > Connection: Keep-Alive
+24 > Host: localhost:9222
+24 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:31.649 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4019 milliseconds for URL: http://localhost:9222
+18:51:31.650 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:33.651 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #24 waiting for http to be ready at: http://localhost:9222
+18:51:33.652 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+25 > GET http://localhost:9222
+25 > Accept-Encoding: gzip,deflate
+25 > Connection: Keep-Alive
+25 > Host: localhost:9222
+25 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:37.673 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4021 milliseconds for URL: http://localhost:9222
+18:51:37.673 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:39.689 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #25 waiting for http to be ready at: http://localhost:9222
+18:51:39.694 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+26 > GET http://localhost:9222
+26 > Accept-Encoding: gzip,deflate
+26 > Connection: Keep-Alive
+26 > Host: localhost:9222
+26 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:43.716 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4022 milliseconds for URL: http://localhost:9222
+18:51:43.716 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:45.718 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #26 waiting for http to be ready at: http://localhost:9222
+18:51:45.718 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+27 > GET http://localhost:9222
+27 > Accept-Encoding: gzip,deflate
+27 > Connection: Keep-Alive
+27 > Host: localhost:9222
+27 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:49.726 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4007 milliseconds for URL: http://localhost:9222
+18:51:49.727 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:51.728 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #27 waiting for http to be ready at: http://localhost:9222
+18:51:51.731 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+28 > GET http://localhost:9222
+28 > Accept-Encoding: gzip,deflate
+28 > Connection: Keep-Alive
+28 > Host: localhost:9222
+28 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:51:55.739 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4008 milliseconds for URL: http://localhost:9222
+18:51:55.739 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:51:57.741 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #28 waiting for http to be ready at: http://localhost:9222
+18:51:57.745 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+29 > GET http://localhost:9222
+29 > Accept-Encoding: gzip,deflate
+29 > Connection: Keep-Alive
+29 > Host: localhost:9222
+29 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:52:01.759 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4013 milliseconds for URL: http://localhost:9222
+18:52:01.759 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:52:03.759 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #29 waiting for http to be ready at: http://localhost:9222
+18:52:03.761 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+30 > GET http://localhost:9222
+30 > Accept-Encoding: gzip,deflate
+30 > Connection: Keep-Alive
+30 > Host: localhost:9222
+30 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:52:07.771 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4009 milliseconds for URL: http://localhost:9222
+18:52:07.771 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:52:09.771 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate.shell.Command - attempt #30 waiting for http to be ready at: http://localhost:9222
+18:52:09.784 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+31 > GET http://localhost:9222
+31 > Accept-Encoding: gzip,deflate
+31 > Connection: Keep-Alive
+31 > Host: localhost:9222
+31 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:52:13.798 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4010 milliseconds for URL: http://localhost:9222
+18:52:13.800 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:52:15.811 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:9222
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+
+18:52:19.838 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4026 milliseconds for URL: http://localhost:9222/json
+18:52:19.839 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+18:52:19.840 [ForkJoinPool-1-worker-1] ERROR com.intuit.karate - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+com.intuit.karate.exception.KarateException: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.intuit.karate.core.ScenarioContext.clientInvoke(ScenarioContext.java:687)
+	at com.intuit.karate.core.ScenarioContext.method(ScenarioContext.java:735)
+	at com.intuit.karate.Http.get(Http.java:107)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:67)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:265)
+	at com.intuit.karate.core.ScenarioContext.driver(ScenarioContext.java:967)
+	at com.intuit.karate.StepActions.driver(StepActions.java:392)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.Engine.executeStep(Engine.java:153)
+	at com.intuit.karate.core.ScenarioExecutionUnit.execute(ScenarioExecutionUnit.java:219)
+	at com.intuit.karate.core.ScenarioExecutionUnit.run(ScenarioExecutionUnit.java:297)
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1386)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+18:52:19.865 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 2 of 2: classpath:jobtest/web/web2.feature
+---------------------------------------------------------
+feature: classpath:jobtest/web/web2.feature
+report: build\surefire-reports\jobtest.web.web2.json
+scenarios:  1 | passed:  0 | failed:  1 | time: 190.7622
+---------------------------------------------------------
+Karate version: 0.9.5
+======================================================
+elapsed: 770.21 | threads:    1 | thread time: 768.35 
+features:     2 | ignored:    0 | efficiency: 1.00
+scenarios:    4 | passed:     0 | failed: 4
+======================================================
+failed features:
+jobtest.web.web1: web1.feature:6 - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+web1.feature:19 - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+web1.feature:33 - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+jobtest.web.web2: web2.feature:6 - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
