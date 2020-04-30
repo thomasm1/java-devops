@@ -1,10 +1,9 @@
-<testsuite failures="3" name="jobtest/web/web1.feature" skipped="0" tests="3" time="573.295674">
-  <testcase classname="jobtest.web.web1" name="try to login to github" time="190.613605">
-    <failure message="web1.feature:6 - driver config / start failed: &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}">Given driver 'https://github.com/login' ................................... failed
+<testsuite failures="1" name="jobtest/web/web1.feature" skipped="0" tests="3" time="42.605517">
+  <testcase classname="jobtest.web.web1" name="try to login to github" time="17.872055">
+    <failure message="web1.feature:6 - driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}">Given driver 'https://github.com/login' ................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
+com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}&#13;
 	at ✽.Given driver 'https://github.com/login' (web1.feature:6)&#13;
 
 And input('#login_field', 'dummy') ........................................ skipped
@@ -16,12 +15,11 @@ And input("input[name=q]", 'karate dsl') .................................. skip
 When submit().click("input[name=btnI]") ................................... skipped
 Then waitForUrl('https://github.com/intuit/karate') ....................... skipped</failure>
   </testcase>
-  <testcase classname="jobtest.web.web1" name="google search, land on the karate github page, and search for a file" time="191.920268">
-    <failure message="web1.feature:19 - driver config / start failed: &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}">Given driver 'https://github.com/login' ................................... failed
+  <testcase classname="jobtest.web.web1" name="google search, land on the karate github page, and search for a file" time="16.702972">
+    <system-out>Given driver 'https://github.com/login' ................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
+com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}&#13;
 	at ✽.Given driver 'https://github.com/login' (web1.feature:6)&#13;
 
 And input('#login_field', 'dummy') ........................................ skipped
@@ -32,29 +30,22 @@ Given driver 'https://google.com' ......................................... skip
 And input("input[name=q]", 'karate dsl') .................................. skipped
 When submit().click("input[name=btnI]") ................................... skipped
 Then waitForUrl('https://github.com/intuit/karate') ....................... skipped
-Given driver 'https://google.com' ......................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: web1.feature:19 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
-	at ✽.Given driver 'https://google.com' (web1.feature:19)&#13;
-
-And input('input[name=q]', 'karate dsl') .................................. skipped
-When click('input[name=btnI]') ............................................ skipped
-Then waitForUrl('https://github.com/intuit/karate') ....................... skipped
-When click('{a}Find file') ................................................ skipped
-And def searchField = waitFor('input[name=query]') ........................ skipped
-Then match driver.url == 'https://github.com/intuit/karate/find/master' ... skipped
-When searchField.input('karate-logo.png') ................................. skipped
-Then def searchResults = waitForResultCount('.js-tree-browser-result-path', 2, '_.innerText') . skipped
-Then match searchResults contains 'karate-core/src/main/resources/karate-logo.png' . skipped</failure>
+Given driver 'https://google.com' ......................................... passed
+And input('input[name=q]', 'karate dsl') .................................. passed
+When click('input[name=btnI]') ............................................ passed
+Then waitForUrl('https://github.com/intuit/karate') ....................... passed
+When click('{a}Find file') ................................................ passed
+And def searchField = waitFor('input[name=query]') ........................ passed
+Then match driver.url == 'https://github.com/intuit/karate/find/master' ... passed
+When searchField.input('karate-logo.png') ................................. passed
+Then def searchResults = waitForResultCount('.js-tree-browser-result-path', 2, '_.innerText') . passed
+Then match searchResults contains 'karate-core/src/main/resources/karate-logo.png' . passed</system-out>
   </testcase>
-  <testcase classname="jobtest.web.web1" name="test-automation challenge" time="190.761801">
-    <failure message="web1.feature:33 - driver config / start failed: &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}">Given driver 'https://github.com/login' ................................... failed
+  <testcase classname="jobtest.web.web1" name="test-automation challenge" time="8.03049">
+    <system-out>Given driver 'https://github.com/login' ................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
+com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}&#13;
 	at ✽.Given driver 'https://github.com/login' (web1.feature:6)&#13;
 
 And input('#login_field', 'dummy') ........................................ skipped
@@ -65,35 +56,23 @@ Given driver 'https://google.com' ......................................... skip
 And input("input[name=q]", 'karate dsl') .................................. skipped
 When submit().click("input[name=btnI]") ................................... skipped
 Then waitForUrl('https://github.com/intuit/karate') ....................... skipped
-Given driver 'https://google.com' ......................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: web1.feature:19 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
-	at ✽.Given driver 'https://google.com' (web1.feature:19)&#13;
-
-And input('input[name=q]', 'karate dsl') .................................. skipped
-When click('input[name=btnI]') ............................................ skipped
-Then waitForUrl('https://github.com/intuit/karate') ....................... skipped
-When click('{a}Find file') ................................................ skipped
-And def searchField = waitFor('input[name=query]') ........................ skipped
-Then match driver.url == 'https://github.com/intuit/karate/find/master' ... skipped
-When searchField.input('karate-logo.png') ................................. skipped
-Then def searchResults = waitForResultCount('.js-tree-browser-result-path', 2, '_.innerText') . skipped
-Then match searchResults contains 'karate-core/src/main/resources/karate-logo.png' . skipped
-Given driver 'https://semantic-ui.com/modules/dropdown.html' .............. failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: web1.feature:33 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
-	at ✽.Given driver 'https://semantic-ui.com/modules/dropdown.html' (web1.feature:33)&#13;
-
-And def locator = "select[name=skills]" ................................... skipped
-Then scroll(locator) ...................................................... skipped
-And click(locator) ........................................................ skipped
-And click('div[data-value=css]') .......................................... skipped
-And click('div[data-value=html]') ......................................... skipped
-And click('div[data-value=ember]') ........................................ skipped
-And delay(1000) ........................................................... skipped</failure>
+Given driver 'https://google.com' ......................................... passed
+And input('input[name=q]', 'karate dsl') .................................. passed
+When click('input[name=btnI]') ............................................ passed
+Then waitForUrl('https://github.com/intuit/karate') ....................... passed
+When click('{a}Find file') ................................................ passed
+And def searchField = waitFor('input[name=query]') ........................ passed
+Then match driver.url == 'https://github.com/intuit/karate/find/master' ... passed
+When searchField.input('karate-logo.png') ................................. passed
+Then def searchResults = waitForResultCount('.js-tree-browser-result-path', 2, '_.innerText') . passed
+Then match searchResults contains 'karate-core/src/main/resources/karate-logo.png' . passed
+Given driver 'https://semantic-ui.com/modules/dropdown.html' .............. passed
+And def locator = "select[name=skills]" ................................... passed
+Then scroll(locator) ...................................................... passed
+And click(locator) ........................................................ passed
+And click('div[data-value=css]') .......................................... passed
+And click('div[data-value=html]') ......................................... passed
+And click('div[data-value=ember]') ........................................ passed
+And delay(1000) ........................................................... passed</system-out>
   </testcase>
 </testsuite>

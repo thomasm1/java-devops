@@ -76,7 +76,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-            <td>27 Apr 2020, 19:05</td>
+            <td>29 Apr 2020, 22:28</td>
     </tr>
   </tbody>
 </table>
@@ -124,7 +124,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">3m 10s 613ms</span>
+  <span class="lead-duration duration">17s 872ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -165,7 +165,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">driver 'https://github.com/login'</span>
   
-  <span class="lead-duration duration">3m 10s 613ms</span>
+  <span class="lead-duration duration">17s 872ms</span>
 
   </div>
 
@@ -174,11 +174,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: </a>
+          <a>com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
+        <pre>com.intuit.karate.exception.KarateException: web1.feature:6 - driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}</pre>
       </div>
     </div>
   </div>
@@ -192,852 +191,74 @@ org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localh
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>18:55:32.528 request:
+        <pre>22:27:23.163 request:
 1 &gt; GET http://localhost:9222/json
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: localhost:9222
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
 
-18:55:36.545 org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4017 milliseconds for URL: http://localhost:9222/json
-18:55:36.546 http request failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-18:55:36.546 driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
-      </div>
-    </div>
-  </div>
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">input('#login_field', 'dummy')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">input('#password', 'world')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">submit().click(&quot;input[name=commit]&quot;)</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">match html('#js-flash-container') contains 'Incorrect username or password.'</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Given</span>
-  <span class="name">driver 'https://google.com'</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">input(&quot;input[name=q]&quot;, 'karate dsl')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">submit().click(&quot;input[name=btnI]&quot;)</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">waitForUrl('https://github.com/intuit/karate')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_jobtest-web-web1-feature.html">jobtest/web/web1.feature</a>
-    </div>
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">3m 11s 920ms</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">google search, land on the karate github page, and search for a file</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-5" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">driver 'https://google.com'</span>
-  
-  <span class="lead-duration duration">3m 11s 920ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
-          <a>com.intuit.karate.exception.KarateException: web1.feature:19 - driver config / start failed: </a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: web1.feature:19 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>18:58:44.448 request:
-1 &gt; GET http://localhost:9222/json
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: localhost:9222
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
-
-18:58:48.480 org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4032 milliseconds for URL: http://localhost:9222/json
-18:58:48.481 http request failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-18:58:48.483 driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
-      </div>
-    </div>
-  </div>
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">input('input[name=q]', 'karate dsl')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">click('input[name=btnI]')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">waitForUrl('https://github.com/intuit/karate')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">click('{a}Find file')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">def searchField = waitFor('input[name=query]')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">match driver.url == 'https://github.com/intuit/karate/find/master'</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">searchField.input('karate-logo.png')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">def searchResults = waitForResultCount('.js-tree-browser-result-path', 2, '_.innerText')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">match searchResults contains 'karate-core/src/main/resources/karate-logo.png'</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_jobtest-web-web1-feature.html">jobtest/web/web1.feature</a>
-    </div>
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">3m 10s 761ms</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">test-automation challenge</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-9" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">driver 'https://semantic-ui.com/modules/dropdown.html'</span>
-  
-  <span class="lead-duration duration">3m 10s 761ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
-          <a>com.intuit.karate.exception.KarateException: web1.feature:33 - driver config / start failed: </a>
-      </div>
-      <div id="msg-11" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: web1.feature:33 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>19:01:55.266 request:
-1 &gt; GET http://localhost:9222/json
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: localhost:9222
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
-
-19:01:59.281 org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4014 milliseconds for URL: http://localhost:9222/json
-19:01:59.281 http request failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-19:01:59.285 driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
-      </div>
-    </div>
-  </div>
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">def locator = &quot;select[name=skills]&quot;</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">scroll(locator)</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">click(locator)</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">click('div[data-value=css]')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">click('div[data-value=html]')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">click('div[data-value=ember]')</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">delay(1000)</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_jobtest-web-web2-feature_1.html">jobtest/web/web2.feature</a>
-    </div>
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">3m 10s 779ms</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">try to login to github</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention">and then do a google search</div>
-
-  <div id="element-13" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">driver 'https://github.com/login'</span>
-  
-  <span class="lead-duration duration">3m 10s 779ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
-          <a>com.intuit.karate.exception.KarateException: web2.feature:6 - driver config / start failed: </a>
-      </div>
-      <div id="msg-15" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: web2.feature:6 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-16" class="collapse collapsable-details">
-        <pre>19:05:06.155 request:
-1 &gt; GET http://localhost:9222/json
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: localhost:9222
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
-
-19:05:10.185 org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4029 milliseconds for URL: http://localhost:9222/json
-19:05:10.185 http request failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-19:05:10.187 driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}</pre>
+22:27:23.168 response time in milliseconds: 3.26
+1 &lt; 200
+1 &lt; Content-Length: 2182
+1 &lt; Content-Type: application/json; charset=UTF-8
+[ {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/A90EBDB380B58584259F41260F33D34A&quot;,
+   &quot;id&quot;: &quot;A90EBDB380B58584259F41260F33D34A&quot;,
+   &quot;title&quot;: &quot;CryptoTokenExtension&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/A90EBDB380B58584259F41260F33D34A&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/1A6507762127F71177489D184FD26145&quot;,
+   &quot;id&quot;: &quot;1A6507762127F71177489D184FD26145&quot;,
+   &quot;title&quot;: &quot;Google Network Speech&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/1A6507762127F71177489D184FD26145&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/EEB60010360C23DF97060CB416620301&quot;,
+   &quot;id&quot;: &quot;EEB60010360C23DF97060CB416620301&quot;,
+   &quot;title&quot;: &quot;Feedback&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/EEB60010360C23DF97060CB416620301&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/0108BED27E7A64A0DD461DA6A19D32BB&quot;,
+   &quot;id&quot;: &quot;0108BED27E7A64A0DD461DA6A19D32BB&quot;,
+   &quot;title&quot;: &quot;Google Hangouts&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/0108BED27E7A64A0DD461DA6A19D32BB&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:9222/devtools/page/4076DDF0259A328B4EE1D4958D22DB07&quot;,
+   &quot;id&quot;: &quot;4076DDF0259A328B4EE1D4958D22DB07&quot;,
+   &quot;title&quot;: &quot;Welcome to Chrome&quot;,
+   &quot;type&quot;: &quot;page&quot;,
+   &quot;url&quot;: &quot;chrome://welcome/&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:9222/devtools/page/4076DDF0259A328B4EE1D4958D22DB07&quot;
+} ]
+
+
+22:27:23.201 root frame id: 4076DDF0259A328B4EE1D4958D22DB07
+22:27:24.266 &gt;&gt; {&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;4076DDF0259A328B4EE1D4958D22DB07&quot;},&quot;id&quot;:1}
+22:27:24.295 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{}}
+22:27:24.298 &gt;&gt; {&quot;method&quot;:&quot;Page.enable&quot;,&quot;id&quot;:2}
+22:27:24.303 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{}}
+22:27:24.304 &gt;&gt; {&quot;method&quot;:&quot;Runtime.enable&quot;,&quot;id&quot;:3}
+22:27:24.307 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://welcome&quot;,&quot;name&quot;:&quot;&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;4076DDF0259A328B4EE1D4958D22DB07&quot;}}}}
+22:27:24.309 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{}}
+22:27:24.311 &gt;&gt; {&quot;method&quot;:&quot;Target.setAutoAttach&quot;,&quot;params&quot;:{&quot;autoAttach&quot;:true,&quot;waitForDebuggerOnStart&quot;:false,&quot;flatten&quot;:true},&quot;id&quot;:4}
+22:27:24.316 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{}}
+22:27:24.321 &gt;&gt; {&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;4076DDF0259A328B4EE1D4958D22DB07&quot;},&quot;id&quot;:5}
+22:27:24.323 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;left&quot;:10,&quot;top&quot;:40,&quot;width&quot;:945,&quot;height&quot;:1030,&quot;windowState&quot;:&quot;normal&quot;}}}
+22:27:39.324 &lt;&lt; timed out after milliseconds: 15000 - [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}]
+22:27:39.340 driver config / start failed: failed to get reply for: [id: 5, method: Browser.getWindowForTarget, params: {targetId=4076DDF0259A328B4EE1D4958D22DB07}], options: {type=chrome, showDriverLog=true, target=null}</pre>
       </div>
     </div>
   </div>

@@ -1,19 +1,13 @@
-<testsuite failures="1" name="jobtest/web/web2.feature" skipped="0" tests="1" time="190.779759">
-  <testcase classname="jobtest.web.web2" name="try to login to github" time="190.779759">
-    <failure message="web2.feature:6 - driver config / start failed: &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}">Given driver 'https://github.com/login' ................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: web2.feature:6 - driver config / start failed: 
-org.apache.http.conn.HttpHostConnectException: Connect to localhost:9222 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=chrome, showDriverLog=true, start=false, beforeStart=supervisorctl start ffmpeg, afterStop=supervisorctl stop ffmpeg, videoFile=/tmp/karate.mp4, target=null}&#13;
-	at ✽.Given driver 'https://github.com/login' (web2.feature:6)&#13;
-
-And input('#login_field', 'dummy') ........................................ skipped
-And input('#password', 'world') ........................................... skipped
-When submit().click("input[name=commit]") ................................. skipped
-Then match html('#js-flash-container') contains 'Incorrect username or password.' . skipped
-Given driver 'https://google.com' ......................................... skipped
-And input("input[name=q]", 'karate dsl') .................................. skipped
-When submit().click("input[name=btnI]") ................................... skipped
-Then waitForUrl('https://github.com/intuit/karate') ....................... skipped</failure>
+<testsuite failures="0" name="jobtest/web/web2.feature" skipped="0" tests="1" time="11.681673">
+  <testcase classname="jobtest.web.web2" name="try to login to github" time="11.681673">
+    <system-out>Given driver 'https://github.com/login' ................................... passed
+And input('#login_field', 'dummy') ........................................ passed
+And input('#password', 'world') ........................................... passed
+When submit().click("input[name=commit]") ................................. passed
+Then match html('#js-flash-container') contains 'Incorrect username or password.' . passed
+Given driver 'https://google.com' ......................................... passed
+And input("input[name=q]", 'karate dsl') .................................. passed
+When submit().click("input[name=btnI]") ................................... passed
+Then waitForUrl('https://github.com/intuit/karate') ....................... passed</system-out>
   </testcase>
 </testsuite>
