@@ -1,0 +1,13 @@
+<testsuite failures="0" name="jobtest/web/web2.feature" skipped="0" tests="1" time="13.604897">
+  <testcase classname="jobtest.web.web2" name="try to login to github" time="13.604897">
+    <system-out>Given driver 'https://github.com/login' ................................... passed
+And input('#login_field', 'dummy') ........................................ passed
+And input('#password', 'world') ........................................... passed
+When submit().click("input[name=commit]") ................................. passed
+Then match html('#js-flash-container') contains 'Incorrect username or password.' . passed
+Given driver 'https://google.com' ......................................... passed
+And input("input[name=q]", 'karate dsl') .................................. passed
+When submit().click("input[name=btnI]") ................................... passed
+Then waitForUrl('https://github.com/intuit/karate') ....................... passed</system-out>
+  </testcase>
+</testsuite>
