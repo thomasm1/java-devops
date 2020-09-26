@@ -7,11 +7,12 @@ import com.rabbitmq.client.ConnectionFactory;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class Publisher {
+public class NoExchangePublisher {
 
 	public static void main(String[] args) throws IOException, TimeoutException {
 
 		//* RUNNING ECLIPSE COMPILER
+		//http://localhost:15672/#/queues
 
 		ConnectionFactory factory = new ConnectionFactory();
 		Connection connection = factory.newConnection();
@@ -21,12 +22,12 @@ public class Publisher {
 		channel_thomas.basicPublish("", "Queue-1", null, message.getBytes());
 		System.out.println(message);
 
-//		String[] messagesArray = {"First", "Second", "Third", "Fourth"};
-//
-//		for(String msg : messagesArray) {
-//			channel_thomas.basicPublish("", "Queue-1", null, msg.getBytes());
-//			System.out.println(msg);
-//		}
+		String[] messagesArray = {"First", "Second", "Third", "Fourth"};
+
+		for(String msg : messagesArray) {
+			channel_thomas.basicPublish("", "Queue-1", null, msg.getBytes());
+			System.out.println(msg);
+		}
 
 		channel_thomas.close();
 		connection.close();

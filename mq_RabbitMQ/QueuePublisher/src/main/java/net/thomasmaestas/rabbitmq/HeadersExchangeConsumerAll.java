@@ -8,19 +8,21 @@ import com.rabbitmq.client.DeliverCallback;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class Consumer {
+public class HeadersExchangeConsumerAll {
 
 	public static void main(String[] args) throws IOException, TimeoutException {
 		ConnectionFactory factory = new ConnectionFactory();
 		Connection connection = factory.newConnection();
-		Channel channel_thomas = connection.createChannel();
+		Channel channel = connection.createChannel();
 		
 		DeliverCallback deliverCallback = (consumerTag, delivery) -> {
 			String message = new String (delivery.getBody());
 			System.out.println("Message received = " + message);
 		};
-									// (Queue	, AutoAck,, deliveryCallback, cancelCallback)
-		channel_thomas.basicConsume("Queue-1", true, deliverCallback, consumerTag -> {});
+
+		// Will not get anything bc publisher sending 2 items, this exchange is x-match:all
+		//  QueueName Tom (routekey tom), AutoAck
+		channel.basicConsume("Mobile", true, deliverCallback, consumerTag -> {});
 	}
 
 }
