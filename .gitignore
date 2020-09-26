@@ -1,5 +1,38 @@
+*target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
 # Compiled class file
 *.class
+
+#prefix "!" which negates the pattern; any matching file excluded by a previous pattern will become included again.
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
 # Log file
 *.log
@@ -22,20 +55,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-fullstack-java/
-fullstack-node/
-h2/
-RPAS-frontend/ 
-rideshare-user-thomas/
-1911-sdet/
-beanLifecycle/   
-rideshare-frontend/    
-project3/
-clinic-master/
+
+#fullstack-java/
+#fullstack-node/
+#h2/
+#RPAS-frontend/
+#rideshare-user-thomas/
+#1911-sdet/
+#beanLifecycle/
+#rideshare-frontend/
+#project3/
+#clinic-master/
 
 # Server stuff
 Servers/
-
 
 # In GitHub
 groot-app/
