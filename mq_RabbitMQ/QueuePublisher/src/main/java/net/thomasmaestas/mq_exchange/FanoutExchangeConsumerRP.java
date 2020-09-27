@@ -1,4 +1,4 @@
-package net.thomasmaestas.rabbitmq;
+package net.thomasmaestas.mq_exchange;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -8,7 +8,7 @@ import com.rabbitmq.client.DeliverCallback;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class TopicConsumerTom {
+public class FanoutExchangeConsumerRP {
 
 	public static void main(String[] args) throws IOException, TimeoutException {
 		ConnectionFactory factory = new ConnectionFactory();
@@ -17,11 +17,10 @@ public class TopicConsumerTom {
 		
 		DeliverCallback deliverCallback = (consumerTag, delivery) -> {
 			String message = new String (delivery.getBody());
-			System.out.println("Tom Message received [TopicConsumerTom]: " + message);
+			System.out.println("Message received = " + message);
 		};
 		//  QueueName Tom (routekey tom), AutoAck
-//		channel.basicConsume("Tom", true, deliverCallback, consumerTag -> {});    // *.tom no match
-		channel.basicConsume("TomHash", true, deliverCallback, consumerTag -> {});  // #.tom match
+		channel.basicConsume("RaspberryPi", true, deliverCallback, consumerTag -> {});
 	}
 
 }

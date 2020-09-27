@@ -1,4 +1,4 @@
-package net.thomasmaestas.rabbitmq;
+package net.thomasmaestas.mq_exchange;
 
 import java.io.IOException;
 import java.util.HashMap;
