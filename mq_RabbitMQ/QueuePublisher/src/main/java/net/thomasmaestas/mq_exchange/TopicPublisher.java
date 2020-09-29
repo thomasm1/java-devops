@@ -16,7 +16,7 @@ public class TopicPublisher {
 		
 		String message = "Mobile topic, RPi topic, Tom topic...\"Topic-Exchange\", \"mobile.raspberrypi.tom\"";
 
-						// 	exchange name,  routingKey Topics [ *.mobile.*, #.mobile.ac (1+)
+						// 	exchange name,  routingKey Topics [ *.mobile.*, #.raspberrypi.tom (1+)
 		channel.basicPublish("Topic-Exchange", "mobile.raspberrypi.tom", null, message.getBytes());
 		System.out.println("sent off: " + message);
 		channel.close();
