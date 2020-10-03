@@ -1,14 +1,14 @@
-package com.example.demo;
+package net.thomasmaestas.mqspring;
 
 import java.io.Serializable;
 
-public class Person implements Serializable {
+public class User implements Serializable {
 
 	private Long Id;
 
 	private String name;
 
-	public Person(Long id, String name) {
+	public User(Long id, String name) {
 		super();
 		Id = id;
 		this.name = name;
