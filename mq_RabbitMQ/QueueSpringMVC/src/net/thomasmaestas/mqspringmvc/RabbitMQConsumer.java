@@ -1,4 +1,4 @@
-package com.demo.controllers;
+package net.thomasmaestas.mqspringmvc;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -14,17 +14,17 @@ import org.springframework.stereotype.Service;
 public class RabbitMQConsumer {
 
 	/*@RabbitListener(queues = "Mobile")
-	public void getMessage(Person p){
-		System.out.println(p.getName());
+	public void getMessage(User u){
+		System.out.println(u.getName());
 	}*/
 	
 	@RabbitListener(queues = "Mobile")
 	public void getMessage(byte[] message) throws IOException, ClassNotFoundException{
 		ByteArrayInputStream bis = new ByteArrayInputStream(message);
 		ObjectInput in = new ObjectInputStream(bis);
-		Person p = (Person) in.readObject();
+		User u = (User) in.readObject();
 		in.close();
 		bis.close();
-		System.out.println(p.getName());
+		System.out.println(u.getName());
 	}
 }

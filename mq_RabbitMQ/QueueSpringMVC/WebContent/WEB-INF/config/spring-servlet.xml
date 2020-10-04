@@ -8,6 +8,6 @@
 
 	<mvc:annotation-driven />
 
-	<context:component-scan base-package="com.demo"></context:component-scan>
+	<context:component-scan base-package="net.thomasmaestas"></context:component-scan>
 
 </beans>

@@ -1,4 +1,4 @@
-package com.demo.controllers;
+package net.thomasmaestas.mqspringmvc;
 
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
