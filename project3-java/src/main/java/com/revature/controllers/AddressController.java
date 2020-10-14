@@ -36,7 +36,7 @@ public class AddressController {
     private static String GOOGLE_APIKEY = System.getenv("googleMapAPIKey");
 
     /**
-     * HTTP POST method (/lat)
+     * HTTP POST method (/address)
      *
      * @param address represents the new Address being sent.
      *                {
@@ -47,7 +47,8 @@ public class AddressController {
      * }
      * @return A address (currently just latitude.
      */
-    @PostMapping(value = "/lat", consumes = "application/json")
+
+    @PostMapping(value = "/address", consumes = "application/json")
     public String getLat(@RequestBody String address) {
 
         JSONObject jsonObject = getLocationInfo(address);
