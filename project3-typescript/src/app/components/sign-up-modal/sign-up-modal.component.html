@@ -1,7 +1,7 @@
 <a (click)="openModal(template)">Sign up</a >
-  
+
 <ng-template #template >
-  <p *ngIf="success != ''" class="success">{{success}}</p>
+  <h3 *ngIf="success != ''" class="success">{{success}}</h3>
   <div class="modal-header">
     <h4 class="modal-title">Sign Up</h4>
     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
@@ -34,10 +34,12 @@
 
     <label id="state">Batch</label>
     <select class="form-control" [(ngModel)]="user.batch">
-          <option value="none" >  
+          <option value="none" >
           </option>
           <option *ngFor="let batch of batches" [ngValue]="batch">{{batch.batchNumber}} {{batch.batchLocation}}</option>
     </select>
+    <p *ngIf="userNameError != ''" class="error">{{userNameError}}</p>
+
 
     <label for="hAddress">Address</label>
     <input (keydown)="hAddressError = ''" id="hAddress" type="text" [(ngModel)]="user.hAddress" class="form-control" />
@@ -49,7 +51,7 @@
 
     <label id="hState">State</label>
     <select (keydown)="hStateError = ''" class="form-control" [(ngModel)]="user.hState" id="hState" >
-            <option value="none" selected disabled hidden>  
+            <option value="none" selected disabled hidden>
             </option>
             <option *ngFor="let state of states" value="{{state}}">{{state}}</option>
     </select>
@@ -74,4 +76,5 @@
       <button type="submit" class="btn btn-primary register" (click)="submitUser()">Submit</button>
     </div>
   </div>
-</ng-template> 
+  <h3 *ngIf="success != ''" class="success">{{success}}</h3>
+</ng-template>

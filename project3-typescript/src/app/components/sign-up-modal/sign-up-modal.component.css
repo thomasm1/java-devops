@@ -1,6 +1,6 @@
 *{
     font-family: "Overpass",sans-serif;
-   
+
 }
 .signup{
     cursor:pointer;
@@ -30,7 +30,7 @@ h3{
 .modal-body{
     font-size:20px;
     margin:30px;
-    
+
 }
 
 .btn-container{
@@ -48,9 +48,9 @@ h3{
     letter-spacing:1px;
     height:45px;
     display:inline-block;
-    
+
 }
- 
+
 .register:hover{
     background-color:white;
     color:#F26925;
@@ -86,8 +86,8 @@ h3{
 .btn-group{
     width:100%;
     height:100px;
-    
-   
+
+
 }
 .btn-group .btn-primary{
     color: white;
@@ -97,7 +97,7 @@ h3{
 
 .driver{
     margin-right:10px;
-    
+
 }
 
 .rider{
@@ -120,6 +120,7 @@ h3{
     border-radius: 5px;
     color: green;
     font-size: 16px;
+    text-align: center;
 }
 
 /*----------------Removes up/down input arrows for zipcode input field--------------*/
@@ -145,7 +146,7 @@ input[type=number] {
         font-size:20px;
     }
     .city{
-        width:100%;        
+        width:100%;
     }
     .state{
         width:100%;

@@ -1,4 +1,5 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { BsModalService, BsModalRef} from 'ngx-bootstrap';
 import { UserService } from 'src/app/services/user-service/user.service';
 import { User } from 'src/app/models/user';
@@ -25,6 +26,7 @@ export class SignupModalComponent implements OnInit {
   batch: Batch = new Batch();
   batches: Batch[];
   // validation
+  batchError : string;
   firstNameError :string;
   lastNameError :string;
   emailError :string;
@@ -34,7 +36,7 @@ export class SignupModalComponent implements OnInit {
   hStateError :string;
   hCityError :string;
   hZipError :string;
-  
+
   success :string;
   //Store the retrieved template from the 'openModal' method for future use cases.
   modalRef :BsModalRef;
@@ -42,7 +44,12 @@ export class SignupModalComponent implements OnInit {
             'KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY',
             'NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV',
             'WI','WY'];
-  constructor(private modalService :BsModalService, private userService :UserService, private batchService :BatchService, private validationService :ValidationService) { }
+  constructor(
+    private router: Router,
+    private modalService :BsModalService,
+    private userService :UserService,
+    private batchService :BatchService,
+    private validationService :ValidationService) { }
 
   ngOnInit() {
     this.userService.getAllUsers().subscribe(
@@ -62,9 +69,13 @@ export class SignupModalComponent implements OnInit {
   openModal(template :TemplateRef<any>){
     this.modalRef = this.modalService.show(template);
   }
-
+  closeModal( ) {
+    console.log("closeModal")
+    // this.modalRef = this.modalService.hide();
+  }
   submitUser() {
     this.user.userId = 0;
+    this.batch = null;
     this.firstNameError = '';
     this.lastNameError = '';
     this.phoneNumberError ='';
@@ -79,8 +90,8 @@ export class SignupModalComponent implements OnInit {
     this.user.wState = this.user.hState;
     this.user.wCity = this.user.hCity;
     this.user.wZip = this.user.hZip;
-    let driver = <HTMLInputElement> document.getElementById("driver");  
-    let rider = <HTMLInputElement> document.getElementById("rider");  
+    let driver = <HTMLInputElement> document.getElementById("driver");
+    let rider = <HTMLInputElement> document.getElementById("rider");
 
     if(driver.checked == true){
       this.user.isDriver =  true;
@@ -93,6 +104,12 @@ export class SignupModalComponent implements OnInit {
       res => {
         console.log(res);
         let i = 0;
+
+        if(res.batch !=undefined){
+          this.batchError = res.batch[0];
+          i=1;
+        }
+
         if(res.firstName != undefined){
           this.firstNameError = res.firstName[0];
           i = 1;
@@ -100,7 +117,7 @@ export class SignupModalComponent implements OnInit {
         if(res.lastName != undefined){
           this.lastNameError = res.lastName[0];
           i = 1;
-          
+
         }
         if(res.phoneNumber != undefined){
           this.phoneNumberError = res.phoneNumber[0];
@@ -141,12 +158,15 @@ export class SignupModalComponent implements OnInit {
           i = 0;
           this.success = "Registered successfully!";
         }
-      } 
+      }
       /*res => {
         console.log("failed to add user");
         console.log(res);
       }*/
     );
-  
+
+    // this.router.navigate(['/'])
+    this.closeModal();
     }
+
     }
