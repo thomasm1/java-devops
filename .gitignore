@@ -18,7 +18,7 @@
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
+#/dist/
 /nbdist/
 /.nb-gradle/
 build/
@@ -60,10 +60,9 @@ hs_err_pid*
 #fullstack-node/
 #h2/
 #RPAS-frontend/
-#rideshare-user-thomas/
 #1911-sdet/
 #beanLifecycle/
-#rideshare-frontend/
+
 #project3/
 #clinic-master/
 
