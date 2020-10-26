@@ -51,7 +51,7 @@ public class KeyController {
     public Map<String, Set<String>> getNasaApi() {
         Map<String, Set<String>> info = new HashMap<>();
         // getting API key
-        String newkey = System.getenv("googleMapAPIKey");
+        String newkey = System.getenv("nasaAPIKey");
 //        String newkey = ks.getNasaMAPKey();
         info.computeIfAbsent("nasaAPIKey", key -> new HashSet<>()).add(newkey);
         return info;
