@@ -13,18 +13,18 @@ import org.springframework.stereotype.Service;
 @EnableRabbit
 public class RabbitMQConsumer {
 
-	/*@RabbitListener(queues = "Mobile")
+	 @RabbitListener(queues = "Mobile")
 	public void getMessage(User u){
 		System.out.println(u.getName());
-	}*/
-	
-	@RabbitListener(queues = "Mobile")
-	public void getMessage(byte[] message) throws IOException, ClassNotFoundException{
-		ByteArrayInputStream bis = new ByteArrayInputStream(message);
-		ObjectInput in = new ObjectInputStream(bis);
-		User u = (User) in.readObject();
-		in.close();
-		bis.close();
-		System.out.println(u.getName());
 	}
+	
+//	@RabbitListener(queues = "Mobile")
+//	public void getMessage(byte[] message) throws IOException, ClassNotFoundException{
+//		ByteArrayInputStream bis = new ByteArrayInputStream(message);
+//		ObjectInput in = new ObjectInputStream(bis);
+//		User u = (User) in.readObject();
+//		in.close();
+//		bis.close();
+//		System.out.println(u.getName());
+//	}
 }
