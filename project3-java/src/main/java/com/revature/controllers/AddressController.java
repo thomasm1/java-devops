@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.net.URLEncoder;
 
 //import com.google.api.client.http.HttpResponse;
+import com.google.gson.Gson;
 import com.revature.services.DistanceService;
 import io.swagger.annotations.Api;
 import org.apache.http.HttpEntity;
@@ -34,6 +35,9 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @Api(tags= {"Address"})
 public class AddressController {
+
+    @Autowired
+    Gson gson;
 
     @Autowired
     private DistanceService ds;

@@ -41,7 +41,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/keys")
+@RequestMapping("/login")
 public class KeyController {
 
 //    @Autowired
