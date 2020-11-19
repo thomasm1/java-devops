@@ -1,10 +1,11 @@
 plugins {
+  id 'groovy'
   id 'java'
 }
 
 defaultTasks 'thisIsDefault', 'anotherTask'
  
-// logger.info ">>> build.gradle --> This is executed during the configuration phase  - timestamp @ ${gradle.timestamp()}"
+logger.info ">>> build.gradle --> This is executed during the configuration phase  - timestamp @ ${gradle.timestamp()}"
 task thisIsDefault
 task anotherTask {
 	description = "logging another Task"
@@ -38,6 +39,9 @@ repositories{
 dependencies { 
 	implementation 'org.apache.commons:commons-math3:3.2'					
 	testImplementation	'junit:junit:4.11'
+	testImplementation 'org.codehaus.groovy:groovy-all:3.0.6'
+	testImplementation 'org.spockframework:spock-core:2.0-M4-groovy-3.0'
+	testImplementation platform("org.spockframework:spock-bom:2.0-M4-groovy-3.0")
 }
 
 
@@ -51,6 +55,10 @@ jar {
 	baseName = "$project.name-all" 
 	from {project.configurations.runtimeClasspath.collect {File file -> project.zipTree(file)}
 	}
+}
+
+test {
+	useJUnitPlatform()
 }
 
 //Properties
