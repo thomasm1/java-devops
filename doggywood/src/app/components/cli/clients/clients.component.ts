@@ -31,6 +31,7 @@ export class ClientsComponent implements OnInit {
   phone: string;
   cusUrl: string;
   test: any;
+  panelTitle:string = 'Welcome';
 
   // public customerParam: Customer;
   public customer: Customer;
