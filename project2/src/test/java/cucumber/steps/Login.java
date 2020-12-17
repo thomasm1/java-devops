@@ -62,19 +62,21 @@ public class Login {
 
 	@And("^User enters a valid password$")
 	public void user_enters_a_valid_password() throws Throwable {
-//		driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("password");
-		driver.findElement(By.cssSelector("#password")).sendKeys("password");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("password");
+//		driver.findElement(By.cssSelector("#password")).sendKeys("password");
 	}
 
 	@When("^User clicks on the login button$")
 	public void user_clicks_on_the_login_button() throws Throwable {
-//		driver.findElement(By.xpath(".//*[@id='submit-button']")).click();
-		driver.findElement(By.id("submit-button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//*[@id='submit-button']")).click();
+//		driver.findElement(By.id("submit-button")).click();
 	}
 
 	@Then("^User should be taken to the successful client landing page$")
 	public void user_should_be_taken_to_the_successful_client_landing_page() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(5000); 
 		WebElement viewRecordsButton = driver.findElement(By.xpath("//a[contains(text(), 'View Records')]"));
 		Assert.assertEquals(true, viewRecordsButton.isDisplayed());
 	}     
