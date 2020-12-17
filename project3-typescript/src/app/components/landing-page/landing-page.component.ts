@@ -13,6 +13,8 @@ import { environment } from "src/environments/environment";
 export class LandingPageComponent implements OnInit {
   location_s: string = ""; //sample: Morgantown, WV
 
+  url: string = environment.fullUrl;
+
   @ViewChild("map", { static: true }) mapElement: any;
 
   map: google.maps.Map;
@@ -50,7 +52,7 @@ export class LandingPageComponent implements OnInit {
 
   getGoogleApi() {
     this.http
-      .get(`http://54.174.82.153:8080/login/getGoogleApi`)
+      .get(`${this.url}/login/getGoogleApi`)
       .subscribe((response) => {
         //console.log(response);
         if (response["googleMapAPIKey"] != undefined) {

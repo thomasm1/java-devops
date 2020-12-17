@@ -12,7 +12,7 @@ const port = '8099';
 /**
  * google map api key
  */
-const googleKey = 'AIzaSyC*********************Uj_qZPjthA';
+const googleKey = 'AIzaSyCG************_qZPjthA';
 
   /**
  * These are the constants for the production config

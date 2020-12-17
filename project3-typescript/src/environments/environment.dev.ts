@@ -11,7 +11,7 @@ const port = '8099';
 /**
  * google map api key
  */
-const googleKey = 'AIz*********hA';
+const googleKey = 'AIzaSyC**********_qZPjthA';
 
   /**
    * These are the dev environment variables
@@ -24,5 +24,6 @@ export const environment = {
   batchesUri: `${baseUri}:${port}/batches`,
   carUri: `${baseUri}:${port}/cars/`,
   adminUri: `${baseUri}:${port}/admins/`,
-  googleMapAPIKey: `${googleKey}`
+  googleMapAPIKey: `${googleKey}`,
+  fullUrl: `${baseUri}:${port}`
 };
