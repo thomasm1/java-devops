@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
 	 * Sets name string variable to the chosen user
 	 * Sets pagination
 	 */
+  url: string = environment.fullUrl;
 
 	users: User[] = [];
 	allUsers: User[] = [];
@@ -155,8 +156,8 @@ export class LoginComponent implements OnInit {
 	login() {
 		this.pwdError ='';
 		this.usernameError= '';
-		
-        this.http.get(`http://54.174.82.153:8080/login?userName=${this.userName}&passWord=${this.passWord}`)
+
+        this.http.get(`${this.url}/login?userName=${this.userName}&passWord=${this.passWord}`)
 			.subscribe(
                   (response) => {
                      //console.log(response);
@@ -169,7 +170,7 @@ export class LoginComponent implements OnInit {
 					  if((response["name"] != undefined) && (response["userid"] != undefined)){
 						sessionStorage.setItem("name", response["name"]);
 						sessionStorage.setItem("userid", response["userid"]);
-						
+
 						//call landing page
 						//this.router.navigate(['landingPage']);
 						location.replace('landingPage');

@@ -1,9 +1,12 @@
 /**
  * This is the base URI
  */
-const baseUri = `http://52.70.39.146`;
 
-const port = '8080';
+const baseUri = `http://34.199.129.2`;
+/**
+ * Set the port to 8099
+ */
+const port = '8099';
 
 /**
  * google map api key

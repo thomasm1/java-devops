@@ -4,16 +4,16 @@
  * `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
  */
 
-const baseUri = `http://52.70.39.146`;
+const baseUri = `http://34.199.129.2`;
 /**
- * Set the port to 8080
+ * Set the port to 8099
  */
-const port = '8080';
+const port = '8099';
 
 /**
  * google map api key
  */
-const googleKey = 'AIz*********hA';
+const googleKey = 'AIzaSyCG************************j_qZPjthA';
  /**
    * This is the environment config.
    */
@@ -28,7 +28,8 @@ export const environment = {
   carUri: `${baseUri}:${port}/cars/`,
   adminUri: `${baseUri}:${port}/admins/`,
   // googleMapKey: `${googleKey}`,
-  googleMapAPIKey: `${googleKey}`
+  googleMapAPIKey: `${googleKey}`,
+  fullUrl: `${baseUri}:${port}`
 };
 
 /*
