@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Rideshare</title>
+    <title>Commuter.Link</title>
     <base href="/">
     <!--Force https requests to SSL Backend-->
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
@@ -12,9 +12,32 @@
   </head>
   <body>
     <app-root></app-root>
+    <!-- <div align="center"><br><br><br><br>
+      <h1>Welcome to <span id="commuterLinkId">CommuterLink! a Revature Production</span></h1>
+      <button onclick="apiFunction()">Take a Tour</button><br>
+      <img src="https://tmm-nov.s3.amazonaws.com/img/banners/ourdailytechBanner.png"></div> -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <!-- <script>
+
+      function apiFunction() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("commuterLinkId").innerHTML = this.responseText;
+              }
+          };
+          xhttp.open("GET", "https://n5c2760wmj.execute-api.us-east-1.amazonaws.com/default/commuterLinkAPI", true);
+          xhttp.send();
+
+
+      }
+
+      </script> -->
   </body>
+
+
 </html>

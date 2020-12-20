@@ -14,14 +14,14 @@
                     </div>
                     <button type="button" id="next-btn" *ngIf="curPage<totalPage" (click)="nextPage()">v</button>
                 </div>
-            </div> 
+            </div>
         </div> -->
-       
+
         <div class="modal-title-container">
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"  id="login-exit">&times;</span>
         </button>
-            <h4 class="modal-title">Login</h4>
+            <h4 class="modal-title" id="login-enter">Login</h4>
     </div>
             <div class = "content">
             <div class="form-group"><p  class="error">{{userNotFound}}</p></div>
@@ -35,7 +35,7 @@
               <input type="password" [(ngModel)]="passWord" class="form-control" id="formGroupExampleInput2" placeholder="Enter Password">
               <p  class="error">{{pwdError}}</p>
             </div>
-          
+
         <p class="alert alert-danger" *ngIf="failed"><strong>Login Failed!</strong></p>
         <p class="alert alert-danger" *ngIf="banned"><strong>You are banned</strong></p>
           <button type="submit" class="btn btn-primary" id="sign-in-btn" (click)="login()">Login</button>
@@ -43,4 +43,4 @@
     </div>
 </div>
 </div>
-</ng-template> 
+</ng-template>

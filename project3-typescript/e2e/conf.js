@@ -3,6 +3,8 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+// const localUrl = 'http://localhost:4200/'
+// const awsUrl = 'http://34.199.129.2:8099'
 
 /**
  * @type { import("protractor").Config }
@@ -19,7 +21,7 @@ exports.config = {
     browserName: 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://http://54.174.82.153:4200/',
+  baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
