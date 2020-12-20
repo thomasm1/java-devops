@@ -3,6 +3,9 @@ Testing the landing page of the application to ensure buttons work as intended
 */
 describe('landing page tests', function(){
 
+    // let url = 'http://localhost:4200/';
+    let url = 'http://commuter.link/';
+
     let elPageHead = element(by.xpath('//*[@id="commuter-title"]'));
 
     let elLoginButton = element(by.xpath('//*[@id="login"]/app-login/a'));
@@ -14,7 +17,7 @@ describe('landing page tests', function(){
     let elSubmitRegister = element(by.xpath('//*[@id="submit-register"]'));
     let elRegisterExit = element(by.xpath('//*[@id="register-exit"]'));
 
-    browser.get('http://localhost:4200/');
+    browser.get(url);
     //checks to make sure that the user reaches the landing page correctly
     //change when the front end is being hosted
     it('Make sure user is on the landing page', function(){

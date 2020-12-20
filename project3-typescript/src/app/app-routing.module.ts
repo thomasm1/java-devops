@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './components/admin/admin.component';
 import { CarRegisterComponent } from './components/car-register/car-register.component';
-import { RegisterComponent } from './components/register/register.component';
+// import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { DriverComponent } from './components/driver/driver.component';
 import { MyCarComponent } from './components/my-car/my-car.component';
@@ -24,12 +24,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes: Routes = [
   {path: 'home/drivers', component: DriverInfoComponent},
-  {path: 'home/riders', component: DriverComponent}, 
+  {path: 'home/riders', component: DriverComponent},
   {path: 'all-drivers', component: DriverInfoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login/admin', component: AdminLoginComponent},
   {path: 'login/adminhome', component: AdminComponent},
-  {path: 'register', component: RegisterComponent},
+  // {path: 'register', component: RegisterComponent},
   {path: 'new/car', component: CarRegisterComponent},
   {path: 'car', component: MyCarComponent},
   {path: 'profile', component: ProfileComponent},
