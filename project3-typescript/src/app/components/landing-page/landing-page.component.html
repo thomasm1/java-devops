@@ -1,5 +1,9 @@
 <div class = "content">
+  <hr>
   <h1>Revature RideForce</h1>
+  <hr>
+  <h6 id="loginName">Welcome to your Ride, {{loginName}}: Where to?</h6>
+  <hr>
   <input type="text" [(ngModel)]="location_s" class="form-control" id="formGroupExampleInput2" placeholder="Search for a driver">
   <button  class="btn btn-primary register" (click)="searchDriver()">Search</button>
   <div class = "googleapi">

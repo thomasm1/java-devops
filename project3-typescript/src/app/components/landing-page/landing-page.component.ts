@@ -12,6 +12,7 @@ import { environment } from "src/environments/environment";
 })
 export class LandingPageComponent implements OnInit {
   location_s: string = ""; //sample: Morgantown, WV
+  loginName: string = "";
 
   url: string = environment.fullUrl;
 
@@ -26,6 +27,8 @@ export class LandingPageComponent implements OnInit {
   }
 
   ngOnInit()  {
+    this.loginName = this.getName();
+
     //load google map  api
 
     this.getGoogleApi();
@@ -50,6 +53,9 @@ export class LandingPageComponent implements OnInit {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
+  getName() {
+    return this.loginName = sessionStorage.getItem("name");
+  }
   getGoogleApi() {
     this.http
       .get(`${this.url}/login/getGoogleApi`)
@@ -58,7 +64,7 @@ export class LandingPageComponent implements OnInit {
         if (response["googleMapAPIKey"] != undefined) {
           new Promise((resolve) => {
             let script: HTMLScriptElement = document.createElement("script");
-            script.addEventListener("load", (r) => resolve());
+            script.addEventListener("load", (r) => resolve(r));
 
             script.src = `http://maps.googleapis.com/maps/api/js?key=${response["googleMapAPIKey"][0]}`;
 

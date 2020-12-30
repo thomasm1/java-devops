@@ -4,12 +4,14 @@
  * `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
  */
 
-const baseUri = `http://34.199.129.2`;
+// const baseUri = `http://34.199.129.2`;
+const baseUri = `http://localhost`;
 /**
  * Set the port to 8099
  */
-const port = '8099';
-
+// const port = '8099';
+const port = '8080';
+/**
 /**
  * google map api key
  */
