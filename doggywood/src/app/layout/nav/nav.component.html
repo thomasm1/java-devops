@@ -90,8 +90,8 @@
   </div>
 
   <form class="form-inline my-2 my-lg-0 register-logout">
-    <button *ngIf="!(authenticationService.isCustLoggedIn() || authenticationService.isEmpLoggedIn())" type="submit"
-      class="btn  " id="register" routerLink="register/">REGISTER</button>
+    <!-- <button *ngIf="!(authenticationService.isCustLoggedIn() || authenticationService.isEmpLoggedIn())" type="submit"
+      class="btn  " id="register" routerLink="register/">REGISTER</button> -->
     <button *ngIf="authenticationService.isCustLoggedIn() || authenticationService.isEmpLoggedIn()"
       class="btn btn-outline-success"> <a routerLink="/"> LOGOUT</a></button>
   </form>
