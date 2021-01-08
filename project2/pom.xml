@@ -10,7 +10,7 @@
 	<packaging>war</packaging>
 	<groupId>com.doggywood</groupId>
 	<artifactId>doggywood</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>doggywood</name>
 	<description>Doggy wood Vet App</description>
 
@@ -32,7 +32,12 @@
 			<version>2.11.1</version>
 		</dependency>
 
-	
+			<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>3.3</version>
+		</dependency>
 	
 	<!-- <dependency>
             <artifactId>ojdbc7</artifactId>
