@@ -1,0 +1,19 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	
+	<!-- Default Page -->
+	<definition name="page-default" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="Hello" type="string" />
+		<put-attribute name="body" value="[BODY]" />
+	</definition>
+	
+	<definition name="page-home" extends="page-default">
+		<put-attribute name="title" type="string" value="Home"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp"/>
+	</definition>
+	
+	
+</tiles-definitions>
