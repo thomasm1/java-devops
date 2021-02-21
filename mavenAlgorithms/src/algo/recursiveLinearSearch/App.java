@@ -1,8 +1,9 @@
-package algo.recursion;
+package algo.recursiveLinearSearch;
 
 public class App {
 
 	public static void main(String[] args) {
+
 		System.out.println(recursiveLinearSearch(new int[] {4,48,4,28,34,76,9,3}, 0, 3));
 
 	}

@@ -1,4 +1,4 @@
-package algo.binarysearch;
+package algo.sortInsertion;
 
 public class TestInsertionSort {
 
