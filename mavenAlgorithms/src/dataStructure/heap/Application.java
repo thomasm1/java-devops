@@ -1,4 +1,6 @@
-package dataStructure.heapimplementation;
+package dataStructure.heap;
+
+import dataStructure.heap.heapImpl.Heap;
 
 public class Application {
 

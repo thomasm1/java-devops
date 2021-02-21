@@ -1,6 +1,4 @@
-package dataStructure.binarysearchtree;
-
-import java.util.Stack;
+package dataStructure.binarySearchTree;
 
 public class BST {
 	

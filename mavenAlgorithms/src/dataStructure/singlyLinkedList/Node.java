@@ -1,4 +1,4 @@
-package dataStructure.circularlinkedlist;
+package dataStructure.singlyLinkedList;
 
 public class Node {
 	public int data;

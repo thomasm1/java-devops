@@ -1,4 +1,4 @@
-package dataStructure.doublylinkedlist;
+package dataStructure.doublyLinkedList;
 
 public class App {
 

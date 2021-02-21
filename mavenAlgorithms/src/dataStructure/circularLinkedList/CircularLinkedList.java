@@ -1,6 +1,6 @@
-package dataStructure.circularlinkedlist;
+package dataStructure.circularLinkedList;
 
-import dataStructure.singlylinkedlist.Node;
+import dataStructure.singlyLinkedList.Node;
 
 public class CircularLinkedList {
 	

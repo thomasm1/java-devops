@@ -1,4 +1,4 @@
-package dataStructure.circularlinkedlist;
+package dataStructure.circularLinkedList;
 
 public class App {
 

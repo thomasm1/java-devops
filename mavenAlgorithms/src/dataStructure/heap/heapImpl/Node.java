@@ -1,4 +1,4 @@
-package dataStructure.heapimplementation;
+package dataStructure.heap.heapImpl;
 
 public class Node {
 	private int key;

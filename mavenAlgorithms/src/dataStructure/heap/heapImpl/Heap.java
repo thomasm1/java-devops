@@ -1,4 +1,4 @@
-package dataStructure.heapimplementation;
+package dataStructure.heap.heapImpl;
 
 public class Heap {
 	private Node[] heapArray;
