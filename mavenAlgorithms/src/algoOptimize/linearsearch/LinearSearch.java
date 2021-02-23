@@ -1,4 +1,4 @@
-package algo.linearsearch;
+package algoOptimize.linearsearch;
 
 public class LinearSearch {
     public int linearSearch(int[] a, int x){

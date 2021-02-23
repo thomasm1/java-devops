@@ -1,4 +1,4 @@
-package algo.sortInsertion;
+package algoOptimize.sortInsertion;
 
 public class TestInsertionSort {
 

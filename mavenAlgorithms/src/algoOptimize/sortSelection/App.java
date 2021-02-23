@@ -1,4 +1,4 @@
-package algo.sortSelection;
+package algoOptimize.sortSelection;
 
 public class App {
 

@@ -1,4 +1,4 @@
-package algo.sortQuick;
+package algoOptimize.sortQuick;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package algo.binarySearch;
+package algoOptimize.binarySearch;
 
 public class App {
 

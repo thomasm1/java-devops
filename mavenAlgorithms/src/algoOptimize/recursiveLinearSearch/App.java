@@ -1,4 +1,4 @@
-package algo.recursiveLinearSearch;
+package algoOptimize.recursiveLinearSearch;
 
 public class App {
 

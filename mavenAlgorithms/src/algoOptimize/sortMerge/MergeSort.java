@@ -1,4 +1,4 @@
-package algo.sortMerge;
+package algoOptimize.sortMerge;
 
 public class MergeSort {
 	

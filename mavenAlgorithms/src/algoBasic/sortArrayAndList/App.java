@@ -1,4 +1,4 @@
-package algo.sortArrays;
+package algoBasic.sortArrayAndList;
 
 import java.util.Arrays;
 
