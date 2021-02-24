@@ -23,9 +23,14 @@ public class GetTheCrypto implements Runnable{
 		this.cryptoGrabber = cryptoGrabber;
 		
 		// startTime = newStartTime;  Not used to have variable sleep time
-		crypto = newCrypto;
+		crypto = nameCleaner(newCrypto);
 		price = newPrice;
 		
+	}
+	public String nameCleaner(String str) {
+
+		str = str.trim().toUpperCase();
+		return str;
 	}
 	
 	public void run(){
@@ -49,7 +54,7 @@ public class GetTheCrypto implements Runnable{
 			
 			// Formats decimals to 2 places
 			
-			DecimalFormat df = new DecimalFormat("#.##");
+			DecimalFormat df = new DecimalFormat("#.###");
 			
 			// Change the price and then convert it back into a double
 			
@@ -58,6 +63,8 @@ public class GetTheCrypto implements Runnable{
 			if(crypto == "ETH") ((CryptoGrabber) cryptoGrabber).setETHPrice(price);
 			if(crypto == "BTC") ((CryptoGrabber) cryptoGrabber).setBTCPrice(price);
 			if(crypto == "HEX") ((CryptoGrabber) cryptoGrabber).setHEXPrice(price);
+			if(crypto == "LINK") ((CryptoGrabber) cryptoGrabber).setLINKPrice(price);
+			if(crypto == "XRP") ((CryptoGrabber) cryptoGrabber).setXRPPrice(price);
 			
 			System.out.println(crypto + ": " + df.format((price + randNum)) + 
 					" " + df.format(randNum));

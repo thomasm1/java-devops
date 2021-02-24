@@ -10,12 +10,20 @@ public class CryptoGrabber implements Subject{
 	private double ethPrice;
 	private double btcPrice;
 	private double hexPrice;
+	private double linkPrice;
+	private double xrpPrice;
 	
-	public CryptoGrabber(){
-		
+	public CryptoGrabber(double ethPrice, double btcPrice, double hexPrice, double linkPrice, double xrpPrice){
+
+		this.ethPrice = ethPrice;
+		this.btcPrice = btcPrice;
+		this.hexPrice = hexPrice;
+		this.linkPrice = linkPrice;
+		this.xrpPrice = xrpPrice;
+
 		// Creates an ArrayList to hold all observers
-		
 		observers = new ArrayList<Observer>();
+
 	}
 	
 	public void register(Observer newObserver) {
@@ -49,7 +57,7 @@ public class CryptoGrabber implements Subject{
 		
 		for(Observer observer : observers){
 			
-			observer.update(ethPrice, btcPrice, hexPrice);
+			observer.update(ethPrice, btcPrice, hexPrice, linkPrice, xrpPrice);
 			
 		}
 	}
@@ -79,5 +87,18 @@ public class CryptoGrabber implements Subject{
 		notifyObserver();
 	
 	}
-	
+	public void setLINKPrice(double newLINKPrice){
+
+		this.linkPrice = newLINKPrice;
+
+		notifyObserver();
+
+	}
+	public void setXRPPrice(double newXRPPrice){
+
+		this.xrpPrice = newXRPPrice;
+
+		notifyObserver();
+
+	}
 }

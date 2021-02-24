@@ -1,15 +1,7 @@
-/**
- * 
- */
 package net.mavencrypto.random;
 
 import org.apache.commons.math3.random.RandomDataGenerator;
 
-
-/**
- * @author thomasMilton
- *
- */
 public class DefaultRandomNumberGenerator implements RandomGenerator {
 
 	

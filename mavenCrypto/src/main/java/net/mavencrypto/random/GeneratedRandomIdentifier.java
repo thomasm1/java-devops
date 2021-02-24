@@ -1,10 +1,5 @@
 package net.mavencrypto.random;
-
-
-/**
- * @author thomasMilton
- *
- */
+ 
 public final class GeneratedRandomIdentifier {
 
 	private String createdBy;	

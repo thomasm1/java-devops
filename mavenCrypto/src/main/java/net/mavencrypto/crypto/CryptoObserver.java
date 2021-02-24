@@ -7,6 +7,8 @@ public class CryptoObserver implements Observer {
 	private double ethPrice;
 	private double btcPrice;
 	private double hexPrice;
+	private double linkPrice;
+	private double xrpPrice;
 	
 	// Static used as a counter
 	
@@ -20,7 +22,7 @@ public class CryptoObserver implements Observer {
 	
 	private Subject cryptoGrabber;
 	
-	public CryptoObserver(Subject stockGrabber){
+	public CryptoObserver(Subject cryptoGrabber){
 		
 		// Store the reference to the stockGrabber object so
 		// I can make calls to its methods
@@ -36,18 +38,20 @@ public class CryptoObserver implements Observer {
 		System.out.println("New Observer " + this.observerID);
 		
 		// Add the observer to the Subjects ArrayList
-		
-		stockGrabber.register(this);
+
+		cryptoGrabber.register(this);
 		
 	}
 	
 	// Called to update all observers
 	
-	public void update(double ethPrice, double btcPrice, double hexPrice) {
+	public void update(double ethPrice, double btcPrice, double hexPrice, double linkPrice, double xrpPrice) {
 		
 		this.ethPrice = ethPrice;
 		this.btcPrice = btcPrice;
 		this.hexPrice = hexPrice;
+		this.linkPrice = linkPrice;
+		this.xrpPrice = xrpPrice;
 		
 		printThePrices();
 		
@@ -56,7 +60,7 @@ public class CryptoObserver implements Observer {
 	public void printThePrices(){
 		
 		System.out.println(observerID + "\nETH: " + ethPrice + "\nBTC: " + 
-				btcPrice + "\nHEX: " + hexPrice + "\n");
+				btcPrice + "\nHEX: " + hexPrice + "\nLINK: " + linkPrice + "\nXRP: " + xrpPrice + "\n");
 		
 	}
 	

@@ -4,6 +4,6 @@ package net.mavencrypto.crypto;
 
 public interface Observer {
 	
-	public void update(double ibmPrice, double aaplPrice, double googPrice);
+	public void update(double ethPrice, double btcPrice, double hexPrice, double linkPrice, double xrpPrice);
 	
 }
