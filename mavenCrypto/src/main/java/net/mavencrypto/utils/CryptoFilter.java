@@ -1,15 +1,13 @@
-package net.mavencrypto.crypto;
+package net.mavencrypto.utils;
 
 import java.util.Arrays;
 
 public class CryptoFilter {
 
 
-    private static int[] levels;
+    private int[] levels;
 
-
-
-    public static void getResult(int[] levels) {
+    public void getResult(int[] levels) {
 
         System.out.println(Arrays.toString(levels));
     }

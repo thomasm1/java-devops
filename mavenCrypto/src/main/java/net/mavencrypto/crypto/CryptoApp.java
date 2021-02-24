@@ -1,10 +1,9 @@
 package net.mavencrypto.crypto;
 
 import net.mavencrypto.crypto.CryptoFilter;
-
 import java.util.Arrays;
 
-public class GrabCrypto{
+public class CryptoApp {
 
 	public static void main(String[] args){
 

@@ -1,4 +1,4 @@
-package algoBasic.conversionArrayAndList;
+package algoBasic.arrayAndListConversion;
 
 import java.util.ArrayList;
 import java.util.Arrays;

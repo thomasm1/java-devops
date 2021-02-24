@@ -1,6 +1,6 @@
 package algoBasic.arrayMultidimensional;
 
-public class App {
+public class DimensionalArray {
         public static void main(String[] args) {
 ///////////////  1d array ///////////////
             int[] myArray = {0, 1};
