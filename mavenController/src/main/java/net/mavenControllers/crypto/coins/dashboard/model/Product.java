@@ -64,6 +64,14 @@ public class Product {
         this.name = name;
     }
 
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
     public String getCategory() {
         return category;
     }
