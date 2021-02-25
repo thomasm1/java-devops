@@ -19,8 +19,11 @@ public class Product {
 	
 	@Column(name="name")
     private String name;
-	
-	@Column(name = "category")
+
+    @Column(name="symbol")
+    private String symbol;
+
+    @Column(name = "category")
     private String category;
 	
 	@Column(name = "retail_price")
@@ -29,19 +32,20 @@ public class Product {
 	@Column(name = "discounted_price")
     private Double discountedPrice;
 	
-	@Column(name = "availability")
-    private Boolean availability;
+	@Column(name = "volume")
+    private Double volume;
 
     public Product() {
     }
 
-    public Product(Long id, String name, String category, Double retailPrice, Double discountedPrice, Boolean availability) {
+    public Product(Long id, String name, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume) {
         this.id = id;
         this.name = name;
+        this.symbol = symbol;
         this.category = category;
         this.retailPrice = retailPrice;
         this.discountedPrice = discountedPrice;
-        this.availability = availability;
+        this.volume = volume;
     }
 
     public Long getId() {
@@ -84,11 +88,11 @@ public class Product {
         this.discountedPrice = discountedPrice;
     }
 
-    public Boolean getAvailability() {
-        return availability;
+    public Double getvolume() {
+        return volume;
     }
 
-    public void setAvailability(Boolean availability) {
-        this.availability = availability;
+    public void setvolume(Double volume) {
+        this.volume = volume;
     }
 }

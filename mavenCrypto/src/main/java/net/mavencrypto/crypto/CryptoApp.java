@@ -44,10 +44,10 @@ public class CryptoApp {
 		CryptoObserver observerHigh = new CryptoObserver(cryptoGrabber);
 
 		cryptoGrabber.setETHPrice(1497);
-		cryptoGrabber.setBTCPrice(32060);
+		cryptoGrabber.setBTCPrice(35060);
 		cryptoGrabber.setHEXPrice(.02240);
-		cryptoGrabber.setLINKPrice(24.099);
-		cryptoGrabber.setXRPPrice(.4940);
+		cryptoGrabber.setLINKPrice(29.099);
+		cryptoGrabber.setXRPPrice(.6240);
 
 		// Delete one of the observers
 		// cryptoGrabber.unregister(observerHigh);

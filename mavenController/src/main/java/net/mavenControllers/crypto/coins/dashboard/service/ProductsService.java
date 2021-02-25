@@ -14,7 +14,7 @@ public interface ProductsService {
 	
 	public List<Product> getProductsByCategory(String category);
 	
-	public List<Product> getProductsByCategoryAndAvailability(String category, Boolean availability);
+	public List<Product> getProductsByCategoryAndVolume(String category, Double volume);
 	
 	public List<Product> getProducts();
 

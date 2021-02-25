@@ -37,9 +37,9 @@ public class ProductServiceImpl implements ProductsService {
 	}
 
 	@Override
-	public List<Product> getProductsByCategoryAndAvailability(String category, Boolean availability) {
+	public List<Product> getProductsByCategoryAndVolume(String category, Double volume) {
 		
-		return prRep.findAllByCategoryAndAvailability(category, availability);
+		return prRep.findAllByCategoryAndVolume(category, volume);
 	}
 
 	@Override

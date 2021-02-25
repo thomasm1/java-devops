@@ -91,12 +91,12 @@ public class ProductsController {
 //		return prServ.getProductsByCategory(category);
 //	}
 				
-	// 5. Return products by category and availability 
+	// 5. Return products by category and volume 
 	// it is working, no response type yet
-	@GetMapping(("/category_availability/{category}/{availability}"))
-	public List<Product> getProductsByCategoryAndAvailability(@PathVariable("category") String category, 
-															@PathVariable("availability") Boolean availability){
-		return prServ.getProductsByCategoryAndAvailability(category, availability);
+	@GetMapping(("/category_volume/{category}/{volume}"))
+	public List<Product> getProductsByCategoryAndVolume(@PathVariable("category") String category, 
+															@PathVariable("volume") Double volume){
+		return prServ.getProductsByCategoryAndVolume(category, volume);
 	}
 	
 	// 6. Gett All products  SHOWING THE CORRECT STATUS, RETURN ITEMS IN ASC ORDER
