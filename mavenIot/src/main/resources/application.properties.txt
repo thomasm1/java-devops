@@ -1,3 +1,3 @@
 twilio.account_sid = ACd547181ee3503e5f866f3b84991f8e55
-twilio.auth_token = ${TWILIO_TOKEN}
-twilio.trial_number = +12677056363
+twilio.auth_token = ${TWILIO_TOKEN}  # eb197589252e78cc57ee89edbb59a247
+twilio.trial_number = +19527773523
