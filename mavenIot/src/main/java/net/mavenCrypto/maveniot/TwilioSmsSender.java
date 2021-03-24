@@ -11,7 +11,8 @@ import org.springframework.stereotype.Service;
 @Service("twilio")
 public class TwilioSmsSender implements SmsSender {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(TwilioSmsSender.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TwilioSmsSender.class);
+
     private final TwilioConfiguration twilioConfiguration;
 
     @Autowired
@@ -22,20 +23,22 @@ public class TwilioSmsSender implements SmsSender {
     @Override
     public void sendSms(SmsRequest smsRequest) {
         if (isPhoneNumberValid(smsRequest.getPhoneNumber())) {
-            phoneNumber to = new PhoneNumber(smsRequest.getPhoneNumber());
-            phoneNumber to = new PhoneNumber(twilioConfiguration.getTrialNumber());
+            PhoneNumber to = new PhoneNumber(smsRequest.getPhoneNumber());
+            PhoneNumber from = new PhoneNumber(twilioConfiguration.getTrialNumber());
             String message = smsRequest.getMessage();
             MessageCreator creator = Message.creator(to, from, message);
             creator.create();
-            LOGGER.info("Send sms {}" + smsRequest);
+            LOGGER.info("Send sms {}", smsRequest);
         } else {
             throw new IllegalArgumentException(
                     "Phone number [" + smsRequest.getPhoneNumber() + "] is not a valid number"
             );
         }
+
     }
+
     private boolean isPhoneNumberValid(String phoneNumber) {
-        // Google phone # validator
+        // TODO: Implement phone number validator
         return true;
     }
 }
