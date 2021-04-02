@@ -10,7 +10,6 @@ public class Configuration {
 
     @Bean(name = "entityManagerFactory")
     public LocalSessionFactoryBean sessionFactory() {
-
         final Logger LOGGER = LoggerFactory.getLogger(Configuration.class);
 
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();

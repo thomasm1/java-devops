@@ -8,14 +8,14 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages={"net.mavenControllers.crypto.coins.dashboard.controller", "net.mavenControllers.crypto.coins.dashboard.repository", "net.mavenControllers.crypto.coins.dashboard.service"})
-public class Application {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Application.class);
+public class AppController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(AppController.class);
 
     public static void main(String[] args) {
         LOGGER.info("starting info message");
         LOGGER.warn("starting warn message");
         LOGGER.error("starting error message");
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(AppController.class, args);
     }
 
 }
