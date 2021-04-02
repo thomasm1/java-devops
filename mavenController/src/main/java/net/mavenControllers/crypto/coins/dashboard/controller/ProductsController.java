@@ -1,25 +1,23 @@
 package net.mavenControllers.crypto.coins.dashboard.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import net.mavenControllers.crypto.coins.dashboard.model.Product;
 import net.mavenControllers.crypto.coins.dashboard.service.ProductsService;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/products")
 public class ProductsController {
-	
+	private static Map<Long, Product> productRepo = new HashMap<>();
+
 	@Autowired
 	public ProductsService prServ;
 	
@@ -32,7 +30,8 @@ public class ProductsController {
 			prServ.getProductById(product.getId()).equals(null);
 
 		}catch(Exception e) {
-			
+
+			productRepo.put(product.getId(), product);
 			prServ.addProduct(product);
 			
 			return new ResponseEntity<Product>( HttpStatus.CREATED);
@@ -57,7 +56,10 @@ public class ProductsController {
 			
 		}
 		if (prServ.getProductById(id).getId().equals(product.getId())) {
+			productRepo.remove(id);
 			prServ.updateProductById(product);
+			productRepo.put(id, product);
+
 			return new ResponseEntity<Product>( HttpStatus.OK);
 		}else {
 			return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
@@ -105,5 +107,12 @@ public class ProductsController {
 		return prServ.getProducts();
 		
 	}
+
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Object> delete(@PathVariable("id") String id) {
+		productRepo.remove(id);
+		return new ResponseEntity<Object>("Product deleted successfully", HttpStatus.OK);
+	}
+
 
 }
