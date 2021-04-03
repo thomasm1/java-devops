@@ -18,5 +18,5 @@ public interface ProductsService {
 	
 	public List<Product> getProducts();
 
-
+	public boolean deleteProductById(Long id);
 }

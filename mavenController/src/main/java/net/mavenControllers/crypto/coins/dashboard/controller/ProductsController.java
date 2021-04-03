@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import net.mavenControllers.crypto.coins.dashboard.exception.ProductNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -43,28 +44,24 @@ public class ProductsController {
 	}
 	
 	// 2. Update a product by id 	WORKING BOTH STATUSES
-	@PutMapping("/{id}")
+	@PutMapping(value="/{id}", consumes="application/json")
 	public ResponseEntity<Product> updateProductById(@PathVariable("id") Long id, @RequestBody Product product) {
-		
-		try {
-			
+		 try {
 			prServ.getProductById(id).equals(null);
 
 		}catch(Exception e) {
-			
+
 			return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
-			
+
 		}
 		if (prServ.getProductById(id).getId().equals(product.getId())) {
-			productRepo.remove(id);
 			prServ.updateProductById(product);
-			productRepo.put(id, product);
-
 			return new ResponseEntity<Product>( HttpStatus.OK);
 		}else {
 			return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
 		}
-		
+
+
 	}
 		
 	
@@ -72,15 +69,15 @@ public class ProductsController {
 	@GetMapping("/{id}")
 	public ResponseEntity<Product> getProductById(@PathVariable("id") Long id) {
 		
-//		try {
-//			
-//			prServ.getProductById(id).equals(null);
-//
-//		}catch(NoSuchElementException e) {
-//			
-//			return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
-//			
-//		}
+		try {
+
+			prServ.getProductById(id).equals(null);
+
+		}catch(ProductNotFoundException e) {
+
+			return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
+
+		}
 		
 		return new ResponseEntity<Product>( HttpStatus.OK);
 	}
@@ -88,10 +85,10 @@ public class ProductsController {
 	
 	// 4. Return products by category
 	// it is working, no response type yet
-//	@GetMapping("/{category}")
-//	public List<Product> getProductsByCategory(@PathVariable("category") String category){
-//		return prServ.getProductsByCategory(category);
-//	}
+	@GetMapping("/category/{category}")
+	public List<Product> getProductsByCategory(@PathVariable("category") String category){
+		return prServ.getProductsByCategory(category);
+	}
 				
 	// 5. Return products by category and volume 
 	// it is working, no response type yet
@@ -109,7 +106,7 @@ public class ProductsController {
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Object> delete(@PathVariable("id") String id) {
+	public ResponseEntity<Object> delete(@PathVariable("id") long id) {
 		productRepo.remove(id);
 		return new ResponseEntity<Object>("Product deleted successfully", HttpStatus.OK);
 	}

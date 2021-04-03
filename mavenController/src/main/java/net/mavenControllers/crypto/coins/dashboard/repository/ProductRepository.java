@@ -16,4 +16,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 //	@Query("select u from User u where u.isDriver = ?1 and u.batch.batchLocation = ?2")
 
 	public List<Product> findAllByCategoryAndVolume(String category, Double volume);
+
+	boolean deleteProductById(Product product);
 }
