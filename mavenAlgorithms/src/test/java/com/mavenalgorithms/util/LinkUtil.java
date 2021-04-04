@@ -1,4 +1,4 @@
-package test.java.com.mavenalgorithms.util;
+package com.mavenalgorithms.util;
 
 import java.net.HttpURLConnection;
 import java.net.URL;

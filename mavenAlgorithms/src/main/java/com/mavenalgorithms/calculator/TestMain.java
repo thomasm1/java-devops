@@ -15,18 +15,12 @@ public class TestMain {
     public static void main(String[] args) {
 
 //        String exp = "9 * 9 - 1 * 7 / 8 + 30 ^ 2 % 3";
-        String exp = "9 * 9 - 1 * 7 / 8 + 130 ^ 2 % 3";
+        String exp = "9 * 9 - 1 * 7 / 8 + 154 ^ 2 % 3";
 
         Calculator.addOperation("^", (a, b) -> (int) Math.pow(a, b));
         Calculator.addOperation("%", (a, b) -> a % b);
 
-        System.out.println("answer" +
-
-
-                Calculator.calculate(exp)
-
-
-        );
+        System.out.println("answer" +    Calculator.calculate(exp)       );
 
 
         TriConsumer personProperties = (firstName, lastName, age) -> {   };

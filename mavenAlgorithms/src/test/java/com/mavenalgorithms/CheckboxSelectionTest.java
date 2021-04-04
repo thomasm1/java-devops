@@ -1,11 +1,12 @@
-package test.java.com.mavenalgorithms;
+package com.mavenalgorithms;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.mavenalgorithms.computation.pages.TableDemoPage;
-import test.java.com.mavenalgorithms.supplier.*;
+import com.mavenalgorithms.supplier.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
+import com.mavenalgorithms.SearchCriteriaFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

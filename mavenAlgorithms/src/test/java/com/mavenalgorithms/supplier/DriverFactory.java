@@ -1,4 +1,4 @@
-package test.java.com.mavenalgorithms.supplier;
+package com.mavenalgorithms.supplier;
 
 import com.google.common.base.Supplier;
 import org.openqa.selenium.WebDriver;

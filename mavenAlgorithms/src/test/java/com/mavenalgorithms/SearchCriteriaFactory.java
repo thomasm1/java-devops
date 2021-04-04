@@ -1,4 +1,4 @@
-package test.java.com.mavenalgorithms;
+package com.mavenalgorithms;
 
 import org.openqa.selenium.WebElement;
 

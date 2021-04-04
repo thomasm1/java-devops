@@ -1,6 +1,6 @@
-package test.java.com.mavenalgorithms;
+package com.mavenalgorithms;
 
-import test.java.com.mavenalgorithms.supplier.*;
+import com.mavenalgorithms.supplier.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,7 +1,7 @@
-package test.java.com.mavenalgorithms;
+package com.mavenalgorithms;
 
-import test.java.com.mavenalgorithms.util.*;
-import test.java.com.mavenalgorithms.supplier.*;
+import com.mavenalgorithms.supplier.DriverFactory;
+import com.mavenalgorithms.util.LinkUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
