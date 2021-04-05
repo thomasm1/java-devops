@@ -11,12 +11,12 @@ import java.util.Map;
 public class DriverFactory {
 
     private static final Supplier<WebDriver> chromeSupplier = () -> {
-        System.setProperty("webdriver.chrome.driver", "/home/qa/.arquillian/drone/chrome/2.38/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         return new ChromeDriver();
     };
 
     private static final Supplier<WebDriver> firefoxSupplier = () -> {
-        System.setProperty("webdriver.gecko.driver", "/home/qa/.arquillian/drone/firefox/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
         return new FirefoxDriver();
     };
 
