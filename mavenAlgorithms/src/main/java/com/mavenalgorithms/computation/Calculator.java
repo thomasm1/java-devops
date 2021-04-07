@@ -1,4 +1,4 @@
-package com.mavenalgorithms.calculator;
+package com.mavenalgorithms.computation;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,10 +20,11 @@ public class Calculator {
 
     public static int calculate(String expression){
         String[] exps = expression.split(" ");
-        int onScreenNumber = Integer.parseInt(exps[0]);
+        int onScreenNumber = Integer.parseInt(exps[0]); // 19
         for (int i = 1; i < exps.length; i = i + 2) {
-            MathOperation op = map.get(exps[i]);
-            int enteredNumber = Integer.parseInt(exps[i+1]);
+
+            MathOperation op = map.get(exps[i]);  // *
+            int enteredNumber = Integer.parseInt(exps[i+1]); // 9
             onScreenNumber = calculate(onScreenNumber, op, enteredNumber);
         }
         return onScreenNumber;

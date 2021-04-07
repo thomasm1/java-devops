@@ -1,4 +1,4 @@
-package com.mavenalgorithms.calculator;
+package com.mavenalgorithms.computation;
 
 @FunctionalInterface
 public interface MathOperation {
