@@ -34,7 +34,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/cars")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @Api(tags= {"Car"})
 public class CarController {
 	

@@ -47,7 +47,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @Api(tags= {"User"})
 public class UserController {
 	
@@ -164,7 +164,7 @@ public class UserController {
 	 */
 	
 	@ApiOperation(value="Adds a new user", tags= {"User"})
-	@PostMapping
+	@PostMapping("/")
 	public Map<String, Set<String>> addUser(@Valid @RequestBody User user, BindingResult result) {
 		
 		System.out.println(user.isDriver());

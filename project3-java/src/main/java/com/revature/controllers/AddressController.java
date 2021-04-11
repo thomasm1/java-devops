@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/address")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @Api(tags= {"Address"})
 public class AddressController {
 
