@@ -1,4 +1,4 @@
-package guru.springframework.services.jms;
+package us.cryptomaven.services.jms;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
@@ -6,9 +6,6 @@ import org.springframework.stereotype.Service;
 
 import javax.jms.Queue;
 
-/**
- * Created by jt on 5/6/16.
- */
 @Service
 public class JmsTextMessageServiceImpl implements JmsTextMessageService {
 

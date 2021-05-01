@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import us.cryptomaven.services.ProductService;
 
-import java.util.List;
 @Controller
 public class ProductController {
 
     private ProductService productService;
 
     @Autowired
-    public void setProductService(ProductService productService) {this.productService = productService;}
+    public void setProductService(ProductService productService) {
+        this.productService = productService;
+    }
 
     @RequestMapping("/product/{id}")
     public String getProductById(@PathVariable Integer id, Model model) {

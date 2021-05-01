@@ -1,10 +1,7 @@
-package guru.springframework.repositories;
+package us.cryptomaven.repositories;
 
-import guru.springframework.domain.Author;
+import us.cryptomaven.domain.Author;
 import org.springframework.data.repository.CrudRepository;
 
-/**
- * Created by jt on 5/6/16.
- */
 public interface AuthorRepository extends CrudRepository<Author, Integer> {
 }

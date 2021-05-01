@@ -1,17 +1,14 @@
-package guru.springframework.services;
+package us.cryptomaven.services;
 
-import guru.springframework.domain.Product;
-import guru.springframework.repositories.ProductRepository;
-import guru.springframework.services.jms.JmsTextMessageService;
+import us.cryptomaven.domain.Product;
+import us.cryptomaven.repositories.ProductRepository;
+import us.cryptomaven.services.jms.JmsTextMessageService;
 import org.apache.commons.collections4.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by jt on 1/26/16.
- */
 @Service
 public class ProductServiceImpl implements ProductService {
 

@@ -1,11 +1,8 @@
-package guru.springframework.services.jms;
+package us.cryptomaven.services.jms;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 5/6/16.
- */
 @Component
 public class JmsTextMessageListener {
 
