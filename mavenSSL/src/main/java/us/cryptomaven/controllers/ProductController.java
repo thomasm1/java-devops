@@ -1,26 +1,24 @@
 package us.cryptomaven.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import us.cryptomaven.services.ProductService;
 
 import java.util.List;
-
-@RestController
-@CrossOrigin(origins = "*")
-@RequestMapping("/products")
+@Controller
 public class ProductController {
 
-//    private ProductService productService;
+    private ProductService productService;
 
-    @RequestMapping("/list")
-    public List<Object> listProducts() {
-        return null;
-    }
+    @Autowired
+    public void setProductService(ProductService productService) {this.productService = productService;}
 
-    @RequestMapping("/test")
-    public String products() {
+    @RequestMapping("/product/{id}")
+    public String getProductById(@PathVariable Integer id, Model model) {
+        model.addAttribute("product", productService.getProduct(id));
         return "products test";
     }
 }
