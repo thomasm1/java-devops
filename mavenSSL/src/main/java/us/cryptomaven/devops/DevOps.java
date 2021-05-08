@@ -37,56 +37,53 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        Author jt = new Author();
-        jt.setFirstName("John");
-        jt.setLastName("Thompson");
-        jt.setId(1);
-        jt.setImage("instructor_jt.jpg");
+        Author tm = new Author();
+        tm.setFirstName("Thomas");
+        tm.setLastName("Maestas");
+        tm.setId(1);
+        tm.setImage("profile.jpg");
 
-        jt = authorRepository.save(jt);
+        tm = authorRepository.save(tm);
 
         ProductCategory springIntroCat = new ProductCategory();
         springIntroCat.setId(1);
-        springIntroCat.setCategory("Spring Introduction");
+        springIntroCat.setCategory("CryptoMaven 1");
 
         springIntroCat = productCategoryRepository.save(springIntroCat);
 
         ProductCategory springCoreCat = new ProductCategory();
         springCoreCat.setId(2);
-        springCoreCat.setCategory("Spring Core");
+        springCoreCat.setCategory("CryptoMaven 2");
 
         springCoreCat = productCategoryRepository.save(springCoreCat);
 
         ProductCategory springBootCat = new ProductCategory();
         springBootCat.setId(3);
-        springBootCat.setCategory("Spring Boot");
+        springBootCat.setCategory("CryptoMaven 3");
 
         springBootCat = productCategoryRepository.save(springBootCat);
 
         ProductCategory thymeleafCat = new ProductCategory();
         thymeleafCat.setId(4);
-        thymeleafCat.setCategory("Thymeleaf");
+        thymeleafCat.setCategory("CryptoMaven 4");
 
         thymeleafCat = productCategoryRepository.save(thymeleafCat);
 
         ProductCategory geapCat = new ProductCategory();
         geapCat.setId(5);
-        geapCat.setCategory("G.E.A.P");
+        geapCat.setCategory("CryptoMaven 5");
 
         geapCat = productCategoryRepository.save(geapCat);
 
         Product springIntro = new Product();
         springIntro.setId(1);
-        springIntro.setCourseName("Introduction to Spring");
-        springIntro.setCourseSubtitle("Start Learning Spring!");
-        springIntro.setAuthor(jt);
-        springIntro.setCourseDescription("Why would you want to learn about the Spring Framework? Simple, Spring is the most widely used framework in the enterprise today. Major companies all over the world are hiring programmers who know the Spring Framework.\n" +
-                "\n" +
-                "My Introduction Spring Framework Tutorial is designed to give you an introduction to the Spring Framework. This course is written for beginners. Ideally before taking the course, you should already have a foundation with the Java programming language. You don't need to be an expert in Java, but you should the basics of Object Oriented Programming with Java.\n" +
-                "\n" +
-                "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
+        springIntro.setCourseName("CryptoMaven");
+        springIntro.setCourseSubtitle("Armchair Bitcoinist");
+        springIntro.setAuthor(tm);
+        springIntro.setCourseDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+
         springIntro.setPrice(new BigDecimal("0"));
-        springIntro.setImageUrl("SpringIntroThumb.png");
+        springIntro.setImageUrl("TMMmoonscape_450.jpg");
         springIntro.getProductCategories().add(springIntroCat);
         springIntro.getProductCategories().add(springBootCat);
 
@@ -94,16 +91,13 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCoreUltimate = new Product();
         springCoreUltimate.setId(2);
-        springCoreUltimate.setCourseName("Spring Core Ultimate");
-        springCoreUltimate.setCourseSubtitle("Ultimate Bundle of Spring Core!");
-        springCoreUltimate.setAuthor(jt);
-        springCoreUltimate.setCourseDescription("Why would you want to learn about the Spring Framework? Simple, Spring is the most widely used framework in the enterprise today. Major companies all over the world are hiring programmers who know the Spring Framework.\n" +
-                "\n" +
-                "My Introduction Spring Framework Tutorial is designed to give you an introduction to the Spring Framework. This course is written for beginners. Ideally before taking the course, you should already have a foundation with the Java programming language. You don't need to be an expert in Java, but you should the basics of Object Oriented Programming with Java.\n" +
-                "\n" +
-                "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
+        springCoreUltimate.setCourseName("CryptoMaven 2");
+        springCoreUltimate.setCourseSubtitle("Dailytech");
+        springCoreUltimate.setAuthor(tm);
+        springCoreUltimate.setCourseDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+
         springCoreUltimate.setPrice(new BigDecimal("199"));
-        springCoreUltimate.setImageUrl("SpringCoreUltimateThumb.png");
+        springCoreUltimate.setImageUrl("tmm2.png");
         springCoreUltimate.getProductCategories().add(springCoreCat);
         springCoreUltimate.getProductCategories().add(springBootCat);
 
@@ -111,32 +105,30 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product thymeleaf = new Product();
         thymeleaf.setId(3);
-        thymeleaf.setCourseName("Thymeleaf");
-        thymeleaf.setCourseSubtitle("Thymeleaf and Spring!");
-        thymeleaf.setAuthor(jt);
-        thymeleaf.setCourseDescription("Why would you want to learn about the Spring Framework? Simple, Spring is the most widely used framework in the enterprise today. Major companies all over the world are hiring programmers who know the Spring Framework.\n" +
+        thymeleaf.setCourseName("CryptoMaven 3");
+        thymeleaf.setCourseSubtitle("Thymeleaf");
+        thymeleaf.setAuthor(tm);
+        thymeleaf.setCourseDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
                 "\n" +
-                "My Introduction Spring Framework Tutorial is designed to give you an introduction to the Spring Framework. This course is written for beginners. Ideally before taking the course, you should already have a foundation with the Java programming language. You don't need to be an expert in Java, but you should the basics of Object Oriented Programming with Java.\n" +
-                "\n" +
-                "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
+                ".\n" +
+                "\n");
         thymeleaf.setPrice(new BigDecimal("199"));
-        thymeleaf.setImageUrl("ThymeleafThumb.png");
+        thymeleaf.setImageUrl("dailytech.png");
         thymeleaf.getProductCategories().add(thymeleafCat);
 
         thymeleaf = productRepository.save(thymeleaf);
 
         Product springCore = new Product();
         springCore.setId(4);
-        springCore.setCourseName("Spring Core");
-        springCore.setCourseSubtitle("Spring Core - mastering Spring!");
-        springCore.setAuthor(jt);
-        springCore.setCourseDescription("Why would you want to learn about the Spring Framework? Simple, Spring is the most widely used framework in the enterprise today. Major companies all over the world are hiring programmers who know the Spring Framework.\n" +
+        springCore.setCourseName("CryptoMaven 4");
+        springCore.setCourseSubtitle("Armchair Bitcoinist");
+        springCore.setAuthor(tm);
+        springCore.setCourseDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
                 "\n" +
-                "My Introduction Spring Framework Tutorial is designed to give you an introduction to the Spring Framework. This course is written for beginners. Ideally before taking the course, you should already have a foundation with the Java programming language. You don't need to be an expert in Java, but you should the basics of Object Oriented Programming with Java.\n" +
-                "\n" +
-                "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
+                "" +
+                "Java\n");
         springCore.setPrice(new BigDecimal("199"));
-        springCore.setImageUrl("SpringCoreThumb.png");
+        springCore.setImageUrl("tmm4.png");
         springCore.getProductCategories().add(springCoreCat);
         springCore.getProductCategories().add(springBootCat);
 
@@ -144,16 +136,13 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCoreAdv = new Product();
         springCoreAdv.setId(5);
-        springCoreAdv.setCourseName("Spring Core Advanced");
-        springCoreAdv.setCourseSubtitle("Advanced Spring Core!");
-        springCoreAdv.setAuthor(jt);
-        springCoreAdv.setCourseDescription("Why would you want to learn about the Spring Framework? Simple, Spring is the most widely used framework in the enterprise today. Major companies all over the world are hiring programmers who know the Spring Framework.\n" +
-                "\n" +
-                "My Introduction Spring Framework Tutorial is designed to give you an introduction to the Spring Framework. This course is written for beginners. Ideally before taking the course, you should already have a foundation with the Java programming language. You don't need to be an expert in Java, but you should the basics of Object Oriented Programming with Java.\n" +
-                "\n" +
-                "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
+        springCoreAdv.setCourseName("CryptoMaven 5");
+        springCoreAdv.setCourseSubtitle("Armchair Bitcoinist");
+        springCoreAdv.setAuthor(tm);
+        springCoreAdv.setCourseDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n");
+
         springCoreAdv.setPrice(new BigDecimal("199"));
-        springCoreAdv.setImageUrl("SpringCoreAdvancedThumb.png");
+        springCoreAdv.setImageUrl("tmm3.png");
         springCoreAdv.getProductCategories().add(springCoreCat);
         springCoreAdv.getProductCategories().add(springBootCat);
 
@@ -161,16 +150,12 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCoreDevOps = new Product();
         springCoreDevOps.setId(6);
-        springCoreDevOps.setCourseName("Spring Core Dev-Ops");
-        springCoreDevOps.setCourseSubtitle("Deploying Spring in the Enterprise and the cloud!");
-        springCoreDevOps.setAuthor(jt);
-        springCoreDevOps.setCourseDescription("Why would you want to learn about the Spring Framework? Simple, Spring is the most widely used framework in the enterprise today. Major companies all over the world are hiring programmers who know the Spring Framework.\n" +
-                "\n" +
-                "My Introduction Spring Framework Tutorial is designed to give you an introduction to the Spring Framework. This course is written for beginners. Ideally before taking the course, you should already have a foundation with the Java programming language. You don't need to be an expert in Java, but you should the basics of Object Oriented Programming with Java.\n" +
-                "\n" +
-                "You will learn what Dependency Injection is, and how Spring uses Inversion of Control to leverage Dependency Injection. Next in my course, I will walk you step by step through building your very first Spring Framework application. I'll show you hot to use the Spring Initializer and Spring Boot to jumpstart your Spring Framework project. Ideally, you can follow along and create your own Spring project. I know it can be frustrating to follow along in a course and run into errors. So don't worry, I have the complete source code examples in Git for you to checkout and use.");
+        springCoreDevOps.setCourseName("CryptoMaven 5");
+        springCoreDevOps.setCourseSubtitle("Cloud");
+        springCoreDevOps.setAuthor(tm);
+        springCoreDevOps.setCourseDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
         springCoreDevOps.setPrice(new BigDecimal("199"));
-        springCoreDevOps.setImageUrl("SpringCoreDevOpsThumb.png");
+        springCoreDevOps.setImageUrl("shadowbox.png");
         springCoreDevOps.getProductCategories().add(springCoreCat);
         springCoreDevOps.getProductCategories().add(springBootCat);
 
