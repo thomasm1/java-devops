@@ -9,5 +9,19 @@ public interface ProductService {
 
     Product getProduct(Integer id);
 
+    List<Product> getProducts();
+
     List<Product> listProducts();
+
+    public Product addProduct(Product product);
+
+    public Product updateProductById(Product product);
+
+    public Product getProductById(Integer id);
+
+    public List<Product> getProductsByCategory(String category);
+
+    public List<Product> getProductsByCategoryAndVolume(String category, Double volume);
+
+    public boolean deleteProductById(Integer id);
 }

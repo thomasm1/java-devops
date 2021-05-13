@@ -77,10 +77,10 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springIntro = new Product();
         springIntro.setId(1);
-        springIntro.setCourseName("CryptoMaven");
-        springIntro.setCourseSubtitle("Armchair Bitcoinist");
+        springIntro.setCoinName("CryptoMaven");
+        springIntro.setCoinSubtitle("Armchair Bitcoinist");
         springIntro.setAuthor(tm);
-        springIntro.setCourseDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+        springIntro.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         springIntro.setPrice(new BigDecimal("0"));
         springIntro.setImageUrl("TMMmoonscape_450.jpg");
@@ -91,10 +91,10 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCoreUltimate = new Product();
         springCoreUltimate.setId(2);
-        springCoreUltimate.setCourseName("CryptoMaven 2");
-        springCoreUltimate.setCourseSubtitle("Dailytech");
+        springCoreUltimate.setCoinName("CryptoMaven 2");
+        springCoreUltimate.setCoinSubtitle("Dailytech");
         springCoreUltimate.setAuthor(tm);
-        springCoreUltimate.setCourseDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+        springCoreUltimate.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         springCoreUltimate.setPrice(new BigDecimal("199"));
         springCoreUltimate.setImageUrl("tmm2.png");
@@ -105,10 +105,10 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product thymeleaf = new Product();
         thymeleaf.setId(3);
-        thymeleaf.setCourseName("CryptoMaven 3");
-        thymeleaf.setCourseSubtitle("Thymeleaf");
+        thymeleaf.setCoinName("CryptoMaven 3");
+        thymeleaf.setCoinSubtitle("Thymeleaf");
         thymeleaf.setAuthor(tm);
-        thymeleaf.setCourseDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
+        thymeleaf.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
                 "\n" +
                 ".\n" +
                 "\n");
@@ -120,10 +120,10 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCore = new Product();
         springCore.setId(4);
-        springCore.setCourseName("CryptoMaven 4");
-        springCore.setCourseSubtitle("Armchair Bitcoinist");
+        springCore.setCoinName("CryptoMaven 4");
+        springCore.setCoinSubtitle("Armchair Bitcoinist");
         springCore.setAuthor(tm);
-        springCore.setCourseDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
+        springCore.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
                 "\n" +
                 "" +
                 "Java\n");
@@ -136,10 +136,10 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCoreAdv = new Product();
         springCoreAdv.setId(5);
-        springCoreAdv.setCourseName("CryptoMaven 5");
-        springCoreAdv.setCourseSubtitle("Armchair Bitcoinist");
+        springCoreAdv.setCoinName("CryptoMaven 5");
+        springCoreAdv.setCoinSubtitle("Armchair Bitcoinist");
         springCoreAdv.setAuthor(tm);
-        springCoreAdv.setCourseDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n");
+        springCoreAdv.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n");
 
         springCoreAdv.setPrice(new BigDecimal("199"));
         springCoreAdv.setImageUrl("tmm3.png");
@@ -150,10 +150,10 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         Product springCoreDevOps = new Product();
         springCoreDevOps.setId(6);
-        springCoreDevOps.setCourseName("CryptoMaven 5");
-        springCoreDevOps.setCourseSubtitle("Cloud");
+        springCoreDevOps.setCoinName("CryptoMaven 5");
+        springCoreDevOps.setCoinSubtitle("Cloud");
         springCoreDevOps.setAuthor(tm);
-        springCoreDevOps.setCourseDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+        springCoreDevOps.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
         springCoreDevOps.setPrice(new BigDecimal("199"));
         springCoreDevOps.setImageUrl("shadowbox.png");
         springCoreDevOps.getProductCategories().add(springCoreCat);

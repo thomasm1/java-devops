@@ -1,5 +1,6 @@
 package us.cryptomaven.services;
 
+import org.springframework.data.domain.Sort;
 import us.cryptomaven.domain.Product;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.services.jms.JmsTextMessageService;
@@ -11,7 +12,8 @@ import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
-
+    
+    @Autowired
     private ProductRepository productRepository;
     private JmsTextMessageService jmsTextMessageService;
 
@@ -37,5 +39,39 @@ public class ProductServiceImpl implements ProductService {
         jmsTextMessageService.sendTextMessage("Listing Products");
         return IteratorUtils.toList(productRepository.findAll().iterator());
     }
+    @Override
+    public Product addProduct(Product product) {
+        return productRepository.save(product);
+    }
 
+    @Override
+    public Product updateProductById(Product product) {
+        return productRepository.save(product);
+    }
+
+    public Product getProductById(Integer id) {
+        return productRepository.findOne(id); //.get();
+    }
+
+    @Override
+    public List<Product> getProductsByCategory(String category) {
+        return productRepository.findAllByCategory(category);
+    }
+
+    @Override
+    public List<Product> getProductsByCategoryAndVolume(String category, Double volume) {
+
+        return productRepository.findAllByCategoryAndVolume(category, volume);
+    }
+
+    @Override
+    public List<Product> getProducts() {
+        Sort sort = new Sort(Sort.Direction.ASC, "id");
+        return (List<Product>) productRepository.findAll(sort);
+
+    }
+
+    public boolean deleteProductById(Integer id) {
+        return productRepository.deleteProductById(productRepository.findOne(id));// .get());
+    }
 }

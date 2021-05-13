@@ -1,12 +1,24 @@
 package us.cryptomaven.domain;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Version;
+import javax.persistence.ManyToOne;
+import javax.persistence.ManyToMany;
+import javax.persistence.PreUpdate;
+import javax.persistence.PrePersist; 
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Entity
+@Table
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,17 +27,112 @@ public class Product {
     @Version
     private Integer version;
 
+    public Product() {};
+
+    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinSubtitle, String coinDescription, String name, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, Author author, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
+        this.version = version;
+        this.dateCreated = dateCreated;
+        this.lastUpdated = lastUpdated;
+        this.coinName = coinName;
+        this.coinSubtitle = coinSubtitle;
+        this.coinDescription = coinDescription;
+        this.name = name;
+        this.symbol = symbol;
+        this.category = category;
+        this.retailPrice = retailPrice;
+        this.discountedPrice = discountedPrice;
+        this.volume = volume;
+        this.author = author;
+        this.price = price;
+        this.productCategories = productCategories;
+        this.imageUrl = imageUrl;
+    }
+
+
     private Date dateCreated;
     private Date lastUpdated;
-    private String courseName;
-    private String courseSubtitle;
+    private String coinName;
+    private String coinSubtitle;
 
     @Column(length = 2000)
-    private String courseDescription;
+    private String coinDescription;
+
+    @Column(name="name")
+    private String name;
+
+    @Column(name="symbol")
+    private String symbol;
+
+    @Column(name = "category")
+    private String category;
+
+    @Column(name = "retail_price")
+    private Double retailPrice;
+
+    @Column(name = "discounted_price")
+    private Double discountedPrice;
+
+    @Column(name = "volume")
+    private Double volume;
+
+    public void setDateCreated(Date dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public void setLastUpdated(Date lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Double getRetailPrice() {
+        return retailPrice;
+    }
+
+    public void setRetailPrice(Double retailPrice) {
+        this.retailPrice = retailPrice;
+    }
+
+    public Double getDiscountedPrice() {
+        return discountedPrice;
+    }
+
+    public void setDiscountedPrice(Double discountedPrice) {
+        this.discountedPrice = discountedPrice;
+    }
+
+    public Double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(Double volume) {
+        this.volume = volume;
+    }
 
     @ManyToOne
     private Author author;
-
     private BigDecimal price;
 
     @ManyToMany
@@ -41,28 +148,28 @@ public class Product {
         this.id = id;
     }
 
-    public String getCourseName() {
-        return courseName;
+    public String getCoinName() {
+        return coinName;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
+    public void setCoinName(String coinName) {
+        this.coinName = coinName;
     }
 
-    public String getCourseSubtitle() {
-        return courseSubtitle;
+    public String getCoinSubtitle() {
+        return coinSubtitle;
     }
 
-    public void setCourseSubtitle(String courseSubtitle) {
-        this.courseSubtitle = courseSubtitle;
+    public void setCoinSubtitle(String coinSubtitle) {
+        this.coinSubtitle = coinSubtitle;
     }
 
-    public String getCourseDescription() {
-        return courseDescription;
+    public String getCoinDescription() {
+        return coinDescription;
     }
 
-    public void setCourseDescription(String courseDescription) {
-        this.courseDescription = courseDescription;
+    public void setCoinDescription(String coinDescription) {
+        this.coinDescription = coinDescription;
     }
 
     public Author getAuthor() {
