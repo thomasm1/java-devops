@@ -5,7 +5,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import us.cryptomaven.domain.Product;
-import us.cryptomaven.exception.ProductNotFoundException;
 import us.cryptomaven.services.ProductService;
 
 import java.util.HashMap;
@@ -32,9 +31,14 @@ public class ProductRestController {
         return "products test";
     }
 
+    //  All products  SHOWING THE CORRECT STATUS, RETURN ITEMS IN ASC ORDER
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public List<Product> getProducts(){
+        return prServ.getProducts();
 
+    }
     // 1. Add a new Product   	WORKING BOTH STATUSES
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value="/add", method = RequestMethod.GET)
     public ResponseEntity<Product> addProduct(@RequestBody Product product) {
 
         try {
@@ -77,44 +81,39 @@ public class ProductRestController {
 
 
     // 3. Return a product by id 	WORKING BOTH STATUSES
-    @RequestMapping("/{id}")
-    public ResponseEntity<Product> getProductById(@PathVariable("id") Integer id) {
-
-        try {
-
-            prServ.getProductById(id).equals(null);
-
-        }catch(ProductNotFoundException e) {
-
-            return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
-
-        }
-
-        return new ResponseEntity<Product>( HttpStatus.OK);
-    }
+//    @RequestMapping(value = "/{id}")
+//    public ResponseEntity<Product> getProductById(@PathVariable("id") Integer id) {
+//
+//        try {
+//
+//            prServ.getProductById(id).equals(null);
+//
+//        }catch(ProductNotFoundException e) {
+//
+//            return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
+//
+//        }
+//
+//        return new ResponseEntity<Product>( HttpStatus.OK);
+//    }
 
 
     // 4. Return products by category
     // it is working, no response type yet
-    @RequestMapping(name="/category/{category}", method = RequestMethod.GET)
-    public List<Product> getProductsByCategory(@PathVariable("category") String category){
-        return prServ.getProductsByCategory(category);
-    }
+//    @RequestMapping(name="/category/{category}", method = RequestMethod.GET)
+//    public List<Product> getProductsByCategory(@PathVariable("category") String category){
+//        return prServ.getProductsByCategory(category);
+//    }
 
-    // 5. Return products by category and volume
-    // it is working, no response type yet
-    @RequestMapping(name="/category_volume/{category}/{volume}", method = RequestMethod.GET)
-    public List<Product> getProductsByCategoryAndVolume(@PathVariable("category") String category,
-                                                        @PathVariable("volume") Double volume){
-        return prServ.getProductsByCategoryAndVolume(category, volume);
-    }
+//     5. Return products by category and volume
+//     it is working, no response type yet
+//    @RequestMapping(name="/category_volume/{category}/{volume}", method = RequestMethod.GET)
+//    public List<Product> getProductsByCategoryAndVolume(@PathVariable("category") String category,
+//                                                        @PathVariable("volume") Double volume){
+//        return prServ.getProductsByCategoryAndVolume(category, volume);
+//    }
 
-    // 6. Gett All products  SHOWING THE CORRECT STATUS, RETURN ITEMS IN ASC ORDER
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public List<Product> getProducts(){
-        return prServ.getProducts();
 
-    }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> delete(@PathVariable("id") Integer id) {
