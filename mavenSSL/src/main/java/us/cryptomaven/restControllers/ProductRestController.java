@@ -100,14 +100,14 @@ public class ProductRestController {
 
     // 4. Return products by category
     // it is working, no response type yet
-//    @RequestMapping(name="/category/{category}", method = RequestMethod.GET)
+//    @RequestMapping(value="/category/{category}", method = RequestMethod.GET)
 //    public List<Product> getProductsByCategory(@PathVariable("category") String category){
 //        return prServ.getProductsByCategory(category);
 //    }
 
 //     5. Return products by category and volume
 //     it is working, no response type yet
-//    @RequestMapping(name="/category_volume/{category}/{volume}", method = RequestMethod.GET)
+//    @RequestMapping(value="/category_volume/{category}/{volume}", method = RequestMethod.GET)
 //    public List<Product> getProductsByCategoryAndVolume(@PathVariable("category") String category,
 //                                                        @PathVariable("volume") Double volume){
 //        return prServ.getProductsByCategoryAndVolume(category, volume);

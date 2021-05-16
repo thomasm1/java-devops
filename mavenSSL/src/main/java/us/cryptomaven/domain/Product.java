@@ -19,22 +19,18 @@ public class Product {
     private Date dateCreated;
     private Date lastUpdated;
     private String coinName;
-    private String coinSubtitle;
 
     @Column(length = 2000)
     private String coinDescription;
 
     @ManyToOne
-    private Author author;
+    private User user;
     private BigDecimal price;
 
     @ManyToMany
     private List<ProductCategory> productCategories = new ArrayList<>();
 
     private String imageUrl;
-
-    @Column(name="name")
-    private String name;
 
     @Column(name="symbol")
     private String symbol;
@@ -53,22 +49,20 @@ public class Product {
 
     public Product() {};
 
-    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinSubtitle, String coinDescription, String name, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, Author author, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
+    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinDescription, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, User user, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
         this.version = version;
         this.dateCreated = dateCreated;
         this.lastUpdated = lastUpdated;
         this.coinName = coinName;
-        this.coinSubtitle = coinSubtitle;
 
         this.coinDescription = coinDescription;
-        this.name = name;
         this.symbol = symbol;
         this.category = category;
         this.retailPrice = retailPrice;
 
         this.discountedPrice = discountedPrice;
         this.volume = volume;
-        this.author = author;
+        this.user = user;
         this.price = price;
         this.productCategories = productCategories;
 
@@ -84,14 +78,6 @@ public class Product {
 
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getSymbol() {
@@ -152,14 +138,6 @@ public class Product {
         this.coinName = coinName;
     }
 
-    public String getCoinSubtitle() {
-        return coinSubtitle;
-    }
-
-    public void setCoinSubtitle(String coinSubtitle) {
-        this.coinSubtitle = coinSubtitle;
-    }
-
     public String getCoinDescription() {
         return coinDescription;
     }
@@ -168,12 +146,12 @@ public class Product {
         this.coinDescription = coinDescription;
     }
 
-    public Author getAuthor() {
-        return author;
+    public User getUser() {
+        return user;
     }
 
-    public void setAuthor(Author author) {
-        this.author = author;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public BigDecimal getPrice() {

@@ -114,7 +114,7 @@
             text-align: right;
         }
 
-        .coin-listing .coin-listing-extra-info .coin-author-name {
+        .coin-listing .coin-listing-extra-info .coin-user-name {
             font-size: 15px;
             font-weight: 200;
             line-height: 30px;
@@ -142,26 +142,26 @@
         </div>
     </div>
 
-    <div class="row" sec:authorize="isAuthenticated()">
+    <div class="row" sec:userize="isAuthenticated()">
         <div class="col-md-10 col-md-offset-2">
             <h2 style="color:green">User is Logged In</h2>
             <p sec:authentication="principal.username">userName</p>
         </div>
     </div>
 
-    <div class="row" sec:authorize="!isAuthenticated()">
+    <div class="row" sec:userize="!isAuthenticated()">
         <div class="col-md-10 col-md-offset-2">
             <h2 style="color:red">User is Logged Out</h2>
         </div>
     </div>
 
-    <div class="row" sec:authorize="hasRole('ROLE_ADMIN')">
+    <div class="row" sec:userize="hasRole('ROLE_ADMIN')">
         <div class="col-md-10 col-md-offset-2">
             <h2>User Has Role Admin</h2>
         </div>
     </div>
 
-    <div class="row" sec:authorize="hasRole('ROLE_USER')">
+    <div class="row" sec:userize="hasRole('ROLE_USER')">
         <div class="col-md-10 col-md-offset-2">
             <h2>User Has Role User</h2>
         </div>

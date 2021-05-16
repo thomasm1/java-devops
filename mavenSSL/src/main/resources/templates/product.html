@@ -114,7 +114,7 @@
             text-align: right;
         }
 
-        .coin-listing .coin-listing-extra-info .coin-author-name {
+        .coin-listing .coin-listing-extra-info .coin-user-name {
             font-size: 15px;
             font-weight: 200;
             line-height: 30px;
@@ -159,11 +159,11 @@
                 <div class="col-xs-8">
                     <img align="left" alt="Thomas Maestas"
                          src="../static/images/instructor_jt.jpg"
-                         th:src="@{'/images/'+${product.author.image}}"
+                         th:src="@{'/images/'+${product.user.image}}"
                          class="img-circle"/>
-                    <div class="small coin-author-name" th:text="${(product.author.firstName)
-                                                          + ' ' + (product.author.lastName)}">
-                        Author Name
+                    <div class="small coin-user-name" th:text="${(product.user.firstName)
+                                                          + ' ' + (product.user.lastName)}">
+                        User Name
                     </div>
                 </div>
                 <div class="col-xs-4">
@@ -183,7 +183,7 @@
         </div>
         <div class="col-md-6">
              <div>
-                 <h2 th:text="${product.coinSubtitle}">Coin Title</h2>
+                 <h2 th:text="${product.symbol}">Coin Title</h2>
                  <p th:text="${product.coinDescription}">Adipiscing magna vestibulum fringilla tristique ad a primis ante mi inceptos condimentum curabitur
                      curabitur eu sed nullam ridiculus nunc montes id nostra dui inceptos scelerisque posuere ipsum mus.
                      A scelerisque libero viverra eu condimentum mollis suscipit mi consectetur semper dis ipsum nisi

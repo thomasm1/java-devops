@@ -19,7 +19,7 @@
                     <div class="coin-listing-title" th:text="${product.coinName}">
                         CryptoMaven
                     </div>
-                    <div class="coin-listing-subtitle" th:text="${product.coinSubtitle}">
+                    <div class="coin-listing-subtitle" th:text="${product.symbol}">
                         CryptoMaven
                     </div>
                 </div>
@@ -29,10 +29,10 @@
             <div class="col-xs-8">
                 <img align="left" width="100" alt="Thomas Maestas"
                      src="../static/images/profile.jpg"
-                     th:src="@{'/images/'+${product.author.image}}"
+                     th:src="@{'/images/'+${product.user.image}}"
                      class="img-circle"/>
-                <div class="small coin-author-name" th:text="${(product.author.firstName)
-                                                          + ' ' + (product.author.lastName)}">
+                <div class="small coin-user-name" th:text="${(product.user.firstName)
+                                                          + ' ' + (product.user.lastName)}">
                     Thomas Maestas
                 </div>
             </div>
