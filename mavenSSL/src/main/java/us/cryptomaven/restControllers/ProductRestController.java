@@ -16,7 +16,7 @@ import java.util.Map;
 @RequestMapping("/products")
 public class ProductRestController {
 
-    private static Map<Integer, Product> productRepo = new HashMap<>();
+    private static Map<Long, Product> productRepo = new HashMap<>();
 
     @Autowired
     public ProductService prServ;
@@ -60,7 +60,7 @@ public class ProductRestController {
 
     // 2. Update a product by id 	WORKING BOTH STATUSES
     @RequestMapping(value="/{id}", consumes="application/json", method=RequestMethod.GET)
-    public ResponseEntity<Product> updateProductById(@PathVariable("id") Integer id, @RequestBody Product product) {
+    public ResponseEntity<Product> updateProductById(@PathVariable("id") Long id, @RequestBody Product product) {
         try {
             prServ.getProductById(id).equals(null);
 
@@ -82,7 +82,7 @@ public class ProductRestController {
 
     // 3. Return a product by id 	WORKING BOTH STATUSES
 //    @RequestMapping(value = "/{id}")
-//    public ResponseEntity<Product> getProductById(@PathVariable("id") Integer id) {
+//    public ResponseEntity<Product> getProductById(@PathVariable("id") Long id) {
 //
 //        try {
 //
@@ -116,7 +116,7 @@ public class ProductRestController {
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<Object> delete(@PathVariable("id") Integer id) {
+    public ResponseEntity<Object> delete(@PathVariable("id") Long id) {
         productRepo.remove(id);
         return new ResponseEntity<Object>("Product deleted successfully", HttpStatus.OK);
     }

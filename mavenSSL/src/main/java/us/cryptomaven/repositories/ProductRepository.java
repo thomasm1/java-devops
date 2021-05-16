@@ -8,7 +8,7 @@ import us.cryptomaven.domain.Product;
 import java.util.List;
 
 @Repository
-public interface ProductRepository extends CrudRepository<Product, Integer> {  // JpaRepository
+public interface ProductRepository extends CrudRepository<Product, Long> {  // JpaRepository
     //	@Query("select p from Product p where p.category = ?1")
     List<Product> findAllByCategory(String category);
 

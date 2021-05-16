@@ -1,17 +1,6 @@
 package us.cryptomaven.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Version;
-import javax.persistence.ManyToOne;
-import javax.persistence.ManyToMany;
-import javax.persistence.PreUpdate;
-import javax.persistence.PrePersist; 
-
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,32 +11,10 @@ import java.util.List;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
 
     @Version
     private Integer version;
-
-    public Product() {};
-
-    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinSubtitle, String coinDescription, String name, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, Author author, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
-        this.version = version;
-        this.dateCreated = dateCreated;
-        this.lastUpdated = lastUpdated;
-        this.coinName = coinName;
-        this.coinSubtitle = coinSubtitle;
-        this.coinDescription = coinDescription;
-        this.name = name;
-        this.symbol = symbol;
-        this.category = category;
-        this.retailPrice = retailPrice;
-        this.discountedPrice = discountedPrice;
-        this.volume = volume;
-        this.author = author;
-        this.price = price;
-        this.productCategories = productCategories;
-        this.imageUrl = imageUrl;
-    }
-
 
     private Date dateCreated;
     private Date lastUpdated;
@@ -56,6 +23,15 @@ public class Product {
 
     @Column(length = 2000)
     private String coinDescription;
+
+    @ManyToOne
+    private Author author;
+    private BigDecimal price;
+
+    @ManyToMany
+    private List<ProductCategory> productCategories = new ArrayList<>();
+
+    private String imageUrl;
 
     @Column(name="name")
     private String name;
@@ -74,6 +50,33 @@ public class Product {
 
     @Column(name = "volume")
     private Double volume;
+
+    public Product() {};
+
+    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinSubtitle, String coinDescription, String name, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, Author author, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
+        this.version = version;
+        this.dateCreated = dateCreated;
+        this.lastUpdated = lastUpdated;
+        this.coinName = coinName;
+        this.coinSubtitle = coinSubtitle;
+
+        this.coinDescription = coinDescription;
+        this.name = name;
+        this.symbol = symbol;
+        this.category = category;
+        this.retailPrice = retailPrice;
+
+        this.discountedPrice = discountedPrice;
+        this.volume = volume;
+        this.author = author;
+        this.price = price;
+        this.productCategories = productCategories;
+
+        this.imageUrl = imageUrl;
+    }
+
+
+
 
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
@@ -131,20 +134,13 @@ public class Product {
         this.volume = volume;
     }
 
-    @ManyToOne
-    private Author author;
-    private BigDecimal price;
 
-    @ManyToMany
-    private List<ProductCategory> productCategories = new ArrayList<>();
 
-    private String imageUrl;
-
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

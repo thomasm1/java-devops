@@ -8,7 +8,7 @@ public class ProductCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Integer id;
+    Long id;
 
     @Version
     private Integer version;
@@ -18,11 +18,11 @@ public class ProductCategory {
 
     private String category;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

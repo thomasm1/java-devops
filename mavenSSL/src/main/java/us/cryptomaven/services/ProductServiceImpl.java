@@ -28,7 +28,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product getProduct(Integer id) {
+    public Product getProduct(Long id) {
         jmsTextMessageService.sendTextMessage("Fetching Product ID: " + id );
 //        return productRepository.findById(id).orElse(null);
         return productRepository.findOne(id);
@@ -49,7 +49,7 @@ public class ProductServiceImpl implements ProductService {
         return productRepository.save(product);
     }
 
-    public Product getProductById(Integer id) {
+    public Product getProductById(Long id) {
         return productRepository.findOne(id); //.get();
     }
 
@@ -71,7 +71,7 @@ public class ProductServiceImpl implements ProductService {
 
     }
 
-    public boolean deleteProductById(Integer id) {
+    public boolean deleteProductById(Long id) {
         return productRepository.deleteProductById(productRepository.findOne(id));// .get());
     }
 }

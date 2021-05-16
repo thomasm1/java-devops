@@ -46,37 +46,37 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         tm = authorRepository.save(tm);
 
         ProductCategory springIntroCat = new ProductCategory();
-        springIntroCat.setId(1);
+        springIntroCat.setId(1L);
         springIntroCat.setCategory("CryptoMaven 1");
 
         springIntroCat = productCategoryRepository.save(springIntroCat);
 
         ProductCategory springCoreCat = new ProductCategory();
-        springCoreCat.setId(2);
+        springCoreCat.setId(2L);
         springCoreCat.setCategory("CryptoMaven 2");
 
         springCoreCat = productCategoryRepository.save(springCoreCat);
 
         ProductCategory springBootCat = new ProductCategory();
-        springBootCat.setId(3);
+        springBootCat.setId(3L);
         springBootCat.setCategory("CryptoMaven 3");
 
         springBootCat = productCategoryRepository.save(springBootCat);
 
         ProductCategory thymeleafCat = new ProductCategory();
-        thymeleafCat.setId(4);
+        thymeleafCat.setId(4L);
         thymeleafCat.setCategory("CryptoMaven 4");
 
         thymeleafCat = productCategoryRepository.save(thymeleafCat);
 
         ProductCategory geapCat = new ProductCategory();
-        geapCat.setId(5);
+        geapCat.setId(5L);
         geapCat.setCategory("CryptoMaven 5");
 
         geapCat = productCategoryRepository.save(geapCat);
 
         Product springIntro = new Product();
-        springIntro.setId(1);
+        springIntro.setId(1L);
         springIntro.setCoinName("CryptoMaven");
         springIntro.setCoinSubtitle("Armchair Bitcoinist");
         springIntro.setAuthor(tm);
@@ -90,7 +90,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         springIntro = productRepository.save(springIntro);
 
         Product springCoreUltimate = new Product();
-        springCoreUltimate.setId(2);
+        springCoreUltimate.setId(2L);
         springCoreUltimate.setCoinName("CryptoMaven 2");
         springCoreUltimate.setCoinSubtitle("Dailytech");
         springCoreUltimate.setAuthor(tm);
@@ -104,7 +104,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         springCoreUltimate = productRepository.save(springCoreUltimate);
 
         Product thymeleaf = new Product();
-        thymeleaf.setId(3);
+        thymeleaf.setId(3L);
         thymeleaf.setCoinName("CryptoMaven 3");
         thymeleaf.setCoinSubtitle("Thymeleaf");
         thymeleaf.setAuthor(tm);
@@ -119,7 +119,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         thymeleaf = productRepository.save(thymeleaf);
 
         Product springCore = new Product();
-        springCore.setId(4);
+        springCore.setId(4L);
         springCore.setCoinName("CryptoMaven 4");
         springCore.setCoinSubtitle("Armchair Bitcoinist");
         springCore.setAuthor(tm);
@@ -135,7 +135,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         springCore = productRepository.save(springCore);
 
         Product springCoreAdv = new Product();
-        springCoreAdv.setId(5);
+        springCoreAdv.setId(5L);
         springCoreAdv.setCoinName("CryptoMaven 5");
         springCoreAdv.setCoinSubtitle("Armchair Bitcoinist");
         springCoreAdv.setAuthor(tm);
@@ -149,7 +149,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         springCoreAdv = productRepository.save(springCoreAdv);
 
         Product springCoreDevOps = new Product();
-        springCoreDevOps.setId(6);
+        springCoreDevOps.setId(6L);
         springCoreDevOps.setCoinName("CryptoMaven 5");
         springCoreDevOps.setCoinSubtitle("Cloud");
         springCoreDevOps.setAuthor(tm);

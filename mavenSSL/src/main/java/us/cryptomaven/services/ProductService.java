@@ -7,7 +7,7 @@ import java.util.List;
 public interface ProductService {
 
 
-    Product getProduct(Integer id);
+    Product getProduct(Long id);
 
     List<Product> getProducts();
 
@@ -17,11 +17,11 @@ public interface ProductService {
 
     public Product updateProductById(Product product);
 
-    public Product getProductById(Integer id);
+    public Product getProductById(Long id);
 
     public List<Product> getProductsByCategory(String category);
 
     public List<Product> getProductsByCategoryAndVolume(String category, Double volume);
 
-    public boolean deleteProductById(Integer id);
+    public boolean deleteProductById(Long id);
 }
