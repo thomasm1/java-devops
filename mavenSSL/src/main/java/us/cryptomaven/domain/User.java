@@ -1,7 +1,20 @@
 package us.cryptomaven.domain;
 
-import javax.persistence.*;
-import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import java.util.*;
+
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 public class User {
@@ -9,15 +22,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Version
-    private Integer version;
 
     private Date dateCreated;
     private Date lastUpdated;
 
     private String firstName;
+
     private String lastName;
+
     private String image;
+
+    private String email;
+
+    private String password;
 
     public Long getId() {
         return id;
@@ -37,6 +54,27 @@ public class User {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public User() {}
+
+    public User(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setLastName(String lastName) {
@@ -59,13 +97,8 @@ public class User {
         return lastUpdated;
     }
 
-    public Integer getVersion() {
-        return version;
-    }
-
-
-    public void setVersion(Integer version) {
-        this.version = version;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @PreUpdate
