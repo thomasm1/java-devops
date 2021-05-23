@@ -4,7 +4,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import us.cryptomaven.domain.Product;
-
+import us.cryptomaven.domain.User;
 
 import java.util.List;
 
@@ -26,5 +26,7 @@ public interface ProductRepository extends CrudRepository<Product, Long> {  // J
 
     boolean deleteUserById(Product one);
 
+    void put(Long id, Product product);
 
+    void remove(Long id);
 }

@@ -7,33 +7,37 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import us.cryptomaven.domain.Product;
-import us.cryptomaven.repositories.PostRepository;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.services.ProductService;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api/product/")
+@RequestMapping("/products")
 public class ProductController {
+
+
+//    private static Map<Long, Product> productRepo = new HashMap<>();
+    @Autowired
+    private ProductRepository productRepo;
 
     @Autowired
     private ProductService productService;
 
     @Autowired
-    private ProductRepository productRepo;
+    public void setProductService(ProductService productService) {
+        this.productService = productService;
+    }
 
-//    @Autowired
-//    public void setProductService(ProductService productService) {
-//        this.productService = productService;
-//    }
-//
-//    @RequestMapping("/{id}")
-//    public String getProductById(@PathVariable Long id, Model model) {
-//        model.addAttribute("product", productService.getProduct(id));
-//        return "product";
-//    }
+    @RequestMapping("/product/{id}")
+    public String getProductById(@PathVariable Long id, Model model) {
+        model.addAttribute("product", productService.getProduct(id));
+        return "product";
+    }
 
 
     @RequestMapping("/list")
@@ -47,7 +51,7 @@ public class ProductController {
     }
 
     //  All products  SHOWING THE CORRECT STATUS, RETURN ITEMS IN ASC ORDER
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public List<Product> getProducts(){
         return productService.getProducts();
 
@@ -62,7 +66,7 @@ public class ProductController {
 
         }catch(Exception e) {
 
-//            productRepo.put(product.getId(), product);
+            productRepo.put(product.getId(), product);
             productService.addProduct(product);
 
             return new ResponseEntity<Product>( HttpStatus.CREATED);
@@ -101,7 +105,7 @@ public class ProductController {
 //
 //        try {
 //
-//            productService.getProductById(id).equals(null);
+//            prServ.getProductById(id).equals(null);
 //
 //        }catch(ProductNotFoundException e) {
 //
@@ -117,7 +121,7 @@ public class ProductController {
     // it is working, no response type yet
 //    @RequestMapping(value="/category/{category}", method = RequestMethod.GET)
 //    public List<Product> getProductsByCategory(@PathVariable("category") String category){
-//        return productService.getProductsByCategory(category);
+//        return prServ.getProductsByCategory(category);
 //    }
 
 //     5. Return products by category and volume
@@ -125,14 +129,14 @@ public class ProductController {
 //    @RequestMapping(value="/category_volume/{category}/{volume}", method = RequestMethod.GET)
 //    public List<Product> getProductsByCategoryAndVolume(@PathVariable("category") String category,
 //                                                        @PathVariable("volume") Double volume){
-//        return productService.getProductsByCategoryAndVolume(category, volume);
+//        return prServ.getProductsByCategoryAndVolume(category, volume);
 //    }
 
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> delete(@PathVariable("id") Long id) {
-//        productRepo.remove(id);
+        productRepo.remove(id);
         return new ResponseEntity<Object>("Product deleted successfully", HttpStatus.OK);
     }
 }

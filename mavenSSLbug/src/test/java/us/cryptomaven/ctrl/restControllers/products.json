@@ -1,0 +1,241 @@
+[
+  {
+    "id": 1,
+    "version": 0,
+    "dateCreated": 1621560675156,
+    "lastUpdated": 1621560675156,
+    "coinName": "Ethereum",
+    "coinDescription": "https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n",
+    "user": {
+      "id": 1,
+      "dateCreated": 1621560675073,
+      "lastUpdated": 1621560675073,
+      "firstName": "Thomas",
+      "lastName": "Maestas",
+      "image": "profile.jpg",
+      "email": null,
+      "password": null
+    },
+    "price": 0.00,
+    "productCategories": [
+      {
+        "id": 1,
+        "version": 0,
+        "dateCreated": 1621560675146,
+        "lastUpdated": 1621560675146,
+        "category": "Platform Tokens"
+      },
+      {
+        "id": 3,
+        "version": 0,
+        "dateCreated": 1621560675150,
+        "lastUpdated": 1621560675150,
+        "category": "Transactional Tokens"
+      }
+    ],
+    "imageUrl": "TMMmoonscape_450.jpg",
+    "symbol": "ETH",
+    "category": null,
+    "retailPrice": null,
+    "discountedPrice": null,
+    "volume": null
+  },
+  {
+    "id": 2,
+    "version": 0,
+    "dateCreated": 1621560675206,
+    "lastUpdated": 1621560675206,
+    "coinName": "Bitcoin",
+    "coinDescription": "https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n",
+    "user": {
+      "id": 1,
+      "dateCreated": 1621560675073,
+      "lastUpdated": 1621560675073,
+      "firstName": "Thomas",
+      "lastName": "Maestas",
+      "image": "profile.jpg",
+      "email": null,
+      "password": null
+    },
+    "price": 199.00,
+    "productCategories": [
+      {
+        "id": 2,
+        "version": 0,
+        "dateCreated": 1621560675149,
+        "lastUpdated": 1621560675149,
+        "category": "Security Tokens"
+      },
+      {
+        "id": 3,
+        "version": 0,
+        "dateCreated": 1621560675150,
+        "lastUpdated": 1621560675150,
+        "category": "Transactional Tokens"
+      }
+    ],
+    "imageUrl": "tmm2.png",
+    "symbol": "BTC",
+    "category": null,
+    "retailPrice": null,
+    "discountedPrice": null,
+    "volume": null
+  },
+  {
+    "id": 3,
+    "version": 0,
+    "dateCreated": 1621560675209,
+    "lastUpdated": 1621560675209,
+    "coinName": "Hex",
+    "coinDescription": "https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n\n.\n\n",
+    "user": {
+      "id": 1,
+      "dateCreated": 1621560675073,
+      "lastUpdated": 1621560675073,
+      "firstName": "Thomas",
+      "lastName": "Maestas",
+      "image": "profile.jpg",
+      "email": null,
+      "password": null
+    },
+    "price": 199.00,
+    "productCategories": [
+      {
+        "id": 4,
+        "version": 0,
+        "dateCreated": 1621560675152,
+        "lastUpdated": 1621560675152,
+        "category": "Utility Tokens"
+      }
+    ],
+    "imageUrl": "dailytech.png",
+    "symbol": "HEX",
+    "category": null,
+    "retailPrice": null,
+    "discountedPrice": null,
+    "volume": null
+  },
+  {
+    "id": 4,
+    "version": 0,
+    "dateCreated": 1621560675212,
+    "lastUpdated": 1621560675212,
+    "coinName": "ChainLink",
+    "coinDescription": "https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n\nJava\n",
+    "user": {
+      "id": 1,
+      "dateCreated": 1621560675073,
+      "lastUpdated": 1621560675073,
+      "firstName": "Thomas",
+      "lastName": "Maestas",
+      "image": "profile.jpg",
+      "email": null,
+      "password": null
+    },
+    "price": 199.00,
+    "productCategories": [
+      {
+        "id": 2,
+        "version": 0,
+        "dateCreated": 1621560675149,
+        "lastUpdated": 1621560675149,
+        "category": "Security Tokens"
+      },
+      {
+        "id": 3,
+        "version": 0,
+        "dateCreated": 1621560675150,
+        "lastUpdated": 1621560675150,
+        "category": "Transactional Tokens"
+      }
+    ],
+    "imageUrl": "tmm4.png",
+    "symbol": "LINK",
+    "category": null,
+    "retailPrice": null,
+    "discountedPrice": null,
+    "volume": null
+  },
+  {
+    "id": 5,
+    "version": 0,
+    "dateCreated": 1621560675214,
+    "lastUpdated": 1621560675214,
+    "coinName": "Polygon",
+    "coinDescription": "https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n",
+    "user": {
+      "id": 1,
+      "dateCreated": 1621560675073,
+      "lastUpdated": 1621560675073,
+      "firstName": "Thomas",
+      "lastName": "Maestas",
+      "image": "profile.jpg",
+      "email": null,
+      "password": null
+    },
+    "price": 199.00,
+    "productCategories": [
+      {
+        "id": 2,
+        "version": 0,
+        "dateCreated": 1621560675149,
+        "lastUpdated": 1621560675149,
+        "category": "Security Tokens"
+      },
+      {
+        "id": 3,
+        "version": 0,
+        "dateCreated": 1621560675150,
+        "lastUpdated": 1621560675150,
+        "category": "Transactional Tokens"
+      }
+    ],
+    "imageUrl": "tmm3.png",
+    "symbol": "MATIC",
+    "category": null,
+    "retailPrice": null,
+    "discountedPrice": null,
+    "volume": null
+  },
+  {
+    "id": 6,
+    "version": 0,
+    "dateCreated": 1621560675217,
+    "lastUpdated": 1621560675217,
+    "coinName": "Compound",
+    "coinDescription": "https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n",
+    "user": {
+      "id": 1,
+      "dateCreated": 1621560675073,
+      "lastUpdated": 1621560675073,
+      "firstName": "Thomas",
+      "lastName": "Maestas",
+      "image": "profile.jpg",
+      "email": null,
+      "password": null
+    },
+    "price": 199.00,
+    "productCategories": [
+      {
+        "id": 2,
+        "version": 0,
+        "dateCreated": 1621560675149,
+        "lastUpdated": 1621560675149,
+        "category": "Security Tokens"
+      },
+      {
+        "id": 3,
+        "version": 0,
+        "dateCreated": 1621560675150,
+        "lastUpdated": 1621560675150,
+        "category": "Transactional Tokens"
+      }
+    ],
+    "imageUrl": "shadowbox.png",
+    "symbol": "COMP",
+    "category": null,
+    "retailPrice": null,
+    "discountedPrice": null,
+    "volume": null
+  }
+]
