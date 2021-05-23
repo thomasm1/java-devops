@@ -23,16 +23,21 @@ public class PostController {
 	
 	@Autowired
 	private PostRepository postRepository;
-	
+
+	@RequestMapping(path="", method=RequestMethod.GET)
+	public List<Post> getPosts(){
+//		return postRepository.findByUsername(username);
+//		return postService.findAll();
+		return null;
+	}
+
 	@RequestMapping(path="/{username}/posts", method=RequestMethod.GET)
-	@CrossOrigin(origins = "*")
-	public List<Post> getAllPosts(@PathVariable String username){
+	public List<Post> getPostsByName(@PathVariable String username){
 //		return postRepository.findByUsername(username);
 		return postService.findAll(); 
 	}
 
 	@RequestMapping(value="/{username}/posts",method=RequestMethod.POST)
-	@CrossOrigin(origins = "*")
 	public ResponseEntity<Void> createPost(
 			@PathVariable String username, 
 		    @RequestBody Post post
@@ -49,7 +54,6 @@ public class PostController {
  
 	}
 			@RequestMapping(value="/{username}/posts/{id}",method=RequestMethod.GET)
-			@CrossOrigin(origins = "*")
 			public Post getPost(@PathVariable String username, @PathVariable long id){
 //				return postRepository.findById(id).get();
 				return postRepository.findOne(id);
@@ -59,7 +63,6 @@ public class PostController {
 
 
 			@RequestMapping(value="/api/{username}/posts/{id}",method=RequestMethod.DELETE)
-			@CrossOrigin(origins = "*")
 			public ResponseEntity<Void> deletePost(
 					@PathVariable String username, @PathVariable long id){
 				
@@ -75,7 +78,6 @@ public class PostController {
 			}
 
 			@RequestMapping(method=RequestMethod.PUT, value ="/{username}/posts/{id}" )
-			@CrossOrigin(origins = "*")
 			public ResponseEntity<Post> updatePost(
 					@PathVariable String username, 
 					@PathVariable long id, @RequestBody Post post){

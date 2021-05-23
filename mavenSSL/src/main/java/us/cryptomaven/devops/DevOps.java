@@ -45,120 +45,121 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
         tm = userRepository.save(tm);
 
-        ProductCategory springIntroCat = new ProductCategory();
-        springIntroCat.setId(1L);
-        springIntroCat.setCategory("Platform Tokens");
+        ProductCategory categorySecurity = new ProductCategory();
+        categorySecurity.setId(1L);
+        categorySecurity.setCategory("Security Tokens");
 
-        springIntroCat = productCategoryRepository.save(springIntroCat);
+        categorySecurity = productCategoryRepository.save(categorySecurity);
 
-        ProductCategory springCoreCat = new ProductCategory();
-        springCoreCat.setId(2L);
-        springCoreCat.setCategory("Security Tokens");
+        ProductCategory categoryPlatform = new ProductCategory();
+        categoryPlatform.setId(2L);
+        categoryPlatform.setCategory("Platform Tokens");
 
-        springCoreCat = productCategoryRepository.save(springCoreCat);
+        categoryPlatform = productCategoryRepository.save(categoryPlatform);
 
-        ProductCategory springBootCat = new ProductCategory();
-        springBootCat.setId(3L);
-        springBootCat.setCategory("Transactional Tokens");
+        ProductCategory categoryTransactional = new ProductCategory();
+        categoryTransactional.setId(3L);
+        categoryTransactional.setCategory("Transactional Tokens");
 
-        springBootCat = productCategoryRepository.save(springBootCat);
+        categoryTransactional = productCategoryRepository.save(categoryTransactional);
 
-        ProductCategory thymeleafCat = new ProductCategory();
-        thymeleafCat.setId(4L);
-        thymeleafCat.setCategory("Utility Tokens");
+        ProductCategory categoryUtility = new ProductCategory();
+        categoryUtility.setId(4L);
+        categoryUtility.setCategory("Utility Tokens");
 
-        thymeleafCat = productCategoryRepository.save(thymeleafCat);
+        categoryUtility = productCategoryRepository.save(categoryUtility);
 
-        ProductCategory geapCat = new ProductCategory();
-        geapCat.setId(5L);
-        geapCat.setCategory("Governance Tokens");
+        ProductCategory categoryGovernance = new ProductCategory();
+        categoryGovernance.setId(5L);
+        categoryGovernance.setCategory("Governance Tokens");
 
-        geapCat = productCategoryRepository.save(geapCat);
+        categoryGovernance = productCategoryRepository.save(categoryGovernance);
 
-        Product springIntro = new Product();
-        springIntro.setId(1L);
-        springIntro.setCoinName("Ethereum");
-        springIntro.setSymbol("ETH");
-        springIntro.setUser(tm);
-        springIntro.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+//        PRODUCTS
+        Product coinETH = new Product();
+        coinETH.setId(1L);
+        coinETH.setCoinName("Ethereum");
+        coinETH.setSymbol("ETH");
+        coinETH.setUser(tm);
+        coinETH.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
-        springIntro.setPrice(new BigDecimal("0"));
-        springIntro.setImageUrl("TMMmoonscape_450.jpg");
-        springIntro.getProductCategories().add(springIntroCat);
-        springIntro.getProductCategories().add(springBootCat);
+        coinETH.setPrice(new BigDecimal("0"));
+        coinETH.setImageUrl("TMMmoonscape_450.jpg");
+        coinETH.getProductCategories().add(categoryGovernance);
+        coinETH.getProductCategories().add(categoryTransactional);
 
-        springIntro = productRepository.save(springIntro);
+        coinETH = productRepository.save(coinETH);
 
-        Product springCoreUltimate = new Product();
-        springCoreUltimate.setId(2L);
-        springCoreUltimate.setCoinName("Bitcoin");
-        springCoreUltimate.setSymbol("BTC");
-        springCoreUltimate.setUser(tm);
-        springCoreUltimate.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+        Product coinBTC = new Product();
+        coinBTC.setId(2L);
+        coinBTC.setCoinName("Bitcoin");
+        coinBTC.setSymbol("BTC");
+        coinBTC.setUser(tm);
+        coinBTC.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
-        springCoreUltimate.setPrice(new BigDecimal("199"));
-        springCoreUltimate.setImageUrl("tmm2.png");
-        springCoreUltimate.getProductCategories().add(springCoreCat);
-        springCoreUltimate.getProductCategories().add(springBootCat);
+        coinBTC.setPrice(new BigDecimal("199"));
+        coinBTC.setImageUrl("tmm2.png");
+        coinBTC.getProductCategories().add(categoryGovernance);
+        coinBTC.getProductCategories().add(categoryTransactional);
 
-        springCoreUltimate = productRepository.save(springCoreUltimate);
+        coinBTC = productRepository.save(coinBTC);
 
-        Product thymeleaf = new Product();
-        thymeleaf.setId(3L);
-        thymeleaf.setCoinName("Hex");
-        thymeleaf.setSymbol("HEX");
-        thymeleaf.setUser(tm);
-        thymeleaf.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
+        Product coinHex = new Product();
+        coinHex.setId(3L);
+        coinHex.setCoinName("Hex");
+        coinHex.setSymbol("HEX");
+        coinHex.setUser(tm);
+        coinHex.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
                 "\n" +
                 ".\n" +
                 "\n");
-        thymeleaf.setPrice(new BigDecimal("199"));
-        thymeleaf.setImageUrl("dailytech.png");
-        thymeleaf.getProductCategories().add(thymeleafCat);
+        coinHex.setPrice(new BigDecimal("199"));
+        coinHex.setImageUrl("dailytech.png");
+        coinHex.getProductCategories().add(categoryUtility);
 
-        thymeleaf = productRepository.save(thymeleaf);
+        coinHex = productRepository.save(coinHex);
 
-        Product springCore = new Product();
-        springCore.setId(4L);
-        springCore.setCoinName("ChainLink");
-        springCore.setSymbol("LINK");
-        springCore.setUser(tm);
-        springCore.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
+        Product coinLink = new Product();
+        coinLink.setId(4L);
+        coinLink.setCoinName("ChainLink");
+        coinLink.setSymbol("LINK");
+        coinLink.setUser(tm);
+        coinLink.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n" +
                 "\n" +
                 "" +
                 "Java\n");
-        springCore.setPrice(new BigDecimal("199"));
-        springCore.setImageUrl("tmm4.png");
-        springCore.getProductCategories().add(springCoreCat);
-        springCore.getProductCategories().add(springBootCat);
+        coinLink.setPrice(new BigDecimal("199"));
+        coinLink.setImageUrl("tmm4.png");
+        coinLink.getProductCategories().add(categoryGovernance);
+        coinLink.getProductCategories().add(categoryUtility);
 
-        springCore = productRepository.save(springCore);
+        coinLink = productRepository.save(coinLink);
 
-        Product springCoreAdv = new Product();
-        springCoreAdv.setId(5L);
-        springCoreAdv.setCoinName("Polygon");
-        springCoreAdv.setSymbol("MATIC");
-        springCoreAdv.setUser(tm);
-        springCoreAdv.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n");
+        Product coinMatic = new Product();
+        coinMatic.setId(5L);
+        coinMatic.setCoinName("Polygon");
+        coinMatic.setSymbol("MATIC");
+        coinMatic.setUser(tm);
+        coinMatic.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n");
 
-        springCoreAdv.setPrice(new BigDecimal("199"));
-        springCoreAdv.setImageUrl("tmm3.png");
-        springCoreAdv.getProductCategories().add(springCoreCat);
-        springCoreAdv.getProductCategories().add(springBootCat);
+        coinMatic.setPrice(new BigDecimal("199"));
+        coinMatic.setImageUrl("tmm3.png");
+        coinMatic.getProductCategories().add(categoryGovernance);
+        coinMatic.getProductCategories().add(categoryPlatform);
 
-        springCoreAdv = productRepository.save(springCoreAdv);
+        coinMatic = productRepository.save(coinMatic);
 
-        Product springCoreDevOps = new Product();
-        springCoreDevOps.setId(6L);
-        springCoreDevOps.setCoinName("Compound");
-        springCoreDevOps.setSymbol("COMP");
-        springCoreDevOps.setUser(tm);
-        springCoreDevOps.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
-        springCoreDevOps.setPrice(new BigDecimal("199"));
-        springCoreDevOps.setImageUrl("shadowbox.png");
-        springCoreDevOps.getProductCategories().add(springCoreCat);
-        springCoreDevOps.getProductCategories().add(springBootCat);
+        Product coinCompound = new Product();
+        coinCompound.setId(6L);
+        coinCompound.setCoinName("Compound");
+        coinCompound.setSymbol("COMP");
+        coinCompound.setUser(tm);
+        coinCompound.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
+        coinCompound.setPrice(new BigDecimal("199"));
+        coinCompound.setImageUrl("shadowbox.png");
+        coinCompound.getProductCategories().add(categorySecurity);
+        coinCompound.getProductCategories().add(categoryPlatform);
 
-        springCoreDevOps = productRepository.save(springCoreDevOps);
+        coinCompound = productRepository.save(coinCompound);
     }
 }
