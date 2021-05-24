@@ -29,6 +29,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
+@Table
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -38,16 +39,29 @@ public class User {
     private Date dateCreated;
     private Date lastUpdated;
 
+    @Column(length = 200)
     private String firstName;
 
+    @Column(length = 200)
     private String lastName;
 
+    @Column(length = 200)
     private String image;
 
+    @Column(length = 200)
     private String email;
 
     private String password;
 
+    public User() {}
+
+    public User(String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password, String image) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.image = image;
+    }
     public Long getId() {
         return id;
     }
@@ -66,27 +80,6 @@ public class User {
 
     public String getLastName() {
         return lastName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public User() {}
-
-    public User(String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public void setLastName(String lastName) {
@@ -111,6 +104,18 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @PreUpdate

@@ -11,6 +11,8 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
 
 @Component
@@ -37,13 +39,29 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
+
+        User user = new User(  "firstName",   "lastName",  "email@gmail.com", "passwordx", "http://tmm.net/images");
+        user = userRepository.save(user);
+
         User tm = new User();
         tm.setFirstName("Thomas");
         tm.setLastName("Maestas");
+        tm.setEmail("thomas@gmail.com");
+        tm.setPassword("xyzPW");
         tm.setId(1L);
         tm.setImage("profile.jpg");
 
         tm = userRepository.save(tm);
+
+        User tm2 = new User();
+        tm2.setFirstName("Thomas2");
+        tm2.setLastName("Maestas2");
+        tm2.setEmail("thomas2@gmail.com");
+        tm2.setPassword("xyzPW2");
+        tm2.setId(1L);
+        tm2.setImage("profile2.jpg");
+
+        tm2 = userRepository.save(tm2);
 
         ProductCategory categorySecurity = new ProductCategory();
         categorySecurity.setId(1L);
@@ -80,7 +98,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinETH.setId(1L);
         coinETH.setCoinName("Ethereum");
         coinETH.setSymbol("ETH");
-        coinETH.setUser(tm);
+        coinETH.setUser(user);
         coinETH.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         coinETH.setPrice(new BigDecimal("0"));
@@ -94,7 +112,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinBTC.setId(2L);
         coinBTC.setCoinName("Bitcoin");
         coinBTC.setSymbol("BTC");
-        coinBTC.setUser(tm);
+        coinBTC.setUser(user);
         coinBTC.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         coinBTC.setPrice(new BigDecimal("199"));

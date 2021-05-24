@@ -7,7 +7,8 @@ import org.springframework.data.repository.CrudRepository;
 public interface UserRepository extends CrudRepository<User, Long> {
     User findByEmail(String value);
 
+    User save(User user);
     boolean deleteUserById(User one);
 
-    Object findAll(Sort sort);
+//    Object findAll(Sort sort);
 }

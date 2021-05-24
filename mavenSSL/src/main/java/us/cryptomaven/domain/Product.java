@@ -25,6 +25,7 @@ public class Product {
 
     @ManyToOne
     private User user;
+
     private BigDecimal price;
 
     @ManyToMany

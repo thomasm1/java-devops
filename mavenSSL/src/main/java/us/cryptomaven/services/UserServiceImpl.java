@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getUsers() {
         Sort sort = new Sort(Sort.Direction.ASC, "id");
-        return (List<User>) userRepository.findAll(sort);
+        return (List<User>) userRepository.findAll();
 
     }
 
