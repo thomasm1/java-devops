@@ -40,8 +40,8 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
 
-        User user = new User(  "firstName",   "lastName",  "email@gmail.com", "passwordx", "http://tmm.net/images");
-        user = userRepository.save(user);
+//        User user = new User(3L,  "firstName",   "lastName",  "email@gmail.com", "passwordx", "http://tmm.net/images");
+//        user = userRepository.save(user);
 
         User tm = new User();
         tm.setFirstName("Thomas");
@@ -58,7 +58,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         tm2.setLastName("Maestas2");
         tm2.setEmail("thomas2@gmail.com");
         tm2.setPassword("xyzPW2");
-        tm2.setId(1L);
+        tm2.setId(2L);
         tm2.setImage("profile2.jpg");
 
         tm2 = userRepository.save(tm2);
@@ -98,7 +98,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinETH.setId(1L);
         coinETH.setCoinName("Ethereum");
         coinETH.setSymbol("ETH");
-        coinETH.setUser(user);
+        coinETH.setUser(tm2);
         coinETH.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         coinETH.setPrice(new BigDecimal("0"));
@@ -112,7 +112,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinBTC.setId(2L);
         coinBTC.setCoinName("Bitcoin");
         coinBTC.setSymbol("BTC");
-        coinBTC.setUser(user);
+        coinBTC.setUser(tm2);
         coinBTC.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         coinBTC.setPrice(new BigDecimal("199"));

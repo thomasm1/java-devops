@@ -35,7 +35,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-
     private Date dateCreated;
     private Date lastUpdated;
 
@@ -55,7 +54,8 @@ public class User {
 
     public User() {}
 
-    public User(String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password, String image) {
+    public User(Long id, String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password, String image) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
