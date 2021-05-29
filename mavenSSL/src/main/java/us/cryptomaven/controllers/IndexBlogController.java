@@ -28,7 +28,7 @@ public class IndexBlogController {
         this.postService = postService;
     }
 
-    @RequestMapping("/blog")
+    @RequestMapping({"/blog", "indexBlog"})
     public String getIndexBlog(Model model){
 
         model.addAttribute("posts", postService.getAllPosts());

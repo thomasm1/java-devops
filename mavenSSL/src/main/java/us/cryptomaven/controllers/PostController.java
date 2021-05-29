@@ -27,8 +27,8 @@ public class PostController {
 	@RequestMapping(path="", method=RequestMethod.GET)
 	public List<Post> getPosts(){
 //		return postRepository.findByUsername(username);
-//		return postService.findAll();
-		return null;
+		return postService.findAll();
+
 	}
 
 	@RequestMapping(path="/{username}/posts", method=RequestMethod.GET)

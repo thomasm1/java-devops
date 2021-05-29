@@ -1,8 +1,10 @@
 package us.cryptomaven.devops;
 
+import us.cryptomaven.domain.Post;
 import us.cryptomaven.domain.User;
 import us.cryptomaven.domain.Product;
 import us.cryptomaven.domain.ProductCategory;
+import us.cryptomaven.repositories.PostRepository;
 import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.repositories.ProductCategoryRepository;
 import us.cryptomaven.repositories.ProductRepository;
@@ -18,9 +20,15 @@ import java.math.BigDecimal;
 @Component
 public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
+    private PostRepository postRepository;
     private UserRepository userRepository;
     private ProductCategoryRepository productCategoryRepository;
     private ProductRepository productRepository;
+
+    @Autowired
+    public void setPostRepository(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
@@ -42,6 +50,30 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 
 //        User user = new User(3L,  "firstName",   "lastName",  "email@gmail.com", "passwordx", "http://tmm.net/images");
 //        user = userRepository.save(user);
+        //  public Post(   "date",   "author", "monthOrder", "cat3", "title", "post", "blogcite", "username")
+        Post p = new Post();
+        p.setId(1040L);
+        p.setDid("setDid");
+        p.setDate("setDate");
+        p.setAuthor("setAuthor");
+        p.setMonthOrder("setMonthOrder");
+        p.setCat3("setCat3");
+        p.setTitle("setTitle");
+        p.setPost("setPost");
+        p.setUsername("setUsername");
+        p = postRepository.save(p);
+
+        Post p1 = new Post();
+        p1.setId(1041L);
+        p1.setDid("setDid1");
+        p1.setDate("setDate1");
+        p1.setAuthor("setAuthor1");
+        p1.setMonthOrder("setMonthOrder1");
+        p1.setCat3("setCat31");
+        p1.setTitle("setTitle1");
+        p1.setPost("setPost1");
+        p1.setUsername("setUsername1");
+        p1 = postRepository.save(p1);
 
         User tm = new User();
         tm.setFirstName("Thomas");

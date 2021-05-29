@@ -41,7 +41,7 @@ public class Post {
     private String username;
 
 
-    protected Post() {
+    public Post() {
 
     }
 
