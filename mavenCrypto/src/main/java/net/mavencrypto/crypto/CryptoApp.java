@@ -7,7 +7,7 @@ public class CryptoApp {
 	public static void main(String[] args){
 
 		cryptos();
-	   filter();
+//	   filter();
 
 	}
 	public static void filter() {

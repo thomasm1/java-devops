@@ -8,7 +8,7 @@ import us.cryptomaven.services.UserService;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api/")
+@RequestMapping("/api")
 public class UserController {
     @Autowired
     UserService us;

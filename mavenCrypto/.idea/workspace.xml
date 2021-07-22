@@ -215,7 +215,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbe905a-a677-4b2a-90bf-a30f3062ecec" name="Default Changelist" comment="" />
+    <list default="true" id="6fbe905a-a677-4b2a-90bf-a30f3062ecec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/java-devops.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mavencrypto/crypto/CryptoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mavencrypto/crypto/CryptoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/controllers/UserController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,7 +256,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../app-kafka-elasticsearch-tweets" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager">
     <configuration name="CryptoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -290,35 +301,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="802" y="344" key="FileChooserDialogImpl" timestamp="1618785752649">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="802" y="344" key="FileChooserDialogImpl/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1618785752649" />
-    <state width="1700" height="159" key="GridCell.Tab.0.bottom" timestamp="1614534934653">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1700" height="159" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1614534934653" />
-    <state width="1700" height="159" key="GridCell.Tab.0.center" timestamp="1614534934653">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1700" height="159" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1614534934653" />
-    <state width="1700" height="159" key="GridCell.Tab.0.left" timestamp="1614534934653">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1700" height="159" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1614534934653" />
-    <state width="1700" height="159" key="GridCell.Tab.0.right" timestamp="1614534934653">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1700" height="159" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1614534934653" />
-    <state width="564" height="446" key="SwitcherDM" timestamp="1618757564233">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="564" height="446" key="SwitcherDM/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1618757564233" />
-    <state x="636" y="235" width="700" height="530" key="recent.locations.popup" timestamp="1618757580190">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="636" y="235" width="700" height="530" key="recent.locations.popup/0.0.1920.1050/-1920.-107.1920.1050@0.0.1920.1050" timestamp="1618757580190" />
   </component>
 </project>
