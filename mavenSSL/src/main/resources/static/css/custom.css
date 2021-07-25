@@ -67,10 +67,10 @@
 
 img {
     vertical-align: middle;
-}
-
-img {
+    max-height:90px;
+    max-width:90px;
     border: 0 none;
+    padding:10px;
 }
 
 .coin-listing .coin-listing-title {

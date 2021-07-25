@@ -86,12 +86,12 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         tm = userRepository.save(tm);
 
         User tm2 = new User();
-        tm2.setFirstName("Thomas2");
+        tm2.setFirstName("Bitcoin");
         tm2.setLastName("Maestas2");
         tm2.setEmail("thomas2@gmail.com");
         tm2.setPassword("xyzPW2");
         tm2.setId(2L);
-        tm2.setImage("profile2.jpg");
+        tm2.setImage("profile.jpg");
 
         tm2 = userRepository.save(tm2);
 
@@ -134,7 +134,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinETH.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         coinETH.setPrice(new BigDecimal("0"));
-        coinETH.setImageUrl("TMMmoonscape_450.jpg");
+        coinETH.setImageUrl("eth.webp");
         coinETH.getProductCategories().add(categoryGovernance);
         coinETH.getProductCategories().add(categoryTransactional);
 
@@ -148,7 +148,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinBTC.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
 
         coinBTC.setPrice(new BigDecimal("199"));
-        coinBTC.setImageUrl("tmm2.png");
+        coinBTC.setImageUrl("btc.webp");
         coinBTC.getProductCategories().add(categoryGovernance);
         coinBTC.getProductCategories().add(categoryTransactional);
 
@@ -164,7 +164,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
                 ".\n" +
                 "\n");
         coinHex.setPrice(new BigDecimal("199"));
-        coinHex.setImageUrl("dailytech.png");
+        coinHex.setImageUrl("hex.png");
         coinHex.getProductCategories().add(categoryUtility);
 
         coinHex = productRepository.save(coinHex);
@@ -179,7 +179,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
                 "" +
                 "Java\n");
         coinLink.setPrice(new BigDecimal("199"));
-        coinLink.setImageUrl("tmm4.png");
+        coinLink.setImageUrl("link.jpg");
         coinLink.getProductCategories().add(categoryGovernance);
         coinLink.getProductCategories().add(categoryUtility);
 
@@ -193,7 +193,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinMatic.setCoinDescription("https://www.coindesk.com/set-protocol-launches-momentum-trading-strategy\n");
 
         coinMatic.setPrice(new BigDecimal("199"));
-        coinMatic.setImageUrl("tmm3.png");
+        coinMatic.setImageUrl("matic.png");
         coinMatic.getProductCategories().add(categoryGovernance);
         coinMatic.getProductCategories().add(categoryPlatform);
 
@@ -206,7 +206,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinCompound.setUser(tm);
         coinCompound.setCoinDescription("https://towardsdatascience.com/creating-bitcoin-trading-bots-that-dont-lose-money-2e7165fb0b29\n");
         coinCompound.setPrice(new BigDecimal("199"));
-        coinCompound.setImageUrl("shadowbox.png");
+        coinCompound.setImageUrl("comp.png");
         coinCompound.getProductCategories().add(categorySecurity);
         coinCompound.getProductCategories().add(categoryPlatform);
 
