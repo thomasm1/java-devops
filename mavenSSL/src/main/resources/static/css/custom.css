@@ -115,3 +115,9 @@ img {
     font-weight: 200;
     line-height: 30px;
 }
+
+.black {
+background-color:black;
+color:white;
+a:silver;
+}
