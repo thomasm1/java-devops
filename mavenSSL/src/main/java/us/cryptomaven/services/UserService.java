@@ -19,7 +19,7 @@ public interface UserService {
 
     public User getUserById(Long id);
 
-    public List<User> getUsersByEmail(String email);
+    public User getUserByEmail(String email);
 
     public List<User> getUsersByEmailAndPassword(String email, String password);
 
