@@ -3,17 +3,8 @@ package us.cryptomaven.domain;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
+import javax.persistence.*;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -52,6 +43,16 @@ public class User {
 
     private String password;
 
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST},
+            fetch = FetchType.LAZY)
+    @JoinTable(name="product_user",
+            joinColumns=@JoinColumn(name="user_id"),
+            inverseJoinColumns= @JoinColumn(name="product_id")
+    )
+    @JsonIgnore
+    private List<Product> coinProducts;
+
+
     public User() {}
 
     public User(Long id, String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password, String image) {
@@ -62,6 +63,7 @@ public class User {
         this.password = password;
         this.image = image;
     }
+
     public Long getId() {
         return id;
     }

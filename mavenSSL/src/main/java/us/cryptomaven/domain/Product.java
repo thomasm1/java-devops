@@ -1,5 +1,7 @@
 package us.cryptomaven.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -47,6 +49,17 @@ public class Product {
 
     @Column(name = "volume")
     private Double volume;
+
+
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST},
+            fetch = FetchType.LAZY)
+    @JoinTable(name="product_user",
+            joinColumns=@JoinColumn(name="product_id"),
+            inverseJoinColumns= @JoinColumn(name="user_id")
+    )
+    @JsonIgnore
+    private List<User> users;
+
 
     public Product() {};
 
