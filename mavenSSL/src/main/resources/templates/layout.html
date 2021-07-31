@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html   xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+    <meta charset="UTF-8"/>
+    <title th:text="#{index.page.title}">CryptoMaven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico"/>
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"-->
+<!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>-->
+
+    <link href="../static/css/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/css/bootstrap-3.3.4-dist/css/bootstrap.min.css}"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta content="Technology News and Blog: Musing Blockchain | Web Dev Affairs | Sociology Tomorrow! Latest Developments in Technology Culture,
+      Technology News, Tech Tools, Tech Talk Too! I explore daily tech topics on one of my three tech
+      blog topics: Blockchain, Web Dev, and Sociology in Tech.  DailyTech is both a public blog, as it is my own research tool for both subject content and app design" name="description" />
+     <meta content="Thomas Maestas, Thomas M Maestas, data analysis and visualization, sociology statistical tests"  name="keywords" />
+     <link rel="manifest" href="/manifest.json"/>
+   <meta content="Thomas M. Maestas" name="author" />
+    <script src="../static/js/vendor/d3v4.min.js"  th:src="@{/js/vendor/d3v4.min.js}"></script>
+
+    <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>
+
+
+<!--    <style th:remove="all">-->
+<!--    </style>-->
+<style>
+    ul {   list-style-type: none;
+  margin: 0;
+  padding: 0;}
+  .nav-item {
+  min-width:40px;
+  }
+</style>
+</head>
+<body>
+<div   th:fragment = "navbar">
+    <div class="black navbar navbar-default navbar-fixed-top">
+        <div  >
+            <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand"  th:href="@{/}">CryptoMaven</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item  ">
+                            <a class="nav-link" th:href="@{/}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/blog-login}">  Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/blog}">  Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="jumbotron" th:fragment="jumbotron">
+    <div class="container">
+        <h1>CryptoMaven</h1>
+        <p class="lead" th:text="#{index.coins.tagline}">BITCOIN RESEARCH AND ANALYSIS CONSOLE</p>
+    </div>
+</div>
+
+
+<div class="container" th:fragment="footer">
+    <div class="black navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">© 2021 - ThomasMaestas.net</p>
+        </div>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/api/posts}">  Blogs API</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/api/products}">  Coins API</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/api/users}">  Members API</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

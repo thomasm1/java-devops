@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico"/>
-    <meta charset="UTF-8"/>
-    <title th:text="#{index.page.title}">CryptoMaven</title>
-
-    <link href="../static/css/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"
-          th:href="@{/css/bootstrap-3.3.4-dist/css/bootstrap.min.css}"/>
-
-    <script src="../static/js/jquery-2.1.4.min.js"
-            th:src="@{/js/jquery-2.1.4.min.js}"></script>
-
-    <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>
-
-    <style th:remove="all">
-    </style>
-
+<head th:replace="layout :: header">
 </head>
+<!--<head>-->
+<!--    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico"/>-->
+<!--    <meta charset="UTF-8"/>-->
+<!--    <title th:text="#{index.page.title}">CryptoMaven</title>-->
+
+<!--    <link href="../static/css/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"-->
+<!--          th:href="@{/css/bootstrap-3.3.4-dist/css/bootstrap.min.css}"/>-->
+
+<!--    <script src="../static/js/jquery-2.1.4.min.js"-->
+<!--            th:src="@{/js/jquery-2.1.4.min.js}"></script>-->
+
+<!--    <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>-->
+<!--    <style>-->
+<!--    ul {   list-style-type: none;-->
+<!--  margin: 0;-->
+<!--  padding: 0;}-->
+<!--</style>-->
+<!--</head>-->
 <body>
-<div class="container" th:replace="fragments/navbar :: navbar">
+<div class="container" th:replace="layout :: navbar">
     <div>NAVBAR</div>
 </div>
-<br /><hr /><br />
-<div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
+
+<div class="jumbotron" th:replace="layout :: jumbotron">
     <div class="container">
         <h1>CryptoMaven</h1>
         <p class="lead" th:text="#{index.coins.tagline}">Tag line</p>
@@ -298,7 +301,7 @@
     </div>
 </div>
 
-<div class="container" th:replace="fragments/footer :: footer">
+<div  th:replace="layout :: footer">
     <p>footer</p>
 </div>
 
