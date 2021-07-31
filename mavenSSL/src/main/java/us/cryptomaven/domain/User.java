@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     private Long id;
 
     private Date dateCreated;
@@ -42,6 +42,9 @@ public class User {
     private String email;
 
     private String password;
+
+//    @Column
+//    private Product product;
 
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST},
             fetch = FetchType.LAZY)
@@ -119,6 +122,12 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+//
+//    public Product getProduct() { return product;   }
+//
+//    public void setProduct(Product product) {
+//        this.product = product;
+//    }
 
     @PreUpdate
     @PrePersist

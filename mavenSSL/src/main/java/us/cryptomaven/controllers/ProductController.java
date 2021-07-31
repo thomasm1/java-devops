@@ -7,10 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import us.cryptomaven.domain.Product;
+import us.cryptomaven.domain.User;
 import us.cryptomaven.repositories.PostRepository;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.services.ProductService;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -46,12 +48,20 @@ public class ProductController {
         return "products test";
     }
 
+
+
+    @RequestMapping(value="/{id}", method = RequestMethod.GET)
+    public Product getProdById(@PathVariable("id") Long id) {
+        return productService.getProductById(id);
+    }
+
     //  All products  SHOWING THE CORRECT STATUS, RETURN ITEMS IN ASC ORDER
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<Product> getProducts(){
         return productService.getProducts();
 
     }
+
     // 1. Add a new Product   	WORKING BOTH STATUSES
     @RequestMapping(value="/add", method = RequestMethod.GET)
     public ResponseEntity<Product> addProduct(@RequestBody Product product) {
@@ -73,27 +83,32 @@ public class ProductController {
 
     }
 
-    // 2. Update a product by id 	WORKING BOTH STATUSES
-    @RequestMapping(value="/{id}", consumes="application/json", method=RequestMethod.GET)
-    public ResponseEntity<Product> updateProductById(@PathVariable("id") Long id, @RequestBody Product product) {
-        try {
-            productService.getProductById(id).equals(null);
+//    // 2. Update a product by id 	WORKING BOTH STATUSES
+//    @RequestMapping(value="/{id}", consumes="application/json", method=RequestMethod.GET)
+//    public ResponseEntity<Product> updateProductById(@PathVariable("id") Long id, @RequestBody Product product) {
+//        try {
+//            productService.getProductById(id).equals(null);
+//
+//        }catch(Exception e) {
+//
+//            return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
+//
+//        }
+//        if (productService.getProductById(id).getId().equals(product.getId())) {
+//            productService.updateProductById(product);
+//            return new ResponseEntity<Product>( HttpStatus.OK);
+//        }else {
+//            return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
+//        }
+//
+//
+//    }
 
-        }catch(Exception e) {
-
-            return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
-
-        }
-        if (productService.getProductById(id).getId().equals(product.getId())) {
-            productService.updateProductById(product);
-            return new ResponseEntity<Product>( HttpStatus.OK);
-        }else {
-            return new ResponseEntity<Product>(HttpStatus.BAD_REQUEST);
-        }
-
-
+    @RequestMapping(value="/{id}", consumes="application/json", method=RequestMethod.PUT)
+    @ResponseStatus(HttpStatus.OK)
+    public Product update(@RequestBody Product p) {
+        return productService.updateProductById(p);
     }
-
 
     // 3. Return a product by id 	WORKING BOTH STATUSES
 //    @RequestMapping(value = "/{id}")

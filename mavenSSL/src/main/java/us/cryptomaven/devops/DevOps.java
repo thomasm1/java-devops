@@ -16,6 +16,8 @@ import org.springframework.stereotype.Component;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
+import java.time.Instant;
+import java.util.Date;
 
 @Component
 public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
@@ -51,6 +53,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
 //        User user = new User(3L,  "firstName",   "lastName",  "email@gmail.com", "passwordx", "http://tmm.net/images");
 //        user = userRepository.save(user);
         //  public Post(   "date",   "author", "monthOrder", "cat3", "title", "post", "blogcite", "username")
+
         Post p = new Post();
         p.setId(1040L);
         p.setDid("setDid");
@@ -74,7 +77,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         p1.setPost("setPost1");
         p1.setUsername("setUsername1");
         p1 = postRepository.save(p1);
-
+///////////////  USER //////////////////////////////
         User tm = new User();
         tm.setFirstName("Thomas");
         tm.setLastName("Maestas");
@@ -92,8 +95,7 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         tm2.setPassword("xyzPW2");
         tm2.setId(2L);
         tm2.setImage("profile.jpg");
-
-        tm2 = userRepository.save(tm2);
+         tm2 = userRepository.save(tm2);
 
         ProductCategory categorySecurity = new ProductCategory();
         categorySecurity.setId(1L);
