@@ -57,9 +57,16 @@ public class Product {
             joinColumns=@JoinColumn(name="product_id"),
             inverseJoinColumns= @JoinColumn(name="user_id")
     )
+
     @JsonIgnore
     private List<User> users;
 
+    public List<User> getEmployees() {
+        return users;
+    }
+    public void setEmployees(List<User> users) {
+        this.users = users;
+    }
 
     public Product() {};
 
@@ -84,6 +91,13 @@ public class Product {
     }
 
 
+    // convenience method:
+    public void addEmployee(User user) {
+        if(users==null) {
+            users = new ArrayList<>();
+        }
+        users.add(user);
+    }
 
 
     public void setDateCreated(Date dateCreated) {

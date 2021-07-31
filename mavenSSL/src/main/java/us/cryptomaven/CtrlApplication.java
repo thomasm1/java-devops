@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Bean;
 import us.cryptomaven.domain.User;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.repositories.UserRepository;
+import us.cryptomaven.utils.Rotate;
+
+import java.util.List;
 
 @SpringBootApplication
 public class CtrlApplication {
@@ -29,7 +32,10 @@ public class CtrlApplication {
 		LOGGER.error("starting error message");
 		SpringApplication.run(CtrlApplication.class, args);
 
+
 	}
+
+
 	@Bean
 	CommandLineRunner runner() {
 

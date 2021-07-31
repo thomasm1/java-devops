@@ -1,12 +1,9 @@
 package us.cryptomaven.services;
 
-import org.apache.commons.collections4.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import us.cryptomaven.domain.User;
-import us.cryptomaven.domain.User;
-import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.services.jms.JmsTextMessageService;
 
@@ -74,5 +71,10 @@ public class UserServiceImpl implements UserService {
 
     public boolean deleteUserById(Long id) {
         return userRepository.deleteUserById(userRepository.findOne(id));// .get());
+    }
+
+    @Override
+    public List<UserProduct> userProducts() {
+        return null;
     }
 }

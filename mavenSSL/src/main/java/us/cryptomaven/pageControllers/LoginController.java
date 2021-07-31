@@ -1,4 +1,4 @@
-package us.cryptomaven.controllers;
+package us.cryptomaven.pageControllers;
 
 import us.cryptomaven.commands.LoginCommand;
 import org.springframework.stereotype.Controller;

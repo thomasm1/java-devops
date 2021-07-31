@@ -74,4 +74,10 @@ public class ProductServiceImpl implements ProductService {
     public boolean deleteProductById(Long id) {
         return productRepository.deleteProductById(productRepository.findOne(id));// .get());
     }
+
+    @Override
+    public List<ChartData> getProductStatus() {
+        return null;
+    }
+
 }

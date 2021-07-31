@@ -24,4 +24,6 @@ public interface ProductService {
     public List<Product> getProductsByCategoryAndVolume(String category, Double volume);
 
     public boolean deleteProductById(Long id);
+
+    List<ChartData> getProductStatus();
 }

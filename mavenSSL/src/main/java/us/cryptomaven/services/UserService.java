@@ -1,6 +1,5 @@
 package us.cryptomaven.services;
 
-import us.cryptomaven.domain.Product;
 import us.cryptomaven.domain.User;
 
 import java.util.List;
@@ -25,4 +24,5 @@ public interface UserService {
 
     public boolean deleteUserById(Long id);
 
+    List<UserProduct> userProducts();
 }

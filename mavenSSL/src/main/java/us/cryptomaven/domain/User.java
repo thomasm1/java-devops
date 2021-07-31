@@ -43,9 +43,6 @@ public class User {
 
     private String password;
 
-//    @Column
-//    private Product product;
-
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST},
             fetch = FetchType.LAZY)
     @JoinTable(name="product_user",
@@ -54,6 +51,14 @@ public class User {
     )
     @JsonIgnore
     private List<Product> coinProducts;
+
+    public List<Product> getProjects() {
+        return coinProducts;
+    }
+
+    public void setProjects(List<Product> coinProducts) {
+        this.coinProducts = coinProducts;
+    }
 
 
     public User() {}

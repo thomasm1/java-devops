@@ -12,15 +12,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+import us.cryptomaven.utils.Rotate;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
-import java.time.Instant;
-import java.util.Date;
 
 @Component
 public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
+
+    public void Rotate() {
+
+    }
+    Rotate r = new us.cryptomaven.utils.Rotate();
+
 
     private PostRepository postRepository;
     private UserRepository userRepository;
