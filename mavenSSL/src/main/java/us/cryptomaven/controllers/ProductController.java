@@ -56,7 +56,7 @@ public class ProductController {
     }
 
     //  All products  SHOWING THE CORRECT STATUS, RETURN ITEMS IN ASC ORDER
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public List<Product> getProducts(){
         return productService.getProducts();
 

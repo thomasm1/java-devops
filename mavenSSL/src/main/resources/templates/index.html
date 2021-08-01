@@ -25,14 +25,28 @@
     <div>NAVBAR</div>
 </div>
 
-<div class="jumbotron" th:replace="layout :: jumbotron">
-    <div class="container">
-        <h1>CryptoMaven</h1>
-        <p class="lead" th:text="#{index.coins.tagline}">Tag line</p>
+
+
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="jumbotron" th:replace="layout :: jumbotron">
+            <div class="container">
+                <h1>CryptoMaven</h1>
+                <p class="lead" th:text="#{index.coins.tagline}">Tag line</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div >
+            <div class="container">
+                <h1>Maven</h1>
+
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container">
     <div class="row">
         <div class="col-md-12">
             <h1 th:text="#{index.coins.headline}">BITCOIN RESEARCH AND ANALYSIS CONSOLE</h1>

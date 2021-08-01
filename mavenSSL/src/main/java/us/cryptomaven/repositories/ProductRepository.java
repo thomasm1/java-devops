@@ -10,11 +10,11 @@ import java.util.List;
 
 @Repository
 public interface ProductRepository extends CrudRepository<Product, Long> {  // JpaRepository
-    //	@Query("select p from Product p where p.category = ?1")
+
+    // 	@Query("select p from Product p where p.category = ?1")
     List<Product> findAllByCategory(String category);
 
 //	@Query("select u from User u where u.isDriver = ?1 and u.batch.batchLocation = ?2")
-
     public List<Product> findAllByCategoryAndVolume(String category, Double volume);
 
     boolean deleteProductById(Product product);

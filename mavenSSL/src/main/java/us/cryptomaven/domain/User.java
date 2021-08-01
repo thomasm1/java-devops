@@ -43,8 +43,6 @@ public class User {
 
     private String password;
 
-//    @Column
-//    private Product product;
 
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST},
             fetch = FetchType.LAZY)
@@ -52,6 +50,9 @@ public class User {
             joinColumns=@JoinColumn(name="user_id"),
             inverseJoinColumns= @JoinColumn(name="product_id")
     )
+//    @JsonIgnore
+//    private Product product;
+
     @JsonIgnore
     private List<Product> coinProducts;
 
@@ -63,7 +64,12 @@ public class User {
         this.coinProducts = coinProducts;
     }
 
-
+////
+//    public Product getProduct() { return product;   }
+//
+//    public void setProduct(Product product) {
+//        this.product = product;
+//    }
 
     public User() {}
 
@@ -74,6 +80,7 @@ public class User {
         this.email = email;
         this.password = password;
         this.image = image;
+//        this.product = product;
     }
 
     public Long getId() {
@@ -131,12 +138,7 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-//
-//    public Product getProduct() { return product;   }
-//
-//    public void setProduct(Product product) {
-//        this.product = product;
-//    }
+
 
     @PreUpdate
     @PrePersist

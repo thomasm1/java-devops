@@ -70,13 +70,13 @@ public class Product {
     }
  
 
-    public long getProductId() {
-        return id;
-    }
-
-    public void setProductId(long productId) {
-        this.id = productId;
-    }
+//    public long getProductId() {
+//        return id;
+//    }
+//
+//    public void setProductId(long productId) {
+//        this.id = productId;
+//    }
 
     public Product() {};
 

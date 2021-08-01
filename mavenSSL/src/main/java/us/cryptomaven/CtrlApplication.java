@@ -7,9 +7,16 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import us.cryptomaven.domain.Product;
+import us.cryptomaven.domain.ProductCategory;
 import us.cryptomaven.domain.User;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.repositories.UserRepository;
+import us.cryptomaven.services.ProductService;
+import us.cryptomaven.services.UserService;
+
+import java.math.BigDecimal;
+import java.util.Date;
 
 @SpringBootApplication
 public class CtrlApplication {
@@ -22,6 +29,12 @@ public class CtrlApplication {
 
 	@Autowired
 	ProductRepository prodRepo;
+
+	@Autowired
+	UserService userService;
+
+	@Autowired
+	ProductService productService;
 
 	public static void main(String[] args) {
 		LOGGER.info("starting info message");
@@ -45,29 +58,10 @@ public class CtrlApplication {
 			User user7 = new User(7777L, "Richard", "Carson", "carson@gmail.com",   "passwordx", "http://tmm.net/images");
 			User user8 = new User(885L, "Honor", "Miles", "miles@gmail.com",   "passwordx", "http://tmm.net/images");
 			User user9 = new User(8885L, "Tony", "Roggers", "roggers@gmail.com",   "passwordx", "http://tmm.net/images");
-//
-//
-//			Product pro1 = new Product("Large Production Deploy", "NOTSTARTED", "This requires all hands on deck for"
-//					+ "the final deployment of the software into production");
-//			Product pro2 = new Product("New User Budget",  "COMPLETED", "Decide on a new user bonus budget"
-//					+ "for the year and figureout who will be promoted");
-//			Product pro3 = new Product("Office Reconstruction", "INPROGRESS", "The office building in Monroe has "
-//					+ "been damaged due to hurricane in the region. This needs to be reconstructed");
-//			Product pro4 = new Product("Improve Intranet Security", "INPROGRESS", "With the recent data hack, the office"
-//					+ "security needs to be improved and proper security team needs to be hired for "
-//					+ "implementation");
-//
-//
-//
-//			// need to set both sides of the relationship manually
-//
-//			pro1.setUser(user1);
-//			pro1.setUser(user2);
-//			pro2.setUser(user3);
-//			pro3.setUser(user1);
-//			pro4.setUser(user1);
-//			pro4.setUser(user3);
-//
+
+
+
+
 //
 //			// need to set both sides of the relationship manually
 //
@@ -86,15 +80,10 @@ public class CtrlApplication {
 			userRepo.save(user8);
 			userRepo.save(user9);
 
-//
 //			// save prodects in database
-//
-//			prodRepo.save(pro1);
-//			prodRepo.save(pro2);
-//			prodRepo.save(pro3);
-//			prodRepo.save(pro4);
-//
-//
+
+
+
 		};
 
 	}

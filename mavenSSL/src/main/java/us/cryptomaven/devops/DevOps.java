@@ -213,5 +213,21 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         coinCompound.getProductCategories().add(categoryPlatform);
 
         coinCompound = productRepository.save(coinCompound);
+
+        Product ethereum2 = new Product(1, null, null, "Ethereum2", "describe Ethereum2" , "ETH2", "erc20", 20.00, 21.00, 454545d, tm2, null, null, "http://tmm.net/images");
+        Product avalanche = new Product(1, null, null, "Avalanche", "describe Avalanche" , "AVX", "erc20", 20.00, 21.00, 454545d, tm, null, null, "http://tmm.net/images");
+        Product brave = new Product(1, null, null, "Brave", "describe Brave" , "BRV", "erc20", 20.00, 21.00, 454545d, tm2, null, null, "http://tmm.net/images");
+
+
+//        ethereum2.setUser(tm);
+//        avalanche.setUser(tm2);
+//        brave.setUser(tm2);
+//        ethereum2.setUser(tm);
+//        avalanche.setUser(tm);
+//        brave.setUser(tm2);
+
+        productRepository.save(ethereum2);
+        productRepository.save(avalanche);
+        productRepository.save(brave);
     }
 }
