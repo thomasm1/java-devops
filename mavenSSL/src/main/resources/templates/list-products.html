@@ -21,6 +21,7 @@
 			<table class="table table-bordered table-striped">
 				<thead class="thead-dark">
 					<tr>
+						<th>Go To</th>
                         <th>Coin ID</th>
 						<th>Coin Name</th>
 						<th>Coin Symbol</th>
@@ -28,6 +29,20 @@
 				</thead>
 				<tbody>
 					<tr th:each="aProduct : ${products}">
+
+						<td>
+							<a th:href="@{/product/update(id=${aProduct.id})}"
+							   class="btn btn-info btn-sm">
+								Update
+							</a>
+
+							<a th:href="@{/product/delete(id=${aProduct.id})}"
+							   class="btn btn-danger btn-sm">
+								<!--                               onClick="if (!(confirm('Are you sure you want to delete this employee?'))) return false">-->
+								Delete
+							</a>
+
+						</td>
                         <td th:text="${aProduct.id}"/>
 						<td th:text="${aProduct.coinName}"/>
 						<td th:text="${aProduct.symbol}"/>
@@ -36,6 +51,9 @@
 
 			</table>
 		</div>
+	<div  th:replace="layout :: footer">
+		<p>footer</p>
+	</div>
 	</body>
 
 </html>

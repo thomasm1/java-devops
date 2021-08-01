@@ -42,7 +42,7 @@ public class ProductPageController {
         return "list-products";
     }
 
-    @RequestMapping("/new")
+    @RequestMapping(path = "/new")
     public String displayProductForm(Model model) {
 
         Product aProduct = new Product();

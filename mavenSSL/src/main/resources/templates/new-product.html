@@ -2,51 +2,51 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="layouts :: header"></head>
+<head th:replace="layout :: header"></head>
 
 <body>
 
-<nav th:replace="layouts :: navbar"></nav>
+<nav th:replace="layout :: navbar"></nav>
 	
 	<br>
 	
 	<div class="container">
-		<form th:action="@{/projects/save}" th:object="${project}" method="POST">
+		<form th:action="@{/product/save}" th:object="${product}" method="POST">
 		
 		<div class="form-group row">
-			<input type="text" placeholder="Project Name" th:field="*{name}">
+			<input type="text" placeholder="Product Name" th:field="*{coinName}">
 		</div>
 		
 		<div class="form-group row">
-			<select th:field="${project.stage}">
-				<option th:value="NOTSTARTED"> Not Started</option>
-				<option th:value="INPROGRESS"> In Progress</option>
-				<option th:value="COMPLETED"> Completed</option>
+			<select th:field="${product.symbol}">
+				<option th:value="ETH"> ETH</option>
+				<option th:value="BTC"> BTC</option>
+				<option th:value="HEX"> HEX</option>
 			</select>
 		</div>
 		
 		<div class="form-group row">
-			<textarea type="text" placeholder="Enter Project Description" th:field="${project.description}"></textarea>
+			<textarea type="text" placeholder="Enter Product Description" th:field="${product.coinDescription}"></textarea>
 		</div>
 		
+<!--		<div class="form-group row">-->
+<!--			<select th:field="*{users}" multiple="multiple">-->
+<!--				<option th:each = "u : ${allUsers}"-->
+<!--						th:value = "${u.id}"-->
+<!--						th:text = "${u.firstName}">-->
+<!--				</option>-->
+<!--			</select>-->
+<!--		</div>-->
+		
+		Product Start Date:
 		<div class="form-group row">
-			<select th:field="*{employees}" multiple="multiple">
-				<option th:each = "employee : ${allEmployees}"
-						th:value = "${employee.employeeId}"
-						th:text = "${employee.firstName}">
-				</option>
-			</select>
+			<input id="dp3" type="text" class="mb-4 col-2 col-xs-4" value="Start Date" th:field="${product.dateCreated}">
 		</div>
 		
-		Project Start Date:
-		<div class="form-group row">
-			<input id="dp3" type="text" class="mb-4 col-2 col-xs-4" value="Start Date" th:field="${project.startDate}">
-		</div>
 		
-		
-		Project End Date:
+		Product End Date:
 		<div class="form-group row">
-			<input id="dp4" type="text" class="mb-4 col-2 col-xs-4" value="End Date" th:field="${project.endDate}">
+			<input id="dp4" type="text" class="mb-4 col-2 col-xs-4" value="End Date" th:field="${product.lastUpdated}">
 		</div>
 		
 		<script type="text/javascript">
@@ -55,11 +55,13 @@
 	      </script>
 		
 		
-		<button class="btn btn-info col-2" type="submit">Enter Project</button>
+		<button class="btn btn-info col-2" type="submit">Enter Product</button>
 		
 		</form>
 	</div>
-	
+<div  th:replace="layout :: footer">
+	<p>footer</p>
+</div>
 </body>
 
 </html>
