@@ -1,4 +1,4 @@
-package us.cryptomaven.controllers;
+package us.cryptomaven.pageControllers;
 
 import us.cryptomaven.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;

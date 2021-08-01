@@ -49,7 +49,7 @@ public class CtrlApplication {
 //
 //			Product pro1 = new Product("Large Production Deploy", "NOTSTARTED", "This requires all hands on deck for"
 //					+ "the final deployment of the software into production");
-//			Product pro2 = new Product("New User Budget",  "COMPLETED", "Decide on a new employee bonus budget"
+//			Product pro2 = new Product("New User Budget",  "COMPLETED", "Decide on a new user bonus budget"
 //					+ "for the year and figureout who will be promoted");
 //			Product pro3 = new Product("Office Reconstruction", "INPROGRESS", "The office building in Monroe has "
 //					+ "been damaged due to hurricane in the region. This needs to be reconstructed");

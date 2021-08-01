@@ -12,6 +12,7 @@ import java.util.List;
 @Table
 public class Product {
     @Id
+    //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
@@ -60,6 +61,22 @@ public class Product {
     @JsonIgnore
     private List<User> users;
 
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
+    }
+ 
+
+    public long getProductId() {
+        return id;
+    }
+
+    public void setProductId(long productId) {
+        this.id = productId;
+    }
 
     public Product() {};
 

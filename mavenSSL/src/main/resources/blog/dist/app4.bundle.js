@@ -633,7 +633,7 @@ var bloggerFeb = function bloggerFeb() {
   
   challenges that arise from informal practices
   
-  <sup>1</sup>, by which the organizational nodes (employees) choose to deviate from the employee role&#39;s protocol for
+  <sup>1</sup>, by which the organizational nodes (users) choose to deviate from the user role&#39;s protocol for
   
   the sake of efficiency, convenience, company culture, and multiple other levels of human factors.</p>
   
@@ -641,7 +641,7 @@ var bloggerFeb = function bloggerFeb() {
   
   <p>Sociologists Meyer &amp; Rowan&#39;s (1977)
   
-  <i>New Institutionalism</i> explains how employees change practices and decouple
+  <i>New Institutionalism</i> explains how users change practices and decouple
   
   <i>actual</i> organizational structure from recorded rules, as a function of organizational size, time, convenience,
   
@@ -655,7 +655,7 @@ var bloggerFeb = function bloggerFeb() {
   
   world the blockchain tool, <s>for which</s> the Hard Sciences can and must share and propogate it's technical expertise <i>and higher standard of metric truth</i><s style="color:purple" class="strike-purple"> not contribute everything, especially relating with</s> to the other sciences that are still lagging behind--namely The Discipline of Sociology</s> toward acclimating to the modern age's social priorities and needs. Ask yourself, how well do 1,000 top blockchain-related programmers understand the multi-dimensional layers of hierarchical social, corporate, and governmental relationship networks--probably 700 of the 1,000. And how many social scientists can understand the technological sciences? Probably 200 out of 1,000. This means that <i>a chunk of the scientific displines suffer from acute innumeracy</i>. So how do we bridge this massive knowledge gap between qualitative meaning in the smart-contract.</p>
   
-  <p>In the past, the layers of abstraction from raw technological tool to societal use was refined, improved, integrated through multiple layers of &quot;middlemen&quot;, such as lawyers, corporate lawyers, government institutions, non-governmental, non-profit and for-profit actors. Blockchain technology, by its very nature, erases the middlemen. Suddenly, one programmer, for example, is writing the same healthcare insurance crypto-contract, that last month an entire team of hospital employees spent a month writing; then overseeing and managing different facets of this same thing.</p>
+  <p>In the past, the layers of abstraction from raw technological tool to societal use was refined, improved, integrated through multiple layers of &quot;middlemen&quot;, such as lawyers, corporate lawyers, government institutions, non-governmental, non-profit and for-profit actors. Blockchain technology, by its very nature, erases the middlemen. Suddenly, one programmer, for example, is writing the same healthcare insurance crypto-contract, that last month an entire team of hospital users spent a month writing; then overseeing and managing different facets of this same thing.</p>
   
   
   

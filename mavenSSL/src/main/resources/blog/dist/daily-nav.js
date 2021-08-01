@@ -235,10 +235,10 @@ document.getElementById("dailyNav").innerHTML = `<nav class="navbar navbar-toggl
                     </li>
                     <li style="z-index:1;">
                         <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
-                            role="button"> R-Project &nbsp;&nbsp; </a>
+                            role="button"> R-Product &nbsp;&nbsp; </a>
                         <ul>
                             <li style="z-index:1;">
-                                <a href="https://www.r-project.org/" target="_blank">R-Project </a>
+                                <a href="https://www.r-project.org/" target="_blank">R-Product </a>
                             </li>
                             <li>
                                 <a href="https://www.rstudio.com/" target="_blank">RStudio</a>

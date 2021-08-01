@@ -55,6 +55,15 @@ public class User {
     @JsonIgnore
     private List<Product> coinProducts;
 
+    public List<Product> getProducts() {
+        return coinProducts;
+    }
+
+    public void setProducts(List<Product> coinProducts) {
+        this.coinProducts = coinProducts;
+    }
+
+
 
     public User() {}
 

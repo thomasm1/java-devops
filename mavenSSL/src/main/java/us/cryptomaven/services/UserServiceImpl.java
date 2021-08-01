@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUser(Long id) {
-        return null;
+        return userRepository.findOne(id);
     }
 
     @Override
@@ -69,9 +69,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> listUsers() {
-        return null;
+        Sort sort = new Sort(Sort.Direction.ASC, "id");
+        return (List<User>) userRepository.findAll();
     }
-
+    @Override
     public boolean deleteUserById(Long id) {
         return userRepository.deleteUserById(userRepository.findOne(id));// .get());
     }

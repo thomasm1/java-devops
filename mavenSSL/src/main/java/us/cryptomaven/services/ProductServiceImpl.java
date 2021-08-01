@@ -66,11 +66,14 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getProducts() {
+//        jmsTextMessageService.sendTextMessage("Listing Products");
+//        return IteratorUtils.toList(productRepository.findAll().iterator());
+
         Sort sort = new Sort(Sort.Direction.ASC, "id");
         return (List<Product>) productRepository.findAll(sort);
 
     }
-
+    @Override
     public boolean deleteProductById(Long id) {
         return productRepository.deleteProductById(productRepository.findOne(id));// .get());
     }
