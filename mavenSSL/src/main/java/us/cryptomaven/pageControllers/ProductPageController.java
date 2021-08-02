@@ -11,6 +11,7 @@ import us.cryptomaven.domain.User;
 import us.cryptomaven.services.ProductService;
 import us.cryptomaven.services.UserService;
 import us.cryptomaven.utils.dataStructure.circularLinkedList.App;
+import us.cryptomaven.utils.dataStructure.queue.Qapp;
 import us.cryptomaven.utils.dataStructure.singlyLinkedList.SinglyApp;
 
 import java.util.List;
@@ -44,12 +45,14 @@ public class ProductPageController {
         List<Product> products = prServ.listProducts();
         model.addAttribute("products", products);
 
-        App a = new us.cryptomaven.utils.dataStructure.circularLinkedList.App();
-        App.cList(333,444);
+        App a = new  App();
+        a.cList(333,444);
 
         SinglyApp s = new SinglyApp();
         s.sList(12,13);
 
+        Qapp q = new Qapp();
+        q.qUp(123, 345);
         return "list-products";
     }
 

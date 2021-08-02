@@ -19,7 +19,7 @@ public class App {
 		mylist.insertFirst(b);
 		mylist.insertFirst(99);
 		mylist.insertFirst(88);
-		mylist.insertLast(9999999);
+		mylist.insertLast(7777);
 
 		mylist.displayList();
 		return mylist;

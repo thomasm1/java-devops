@@ -50,6 +50,7 @@ public class Queue {
 	}
 	
 	public void view(){
+		System.out.println("Queue List (first in <---) ");
 		System.out.print("[ ");
 		for(int i = 0; i < queArray.length; i++){
 			System.out.print(queArray[i]+ " ");

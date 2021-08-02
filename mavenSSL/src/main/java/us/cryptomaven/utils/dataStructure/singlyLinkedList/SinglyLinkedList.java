@@ -26,7 +26,7 @@ public class SinglyLinkedList {
 	}
 	
 	public void displayList(){
-		System.out.println("List (first --> last) ");
+		System.out.println("Singly Linked List (first --> last) ");
 		Node current = first;
 		while(current != null){
 			current.displayNode();
