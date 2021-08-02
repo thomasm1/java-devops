@@ -89,9 +89,9 @@ public class DevOps implements ApplicationListener<ContextRefreshedEvent> {
         tm = userRepository.save(tm);
 
         User tm2 = new User();
-        tm2.setFirstName("Bitcoin");
-        tm2.setLastName("Maestas2");
-        tm2.setEmail("thomas2@gmail.com");
+        tm2.setFirstName("Theodore");
+        tm2.setLastName("Stephenson");
+        tm2.setEmail("theo@gmail.com");
         tm2.setPassword("xyzPW2");
         tm2.setId(2L);
         tm2.setImage("profile.jpg");

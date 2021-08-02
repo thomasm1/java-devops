@@ -1,6 +1,6 @@
 package us.cryptomaven.utils.dataStructure.singlyLinkedList;
 
-public class App {
+public class SinglyApp {
 
 	public static void main(String[] args) {
 		SinglyLinkedList mylist = new SinglyLinkedList();
@@ -12,5 +12,15 @@ public class App {
 		
 		mylist.displayList();
 	}
+	public static SinglyLinkedList sList(int a, int b) {
+		SinglyLinkedList mylist1 = new SinglyLinkedList();
+		mylist1.insertFirst(a);
+		mylist1.insertFirst(b);
+		mylist1.insertFirst(99);
+		mylist1.insertFirst(88);
+		mylist1.insertLast(9999999);
 
+		mylist1.displayList();
+		return mylist1;
+	}
 }

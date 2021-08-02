@@ -13,4 +13,15 @@ public class App {
 		mylist.displayList();
 	}
 
+	public static CircularLinkedList cList(int a, int b) {
+		CircularLinkedList mylist = new CircularLinkedList();
+		mylist.insertFirst(a);
+		mylist.insertFirst(b);
+		mylist.insertFirst(99);
+		mylist.insertFirst(88);
+		mylist.insertLast(9999999);
+
+		mylist.displayList();
+		return mylist;
+	}
 }

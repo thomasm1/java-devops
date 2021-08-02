@@ -10,6 +10,8 @@ import us.cryptomaven.domain.Product;
 import us.cryptomaven.domain.User;
 import us.cryptomaven.services.ProductService;
 import us.cryptomaven.services.UserService;
+import us.cryptomaven.utils.dataStructure.circularLinkedList.App;
+import us.cryptomaven.utils.dataStructure.singlyLinkedList.SinglyApp;
 
 import java.util.List;
 
@@ -37,8 +39,17 @@ public class ProductPageController {
 
     @RequestMapping("")
     public String displayProducts(Model model) {
+
+
         List<Product> products = prServ.listProducts();
         model.addAttribute("products", products);
+
+        App a = new us.cryptomaven.utils.dataStructure.circularLinkedList.App();
+        App.cList(333,444);
+
+        SinglyApp s = new SinglyApp();
+        s.sList(12,13);
+
         return "list-products";
     }
 
