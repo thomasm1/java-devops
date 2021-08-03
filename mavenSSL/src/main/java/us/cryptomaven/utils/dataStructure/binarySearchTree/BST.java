@@ -168,19 +168,22 @@ public class BST {
 		
 	}
 	
-	public void displayTree() {
-		
-		/** 
-		You'll need to implement this method in the following assignment. I've provided 
-		the solution at the end of the assignment but please don't just copy the solution. 
-		Try to take the time and work on completing this method on your own before viewing
-		the solution code. 
-		
-		This is an interesting and challenging programming problem to help you sharpen 
-		your coding skills.
-		
-		*/
-		
+	public void displayTree(BST tree) {
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println("Binary Search Tree ");
+
+		System.out.println("Min:");
+		System.out.println(tree.findMin().key);
+		System.out.println("Max:");
+		System.out.println(tree.findMax().key);
+
+		System.out.println("System.out.println(tree.remove(10)); // print true);");
+		System.out.println(tree.remove(10)); // print true
+		System.out.println(tree.findMin().key); // 15
+		System.out.println(tree.findMax().key); // 15
+
+
 		}
 }
 	

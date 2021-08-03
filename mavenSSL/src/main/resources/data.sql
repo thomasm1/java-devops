@@ -28,10 +28,16 @@ INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_p
 INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
 (1555, 'Polygon2', 'MATIC', 'coin', 94.83, 66.83, 120005);
 
+
+--USER
+--DROP TABLE USER;
+CREATE TABLE USER(id NUMBER(10), first_name VARCHAR2(20), last_name VARCHAR2(20), email VARCHAR2(20), password VARCHAR2(20), image VARCHAR2(200));
+INSERT INTO USER (id, first_name, last_name, email, password, image) VALUES (7,  'ff',   'll',  'e@gmail.com', 'passw', 'http://tmm.net/images');
+
+
+
 CREATE TABLE POST(id NUMBER(10), did VARCHAR2(20), date_ VARCHAR2(20) , author VARCHAR2(20) , month_order VARCHAR2(20), cat3 VARCHAR2(20), title VARCHAR2(20), post VARCHAR2(2000), blogcite VARCHAR2(200), username  VARCHAR2(20));
-
 --DROP TABLE POST;
-
 
 --SELECT * FROM POST;
 insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)

@@ -13,6 +13,7 @@ import us.cryptomaven.services.UserService;
 import us.cryptomaven.utils.dataStructure.circularLinkedList.App;
 import us.cryptomaven.utils.dataStructure.queue.Qapp;
 import us.cryptomaven.utils.dataStructure.singlyLinkedList.SinglyApp;
+import us.cryptomaven.utils.dataStructure.binarySearchTree.BinaryApp;
 
 import java.util.List;
 
@@ -45,6 +46,7 @@ public class ProductPageController {
         List<Product> products = prServ.listProducts();
         model.addAttribute("products", products);
 
+
         App a = new  App();
         a.cList(333,444);
 
@@ -53,6 +55,10 @@ public class ProductPageController {
 
         Qapp q = new Qapp();
         q.qUp(123, 345);
+
+        BinaryApp bst = new BinaryApp();
+        bst.bSearch();
+
         return "list-products";
     }
 
