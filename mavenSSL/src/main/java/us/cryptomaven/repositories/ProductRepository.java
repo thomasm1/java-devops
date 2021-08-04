@@ -1,9 +1,12 @@
 package us.cryptomaven.repositories;
 
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import us.cryptomaven.domain.Product;
+import us.cryptomaven.utils.dataVisuals.ChartData;
+import us.cryptomaven.utils.dataVisuals.TimeChartData;
 
 
 import java.util.List;
@@ -26,5 +29,12 @@ public interface ProductRepository extends CrudRepository<Product, Long> {  // J
 
     boolean deleteUserById(Product one);
 
+//    @Query(nativeQuery=true, value="SELECT symbol as label, COUNT(*) as value " +
+//            "FROM product " +
+//            "GROUP BY symbol")
+//    public List<ChartData> getProductStatus();
 
+//    @Query(nativeQuery=true, value="SELECT name as productName, start_date as startDate, end_date as endDate"
+//            + " FROM product WHERE start_date is not null")
+//    public List<TimeChartData> getTimeData();
 }

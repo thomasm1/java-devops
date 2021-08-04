@@ -2,6 +2,7 @@ package us.cryptomaven.services;
 
 import us.cryptomaven.domain.Product;
 import us.cryptomaven.domain.User;
+import us.cryptomaven.utils.dataVisuals.UserProduct;
 
 import java.util.List;
 
@@ -12,6 +13,10 @@ public interface UserService {
     List<User> getUsers();
 
     List<User> listUsers();
+
+
+//    public List<UserProduct> userProducts();
+
 
     public User addUser(User u);
 

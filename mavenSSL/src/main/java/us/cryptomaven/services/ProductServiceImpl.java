@@ -7,6 +7,7 @@ import us.cryptomaven.services.jms.JmsTextMessageService;
 import org.apache.commons.collections4.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import us.cryptomaven.utils.dataVisuals.ChartData;
 
 import java.util.List;
 
@@ -77,4 +78,12 @@ public class ProductServiceImpl implements ProductService {
     public boolean deleteProductById(Long id) {
         return productRepository.deleteProductById(productRepository.findOne(id));// .get());
     }
+
+
+
+//    @Override
+//    public List<ChartData> getProductStatus() {
+//        return productRepository.getProductStatus();
+//    };
+
 }

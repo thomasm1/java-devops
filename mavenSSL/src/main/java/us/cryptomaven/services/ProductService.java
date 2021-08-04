@@ -1,6 +1,7 @@
 package us.cryptomaven.services;
 
 import us.cryptomaven.domain.Product;
+import us.cryptomaven.utils.dataVisuals.ChartData;
 
 import java.util.List;
 
@@ -24,4 +25,6 @@ public interface ProductService {
     public List<Product> getProductsByCategoryAndVolume(String category, Double volume);
 
     public boolean deleteProductById(Long id);
+
+//    List<ChartData> getProductStatus();
 }

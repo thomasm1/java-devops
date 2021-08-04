@@ -9,6 +9,7 @@ import us.cryptomaven.domain.User;
 import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.services.jms.JmsTextMessageService;
+import us.cryptomaven.utils.dataVisuals.UserProduct;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
     private JmsTextMessageService jmsTextMessageService;
+
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
@@ -72,6 +74,12 @@ public class UserServiceImpl implements UserService {
         Sort sort = new Sort(Sort.Direction.ASC, "id");
         return (List<User>) userRepository.findAll();
     }
+
+//    @Override
+//    public List<UserProduct> userProducts() {
+//        return   userRepository.userProducts();
+//    }
+
     @Override
     public boolean deleteUserById(Long id) {
         return userRepository.deleteUserById(userRepository.findOne(id));// .get());
