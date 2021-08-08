@@ -10,11 +10,14 @@ import us.cryptomaven.domain.Product;
 import us.cryptomaven.domain.User;
 import us.cryptomaven.services.ProductService;
 import us.cryptomaven.services.UserService;
+import us.cryptomaven.utils.blockchain.Block;
+import us.cryptomaven.utils.blockchain.BlockChainApp;
 import us.cryptomaven.utils.dataStructure.circularLinkedList.App;
 import us.cryptomaven.utils.dataStructure.queue.Qapp;
 import us.cryptomaven.utils.dataStructure.singlyLinkedList.SinglyApp;
 import us.cryptomaven.utils.dataStructure.binarySearchTree.BinaryApp;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -42,13 +45,14 @@ public class ProductPageController {
     @RequestMapping("")
     public String displayProducts(Model model) {
 
+        Block blockchain = BlockChainApp.startBlock();
 
+        // Products
         List<Product> products = prServ.listProducts();
         model.addAttribute("products", products);
 
-
-        App a = new  App();
-        a.cList(333,444);
+        App app2 = new  App();
+        app2.cList(333,444);
 
         SinglyApp s = new SinglyApp();
         s.sList(12,13);
