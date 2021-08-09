@@ -1,4 +1,4 @@
-package us.cryptomaven.utils;
+package us.cryptomaven.utils.utility;
 
 public class NumericPromotion {
     public static void main(String[] args) {

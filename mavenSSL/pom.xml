@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>us.cryptomaven</groupId>
-    <artifactId>ctrl</artifactId>
+    <artifactId>crypto-maven</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ctrl</name>
     <description>Crypto Maven Spring ThymeLeaf App</description>

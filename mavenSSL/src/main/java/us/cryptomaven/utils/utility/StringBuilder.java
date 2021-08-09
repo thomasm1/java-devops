@@ -1,4 +1,4 @@
-package us.cryptomaven.utils;
+package us.cryptomaven.utils.utility;
 import java.lang.*;
 
 public class  StringBuilder {

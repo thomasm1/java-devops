@@ -1,4 +1,4 @@
-package us.cryptomaven.utils;
+package us.cryptomaven.utils.utility;
 
 public class CharMath {
     public static void main(String[] args) {

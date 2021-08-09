@@ -7,21 +7,16 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import us.cryptomaven.domain.Product;
-import us.cryptomaven.domain.ProductCategory;
 import us.cryptomaven.domain.User;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.services.ProductService;
 import us.cryptomaven.services.UserService;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 @SpringBootApplication
-public class CtrlApplication {
+public class CryptoMavenApp {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(CtrlApplication.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(CryptoMavenApp.class);
 
 
 	@Autowired
@@ -40,7 +35,7 @@ public class CtrlApplication {
 		LOGGER.info("starting info message");
 		LOGGER.warn("starting warn message");
 		LOGGER.error("starting error message");
-		SpringApplication.run(CtrlApplication.class, args);
+		SpringApplication.run(CryptoMavenApp.class, args);
 
 	}
 	@Bean
