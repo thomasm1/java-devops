@@ -66,7 +66,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> listUsers() {
-        return null;
+        Sort sort = new Sort(Sort.Direction.ASC, "id");
+        return (List<User>) userRepository.findAll();
     }
 
     public boolean deleteUserById(Long id) {

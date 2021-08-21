@@ -80,4 +80,9 @@ public class ProductServiceImpl implements ProductService {
         return null;
     }
 
+    @Override
+    public List<TimeChartData> getTimeData() {
+        return null;
+    }
+
 }

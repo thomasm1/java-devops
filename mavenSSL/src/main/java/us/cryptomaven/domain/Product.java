@@ -61,10 +61,10 @@ public class Product {
     @JsonIgnore
     private List<User> users;
 
-    public List<User> getEmployees() {
+    public List<User> getUsers() {
         return users;
     }
-    public void setEmployees(List<User> users) {
+    public void setUsers(List<User> users) {
         this.users = users;
     }
 
@@ -92,7 +92,7 @@ public class Product {
 
 
     // convenience method:
-    public void addEmployee(User user) {
+    public void addUser(User user) {
         if(users==null) {
             users = new ArrayList<>();
         }
