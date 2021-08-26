@@ -5,11 +5,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
+import us.cryptomaven.domain.User;
+import us.cryptomaven.services.UserService;
 
 import javax.validation.Valid;
 
+
 @Controller
 public class LoginController {
+
+    private UserService uServ;
 
     @RequestMapping("/login")
     public String showLoginForm(Model model){
@@ -34,4 +39,9 @@ public class LoginController {
 
         return "redirect:index";
     }
+    @RequestMapping("/submit")
+ public User getUserByEmailAndPassword(String email, String password){
+        return uServ.getUserByEmailAndPassword(email, password);
+ };
+
 }
