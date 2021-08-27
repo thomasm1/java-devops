@@ -30,4 +30,5 @@ public interface UserService {
 
     public boolean deleteUserById(Long id);
 
+    List<UserProduct> userProducts();
 }

@@ -10,8 +10,8 @@ import java.util.function.Predicate;
 public class SearchCriteriaFactory {
 
     private static Predicate<List<WebElement>> allMale = (l) -> l.get(1).getText().equalsIgnoreCase("male");
-    private static Predicate<List<WebElement>> allFemale = (l) -> l.get(1).getText().equalsIgnoreCase("female");
-    private static Predicate<List<WebElement>> allGender = allMale.or(allFemale);
+    mavenalgorithmsprivate static Predicate<List<WebElement>> allFemale = (l) -> l.get(1).getText().equalsIgnoreCase("female");
+    privmavenalgorithmsate static Predicate<List<WebElement>> allGender = allMale.or(allFemale);
     private static Predicate<List<WebElement>> allAU = (l) -> l.get(2).getText().equalsIgnoreCase("AU");
     private static Predicate<List<WebElement>> allFemaleAU = allFemale.and(allAU);
 

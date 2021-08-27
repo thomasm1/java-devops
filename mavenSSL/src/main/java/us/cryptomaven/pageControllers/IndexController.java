@@ -61,8 +61,8 @@ public class IndexController {
 //        model.addAttribute("productStatusCnt", jsonString);
 //
 //        // we are querying the database for users
-//        List<UserProduct> usersProductCnt = uServ.userProducts();
-//        model.addAttribute("usersListProductsCnt", usersProductCnt);
+        List<UserProduct> usersProductCnt = uServ.userProducts();
+        model.addAttribute("usersListProductsCnt", usersProductCnt);
 
 
         return "index";

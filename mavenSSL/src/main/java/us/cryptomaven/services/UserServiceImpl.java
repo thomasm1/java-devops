@@ -84,4 +84,9 @@ public class UserServiceImpl implements UserService {
     public boolean deleteUserById(Long id) {
         return userRepository.deleteUserById(userRepository.findOne(id));// .get());
     }
+
+    @Override
+    public List<UserProduct> userProducts() {
+        return null;
+    }
 }
