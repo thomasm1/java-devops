@@ -6,7 +6,7 @@ insert into admins values
 (1, 'admin1');
 
 insert into users values 
-(1, 'gpichmann0@artisteer.com', 'Grady', '5 Carpenter Plaza', 'New York City', 'NY', '10275', false, false, false, 'Pichmann', '212-374-3466', 'gpichmann0', '30401 Esker Point', 'Des Moines', 'IA', '50347', 1),
+(1, 'gpichmann0@artister.com', 'Grady', '5 Carpenter Plaza', 'New York City', 'NY', '10275', false, false, false, 'Pichmann', '212-374-3466', 'gpichmann0', '30401 Esker Point', 'Des Moines', 'IA', '50347', 1),
 (2, 'smigheli1@indiatimes.com', 'Salvidor', '6371 Elka Court', 'Columbus', 'OH', '43220', true, true, true, 'Migheli', '614-513-2776', 'smigheli1', '35747 3rd Park', 'Philadelphia', 'PA', '19131', 1),
 (3, 'fbraunroth2@ebay.co.uk', 'Fabien', '830 Pierstorff Parkway', 'Omaha', 'NE', '68197', true, true, true, 'Braunroth', '402-694-8099', 'fbraunroth2', '747 Crownhardt Place', 'New York City', 'NY', '10270', 1),
 (4, 'aocullen3@google.com.au', 'Aldon', '86978 Sage Junction', 'Elmira', 'NY', '14905', true, false, false, 'O''Cullen', '607-732-5313', 'aocullen3', '2 Killdeer Avenue', 'Norwalk', 'CT', '06859', 1),
