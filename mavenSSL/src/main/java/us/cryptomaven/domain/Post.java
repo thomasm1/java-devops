@@ -1,15 +1,13 @@
 package us.cryptomaven.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Post {
 
     @Id
-    @GeneratedValue
+    //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
+    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     @Column(name = "ID")
     private Long id;
 

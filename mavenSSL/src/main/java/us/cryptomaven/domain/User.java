@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table
 public class User {
     @Id
+    //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
     @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     private Long id;
 

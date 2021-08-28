@@ -13,7 +13,7 @@ import java.util.List;
 public class Product {
     @Id
     //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     private Long id;
 
     @Version

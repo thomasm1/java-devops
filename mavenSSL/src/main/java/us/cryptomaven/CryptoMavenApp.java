@@ -18,7 +18,6 @@ public class CryptoMavenApp {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CryptoMavenApp.class);
 
-
 	@Autowired
 	UserRepository userRepo;
 

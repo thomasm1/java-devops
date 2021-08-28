@@ -7,7 +7,8 @@ import java.util.Date;
 public class ProductCategory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
+    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     Long id;
 
     @Version
