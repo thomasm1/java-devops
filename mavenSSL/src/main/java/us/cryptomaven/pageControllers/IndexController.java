@@ -47,7 +47,6 @@ public class IndexController {
 
         model.addAttribute("products", productService.listProducts());
         model.addAttribute("users", uServ.listUsers());
-
 //        List<ChartData> productData = productService.getProductStatus();
 //
 //        // Lets convert productData object into a json structure for use in javascript

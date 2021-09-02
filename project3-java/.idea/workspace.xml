@@ -192,7 +192,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70001b3-f5a3-42e3-8c20-72614623e480" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mavenSSL/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/static/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/pageControllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/pageControllers/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
