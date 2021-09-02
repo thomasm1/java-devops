@@ -44,13 +44,10 @@ public class IndexController {
 
     @RequestMapping({"/", "index"})
     public String displayIndex(Model model) throws JsonProcessingException {
-        model.addAttribute("products", productService.listProducts());
-//        model.addAttribute("versionNumber", ver);
 
-//        // query database for products
-//        List<Product> products = productService.listProducts();
-//        model.addAttribute("productsList", products);
-//
+        model.addAttribute("products", productService.listProducts());
+        model.addAttribute("users", uServ.listUsers());
+
 //        List<ChartData> productData = productService.getProductStatus();
 //
 //        // Lets convert productData object into a json structure for use in javascript

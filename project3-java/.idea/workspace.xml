@@ -192,30 +192,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70001b3-f5a3-42e3-8c20-72614623e480" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_196.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-qa.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/CryptoMavenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/CryptoMavenApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenSSL/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/pageControllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/java/us/cryptomaven/pageControllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rideshare-user-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rideshare-user-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
