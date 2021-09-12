@@ -76,9 +76,15 @@ public class ProductServiceImpl implements ProductService {
     }
     @Override
     public boolean deleteProductById(Long id) {
-        return productRepository.deleteProductById(productRepository.findOne(id));// .get());
-    }
+//        return productRepository.deleteProductById(productRepository.findOne(id));
+        return productRepository.deleteProductById(productRepository.findOne(id));
 
+        // .get());
+    }
+// !!** september **!!
+    public List<Product> getSpecials() {
+                return null;
+    }
 
 
 //    @Override

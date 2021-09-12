@@ -26,5 +26,7 @@ public interface ProductService {
 
     public boolean deleteProductById(Long id);
 
+    public List<Product> getSpecials();
+
 //    List<ChartData> getProductStatus();
 }
