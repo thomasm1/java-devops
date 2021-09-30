@@ -14,6 +14,7 @@ import us.cryptomaven.utils.blockchain.Block;
 import us.cryptomaven.utils.blockchain.BlockChainApp;
 import us.cryptomaven.utils.dataStructure.circularLinkedList.App;
 import us.cryptomaven.utils.dataStructure.queue.Qapp;
+import us.cryptomaven.utils.dataStructure.stack.*;
 import us.cryptomaven.utils.dataStructure.singlyLinkedList.SinglyApp;
 import us.cryptomaven.utils.dataStructure.binarySearchTree.BinaryApp;
 
@@ -54,11 +55,25 @@ public class ProductPageController {
         App app2 = new  App();
         app2.cList(333,444);
 
+        Qapp q = new Qapp();
+        q.qUp(123, 345);
+
+        Stack st = new Stack(6);
+        st.push('t');
+        st.push('h');
+        st.push('o');
+        st.push('m');
+        st.push('a');
+        st.push('s');
+        System.out.println(st);
+        st.print();
+
+        StackApp stackapp = new StackApp();
+        stackapp.reverse("Thomas");
+
         SinglyApp s = new SinglyApp();
         s.sList(12,13);
 
-        Qapp q = new Qapp();
-        q.qUp(123, 345);
 
         BinaryApp bst = new BinaryApp();
         bst.bSearch();

@@ -44,4 +44,8 @@ public class Stack {
 	public boolean isFull(){
 		return (maxSize-1 == top);
 	}
+
+	public void print() {
+		System.out.println(stackArray);
+	}
 }

@@ -31,6 +31,17 @@ public class StackApp {
 		System.out.println(rs.reverseString("Thomas"));
 		return theStack;
 	}
+	public static Stack reverse(String str) {
+		Stack theRev = new Stack(str.length());
+
+//		while(!theStack.isEmpty()){
+//			long value = theStack.pop();
+//			System.out.println(value);
+//		}
+		ReverseString rs = new ReverseString();
+		System.out.println(rs.reverseString(str));
+		return theRev;
+	}
 }
 class ReverseString {
 	public String reverseString(String str){
