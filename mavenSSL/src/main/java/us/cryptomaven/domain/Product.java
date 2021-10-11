@@ -13,7 +13,7 @@ import java.util.List;
 public class Product {
     @Id
     //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
-    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     private Long id;
 
     @Version
@@ -25,9 +25,9 @@ public class Product {
 
     @Column(length = 2000)
     private String coinDescription;
-
-    @ManyToOne
-    private User user;
+//
+//    @ManyToOne
+//    private User_ user_;
 
     private BigDecimal price;
 
@@ -59,13 +59,13 @@ public class Product {
             inverseJoinColumns= @JoinColumn(name="user_id")
     )
     @JsonIgnore
-    private List<User> users;
+    private List<User_> users;
 
-    public List<User> getUsers() {
+    public List<User_> getUsers() {
         return users;
     }
 
-    public void setUsers(List<User> users) {
+    public void setUsers(List<User_> users) {
         this.users = users;
     }
  
@@ -80,7 +80,7 @@ public class Product {
 
     public Product() {};
 
-    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinDescription, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, User user, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
+    public Product(Integer version, Date dateCreated, Date lastUpdated, String coinName, String coinDescription, String symbol, String category, Double retailPrice, Double discountedPrice, Double volume, User_ user_, BigDecimal price, List<ProductCategory> productCategories, String imageUrl) {
         this.version = version;
         this.dateCreated = dateCreated;
         this.lastUpdated = lastUpdated;
@@ -93,7 +93,7 @@ public class Product {
 
         this.discountedPrice = discountedPrice;
         this.volume = volume;
-        this.user = user;
+//        this.user_ = user_;
         this.price = price;
         this.productCategories = productCategories;
 
@@ -177,13 +177,13 @@ public class Product {
         this.coinDescription = coinDescription;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
+//    public User_ getUser() {
+//        return user_;
+//    }
+//
+//    public void setUser(User_ user_) {
+//        this.user_ = user_;
+//    }
 
     public BigDecimal getPrice() {
         return price;

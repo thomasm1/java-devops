@@ -1,0 +1,22 @@
+
+--DROP TABLE IF EXISTS PRODUCT;
+--CREATE TABLE Product (
+--  id BIGINT,
+--  coin_name VARCHAR(250),
+--  symbol VARCHAR(20),
+--  category VARCHAR(250),
+--  retail_price DECIMAL(10,2),
+--  discounted_price DECIMAL(10,2),
+--  volume DECIMAL(10,2),
+--);
+
+--DROP TABLE IF EXISTS MEMBER;
+--CREATE TABLE MEMBER (
+--id BIGINT,
+--date_created VARCHAR (40),
+--last_updated VARCHAR(40),
+--first_name VARCHAR(40),
+--last_name VARCHAR(40),
+--email VARCHAR(40),
+--password VARCHAR(40),
+--image VARCHAR(200));

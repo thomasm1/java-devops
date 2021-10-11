@@ -6,10 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-import us.cryptomaven.domain.User;
+import us.cryptomaven.domain.User_;
 import us.cryptomaven.services.UserService;
-
-import javax.validation.Valid;
 
 
 @Controller
@@ -28,7 +26,7 @@ public class UserPageController {
     }
     @RequestMapping("")
     public String displayUsers(Model model) {
-        Iterable<User> users = uServ.listUsers();
+        Iterable<User_> users = uServ.listUsers();
         model.addAttribute("users", users);
         return "list-users";
     }
@@ -36,7 +34,7 @@ public class UserPageController {
     @RequestMapping("/new")
     public String displayUserForm(Model model) {
 
-        User anUser = new User();
+        User_ anUser = new User_();
 
         model.addAttribute("user", anUser);
 
@@ -44,7 +42,7 @@ public class UserPageController {
     }
 
     @RequestMapping(path = "/save", method = RequestMethod.POST)
-    public String createUser(Model model,  User user, Errors errors) {
+    public String createUser(Model model, User_ user, Errors errors) {
 
         if(errors.hasErrors())
             return "new-user";
@@ -58,7 +56,7 @@ public class UserPageController {
     @RequestMapping(path ="/update", method = RequestMethod.GET)
     public String displayUserUpdateForm(@RequestParam("id") long theId, Model model) {
 
-        User u = uServ.getUserById(theId);
+        User_ u = uServ.getUserById(theId);
 
         model.addAttribute("user", u);
 

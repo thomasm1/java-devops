@@ -8,7 +8,7 @@ public class ProductCategory {
 
     @Id
     //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
-    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     Long id;
 
     @Version

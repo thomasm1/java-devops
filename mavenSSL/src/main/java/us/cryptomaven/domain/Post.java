@@ -7,7 +7,7 @@ public class Post {
 
     @Id
     //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
-    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     @Column(name = "ID")
     private Long id;
 

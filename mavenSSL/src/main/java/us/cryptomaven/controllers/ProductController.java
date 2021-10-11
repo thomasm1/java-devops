@@ -3,16 +3,11 @@ package us.cryptomaven.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import us.cryptomaven.domain.Product;
-import us.cryptomaven.domain.User;
-import us.cryptomaven.repositories.PostRepository;
 import us.cryptomaven.repositories.ProductRepository;
 import us.cryptomaven.services.ProductService;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController

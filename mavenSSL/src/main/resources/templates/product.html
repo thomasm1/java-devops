@@ -54,12 +54,11 @@
             <div class="row coin-listing-extra-info col-xs-12">
                 <div class="col-xs-8">
                     <img align="left" alt="Thomas Maestas"
-                         src="../static/images/instructor_jt.jpg"
-                         th:src="@{'/images/'+${product.user.image}}"
+                         src="../static/images/profile.jpg"
+                         th:src="@{'/images/'+${product.imageUrl}}"
                          class="img-circle"/>
-                    <div class="small coin-user-name" th:text="${(product.user.firstName)
-                                                          + ' ' + (product.user.lastName)}">
-                        User Name
+                    <div class="small coin-user-name" th:text="${(product.coinName)}">
+                        NAME
                     </div>
                 </div>
                 <div class="col-xs-4">

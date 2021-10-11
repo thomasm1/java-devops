@@ -1,20 +1,15 @@
 package us.cryptomaven.repositories;
 
-import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.repository.Query;
-import us.cryptomaven.domain.User;
+import us.cryptomaven.domain.User_;
 import org.springframework.data.repository.CrudRepository;
-import us.cryptomaven.utils.dataVisuals.UserProduct;
 
-import java.util.List;
+public interface UserRepository extends CrudRepository<User_, Long> {
+    User_ findByEmail(String value);
+    User_ findByEmailAndPassword(String email, String password);
 
-public interface UserRepository extends CrudRepository<User, Long> {
-    User findByEmail(String value);
-    User findByEmailAndPassword(String email, String password);
-
-    User findById(Long id);
-    User save(User user);
-    boolean deleteUserById(User one);
+    User_ findById(Long id);
+    User_ save(User_ user);
+    boolean deleteUserById(User_ one);
 
 //    Object findAll(Sort sort);
 //    @Query(nativeQuery=true, value="SELECT u.first_name as firstName, u.last_name as lastName, COUNT(pe.user_id) as projectCount " +

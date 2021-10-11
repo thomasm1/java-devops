@@ -1,13 +1,11 @@
 package us.cryptomaven.pageControllers;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import us.cryptomaven.domain.Product;
-import us.cryptomaven.domain.User;
+import us.cryptomaven.domain.User_;
 import us.cryptomaven.services.ProductService;
 import us.cryptomaven.services.UserService;
 import us.cryptomaven.utils.blockchain.Block;
@@ -18,7 +16,6 @@ import us.cryptomaven.utils.dataStructure.stack.*;
 import us.cryptomaven.utils.dataStructure.singlyLinkedList.SinglyApp;
 import us.cryptomaven.utils.dataStructure.binarySearchTree.BinaryApp;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -85,7 +82,7 @@ public class ProductPageController {
     public String displayProductForm(Model model) {
 
         Product aProduct = new Product();
-        Iterable<User> users = uServ.listUsers();
+        Iterable<User_> users = uServ.listUsers();
         model.addAttribute("product", aProduct);
         model.addAttribute("allUsers", users);
 

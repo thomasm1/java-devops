@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import us.cryptomaven.domain.User;
+import us.cryptomaven.domain.User_;
 import us.cryptomaven.repositories.UserRepository;
 import us.cryptomaven.services.UserService;
 
@@ -21,26 +21,26 @@ public class UserController {
     UserRepository userRepository;
 
     @RequestMapping(path = "/user/{id}", method = RequestMethod.GET)
-    public User getEmployeeById(@PathVariable("id") Long id) {
+    public User_ getEmployeeById(@PathVariable("id") Long id) {
         return uServ.getUserById(id);
     }
 
 
     @RequestMapping(value = "/users", method = RequestMethod.GET )
-    public Iterable<User> getUsers() {
+    public Iterable<User_> getUsers() {
         return uServ.getUsers();
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.POST, consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public User createUser(@RequestBody User user) {
+    public User_ createUser(@RequestBody User_ user) {
         return uServ.addUser(user);
     }
 
 
     @RequestMapping(value = "/users", method = RequestMethod.PUT, consumes = "application/json")
     @ResponseStatus(HttpStatus.OK)
-    public User update(@RequestBody@Valid User user) {
+    public User_ update(@RequestBody@Valid User_ user) {
         return uServ.updateUserById(user);
     }
 

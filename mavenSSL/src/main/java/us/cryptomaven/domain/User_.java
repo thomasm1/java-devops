@@ -21,10 +21,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table
-public class User {
+public class User_ {
     @Id
     //     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="project_seq")
-    @GeneratedValue(strategy = GenerationType.AUTO)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)  // AUTO -> java ; IDENTITY ->JPA-Hibernate
     private Long id;
 
     private Date dateCreated;
@@ -72,9 +72,9 @@ public class User {
 //        this.product = product;
 //    }
 
-    public User() {}
+    public User_() {}
 
-    public User(Long id, String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password, String image) {
+    public User_(Long id, String firstName, String lastName, @Email @Pattern(regexp = "^\\w+\\.?\\w+@\\w+\\.[a-zA-Z]{2,4}$") String email, String password, String image) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
