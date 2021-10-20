@@ -1,22 +1,40 @@
+-- PRODUCT
+DROP TABLE IF EXISTS PRODUCT;
+CREATE TABLE Product (
+ id BIGINT,
+ version NUMERIC(20),
+ coin_name VARCHAR(250),
+ coin_description VARCHAR(8000),
+ symbol VARCHAR(20),
+ category VARCHAR(250),
+ retail_price DECIMAL(10,2),
+ discounted_price DECIMAL(10,2),
+ volume DECIMAL(10,2),
+ price DECIMAL(10,2),
+ image_url VARCHAR(500));
 
---DROP TABLE IF EXISTS PRODUCT;
---CREATE TABLE Product (
---  id BIGINT,
---  coin_name VARCHAR(250),
---  symbol VARCHAR(20),
---  category VARCHAR(250),
---  retail_price DECIMAL(10,2),
---  discounted_price DECIMAL(10,2),
---  volume DECIMAL(10,2),
---);
+-- USER_
+DROP TABLE IF EXISTS USER_;
+CREATE TABLE USER_ (
+id BIGINT,
+date_created VARCHAR (40),
+last_updated VARCHAR(40),
+first_name VARCHAR(40),
+last_name VARCHAR(40),
+email VARCHAR(40),
+password VARCHAR(40),
+image VARCHAR(200));
 
---DROP TABLE IF EXISTS MEMBER;
---CREATE TABLE MEMBER (
---id BIGINT,
---date_created VARCHAR (40),
---last_updated VARCHAR(40),
---first_name VARCHAR(40),
---last_name VARCHAR(40),
---email VARCHAR(40),
---password VARCHAR(40),
---image VARCHAR(200));
+-- POST
+ DROP TABLE IF EXISTS POST;
+ CREATE TABLE POST (
+ id BIGINT,
+ did VARCHAR(20),
+ date_ VARCHAR (40),
+ author VARCHAR(100),
+ month_order VARCHAR(40),
+ cat3 VARCHAR(110),
+ title VARCHAR(110),
+ post VARCHAR(50000),
+ blogcite VARCHAR(3000),
+ username VARCHAR(100));

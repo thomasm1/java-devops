@@ -1,46 +1,59 @@
+-- PRODUCT
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1111, 1, 'Ethereum2', 'ERC20', 'ETH', 'coin', 94.83, 66.83, 120005, 1000.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1114, 3, 'Bitcoin2', 'Bitcoin-Network', 'BTC', 'coin', 94.83, 66.83, 62005, 62005.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1115, 3, 'Hex2', 'ERC-20', 'HEX', 'coin', .6483, .6683, 62005, .6210, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1116, 3, 'ChainLink2', 'ERC-20', 'LINK', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1117, 3, 'Ripple2', 'ERC-20', 'XRP', 'XRP', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+   (1118, 3, 'Cardano2', 'Cardano Network', 'ADA', 'ADA', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+    (1119, 3, 'Aave2', 'ERC-20', 'AAVE', 'ADA', 6.483, 6.83, 62005, 6.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+     (1120, 3, 'Stellar2', 'ERC-20', 'XLM', 'ADA', 368.483, 366.83, 62005, 362.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1121, 3, 'ChainLink2', 'ERC-20', 'LINK', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1122, 3, 'Monero2', 'ERC-20', 'XMR', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1123, 3, 'Compound2', 'ERC-20', 'COMP', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1124, 3, 'Litecoin2', 'Litecoin Network', 'LTC', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+    (1125, 3, 'Polygon2', 'ERC-20', 'MATIC', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
+  (1126, 3, 'Yearn2', 'ERC-20', 'YFI', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
 
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (1111, 'Ethereum2', 'ETH', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (2221, 'Bitcoin2', 'BTC', 'coin', 35.08, 26.88, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (3331, 'Hex2', 'HEX', 'erc20Token', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (4441, 'ChainLink2', 'LINK', 'erc20Token', 35.08, 26.88, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (5551, 'Ripple2', 'XRP', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (6661, 'Cardano2', 'ADA', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (7771, 'Aave2', 'AAVE', 'erc20Token', 35.08, 26.88, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (8881, 'Stellar2', 'XLM', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (9991, 'Neo2', 'NEO', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (1121, 'Monero2', 'XMR', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (1221, 'Compound2', 'COMP', 'erc20Token', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (1331, 'Litecoin2', 'LTC', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-  (1441, 'Yearn2', 'YFI', 'coin', 94.83, 66.83, 120005);
-INSERT INTO Product (id, coin_name, symbol, category, retail_price, discounted_price, volume) VALUES
-(1551, 'Polygon2', 'MATIC', 'coin', 94.83, 66.83, 120005);
 
-
---USER
+-- USER
 INSERT INTO USER_ (id, date_created, last_updated, first_name, last_name, email, password, image)
-VALUES (71111,  '9/30/2021', '10/30/2021', 'tom',   'maestas',  'thomasm1.maestas@gmail.com', 'passwd', 'http://tmm.net/images');
+VALUES (71111,  '9/30/2021', '10/30/2021', 'tom',   'maestas',  'thomasm1.maestas@gmail.com', 'passwd', 'https://s3.amazonaws.com/tmm.net/img/thomas-maestas.jpg');
+INSERT INTO USER_ (id, date_created, last_updated, first_name, last_name, email, password, image)
+VALUES (71112,  '9/30/2011', '10/30/2021', 'mot',   'milton',  'thomas76milton@gmail.com', 'passwd', 'https://s3.amazonaws.com/tmm.net/img/thomas-maestas.jpg');
+INSERT INTO USER_ (id, date_created, last_updated, first_name, last_name, email, password, image)
+VALUES (71113,  '10/30/2076', '10/30/2021', 'milton',   'thomas',  'thomas76milton@gmail.com', 'passwd', 'https://s3.amazonaws.com/tmm.net/img/thomas-maestas.jpg');
 
---POST
+-- POST
 insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)
-values(10011,'did1','date_1', 'author','monthOrder1','cat3', 'title1', 'post1', 'blogcite1', 'username1');
+values(14,'did1','date_1', 'author','monthOrder1','cat3', 'title1', 'post1', 'blogcite1', 'username1');
 
 insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)
-values(10021,'did2','date_2', 'author','monthOrder2','cat23', 'title2', 'post2', 'blogcite2', 'username2');
+values(15,'21-10-15','October 15, 2021', 'by Thomas Maestas, MA','2','Musing Blockchain', 'The Knighting of Bitcoin ETFs by the Sword of the SEC', '\n  <p class=\"firstparagraph\">\n   Bitcoins ETF (Exchange Traded Fund, i.e. futures trading) Approval by the United States <strong>  SEC</strong> (Security and Exchange Commission) completes a <i><strong>milestone event in CryptoCurrency</i>. Legitimacy remains the last hurdle to wide-spread adoption of Crypto Currencies, and true to form, Bitcoin leads the way. <br /><br /></p>\n  </p>\n  <p>The U.S. joins other nations like France and Canada<sup>1</sup> to approve the only mildly speculative art of trading in futures. Predicting The Future would require a real A.I. Oracle!</p>\n\n  <p class=\"quote\">Though dozens of companies like VanEck and Fidelity have submitted applications to the Securities and Exchange Commission to create the first Bitcoin ETF, none have received approval thus far. \n\n\n  Instead, the SEC has given the green light to the Volt Crypto Industry Revolution and Tech ETF, which offers investors access to companies with significant exposure to the worlds \n  largest cryptocurrency, rather than the ability to trade it directly. <sup>2</sup></p>\n  <p>All in all, this is a mild development because the underlying asset of these ETFs are future contracts --<i>not actual bitcoin</i>. So, Bitcoin-backed ETFs may be next on the horizon!\n', '\n<p class=\"footnotes\">1. <a href=\"https://www.coindesk.com/policy/2021/10/15/sec-approves-bitcoin-etf-opening-crypto-to-wider-investor-base/\"\n   target=\"_blank\">https://www.coindesk.com/policy/2021/10/15/sec-approves-bitcoin-etf-opening-crypto-to-wider-investor-base/</a>\n  \n</p> \n\n<p class=\"footnotes\">1. <a href=\"https://www.foxbusiness.com/markets/volt-equity-bitcoin-etf-sec-approval\"   target=\"_blank\">https://www.foxbusiness.com/markets/volt-equity-bitcoin-etf-sec-approval</a>\n  \n</p>   ', 'username1');
 
 insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)
-values(10031,'did3','date_3', 'author3','monthOrder3','cat33', 'title3', 'post3', 'blogcite3', 'username3');
+values(16,'21-10-16','October 16, 2021', 'by Thomas Maestas, MA','2','Musing Blockchain', 'The Knighting of Bitcoin ETFs by the Sword of the SEC', '\n  <p class=\"firstparagraph\">\n   Bitcoins ETF (Exchange Traded Fund, i.e. futures trading) Approval by the United States <strong>  SEC</strong> (Security and Exchange Commission) completes a <i><strong>milestone event in CryptoCurrency</i>. Legitimacy remains the last hurdle to wide-spread adoption of Crypto Currencies, and true to form, Bitcoin leads the way. <br /><br /></p>\n  </p>\n  <p>The U.S. joins other nations like France and Canada<sup>1</sup> to approve the only mildly speculative art of trading in futures. Predicting The Future would require a real A.I. Oracle!</p>\n\n  <p class=\"quote\">Though dozens of companies like VanEck and Fidelity have submitted applications to the Securities and Exchange Commission to create the first Bitcoin ETF, none have received approval thus far. \n\n\n  Instead, the SEC has given the green light to the Volt Crypto Industry Revolution and Tech ETF, which offers investors access to companies with significant exposure to the worlds \n  largest cryptocurrency, rather than the ability to trade it directly. <sup>2</sup></p>\n  <p>All in all, this is a mild development because the underlying asset of these ETFs are future contracts --<i>not actual bitcoin</i>. So, Bitcoin-backed ETFs may be next on the horizon!\n', '\n<p class=\"footnotes\">1. <a href=\"https://www.coindesk.com/policy/2021/10/15/sec-approves-bitcoin-etf-opening-crypto-to-wider-investor-base/\"\n   target=\"_blank\">https://www.coindesk.com/policy/2021/10/15/sec-approves-bitcoin-etf-opening-crypto-to-wider-investor-base/</a>\n  \n</p> \n\n<p class=\"footnotes\">1. <a href=\"https://www.foxbusiness.com/markets/volt-equity-bitcoin-etf-sec-approval\"   target=\"_blank\">https://www.foxbusiness.com/markets/volt-equity-bitcoin-etf-sec-approval</a>\n  \n</p>   ', 'username1');
+
+insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)
+values(17,'21-10-17','October 17, 2021', 'by Thomas Maestas, MA','2','Musing Blockchain', 'The Knighting of Bitcoin ETFs by the Sword of the SEC', '\n  <p class=\"firstparagraph\">\n   Bitcoins ETF (Exchange Traded Fund, i.e. futures trading) Approval by the United States <strong>  SEC</strong> (Security and Exchange Commission) completes a <i><strong>milestone event in CryptoCurrency</i>. Legitimacy remains the last hurdle to wide-spread adoption of Crypto Currencies, and true to form, Bitcoin leads the way. <br /><br /></p>\n  </p>\n  <p>The U.S. joins other nations like France and Canada<sup>1</sup> to approve the only mildly speculative art of trading in futures. Predicting The Future would require a real A.I. Oracle!</p>\n\n  <p class=\"quote\">Though dozens of companies like VanEck and Fidelity have submitted applications to the Securities and Exchange Commission to create the first Bitcoin ETF, none have received approval thus far. \n\n\n  Instead, the SEC has given the green light to the Volt Crypto Industry Revolution and Tech ETF, which offers investors access to companies with significant exposure to the worlds \n  largest cryptocurrency, rather than the ability to trade it directly. <sup>2</sup></p>\n  <p>All in all, this is a mild development because the underlying asset of these ETFs are future contracts --<i>not actual bitcoin</i>. So, Bitcoin-backed ETFs may be next on the horizon!\n', '\n<p class=\"footnotes\">1. <a href=\"https://www.coindesk.com/policy/2021/10/15/sec-approves-bitcoin-etf-opening-crypto-to-wider-investor-base/\"\n   target=\"_blank\">https://www.coindesk.com/policy/2021/10/15/sec-approves-bitcoin-etf-opening-crypto-to-wider-investor-base/</a>\n  \n</p> \n\n<p class=\"footnotes\">1. <a href=\"https://www.foxbusiness.com/markets/volt-equity-bitcoin-etf-sec-approval\"   target=\"_blank\">https://www.foxbusiness.com/markets/volt-equity-bitcoin-etf-sec-approval</a>\n  \n</p>   ', 'username1');
+
+insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)
+values(18,'did2','date_2', 'author','monthOrder2','cat23', 'title2', 'post2', 'blogcite2', 'username2');
+
+insert into post(id, did, date_, author, month_order, cat3, title, post, blogcite, username)
+values(19,'did3','date_3', 'author3','monthOrder3','cat33', 'title3', 'post3', 'blogcite3', 'username3');
 
 COMMIT;
