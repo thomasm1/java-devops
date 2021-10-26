@@ -15,8 +15,8 @@ public class JDBCConnection {
 	public static Connection getConnection() {
 		
 		if(conn == null) {
-			
-			String endpoint = "jdbc:oracle:thin:@thomas.cs8ihlmwvzfx.us-east-1.rds.amazonaws.com:1521:thomas";
+			//thomas.cmcadlepsyx9.us-east-1.rds.amazonaws.com
+			String endpoint = "jdbc:oracle:thin:@thomas.cmcadlepsyx9.us-east-1.rds.amazonaws.com:1521:thomas";
 			
 			String secureValue = getJDBCKey();
 //			String secureValue = "";							// endpoint:port:SID
@@ -49,7 +49,7 @@ public class JDBCConnection {
 	public static String getJDBCKey() {
 		Map<String, String> env = System.getenv();
 		for (Map.Entry<String, String> entry : env.entrySet()) {
-			if (entry.getKey().equals("getJDBCKey")) {
+			if (entry.getKey().equals("ORACLE_DB_PASSWORD")) {
 				System.out.println(entry.getValue());
 				return entry.getValue();
 			}
@@ -66,7 +66,6 @@ public class JDBCConnection {
 		
 		System.out.println(conn1);
 		System.out.println(conn2);
-		System.out.println(conn3);
 		System.out.println(conn4);
 	}
 

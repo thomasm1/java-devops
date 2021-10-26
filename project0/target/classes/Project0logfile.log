@@ -1,0 +1,14 @@
+INFO  | 2021-10-25 19:26:41 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 19:26:41 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2021-10-25 19:45:33 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 19:45:33 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2021-10-25 19:45:51 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 19:45:51 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2021-10-25 22:10:02 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 22:10:02 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2021-10-25 22:10:10 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 22:10:10 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2021-10-25 22:10:48 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 22:10:48 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2021-10-25 22:10:53 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2021-10-25 22:10:53 | [main] logger.LogGround (LogGround.java:19) - Program ended

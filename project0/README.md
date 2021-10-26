@@ -4,10 +4,8 @@
  	#====All-Star_E-Cars===# 
    #======================# 
 ```
-### Veterinarian Data Services Application
-
-### URL: 
-http://doggywood.s3-website-us-east-1.amazonaws.com/
+  
+### URL:  
 
 ### AUTHOR:
 -Thomas Maestas
@@ -15,7 +13,7 @@ http://doggywood.s3-website-us-east-1.amazonaws.com/
 ## Application Description:
 The Car Dealership app is a console-based application that facilitates the purchasing of cars. An employee can add cars to the lot and manage offers for those cars, while a customer can view the cars on the lot and make offers.
 ## Functionalities: 
-2. Data is stored in a database. 
+2. Data is stored in a Oracle database. 
 3. A custom-stored-procedure is called to perform some portion of the functionality.  
 4. Data Access is performed through use of JDBC data layer consisting of Data Access Objects.
 5. All input is received using the java.util.Scanner class.
@@ -59,7 +57,7 @@ My SQL tables are sufficiently atomic, non-redundant, and functionally independe
 |------------|:------------:|---------:|
 | Database | Oracle SE 11 | [Oracle]  | 
 | Cloud Data | Amazon RDS |  [AWS] | 
-| Cloud ASsets | Amazon S3 |  [S3]  |
+| Cloud Assets | Amazon S3 |  [S3]  |
 | User Data | Angular 8 |  [Angular]  |
 | UI/UX | Angular-Bootstrap |  [BS4] |
 | E2E Testing | Selenium | [Selenium] |

@@ -46,7 +46,7 @@ public class UserMain {
 
 	public static void frontpage() {
 
-		String fileName = "C:/w/www/git/java-dev/project0/src/main/java/systemUser/scannertext.txt";
+		String fileName = "C:/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
 
 		try {
 			File textFile = new File(fileName);
@@ -55,7 +55,8 @@ public class UserMain {
 			System.out.println("\n    #=============#");
 			System.out.println("    Welcome VIP # " + value);
 			System.out.println("    #=============#");
-			System.out.println("\n#====All-Star_E-Cars===#");
+			int value2 = scanText.nextInt();
+			System.out.println("\n#====All-Star_E-Cars==with " + value2 + " locations!");
 			System.out.println(
 					"\n1.) Log in press '1'.\n" + "2.) Register (get great deals and make offers), press '2'"
 							+ "\n3.) Browse the lot,  press '3'." + "\n\nExit, press '0'.");
