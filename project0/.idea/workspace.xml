@@ -5,41 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd49061f-54d2-4c56-aa29-dc1f492da64e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/data.sql.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project0logfile.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ojdbc8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/systemUser/AdminDashboard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/systemUser/CustDashboard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/systemUser/UserLogin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/systemUser/UserMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/systemUser/UserRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/systemUser/UserRegisterTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/daoTests/UserDAOTesting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/modelTests/CarModelTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/serviceTests/CarServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/serviceTests/OfferServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/serviceTests/UserServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/systemUserTests/UserRegisterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mavenSSL/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mavenSSL/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/6.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWar1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWar1/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWar1/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWar1/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWar1/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWar1/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWar1/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/fileContent/annotation-processors.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/5.6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/5.6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/5.6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/5.6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/5.6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/5.6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWeb2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWeb2/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWeb2/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/pickerNumberApplication/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWeb2/pickerNumberApplication/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/plusplus/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWeb2/plusplus/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWeb2/randomNumberGen/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWeb2/randomNumberGen/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/fileContent/annotation-processors.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/5.6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/5.6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/5.6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/5.6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/5.6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/5.6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleWebTomcat3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlejava0/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gradlejava0/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlejava0/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradlejava0/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlejava0/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../groot-data-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../groot-data-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/systemUser/UserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/systemUser/UserMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/systemUser/scannertext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/systemUser/scannertext.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/JDBCConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JDBCConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grootadder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grootviewer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/systemUser/scannertext.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/systemUser/userscript.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/TestConnMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/TestConnMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project0logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project0logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Project0logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Project0logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/TestConnMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/TestConnMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project1/project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../project1/project1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +89,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/ojdbc8.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project2" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -109,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

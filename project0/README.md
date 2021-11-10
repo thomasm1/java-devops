@@ -9,8 +9,13 @@
 
 ### AUTHOR:
 -Thomas Maestas
+## INSTRUCTIONS:
+		String adminUsername = "admin"; 
+		String adminPassword = "pass";  
 
-## Application Description:
+		String tempUsername = "cust";
+		String tempPassword = "pass";
+## Applica1tion Description:
 The Car Dealership app is a console-based application that facilitates the purchasing of cars. An employee can add cars to the lot and manage offers for those cars, while a customer can view the cars on the lot and make offers.
 ## Functionalities: 
 2. Data is stored in a Oracle database. 
