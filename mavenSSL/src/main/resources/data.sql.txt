@@ -22,7 +22,7 @@ INSERT INTO Product (id, version, coin_name, coin_description, symbol, category,
 INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
   (11123, 3, 'Compound2', 'ERC-20', 'COMP', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
 INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
-  (11214, 3, 'Litecoin2', 'Litecoin Network', 'LTC', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
+  (11214, 3, 'Litecoin2', 'Litecoi n Network', 'LTC', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
 INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES
     (11125, 3, 'Polygon2', 'ERC-20', 'MATIC', 'coin', 68.483, 66.83, 62005, 62.10, 'https://s3.amazonaws.com/tmm.net/img/blueColorTriomphe.jpg');
 INSERT INTO Product (id, version, coin_name, coin_description, symbol, category, retail_price, discounted_price, volume, price, image_url) VALUES

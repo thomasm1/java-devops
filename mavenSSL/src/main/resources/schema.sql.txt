@@ -11,7 +11,8 @@ CREATE TABLE Product (
  discounted_price DECIMAL(10,2),
  volume DECIMAL(10,2),
  price DECIMAL(10,2),
- image_url VARCHAR(500));
+ image_url VARCHAR(500),
+ users ARRAY of user objects);
 
 -- USER_
 DROP TABLE IF EXISTS USER_;
@@ -23,7 +24,9 @@ first_name VARCHAR(40),
 last_name VARCHAR(40),
 email VARCHAR(40),
 password VARCHAR(40),
-image VARCHAR(200));
+image VARCHAR(200),
+posts ARRAY of post objects
+products ARRAY of product objects);
 
 -- POST
  DROP TABLE IF EXISTS POST;
