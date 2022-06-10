@@ -38,3 +38,7 @@ INFO  | 2021-11-09 18:59:36 | [main] logger.LogGround (LogGround.java:10) - Prog
 INFO  | 2021-11-09 18:59:36 | [main] logger.LogGround (LogGround.java:19) - Program ended
 INFO  | 2021-11-09 19:01:34 | [main] logger.LogGround (LogGround.java:10) - Program Started
 INFO  | 2021-11-09 19:01:34 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2022-06-10 01:18:18 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2022-06-10 01:18:18 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2022-06-10 01:21:48 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2022-06-10 01:21:48 | [main] logger.LogGround (LogGround.java:19) - Program ended

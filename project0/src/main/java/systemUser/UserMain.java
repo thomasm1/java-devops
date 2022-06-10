@@ -46,7 +46,7 @@ public class UserMain {
 
 	public static void frontpage() {
 
-		String fileName = "C:/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
+		String fileName = "C://Users/thoma/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
 
 		try {
 			File textFile = new File(fileName);

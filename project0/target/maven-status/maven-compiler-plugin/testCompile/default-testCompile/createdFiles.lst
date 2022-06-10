@@ -1,0 +1,6 @@
+modelTests\CarModelTest.class
+serviceTests\UserServiceTest.class
+serviceTests\CarServiceTest.class
+daoTests\UserDAOTesting.class
+serviceTests\OfferServiceTest.class
+systemUserTests\UserRegisterTest.class
