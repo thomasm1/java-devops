@@ -33,6 +33,16 @@ public class User {
 		this.isOwner = isOwner;
 	}
 
+	
+
+    @Override
+    public int hashCode() {
+        int result = username.hashCode();
+        result = 31 * result + fullName.hashCode(); 
+        return result;
+    }
+
+    
 	public int getUserID() {
 		return userID;
 	}

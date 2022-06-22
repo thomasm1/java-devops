@@ -3,6 +3,8 @@ package serviceTests;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.junit.Test;
 
 import models.User;
@@ -25,14 +27,14 @@ public class UserServiceTest {      // *NOTE: change PK usernames before sending
 	}
 
     @org.junit.Test   
-	public void add_new_user() {
+	public void add_new_user() throws IOException {
 		User u = new User(999, "x1445549", "passWordX", null, 0, 0);    // PASSES
 		assertTrue(UserService.createUser(u));
 		UserService.deleteUser(UserService.getUser("x1445549").getUsername());		
 	}
 
     @org.junit.Test   
-   	public void get_user() {
+   	public void get_user() throws IOException {
    		User u = new User(99, "x455491", "passWordX", null, 0, 0);   // PASSES
 		UserService.createUser(u); // leave ou
    		assertEquals("passWordX", u.getPassword());
@@ -40,7 +42,7 @@ public class UserServiceTest {      // *NOTE: change PK usernames before sending
    	} 
     
     @org.junit.Test   
-   	public void update_user() {
+   	public void update_user() throws IOException {
    		User u = new User(99, "x455491", "passWordX", null, 0, 0);   // PASSES
 		UserService.createUser(u); // leave ou
    		User uUpdated = new User(99, "x455491", "UPDATESpassWordX", null, 1, 1);   // PASSES

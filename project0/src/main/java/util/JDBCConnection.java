@@ -18,7 +18,7 @@ public class JDBCConnection {
 			//thomas.cmcadlepsyx9.us-east-1.rds.amazonaws.com
 			String endpoint = "jdbc:oracle:thin:@thomas.cmcadlepsyx9.us-east-1.rds.amazonaws.com:1521:thomas";
 			
-			String secureValue = getJDBCKey();
+			String secureValue = "Paris)utpost1"; //getJDBCKey(); //
 //			String secureValue = "";							// endpoint:port:SID
 //			try {
 //				String fileBower = "C:/w/www/git/java-dev/bower/bowertext.txt";
