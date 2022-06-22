@@ -2,6 +2,8 @@ package systemUser;
 
 import logger.LogGround;
 import models.Car;
+import models.Groot;
+import models.User;
 //import models.Offer;
 //import models.User;
 import service.CarService;
@@ -11,10 +13,13 @@ import service.CarService;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import systemUser.UserLogin;
+import util.DataHashtable;
 
 public class UserMain {
 
@@ -34,8 +39,28 @@ public class UserMain {
 		} catch (Exception e) {
 			UserMain.main(args);
 		}
+		
+		// console work 6/22
+		User newUser1 = new User( 1001, "userJune22", "userPass22", "User Pass 22", 0, 0);
+		DataHashtable dh = new DataHashtable();
+		dh.put("userJune22", newUser1);
+		
+		//
+		
 	}
-
+	// console work 6/22
+	public static Map<Integer, Groot> team = new HashMap<Integer, Groot>();
+	
+	 static {
+		Groot p1 = new Groot(1, "Bulbasaur", "Grass/Poision");		
+		Groot p2 = new Groot(2, "Pikachu", "Electric");
+		Groot p3 = new Groot(3, "Jigglypuff", "Fairy");
+		
+		team.put(1, p1);
+		team.put(2, p2);
+		team.put(3, p3);
+	}
+		//  
 	public static void carlotView() {
 		List<Car> carList = CarService.getAllCarsCust(); // Customer view of carlot.
 		System.out.println("\nWelcome to All-Star e-Cars!\n  " + ">>>> Now featuring 2020 e-Cars!! <<<<");
