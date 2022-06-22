@@ -106,3 +106,5 @@ INFO  | 2022-06-22 00:51:44 | [main] logger.LogGround (LogGround.java:10) - Prog
 INFO  | 2022-06-22 00:51:44 | [main] logger.LogGround (LogGround.java:19) - Program ended
 INFO  | 2022-06-22 00:52:21 | [main] logger.LogGround (LogGround.java:10) - Program Started
 INFO  | 2022-06-22 00:52:21 | [main] logger.LogGround (LogGround.java:19) - Program ended
+INFO  | 2022-06-22 11:31:19 | [main] logger.LogGround (LogGround.java:10) - Program Started
+INFO  | 2022-06-22 11:31:19 | [main] logger.LogGround (LogGround.java:19) - Program ended

@@ -12,11 +12,11 @@ import models.User;
 	  public User remove(String key)
  */
 
-public class DataHashtable {
+public class HashtableProbe {
 
 	private StoredUser[] hashtable; //
 	
-	public DataHashtable() {
+	public HashtableProbe() {
 		hashtable = new StoredUser[1000];
 	}
 	
@@ -78,5 +78,13 @@ public class DataHashtable {
 			
 		
 	}
-	
+	public void printHashtable() {
+		for (int i=0;i<hashtable.length;i++) {
+			if(hashtable[i]==null) {
+				System.out.println("empty table");
+			} else {
+				System.out.println("Index Position " + i + ":"+hashtable[i].user);
+			}
+		}
+	}
 }

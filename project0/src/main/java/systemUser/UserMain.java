@@ -1,15 +1,5 @@
 package systemUser;
 
-import logger.LogGround;
-import models.Car;
-import models.Groot;
-import models.User;
-//import models.Offer;
-//import models.User;
-import service.CarService;
-//import service.OfferService;
-//import service.UserService;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
@@ -18,10 +8,21 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import systemUser.UserLogin;
-import util.DataHashtable;
+
+import logger.LogGround;
+import models.Car;
+import models.Groot;
+import models.User;
+//import models.Offer;
+//import models.User;
+import service.CarService;
+import util.HashtableChain;
+//import service.OfferService;
+//import service.UserService;
+import util.HashtableProbe;
 
 public class UserMain {
+
 
 	public static void main(String[] args) throws SQLException {
 
@@ -41,12 +42,20 @@ public class UserMain {
 		}
 		
 		// console work 6/22
-		User newUser1 = new User( 1001, "userJune22", "userPass22", "User Pass 22", 0, 0);
-		DataHashtable dh = new DataHashtable();
-		dh.put("userJune22", newUser1);
+		User newUser1 = new User( 12001, "userJune22", "userPass22", "User Pass 22", 0, 0);
 		
-		//
+		HashtableProbe hp = new HashtableProbe();
+		hp.put("userJune22", newUser1);  
+		hp.printHashtable();
 		
+		User newCHain = new User( 12003, "user3", "user3", "User3", 0, 0);
+		User newCHain2 = new User( 12002, "user2", "user22", "User22", 0, 0);
+        HashtableChain hc = new HashtableChain();
+        hc.put("userCHAIN", newCHain);
+        hc.put("newCHain2", newCHain2);
+		hc.printHashtable();
+        hc.remove("newCHain2");
+		hc.printHashtable();
 	}
 	// console work 6/22
 	public static Map<Integer, Groot> team = new HashMap<Integer, Groot>();

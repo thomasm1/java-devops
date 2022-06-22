@@ -9,13 +9,27 @@
 
 ### AUTHOR:
 -Thomas Maestas
+
 ## INSTRUCTIONS:
 		String adminUsername = "admin"; 
 		String adminPassword = "pass";  
 
 		String tempUsername = "cust";
 		String tempPassword = "pass";
-## Applica1tion Description:
+		
+		mvn clean test
+		mvn package
+		
+		...Logging by Log4j2.
+
+MUST: 
+1. update OJDBC driver & configure in src
+2. update string location below on local
+class oracle.jdbc.driver.OracleDriver
+... JDBC Drive successfully connected.
+Welcome script file not found: C://Users/thoma/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt
+		
+## Application Description:
 The Car Dealership app is a console-based application that facilitates the purchasing of cars. An employee can add cars to the lot and manage offers for those cars, while a customer can view the cars on the lot and make offers.
 ## Functionalities: 
 2. Data is stored in a Oracle database. 
