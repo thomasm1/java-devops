@@ -27,7 +27,9 @@ MUST:
 2. update string location below on local
 class oracle.jdbc.driver.OracleDriver
 ... JDBC Drive successfully connected.
-Welcome script file not found: C://Users/thoma/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt
+Main class in UserMain, Run as Java Application
+userMain.java --> line 83. update path
+	Welcome script file not found: 	C://Users/thoma/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt
 		
 ## Application Description:
 The Car Dealership app is a console-based application that facilitates the purchasing of cars. An employee can add cars to the lot and manage offers for those cars, while a customer can view the cars on the lot and make offers.

@@ -16,6 +16,7 @@ import models.User;
 //import models.Offer;
 //import models.User;
 import service.CarService;
+import service.DataService;
 import util.HashtableChain;
 //import service.OfferService;
 //import service.UserService;
@@ -23,7 +24,8 @@ import util.HashtableProbe;
 
 public class UserMain {
 
-
+    // main class here
+	
 	public static void main(String[] args) throws SQLException {
 
 		LogGround.logger();
@@ -69,7 +71,16 @@ public class UserMain {
 		team.put(2, p2);
 		team.put(3, p3);
 	}
-		//  
+		//  TODO;
+	 	// CLI input converting string numbers into array of integers. 
+	public static void dataStructures() {
+		int[] numbers = { 59382, 43, 6894, 500, 99, -58 };
+		int[] buckets = DataService.hashNums(numbers);
+		System.out.println("Sundry hashNums Practice Operations ");
+		System.out.print(buckets.toString());  
+		frontpage();
+	}
+	 
 	public static void carlotView() {
 		List<Car> carList = CarService.getAllCarsCust(); // Customer view of carlot.
 		System.out.println("\nWelcome to All-Star e-Cars!\n  " + ">>>> Now featuring 2020 e-Cars!! <<<<");
@@ -80,7 +91,7 @@ public class UserMain {
 
 	public static void frontpage() {
 
-		String fileName = "C://Users/thoma/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
+		String fileName = "C://w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
 
 		try {
 			File textFile = new File(fileName);
@@ -93,7 +104,9 @@ public class UserMain {
 			System.out.println("\n#====All-Star_E-Cars==with " + value2 + " locations!");
 			System.out.println(
 					"\n1.) Log in press '1'.\n" + "2.) Register (get great deals and make offers), press '2'"
-							+ "\n3.) Browse the lot,  press '3'." + "\n\nExit, press '0'.");
+							+ "\n3.) Browse the lot,  press '3'." + 
+							"\n4.) Data Structures Manipulation,  press '4'." + 
+							"\n\nExit, press '0'.");
 			scanText.close();
 			
 		} catch (FileNotFoundException e) {
@@ -105,7 +118,7 @@ public class UserMain {
 			boolean hasNextInt = newScan.hasNextInt();
 			int val = newScan.nextInt();
 			try {
-				if (val < 0 | val > 3 | !hasNextInt) {
+				if (val < 0 | val > 4 | !hasNextInt) {
 					System.out.println("Please enter valid choices: 0-3");
 					UserMain.frontpage();
 				} else {
@@ -122,6 +135,23 @@ public class UserMain {
 					case 3: {
 						System.out.println("\n Ok, please enjoy your browsing....");
 						carlotView();
+						break;
+					}
+					case 4: {
+						
+					    try
+						{
+							System.out.println("\n Ok, opening algorithm dex ....");
+							
+						    Thread.sleep(3000);
+//							algoControllerView();
+							dataStructures();
+						    Thread.sleep(3000);
+						}
+						catch(InterruptedException ex)
+						{
+						    Thread.currentThread().interrupt();
+						}
 						break;
 					}
 					case 0: {

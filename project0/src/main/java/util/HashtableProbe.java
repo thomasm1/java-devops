@@ -21,7 +21,7 @@ public class HashtableProbe {
 	}
 	
 	private int hashKey(String key) {
-		return (int) (key.length() *31) % hashtable.length; // int NOT RANDOM FOR NOW, ONLY LENGTH // * Math.random()
+		return (int) key.length() % hashtable.length; // int NOT RANDOM FOR NOW, ONLY LENGTH // * Math.random()
 	}
 	private boolean occupied(int index) {
 		return hashtable[index]!=null; // returning true if occupied
@@ -68,9 +68,9 @@ public class HashtableProbe {
 			hashedKey++;
 		}
 		while (hashedKey != stopIndex && hashtable[hashedKey] != null && !hashtable[hashedKey].key.equals(key)) {
-			hashedKey = (hashedKey +1) % (hashtable.length *31);
+			hashedKey = (hashedKey +1) % (hashtable.length);
 		}
-		if(hashtable[hashedKey] != null && hashtable [hashedKey].key.equals(key)) {
+		if(hashtable[hashedKey] != null && hashtable[hashedKey].key.equals(key)) {
 			return hashedKey;
 		} else {
 			return -1;
