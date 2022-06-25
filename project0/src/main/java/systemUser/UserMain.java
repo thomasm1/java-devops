@@ -21,6 +21,7 @@ import util.HashtableChain;
 //import service.OfferService;
 //import service.UserService;
 import util.HashtableProbe;
+import util.Tree;
 
 public class UserMain {
 
@@ -52,12 +53,19 @@ public class UserMain {
 		
 		User newCHain = new User( 12003, "user3", "user3", "User3", 0, 0);
 		User newCHain2 = new User( 12002, "user2", "user22", "User22", 0, 0);
+		
         HashtableChain hc = new HashtableChain();
         hc.put("userCHAIN", newCHain);
         hc.put("newCHain2", newCHain2);
 		hc.printHashtable();
         hc.remove("newCHain2");
 		hc.printHashtable();
+		
+		// Tree
+		Tree intTree = new Tree();
+	    intTree.insert(25);
+	    intTree.insert(20);
+	    intTree.insert(15);
 	}
 	// console work 6/22
 	public static Map<Integer, Groot> team = new HashMap<Integer, Groot>();

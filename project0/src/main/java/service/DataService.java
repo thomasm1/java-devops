@@ -1,6 +1,8 @@
 package service;
 
 import java.util.List;
+import util.HashtableChain;
+import util.HashtableProbe;
 
 import models.Car;
 
@@ -11,12 +13,12 @@ public class DataService {
 		int[] numsToAdd = arr;
 		
 		for (int i = 0; i< numsToAdd.length;i++) {
-			nums[hash(numsToAdd[i])] = numsToAdd[i];
+			nums[hash(nums.length, numsToAdd[i])] = numsToAdd[i];
 		}
-		return nums;
+		return nums; // returns array of ints8
 	}
 
-	public static int hash(int value) {
-		return Math.abs(value %  10);	}
+	public static int hash(int size, int value) {
+		return Math.abs(value  %  size);	}
 
 }
