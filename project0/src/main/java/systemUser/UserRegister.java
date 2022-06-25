@@ -41,7 +41,7 @@ public class UserRegister {
 				CustDashboard.loginDashboard(fn); //, fn, ln
 			}
 		} else {
-			UserMain.frontpage();
+			UserMain.frontConsole();
 		}
 
 		scan.close();

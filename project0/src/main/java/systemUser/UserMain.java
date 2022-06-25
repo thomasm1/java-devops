@@ -30,16 +30,18 @@ public class UserMain {
 	public static void main(String[] args) throws SQLException {
 
 		LogGround.logger();
+		System.out.println("#0 log ...Logging by Log4j2.\n");/// #0 log
 
+		/// #1 check for Oracle JDBC Driver 
 		try {
-			System.out.println("...Logging by Log4j2.\n");
-			System.out.println(Class.forName("oracle.jdbc.driver.OracleDriver"));
-			System.out.println("... JDBC Drive successfully connected.");
+			System.out.println("# Success! driver: " +Class.forName("oracle.jdbc.driver.OracleDriver"));
+			System.out.println("1 ..found Oracle JDBC Driver...ready to connect.");
 		} catch (ClassNotFoundException e) {
 			System.out.println("oops, Driver not found :-O");
 		}
-		try {
-			frontpage();
+		try { 
+			System.out.println("#2 Loading frontConsole ");
+			frontConsole();
 		} catch (Exception e) {
 			UserMain.main(args);
 		}
@@ -65,7 +67,7 @@ public class UserMain {
 		int[] buckets = DataService.hashNums(numbers);
 		System.out.println("Sundry hashNums Practice Operations ");
 		System.out.print(buckets.toString());  
-		frontpage();
+		frontConsole();
 	}
 	 
 	public static void carlotView() {
@@ -73,10 +75,10 @@ public class UserMain {
 		System.out.println("\nWelcome to All-Star e-Cars!\n  " + ">>>> Now featuring 2020 e-Cars!! <<<<");
 
 		System.out.println(carList);
-		frontpage();
+		frontConsole();
 	}
 
-	public static void frontpage() {
+	public static void frontConsole() {
 
 		String fileName = "C://w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
 
@@ -105,9 +107,10 @@ public class UserMain {
 			boolean hasNextInt = newScan.hasNextInt();
 			int val = newScan.nextInt();
 			try {
+				/// Validate 
 				if (val < 0 | val > 4 | !hasNextInt) {
 					System.out.println("Please enter valid choices: 0-3");
-					UserMain.frontpage();
+					UserMain.frontConsole();
 				} else {
 					switch (val) {
 					case 1: {
@@ -143,20 +146,20 @@ public class UserMain {
 					}
 					case 0: {
 						System.out.println("\n   Come Back *Soon* !\n");
-						frontpage();
+						frontConsole();
 					}
 					}
 					newScan.close();
 				}
 			} catch (SQLException e) {
 				System.out.println("Input digits from 0 - 4" + e);
-				frontpage();
+				frontConsole();
 			}
-			frontpage();
+			frontConsole();
 
 		} catch (InputMismatchException e) {
 			System.out.println("Oops, Inputs! must choose 1,2,3,4... " + e);
-			frontpage();
+			frontConsole();
 		}
 
 	}

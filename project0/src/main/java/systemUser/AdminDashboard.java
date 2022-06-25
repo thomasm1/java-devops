@@ -227,7 +227,7 @@ public class AdminDashboard {
 			try {
 				dashboardChoice();
 			} catch (SQLException e1) {
-				UserMain.frontpage();
+				UserMain.frontConsole();
 			}
 		}
 	}

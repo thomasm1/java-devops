@@ -40,7 +40,7 @@ public class UserLogin {
 				try {
 					login();
 				} catch (Exception e) {
-					UserMain.frontpage();
+					UserMain.frontConsole();
 				}
 			}
 			scanner.close();
