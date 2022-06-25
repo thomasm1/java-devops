@@ -3,7 +3,7 @@ package service;
 import java.util.List;
 import util.HashtableChain;
 import util.HashtableProbe;
-
+import util.Tree;
 import models.Car;
 
 public class DataService {

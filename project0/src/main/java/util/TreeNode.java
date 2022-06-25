@@ -5,12 +5,21 @@ public class TreeNode {
 	private int data;
 	private TreeNode leftChild;
 	private TreeNode rightChild;
-	
-	public TreeNode(int value) {
-		// TODO Auto-generated constructor stub
-		
+	 
+	public TreeNode(int data) {
+		this.data = data;
 	}
 
+	 void traverseInOrder() {
+		if (leftChild != null) {
+			leftChild.traverseInOrder();
+		} 
+		System.out.println(data + ", ");
+		if (rightChild != null) {
+			rightChild.traverseInOrder();
+		}
+	}
+	 
 	public void insert(int value) {
 		if(value == data) {
 			return;
@@ -70,5 +79,6 @@ public class TreeNode {
 	public void setRightChild(TreeNode rightChild) {
 		this.rightChild = rightChild;
 	}
+
 
 }

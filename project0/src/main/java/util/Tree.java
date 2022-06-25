@@ -3,6 +3,8 @@ package util;
 public class Tree {
 
 	private TreeNode root;
+	private TreeNode leftChild;
+	private TreeNode rightChild;
 	
 	public void insert(int value) {
 		if(root == null) {
@@ -11,5 +13,6 @@ public class Tree {
 			root.insert(value);
 		}
 	}
+	 
 	
 }
