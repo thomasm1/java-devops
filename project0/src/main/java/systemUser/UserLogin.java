@@ -34,7 +34,7 @@ public class UserLogin {
 					| (un.contentEquals(login.getUsername()) && pw.contentEquals(login.getPassword()))) {
 				System.out.println(
 						"...grreat, password checks out! *" + un + "* #1, now logging you into your Dashboard");
-				CustDashboard.loginDashboard(un); //
+				CarsDashboard.loginDashboard(un); //
 			} else {
 				System.out.println("Oops, typo time, please try again");
 				try {

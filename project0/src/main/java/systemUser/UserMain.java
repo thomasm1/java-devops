@@ -2,7 +2,11 @@ package systemUser;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -37,7 +41,7 @@ public class UserMain {
 			System.out.println("# Success! driver: " +Class.forName("oracle.jdbc.driver.OracleDriver"));
 			System.out.println("1 ..found Oracle JDBC Driver...ready to connect.");
 		} catch (ClassNotFoundException e) {
-			System.out.println("oops, Driver not found :-O");
+			System.out.println("oops, Driver not found :-O. Hey! Check Build Path for the Oracle Java Database Connector Class! Physically put the jar into ");
 		}
 		try { 
 			System.out.println("#2 Loading frontConsole ");
@@ -72,35 +76,49 @@ public class UserMain {
 	 
 	public static void carlotView() {
 		List<Car> carList = CarService.getAllCarsCust(); // Customer view of carlot.
-		System.out.println("\nWelcome to All-Star e-Cars!\n  " + ">>>> Now featuring 2020 e-Cars!! <<<<");
+		System.out.println("\nWelcome  !\n  " + ">>>> Now featuring 2020 e-Cars!! <<<<");
 
 		System.out.println(carList);
 		frontConsole();
 	}
-
-	public static void frontConsole() {
-
-		String fileName = "C://w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
-
-		try {
-			File textFile = new File(fileName);
-			Scanner scanText = new Scanner(textFile);
-			int value = scanText.nextInt(); 
-			System.out.println("\n    #=============#");
-			System.out.println("    Welcome VIP # " + value);
+	 protected static File checkLocalfiles(String path)  throws IOException {
+		  	// if no path provided, local here: 
+		 //TODO UPDATE using JavaScript Dynamically get browser & OS, etc.
+		 // Assuming I pass a null (usually), this method returns default
+			String fileFullPath = (path!=null) ?  path : "C://w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
+			File textFile = new File(fileFullPath );
+			return textFile;
+		}
+		
+	
+	/*
+	 * frontConsole() method soon to be moved into a Singleton Session ..
+	 * Class.forName("oracle.jdbc.driver.OracleDriver, but now auto-bounnd npi with database of user.
+	 * 
+	 */
+	public static void frontConsoleFirst() throws IOException, ClassNotFoundException {
+ 
+			// ## Checking data types and local input
+			File file = checkLocalfiles(null);
+			Scanner scanText = new Scanner(file);
+			int rowInt1 = scanText.nextInt(); 
+			System.out.println("\n    #=====document ID: "+ rowInt1+"========#");
+			String rowString1 = scanText.next(); 
+			System.out.println("    Welcome  " + rowString1 + " .., I am now updated with your database: "+ Class.forName("oracle.jdbc.driver.OracleDriver")+ " ...\nWhat can I do next?");
 			System.out.println("    #=============#");
-			int value2 = scanText.nextInt();
-			System.out.println("\n#====All-Star_E-Cars==with " + value2 + " locations!");
+			long rowLong1 = scanText.nextLong();
+			rowLong1 = System.currentTimeMillis();
+			System.out.println("\n#===Maven Dashboard " + rowLong1 + " o'clock!"+startupTime());
 			System.out.println(
 					"\n1.) Log in press '1'.\n" + "2.) Register (get great deals and make offers), press '2'"
 							+ "\n3.) Browse the lot,  press '3'." + 
 							"\n4.) Data Structures Manipulation,  press '4'." + 
 							"\n\nExit, press '0'.");
 			scanText.close();
-			
-		} catch (FileNotFoundException e) {
-			System.out.println("Welcome script file not found: " + fileName.toString());
-		}
+			  
+
+	}
+	public static void frontConsole() {
 
 		try {
 			Scanner newScan = new Scanner(System.in);
@@ -161,7 +179,11 @@ public class UserMain {
 			System.out.println("Oops, Inputs! must choose 1,2,3,4... " + e);
 			frontConsole();
 		}
-
 	}
-
+	private static String startupTime() {
+		SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+		Date date = new Date(System.currentTimeMillis());
+//		System.out.println(formatter.format(date));
+		return formatter.format(date);
+	}
 }

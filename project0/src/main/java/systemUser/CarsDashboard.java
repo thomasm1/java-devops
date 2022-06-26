@@ -16,7 +16,7 @@ import service.ElectroLotService;
 import service.OfferService;
 import service.ControllerService;
 
-public class CustDashboard {
+public class CarsDashboard {
 
 	Integer val;
 

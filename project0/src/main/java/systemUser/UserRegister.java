@@ -36,9 +36,9 @@ public class UserRegister {
 		if (yes.contentEquals("y")) { 
 			try {
 				System.out.println("...sounds good, *"+ fn + "*, now logging you into your Dashboard");
-				CustDashboard.loginDashboard(fn); //, fn, ln
+				CarsDashboard.loginDashboard(fn); //, fn, ln
 			} catch (Exception e) {
-				CustDashboard.loginDashboard(fn); //, fn, ln
+				CarsDashboard.loginDashboard(fn); //, fn, ln
 			}
 		} else {
 			UserMain.frontConsole();
