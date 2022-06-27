@@ -150,8 +150,7 @@ public class AdminDashboard {
 				}
 				case 0: {
 					System.out.println("At your service, logging you out now ...\n");
-					String[] args = null;
-					UserMain.main(args);
+					System.exit(0);
 				}
 				} // end switch
 			} else {

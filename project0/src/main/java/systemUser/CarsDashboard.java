@@ -132,13 +132,8 @@ public class CarsDashboard {
 				dashboardChoice(username);
 			}
 			case 0: {
-				System.out.println("So sorry to see you leave! Please come back soon!!\n");
-				String[] args = null;
-				try {
-					UserMain.main(args);
-				} catch (SQLException e) {
-					dashboardChoice(username);
-				}
+				System.out.println("So sorry to see you leave! Please come back soon!!\n"); 
+					System.exit(0); 
 				dashboardChoice(username);
 			}
 			}

@@ -91,8 +91,7 @@ My SQL tables are sufficiently atomic, non-redundant, and functionally independe
 | CI/CD | Jenkins | [Jenkins] |
 | Pipeline | AWS Codebuild | [CodeBuild] |
    
-##### Testing Libraries:
-```json
+### Testing Libraries:
 "Jenkins" : "2.0",
 "codelyzer": "^5.0.0",
 "jasmine-core": "~3.4.0",
@@ -105,10 +104,8 @@ My SQL tables are sufficiently atomic, non-redundant, and functionally independe
 "protractor": "~5.4.0",
 "ts-node": "~7.0.0",
 "tslint": "~5.15.0",
-''' 
-   
 
-** Software **
+### Software **
 
 * [Oracle]: <https://www.oracle.com/database/technologies/112010-win64soft.html>
 * [AWS-RDS]: <https://aws.amazon.com/rds/>
@@ -119,4 +116,27 @@ My SQL tables are sufficiently atomic, non-redundant, and functionally independe
 * [Jenkins]: <https://jenkins.io/> 
 * [CodeBuild]:<https://aws.amazon.com/codebuild/> 
   
+ ### NOTES AND TODOS
+
+6/26
+Results :
+
+Tests in error:
+  get_car_make(serviceTests.CarServiceTest)
+  add_new_car(serviceTests.CarServiceTest)
+  update_car(serviceTests.CarServiceTest)
+  get_car(serviceTests.CarServiceTest)
+  delete_car(serviceTests.CarServiceTest)
+  update_offer(serviceTests.OfferServiceTest)
+  delete_offer(serviceTests.OfferServiceTest)
+  add_new_offer(serviceTests.OfferServiceTest)
+  get_offer(serviceTests.OfferServiceTest)
+  delete_user(serviceTests.UserServiceTest)
+  add_new_user(serviceTests.UserServiceTest)
+  update_user(serviceTests.UserServiceTest)
+  get_user(serviceTests.UserServiceTest)
+
+Tests run: 20, Failures: 0, Errors: 13, Skipped: 0
+
+
  

@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Scanner; 
 import service.ControllerService; 
 
+import util.ScannerCalculator;
+
 public class UserController {
 	
 	public static void userController () throws SQLException {
@@ -18,7 +20,7 @@ public class UserController {
 						+ "2.) View available  Algorithms \n "
 						
 						+ "3.) Add Algorithms\n Formulate and add formula: 1. inputs, 2. output, 3. data types, 4. tests"  
-						+ "4.) Run Algorithms. Want to Hash something? Make a Glossary on-the-fly? Let's go ==>4\n "
+						+ "4.) Caculate. Run Algorithms. Want to Hash something? Make a Glossary on-the-fly? Let's go ==>4\n "
 						
 						+ "5.) View History of Run Jobs\n "
 						+ "0.) Logout");
@@ -27,7 +29,7 @@ public class UserController {
 			Scanner scan = new Scanner(System.in);
 			int val = scan.nextInt();
 			// Validation
-			if (val >= 0 && val <= 5) {
+			if (val >= 0 && val <= 6) {
 				switch (val) {
 				case 1: {
 					scan.nextLine();
@@ -70,26 +72,66 @@ public class UserController {
 					}
 				}
 				case 4: {
+					scan.nextLine();
+					System.out.println("Running a Program? Let me get my notepad ...");
+					System.out.println("Enter your program number - ");
+					while (true) {
+						try { 
+							
+							System.out.println("program?");
+							int programId = scan.nextInt();
+//							
+//							if(programId = 1) {
+//								
+//							DASHBOARD CONTROLLER ; BREAK;
+							
+							Scanner scalc = new Scanner(System.in);
+									int a = scalc.nextInt();
+								String op = scalc.next();
+								int b = scalc.nextInt();
+								if (op.equals("+")) {
+									ScannerCalculator.plus(a,b);
+								}
+//							}
+							System.out.println("entry name?");
+							String entry = scan.nextLine();
+							System.out.println("Data  : i.e., json, xml, csv?");
+							String data = scan.nextLine();
+							System.out.println("Algorithm Description");
+							String desc = scan.nextLine(); 
+				 
+							System.out.println("Umkay \n" + entry + " will be delivered using type "+data);
+							System.out.println("Umkay \n" + desc);
+							System.out.println("    Everything look right? (y) or (no)\n");
+							String y = scan.nextLine();
+ 
+							scalc.close();
+							
+						} catch (Exception e) {
+							System.out.println("Oops, something went wrong, try again please\n");
+						} 
+						userController();
+					}
+				}
+				case 5: {
 		 
 					userController();
 				}
-				case 5: {
+				case 6: {
 			 
 					userController();
 				}
 				case 0: {
 					System.out.println("At your service, logging you out now ...\n");
-					String[] args = null;
-					UserMain.main(args);
-				}
+					System.exit(0);				}
 				} // end switch
 			} else {
-				System.out.println("Please enter digits 0 to 5");
+				System.out.println("Please enter digits 0 to 6");
 				userController();
 			}
 		} catch (InputMismatchException e) {
 			// go round again. Read past the end of line in the input first
-			System.out.println("Please enter digits 0 to 5");
+			System.out.println("Please enter digits 0 to 6");
 			userController();
 		}
 	}

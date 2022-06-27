@@ -1,5 +1,7 @@
 package util;
 
+import org.junit.After;
+
 public class TreeNode {
 	
 	private int data;
@@ -10,16 +12,37 @@ public class TreeNode {
 		this.data = data;
 	}
 
-	 void traverseInOrder() {
-		if (leftChild != null) {
-			leftChild.traverseInOrder();
-		} 
-		System.out.println(data + ", ");
-		if (rightChild != null) {
-			rightChild.traverseInOrder();
+	/**
+	 * @returns Node with value for identifier.... integer primitive for the hashMapper tool.  
+	 * 
+	 *prints data
+	 */
+
+	public TreeNode get(int value) {
+		if(value == data) {
+			return this;
 		}
+		if (value < data) {
+			if (leftChild != null) {
+				return leftChild.get(value);
+			}
+		}
+		else {
+			if (rightChild !=null) {
+				return rightChild.get(value);
+			}
+		}
+//		After both recursive sides complete, .
+		return null;
 	}
-	 
+
+
+	/**
+	 * @returns nothing  
+	 * 
+	 * insert only
+	 */	
+
 	public void insert(int value) {
 		if(value == data) {
 			return;
@@ -38,6 +61,31 @@ public class TreeNode {
 			}
 		}
 	}
+	
+	
+
+	/**
+	 * @returns nothing
+	 * 
+	 *prints data
+	 */
+	
+	// Depth-first Search to Lowest Level Left Child Node: min
+	 public void traverseInOrder() {
+		if (leftChild != null) {
+			leftChild.traverseInOrder();
+		} 
+		// Recursive Left side hits base case furrthest left, then print
+		System.out.println(data + ", ");
+		
+		// Finish out Right-Childs
+		if (rightChild != null) {
+			rightChild.traverseInOrder();
+		}
+		// No print right child until print of root: In-order
+	}
+	 
+	 
 	/**
 	 * @return the data
 	 */
@@ -78,6 +126,11 @@ public class TreeNode {
 	 */
 	public void setRightChild(TreeNode rightChild) {
 		this.rightChild = rightChild;
+	}
+
+	public TreeNode getValue() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
