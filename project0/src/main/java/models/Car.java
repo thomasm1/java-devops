@@ -9,10 +9,9 @@ public class Car {
 	int purchased;
 
 	/*
-	 * This class is in the model layer of the application. This comes from the M in
-	 * MVC. This class will be a Java Object representation of a table in DB.
-	 * UPcoming Tables: User, Payments, Offers, Fields represent db fields ( using
-	 * String of 'toppings' is *not* Atomic)
+	 * Java Object representation of a table in DB.
+	 * Tables: User, Payments, Offers, 
+	 * *purchased = 1 ; (not) purchased = 0
 	 */
 	public Car() {
 		super();
