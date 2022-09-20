@@ -37,7 +37,7 @@ This app uses hashing algorithms to optimize the calculations of the inventory d
 
 This app uses structs, in the formal sense of Solidity language, rather that C, etc. 
 Structs, by definition. (computing, programming) A data structure, especially one that serves to group a number of fields (in contrast to an object-oriented class with methods) or one that is passed by value rather than by reference. noun.	
-## Application Description:
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 The Car Dealership app is a console-based application that facilitates the purchasing of cars. An employee can add cars to the lot and manage offers for those cars, while a customer can view the cars on the lot and make offers.
 ## Functionalities: 
 2. Data is stored in a Oracle database. 
