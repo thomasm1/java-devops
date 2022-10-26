@@ -62,6 +62,8 @@ AWS RDS hosts Oracle 11se servers
 3 Foreign-Keys-linked tables, 4 custom-stored procedures, and 1 stored function. 
 My SQL tables are sufficiently atomic, non-redundant, and functionally independent to achieve 1st, 2nd, and 3rd forms normalization. 
 
+## Data-binding functionality 
+	<p>Language processing will use a Tree-model
 ## User Stories:
 * As a user, I can login.  
 * As a user, I can register for a customer account. 
@@ -107,6 +109,7 @@ My SQL tables are sufficiently atomic, non-redundant, and functionally independe
 
 ### Software **
 
+####Front-angular
 * [Oracle]: <https://www.oracle.com/database/technologies/112010-win64soft.html>
 * [AWS-RDS]: <https://aws.amazon.com/rds/>
 * [AWS-S3]: <https://aws.amazon.com/s3/>
@@ -115,8 +118,12 @@ My SQL tables are sufficiently atomic, non-redundant, and functionally independe
 * [Selenium]: <https://selenium.dev/documentation/en/>
 * [Jenkins]: <https://jenkins.io/> 
 * [CodeBuild]:<https://aws.amazon.com/codebuild/> 
-  
- ### NOTES AND TODOS
+#### server-spring-boot
+
+
+
+
+### NOTES AND TODOS
 
 6/26
 Results :

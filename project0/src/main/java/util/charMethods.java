@@ -11,7 +11,7 @@ public class charMethods {
 			}
 		for (int i=0;i<t.length();i++) {
 			letters[t.charAt(i)]--;
-			if(letters[t.charAt(i)]<0) { After going through 2nd time checking 
+			if(letters[t.charAt(i)]<0) { //After going through 2nd time checking 
 				return false;
 			}
 		}
