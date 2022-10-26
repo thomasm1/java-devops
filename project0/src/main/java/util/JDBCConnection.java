@@ -14,11 +14,10 @@ public class JDBCConnection {
 	
 	public static Connection getConnection() {
 		
-		if(conn == null) {
-			//thomas.cmcadlepsyx9.us-east-1.rds.amazonaws.com
+		if(conn == null) { 
 			String endpoint = "jdbc:oracle:thin:@thomas.cmcadlepsyx9.us-east-1.rds.amazonaws.com:1521:thomas";
 			
-			String secureValue = "Paris)utpost1"; //getJDBCKey(); //
+			String secureValue = getJDBCKey();//  
 //			String secureValue = "";							// endpoint:port:SID
 //			try {
 //				String fileBower = "C:/w/www/git/java-dev/bower/bowertext.txt";
@@ -50,23 +49,23 @@ public class JDBCConnection {
 		Map<String, String> env = System.getenv();
 		for (Map.Entry<String, String> entry : env.entrySet()) {
 			if (entry.getKey().equals("ORACLE_DB_PASSWORD")) {
-				System.out.println(entry.getValue());
+ 
 				return entry.getValue();
 			}
 		}
 		return null;
 	}
 
-	public static void main(String[] args) { 
-		Connection conn1 = getConnection();
-		Connection conn2 = getConnection();
-		Connection conn3 = getConnection();
-		Connection conn4 = getConnection();
-		
-		
-		System.out.println(conn1);
-		System.out.println(conn2);
-		System.out.println(conn4);
-	}
+//	public static void main(String[] args) { 
+//		Connection conn1 = getConnection();
+//		Connection conn2 = getConnection();
+//		Connection conn3 = getConnection();
+//		Connection conn4 = getConnection();
+//		
+//		
+//		System.out.println(conn1);
+//		System.out.println(conn2);
+//		System.out.println(conn4);
+//	}
 
 }

@@ -66,27 +66,7 @@ public class UserMain {
 				}
 	}
 	 
-	public static Map<Integer, Groot> team = new HashMap<Integer, Groot>();
-	
-	 static {
-		Groot p1 = new Groot(1, "Bulbasaur", "Grass/Poision");		
-		Groot p2 = new Groot(2, "Pikachu", "Electric");
-		Groot p3 = new Groot(3, "Jigglypuff", "Fairy");
-		
-		team.put(1, p1);
-		team.put(2, p2);
-		team.put(3, p3);
-	}
-		//  TODO;
-	 	// CLI input converting string numbers into array of integers. 
-	public static void dataStructures() {
-		int[] numbers = { 59382, 43, 6894, 500, 99, -58 };
-		int[] buckets = DataService.hashNums(numbers);
-		System.out.println("Sundry hashNums Practice Operations ");
-		System.out.print(buckets.toString());  
-		frontConsole();
-	}
-	 
+ 
 	public static void carlotView() {
 		List<Car> carList = CarService.getAllCarsCust(); // Customer view of carlot.
 		System.out.println("\nWelcome  !\n  " + ">>>> Now featuring 2020 e-Cars!! <<<<");
@@ -98,7 +78,7 @@ public class UserMain {
 		  	// if no path provided, local here: 
 		 //TODO UPDATE using JavaScript Dynamically get browser & OS, etc.
 		 // Assuming I pass a null (usually), this method returns default
-			String fileFullPath = (path!=null) ?  path : "C://Users/thoma/w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
+			String fileFullPath = (path!=null) ?  path : "C://w/www/java-devops/project0/src/main/java/systemUser/scannertext.txt";
 			File textFile = new File(fileFullPath );
 			return textFile;
 		}
@@ -154,27 +134,15 @@ public class UserMain {
 					case 2: {
 						UserRegister.register();
 						carlotView();
+						break;
 					}
 					case 3: {
 						System.out.println("\n Ok, please enjoy your browsing....");
 						carlotView();
 						break;
 					}
-					case 4: {
-						
-					    try
-						{
-							System.out.println("\n Ok, opening algorithm dex ....");
-							
-						    Thread.sleep(3000);
-//							algoControllerView();
-							dataStructures();
-						    Thread.sleep(3000);
-						}
-						catch(InterruptedException ex)
-						{
-						    Thread.currentThread().interrupt();
-						}
+					case 4: {  
+						System.out.println("\n Ok, #4 ..."); 
 						break;
 					}
 					case 0: {
